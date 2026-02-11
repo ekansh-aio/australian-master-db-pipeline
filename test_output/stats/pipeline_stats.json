@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "mode": "test_fixed_v2",
+  "pipeline_time_seconds": 81.43,
+  "documents_fetched": 10,
+  "documents_processed": 10,
+  "documents_failed": 0,
+  "total_chunks_generated": 490,
+  "top_k_chunks_selected": 38,
+  "chunks_with_embeddings": 38,
+  "timestamp": "2026-02-03T22:28:46.675129",
+  "output_directory": "J:\\msdb_pipeline\\test_output"
+}

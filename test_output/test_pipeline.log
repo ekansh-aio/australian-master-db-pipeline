@@ -1,0 +1,959 @@
+2026-02-03 22:05:23,583 - __main__ - INFO - Starting Test Pipeline (FIXED VERSION)
+2026-02-03 22:05:23,587 - __main__ - INFO - ================================================================================
+2026-02-03 22:05:23,587 - __main__ - INFO - TEST PIPELINE - LOCAL STORAGE MODE (FIXED VERSION)
+2026-02-03 22:05:23,587 - __main__ - INFO - ================================================================================
+2026-02-03 22:05:23,590 - __main__ - INFO - Output directory: J:\msdb_pipeline\test_output
+2026-02-03 22:05:23,591 - __main__ - INFO - Initializing ADLS connection...
+2026-02-03 22:05:23,591 - core.adls_fetcher - INFO - Initializing ADLS connection: account=ausmasterdb, container=raw
+2026-02-03 22:05:23,673 - core.adls_fetcher - INFO - ADLS connection established successfully
+2026-02-03 22:05:23,674 - __main__ - INFO - Initializing text processors...
+2026-02-03 22:05:23,675 - core.semantic_chunker - INFO - Loading sentence transformer model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-03 22:05:23,679 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-03 22:05:23,680 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-03 22:05:29,441 - core.semantic_chunker - INFO - Model loaded successfully
+2026-02-03 22:05:29,441 - core.semantic_chunker - INFO - SemanticChunker initialized with threshold=0.8, min_sentences=2, max_sentences=10
+2026-02-03 22:05:29,442 - __main__ - INFO - Using embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-03 22:05:29,443 - __main__ - INFO - Test pipeline initialized successfully
+2026-02-03 22:05:29,443 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:05:29,443 - __main__ - INFO - STAGE 1: FETCHING DOCUMENTS FROM ADLS
+2026-02-03 22:05:29,444 - __main__ - INFO - ================================================================================
+2026-02-03 22:05:29,444 - core.adls_fetcher - INFO - Listing files in path: newapp/dataset=bill/bill/queensland/1992, pattern: *.json, recursive: True
+2026-02-03 22:05:29,447 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.dfs.core.windows.net/raw?resource=REDACTED&directory=REDACTED&recursive=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '59eb98c2-011e-11f1-9c1b-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:30,585 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json;charset=utf-8'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '1aa47abc-401f-005c-572b-95d89c000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '59eb98c2-011e-11f1-9c1b-00155d366418'
+    'Date': 'Tue, 03 Feb 2026 16:35:29 GMT'
+2026-02-03 22:05:30,588 - core.adls_fetcher - INFO - Found 32 files matching pattern
+2026-02-03 22:05:30,588 - core.adls_fetcher - INFO - Limiting to 10 files (out of 32)
+2026-02-03 22:05:30,589 - core.adls_fetcher - INFO - Reading 10 files from ADLS
+2026-02-03 22:05:30,595 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_0465c42c.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5a9afe67-011e-11f1-a857-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:31,820 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '107494'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:08:00 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE6219094AE7A0"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638375-201e-0007-1e2b-95e1a7000000'
+    'x-ms-client-request-id': '5a9afe67-011e-11f1-a857-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:31 GMT'
+2026-02-03 22:05:32,942 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_0b09491c.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c012752-011e-11f1-95c8-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:33,144 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '49056'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE62190380A708"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf63887e-201e-0007-302b-95e1a7000000'
+    'x-ms-client-request-id': '5c012752-011e-11f1-95c8-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:32 GMT'
+2026-02-03 22:05:33,159 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_0f4586da.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c225221-011e-11f1-b249-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:33,351 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '16767'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:48 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE62190215EC70"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638978-201e-0007-142b-95e1a7000000'
+    'x-ms-client-request-id': '5c225221-011e-11f1-b249-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:32 GMT'
+2026-02-03 22:05:33,358 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_197001f4.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c4099ba-011e-11f1-a287-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:33,544 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '18536'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621905B94188"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638a3b-201e-0007-492b-95e1a7000000'
+    'x-ms-client-request-id': '5c4099ba-011e-11f1-a287-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:32 GMT'
+2026-02-03 22:05:33,549 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_1d4d5653.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c5db48c-011e-11f1-8572-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:33,743 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '33165'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:55 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621906824A30"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638aba-201e-0007-3e2b-95e1a7000000'
+    'x-ms-client-request-id': '5c5db48c-011e-11f1-8572-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:33 GMT'
+2026-02-03 22:05:33,748 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_38688873.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c7c1617-011e-11f1-bb2e-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:33,943 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '161736'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE6219061916E4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638b75-201e-0007-642b-95e1a7000000'
+    'x-ms-client-request-id': '5c7c1617-011e-11f1-bb2e-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:33 GMT'
+2026-02-03 22:05:34,187 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_436ada78.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5cbf113d-011e-11f1-ab01-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:34,489 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '119481'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:49 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621902DE9CB0"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638ce3-201e-0007-3a2b-95e1a7000000'
+    'x-ms-client-request-id': '5cbf113d-011e-11f1-ab01-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:33 GMT'
+2026-02-03 22:05:34,722 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_4674fdb3.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5d10bd24-011e-11f1-9a03-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:34,909 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '9842'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:56 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE6219073E75DC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638ea8-201e-0007-5b2b-95e1a7000000'
+    'x-ms-client-request-id': '5d10bd24-011e-11f1-9a03-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:34 GMT'
+2026-02-03 22:05:34,914 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_46a3279e.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5d2e0d88-011e-11f1-addf-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:35,099 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '2268'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621908B22338"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638f59-201e-0007-7e2b-95e1a7000000'
+    'x-ms-client-request-id': '5d2e0d88-011e-11f1-addf-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:34 GMT'
+2026-02-03 22:05:35,103 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_4801627d.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5d4ad54c-011e-11f1-b349-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:05:35,303 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '39482'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:56 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621906F11248"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'bf638ff8-201e-0007-152b-95e1a7000000'
+    'x-ms-client-request-id': '5d4ad54c-011e-11f1-b349-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:35:34 GMT'
+2026-02-03 22:05:35,307 - core.adls_fetcher - INFO - Successfully read 10 documents
+2026-02-03 22:05:35,308 - __main__ - INFO - Fetched 10 documents in 5.86s
+2026-02-03 22:05:35,309 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:05:35,309 - __main__ - INFO - STAGE 2: PROCESSING DOCUMENTS
+2026-02-03 22:05:35,310 - __main__ - INFO - ================================================================================
+2026-02-03 22:05:35,312 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 101430 chars
+2026-02-03 22:05:35,328 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 100085 chars (1.3% reduction)
+2026-02-03 22:05:35,329 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 100085 chars
+2026-02-03 22:05:36,139 - core.semantic_chunker - INFO - Extracted 435 sentences
+2026-02-03 22:05:45,375 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4168, Min: 0.1860, Max: 1.0000
+2026-02-03 22:05:45,376 - core.semantic_chunker - INFO - Semantic chunking complete. Created 187 chunks, skipped 10 small chunks
+2026-02-03 22:05:45,389 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 46644 chars
+2026-02-03 22:05:45,403 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 46105 chars (1.2% reduction)
+2026-02-03 22:05:45,404 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 46105 chars
+2026-02-03 22:05:45,648 - core.semantic_chunker - INFO - Extracted 69 sentences
+2026-02-03 22:05:50,656 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4886, Min: 0.2330, Max: 1.0000
+2026-02-03 22:05:50,657 - core.semantic_chunker - INFO - Semantic chunking complete. Created 29 chunks, skipped 4 small chunks
+2026-02-03 22:05:50,662 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 15651 chars
+2026-02-03 22:05:50,668 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 15468 chars (1.2% reduction)
+2026-02-03 22:05:50,669 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 15468 chars
+2026-02-03 22:05:50,870 - core.semantic_chunker - INFO - Extracted 38 sentences
+2026-02-03 22:05:54,631 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5423, Min: 0.3605, Max: 1.0000
+2026-02-03 22:05:54,632 - core.semantic_chunker - INFO - Semantic chunking complete. Created 17 chunks, skipped 1 small chunks
+2026-02-03 22:05:54,636 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 17354 chars
+2026-02-03 22:05:54,641 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 17150 chars (1.2% reduction)
+2026-02-03 22:05:54,642 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 17150 chars
+2026-02-03 22:05:54,843 - core.semantic_chunker - INFO - Extracted 56 sentences
+2026-02-03 22:05:59,048 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5518, Min: 0.3207, Max: 1.0000
+2026-02-03 22:05:59,049 - core.semantic_chunker - INFO - Semantic chunking complete. Created 26 chunks, skipped 1 small chunks
+2026-02-03 22:05:59,053 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 31557 chars
+2026-02-03 22:05:59,062 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 31236 chars (1.0% reduction)
+2026-02-03 22:05:59,063 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 31236 chars
+2026-02-03 22:05:59,274 - core.semantic_chunker - INFO - Extracted 62 sentences
+2026-02-03 22:06:04,212 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6435, Min: 0.4236, Max: 1.0000
+2026-02-03 22:06:04,213 - core.semantic_chunker - INFO - Semantic chunking complete. Created 28 chunks, skipped 1 small chunks
+2026-02-03 22:06:04,217 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 155325 chars
+2026-02-03 22:06:04,260 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 153767 chars (1.0% reduction)
+2026-02-03 22:06:04,261 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 153767 chars
+2026-02-03 22:06:04,759 - core.semantic_chunker - INFO - Extracted 113 sentences
+2026-02-03 22:06:12,637 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4479, Min: 0.1633, Max: 1.0000
+2026-02-03 22:06:12,638 - core.semantic_chunker - INFO - Semantic chunking complete. Created 50 chunks, skipped 3 small chunks
+2026-02-03 22:06:12,645 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 113643 chars
+2026-02-03 22:06:12,690 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 112323 chars (1.2% reduction)
+2026-02-03 22:06:12,692 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 112323 chars
+2026-02-03 22:06:13,077 - core.semantic_chunker - INFO - Extracted 326 sentences
+2026-02-03 22:06:32,904 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4755, Min: 0.2670, Max: 1.0000
+2026-02-03 22:06:32,905 - core.semantic_chunker - INFO - Semantic chunking complete. Created 143 chunks, skipped 19 small chunks
+2026-02-03 22:06:32,916 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 9076 chars
+2026-02-03 22:06:32,921 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 8973 chars (1.1% reduction)
+2026-02-03 22:06:32,922 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 8973 chars
+2026-02-03 22:06:33,105 - core.semantic_chunker - INFO - Extracted 13 sentences
+2026-02-03 22:06:34,306 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7249, Min: 0.5433, Max: 1.0000
+2026-02-03 22:06:34,307 - core.semantic_chunker - INFO - Semantic chunking complete. Created 3 chunks, skipped 3 small chunks
+2026-02-03 22:06:34,310 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 1781 chars
+2026-02-03 22:06:34,311 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 1754 chars (1.5% reduction)
+2026-02-03 22:06:34,312 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 1754 chars
+2026-02-03 22:06:34,480 - core.semantic_chunker - INFO - Extracted 11 sentences
+2026-02-03 22:06:35,462 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6261, Min: 0.4420, Max: 0.9725
+2026-02-03 22:06:35,463 - core.semantic_chunker - INFO - Semantic chunking complete. Created 4 chunks, skipped 1 small chunks
+2026-02-03 22:06:35,465 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 36703 chars
+2026-02-03 22:06:35,480 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 35982 chars (2.0% reduction)
+2026-02-03 22:06:35,481 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 35982 chars
+2026-02-03 22:06:35,712 - core.semantic_chunker - INFO - Extracted 9 sentences
+2026-02-03 22:06:36,821 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7857, Min: 0.6765, Max: 1.0000
+2026-02-03 22:06:36,822 - core.semantic_chunker - INFO - Semantic chunking complete. Created 3 chunks, skipped 0 small chunks
+2026-02-03 22:06:36,827 - __main__ - INFO - Processed 10/10 documents
+2026-02-03 22:06:36,828 - __main__ - INFO - Total chunks: 490, Top-K: 38
+2026-02-03 22:06:36,829 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:06:36,830 - __main__ - INFO - STAGE 3: GENERATING EMBEDDINGS
+2026-02-03 22:06:36,831 - __main__ - INFO - ================================================================================
+2026-02-03 22:06:36,832 - __main__ - INFO - Encoding 38 texts...
+2026-02-03 22:06:39,598 - __main__ - INFO - Generated 38 embeddings in 2.77s
+2026-02-03 22:06:39,600 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:06:39,600 - __main__ - INFO - STAGE 4: SAVING OUTPUTS LOCALLY
+2026-02-03 22:06:39,601 - __main__ - INFO - ================================================================================
+2026-02-03 22:06:39,893 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:06:39,894 - __main__ - INFO - TEST PIPELINE COMPLETED SUCCESSFULLY
+2026-02-03 22:06:39,895 - __main__ - INFO - ================================================================================
+2026-02-03 22:06:39,895 - __main__ - INFO - Total time: 70.16s
+2026-02-03 22:06:39,896 - __main__ - INFO - Output directory: J:\msdb_pipeline\test_output
+2026-02-03 22:06:39,897 - __main__ - INFO - Documents processed: 10
+2026-02-03 22:06:39,898 - __main__ - INFO - Total chunks: 490
+2026-02-03 22:27:19,753 - __main__ - INFO - Starting Test Pipeline (FIXED VERSION 2)
+2026-02-03 22:27:19,754 - __main__ - INFO - ================================================================================
+2026-02-03 22:27:19,754 - __main__ - INFO - TEST PIPELINE - FIXED VERSION 2
+2026-02-03 22:27:19,755 - __main__ - INFO - ================================================================================
+2026-02-03 22:27:19,756 - __main__ - INFO - Output directory: J:\msdb_pipeline\test_output
+2026-02-03 22:27:19,756 - __main__ - INFO - Initializing ADLS connection...
+2026-02-03 22:27:19,756 - core.adls_fetcher - INFO - Initializing ADLS connection: account=ausmasterdb, container=raw
+2026-02-03 22:27:19,844 - core.adls_fetcher - INFO - ADLS connection established successfully
+2026-02-03 22:27:19,845 - __main__ - INFO - Initializing text processors...
+2026-02-03 22:27:19,846 - core.semantic_chunker - INFO - Loading sentence transformer model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-03 22:27:19,850 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-03 22:27:19,850 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-03 22:27:25,241 - core.semantic_chunker - INFO - Model loaded successfully
+2026-02-03 22:27:25,243 - core.semantic_chunker - INFO - SemanticChunker initialized with threshold=0.8, min_sentences=2, max_sentences=10
+2026-02-03 22:27:25,243 - __main__ - INFO - Using embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-03 22:27:25,243 - __main__ - INFO - Test pipeline initialized successfully
+2026-02-03 22:27:25,244 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:27:25,244 - __main__ - INFO - STAGE 1: FETCHING DOCUMENTS FROM ADLS
+2026-02-03 22:27:25,244 - __main__ - INFO - ================================================================================
+2026-02-03 22:27:25,244 - core.adls_fetcher - INFO - Listing files in path: newapp/dataset=bill/bill/queensland/1992, pattern: *.json, recursive: True
+2026-02-03 22:27:25,248 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.dfs.core.windows.net/raw?resource=REDACTED&directory=REDACTED&recursive=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6a32da73-0121-11f1-8d0f-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:26,381 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json;charset=utf-8'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '83f1e37c-501f-000d-082e-954510000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '6a32da73-0121-11f1-8d0f-00155d366418'
+    'Date': 'Tue, 03 Feb 2026 16:57:25 GMT'
+2026-02-03 22:27:26,391 - core.adls_fetcher - INFO - Found 32 files matching pattern
+2026-02-03 22:27:26,392 - core.adls_fetcher - INFO - Limiting to 10 files (out of 32)
+2026-02-03 22:27:26,392 - core.adls_fetcher - INFO - Reading 10 files from ADLS
+2026-02-03 22:27:26,401 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_0465c42c.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6ae2fe4d-0121-11f1-bf86-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:27,513 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '107494'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:08:00 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE6219094AE7A0"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c29c-401e-0063-4b2e-95103f000000'
+    'x-ms-client-request-id': '6ae2fe4d-0121-11f1-bf86-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:26 GMT'
+2026-02-03 22:27:27,872 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_0b09491c.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6bc377a8-0121-11f1-b060-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:28,076 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '49056'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE62190380A708"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c40b-401e-0063-192e-95103f000000'
+    'x-ms-client-request-id': '6bc377a8-0121-11f1-b060-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:27 GMT'
+2026-02-03 22:27:28,082 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_0f4586da.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6be38f32-0121-11f1-8a8a-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:28,274 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '16767'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:48 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE62190215EC70"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c48c-401e-0063-162e-95103f000000'
+    'x-ms-client-request-id': '6be38f32-0121-11f1-8a8a-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:27 GMT'
+2026-02-03 22:27:28,279 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_197001f4.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6c01aa07-0121-11f1-bc66-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:28,474 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '18536'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621905B94188"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c4e0-401e-0063-622e-95103f000000'
+    'x-ms-client-request-id': '6c01aa07-0121-11f1-bc66-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:27 GMT'
+2026-02-03 22:27:28,476 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_1d4d5653.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6c1fcc69-0121-11f1-a602-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:28,675 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '33165'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:55 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621906824A30"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c55b-401e-0063-542e-95103f000000'
+    'x-ms-client-request-id': '6c1fcc69-0121-11f1-a602-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:27 GMT'
+2026-02-03 22:27:28,680 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_38688873.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6c3ec338-0121-11f1-8ccf-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:28,878 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '161736'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE6219061916E4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c5e0-401e-0063-4b2e-95103f000000'
+    'x-ms-client-request-id': '6c3ec338-0121-11f1-8ccf-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:27 GMT'
+2026-02-03 22:27:29,062 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_436ada78.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6c7911e9-0121-11f1-89b1-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:29,251 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '119481'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:49 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621902DE9CB0"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c6cd-401e-0063-1b2e-95103f000000'
+    'x-ms-client-request-id': '6c7911e9-0121-11f1-89b1-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:28 GMT'
+2026-02-03 22:27:29,492 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_4674fdb3.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6cba9012-0121-11f1-bcff-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:29,683 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '9842'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:56 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE6219073E75DC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c7d3-401e-0063-792e-95103f000000'
+    'x-ms-client-request-id': '6cba9012-0121-11f1-bcff-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:28 GMT'
+2026-02-03 22:27:29,688 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_46a3279e.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6cd898a6-0121-11f1-a803-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:29,875 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '2268'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621908B22338"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c86a-401e-0063-7f2e-95103f000000'
+    'x-ms-client-request-id': '6cd898a6-0121-11f1-a803-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:28 GMT'
+2026-02-03 22:27:29,880 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Dbill/bill/queensland/1992/bill_queensland_1992_4801627d.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6cf5f8ac-0121-11f1-b03d-00155d366418'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-03 22:27:30,073 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '39482'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:07:56 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621906F11248"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e145c8d7-401e-0063-5b2e-95103f000000'
+    'x-ms-client-request-id': '6cf5f8ac-0121-11f1-b03d-00155d366418'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Tue, 03 Feb 2026 16:57:29 GMT'
+2026-02-03 22:27:30,085 - core.adls_fetcher - INFO - Successfully read 10 documents
+2026-02-03 22:27:30,086 - __main__ - INFO - Fetched 10 documents in 4.84s
+2026-02-03 22:27:30,087 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:27:30,087 - __main__ - INFO - STAGE 2: PROCESSING DOCUMENTS
+2026-02-03 22:27:30,088 - __main__ - INFO - ================================================================================
+2026-02-03 22:27:30,089 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 101430 chars
+2026-02-03 22:27:30,100 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 100085 chars (1.3% reduction)
+2026-02-03 22:27:30,101 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 100085 chars
+2026-02-03 22:27:30,760 - core.semantic_chunker - INFO - Extracted 435 sentences
+2026-02-03 22:27:49,544 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4168, Min: 0.1860, Max: 1.0000
+2026-02-03 22:27:49,545 - core.semantic_chunker - INFO - Semantic chunking complete. Created 187 chunks, skipped 10 small chunks
+2026-02-03 22:27:49,558 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 46644 chars
+2026-02-03 22:27:49,570 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 46105 chars (1.2% reduction)
+2026-02-03 22:27:49,571 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 46105 chars
+2026-02-03 22:27:49,931 - core.semantic_chunker - INFO - Extracted 69 sentences
+2026-02-03 22:27:55,401 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4886, Min: 0.2330, Max: 1.0000
+2026-02-03 22:27:55,402 - core.semantic_chunker - INFO - Semantic chunking complete. Created 29 chunks, skipped 4 small chunks
+2026-02-03 22:27:55,406 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 15651 chars
+2026-02-03 22:27:55,414 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 15468 chars (1.2% reduction)
+2026-02-03 22:27:55,415 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 15468 chars
+2026-02-03 22:27:55,666 - core.semantic_chunker - INFO - Extracted 38 sentences
+2026-02-03 22:28:01,305 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5423, Min: 0.3605, Max: 1.0000
+2026-02-03 22:28:01,306 - core.semantic_chunker - INFO - Semantic chunking complete. Created 17 chunks, skipped 1 small chunks
+2026-02-03 22:28:01,309 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 17354 chars
+2026-02-03 22:28:01,314 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 17150 chars (1.2% reduction)
+2026-02-03 22:28:01,315 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 17150 chars
+2026-02-03 22:28:01,566 - core.semantic_chunker - INFO - Extracted 56 sentences
+2026-02-03 22:28:05,821 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5518, Min: 0.3207, Max: 1.0000
+2026-02-03 22:28:05,822 - core.semantic_chunker - INFO - Semantic chunking complete. Created 26 chunks, skipped 1 small chunks
+2026-02-03 22:28:05,825 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 31557 chars
+2026-02-03 22:28:05,832 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 31236 chars (1.0% reduction)
+2026-02-03 22:28:05,833 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 31236 chars
+2026-02-03 22:28:06,036 - core.semantic_chunker - INFO - Extracted 62 sentences
+2026-02-03 22:28:10,770 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6435, Min: 0.4236, Max: 1.0000
+2026-02-03 22:28:10,771 - core.semantic_chunker - INFO - Semantic chunking complete. Created 28 chunks, skipped 1 small chunks
+2026-02-03 22:28:10,773 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 155325 chars
+2026-02-03 22:28:10,805 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 153767 chars (1.0% reduction)
+2026-02-03 22:28:10,806 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 153767 chars
+2026-02-03 22:28:11,323 - core.semantic_chunker - INFO - Extracted 113 sentences
+2026-02-03 22:28:19,010 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4479, Min: 0.1633, Max: 1.0000
+2026-02-03 22:28:19,011 - core.semantic_chunker - INFO - Semantic chunking complete. Created 50 chunks, skipped 3 small chunks
+2026-02-03 22:28:19,014 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 113643 chars
+2026-02-03 22:28:19,037 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 112323 chars (1.2% reduction)
+2026-02-03 22:28:19,038 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 112323 chars
+2026-02-03 22:28:19,395 - core.semantic_chunker - INFO - Extracted 326 sentences
+2026-02-03 22:28:38,387 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4755, Min: 0.2670, Max: 1.0000
+2026-02-03 22:28:38,390 - core.semantic_chunker - INFO - Semantic chunking complete. Created 143 chunks, skipped 19 small chunks
+2026-02-03 22:28:38,401 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 9076 chars
+2026-02-03 22:28:38,416 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 8973 chars (1.1% reduction)
+2026-02-03 22:28:38,419 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 8973 chars
+2026-02-03 22:28:38,881 - core.semantic_chunker - INFO - Extracted 13 sentences
+2026-02-03 22:28:40,831 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7249, Min: 0.5433, Max: 1.0000
+2026-02-03 22:28:40,832 - core.semantic_chunker - INFO - Semantic chunking complete. Created 3 chunks, skipped 3 small chunks
+2026-02-03 22:28:40,834 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 1781 chars
+2026-02-03 22:28:40,836 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 1754 chars (1.5% reduction)
+2026-02-03 22:28:40,836 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 1754 chars
+2026-02-03 22:28:41,034 - core.semantic_chunker - INFO - Extracted 11 sentences
+2026-02-03 22:28:42,183 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6261, Min: 0.4420, Max: 0.9725
+2026-02-03 22:28:42,184 - core.semantic_chunker - INFO - Semantic chunking complete. Created 4 chunks, skipped 1 small chunks
+2026-02-03 22:28:42,186 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 36703 chars
+2026-02-03 22:28:42,195 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 35982 chars (2.0% reduction)
+2026-02-03 22:28:42,196 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 35982 chars
+2026-02-03 22:28:42,434 - core.semantic_chunker - INFO - Extracted 9 sentences
+2026-02-03 22:28:43,727 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7857, Min: 0.6765, Max: 1.0000
+2026-02-03 22:28:43,728 - core.semantic_chunker - INFO - Semantic chunking complete. Created 3 chunks, skipped 0 small chunks
+2026-02-03 22:28:43,731 - __main__ - INFO - Processed 10/10 documents
+2026-02-03 22:28:43,732 - __main__ - INFO - Total chunks: 490, Top-K: 38
+2026-02-03 22:28:43,733 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:28:43,733 - __main__ - INFO - STAGE 3: GENERATING EMBEDDINGS
+2026-02-03 22:28:43,735 - __main__ - INFO - ================================================================================
+2026-02-03 22:28:43,736 - __main__ - INFO - Encoding 38 texts...
+2026-02-03 22:28:46,674 - __main__ - INFO - Generated 38 embeddings in 2.94s
+2026-02-03 22:28:46,675 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:28:46,675 - __main__ - INFO - STAGE 4: SAVING OUTPUTS LOCALLY
+2026-02-03 22:28:46,676 - __main__ - INFO - ================================================================================
+2026-02-03 22:28:46,891 - __main__ - INFO - 
+================================================================================
+2026-02-03 22:28:46,891 - __main__ - INFO - TEST PIPELINE COMPLETED SUCCESSFULLY
+2026-02-03 22:28:46,892 - __main__ - INFO - ================================================================================
+2026-02-03 22:28:46,893 - __main__ - INFO - Total time: 81.43s
+2026-02-03 22:28:46,893 - __main__ - INFO - Output directory: J:\msdb_pipeline\test_output
+2026-02-03 22:28:46,894 - __main__ - INFO - Documents processed: 10
+2026-02-03 22:28:46,894 - __main__ - INFO - Total chunks: 490
+2026-02-03 22:28:46,895 - __main__ - INFO - all_chunks files saved: 10

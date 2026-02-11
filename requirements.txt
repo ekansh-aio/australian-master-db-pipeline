@@ -1,0 +1,21 @@
+# Core dependencies
+python-dotenv==1.0.0
+
+# Azure dependencies
+azure-storage-file-datalake==12.14.0
+azure-search-documents==11.4.0
+azure-core==1.29.5
+
+# ML and NLP
+sentence-transformers==2.2.2
+torch>=2.0.0
+numpy>=1.24.0
+
+# Role Classification (NEW)
+transformers
+datasets
+accelerate
+scikit-learn
+
+# Data processing
+tqdm==4.66.1

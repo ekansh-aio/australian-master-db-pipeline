@@ -1,0 +1,45 @@
+{
+  "total_documents": 10,
+  "documents": {
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_0465c42c": {
+      "num_chunks": 187,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_0465c42c_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_0b09491c": {
+      "num_chunks": 29,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_0b09491c_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_0f4586da": {
+      "num_chunks": 17,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_0f4586da_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_197001f4": {
+      "num_chunks": 26,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_197001f4_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_1d4d5653": {
+      "num_chunks": 28,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_1d4d5653_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_38688873": {
+      "num_chunks": 50,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_38688873_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_436ada78": {
+      "num_chunks": 143,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_436ada78_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_4674fdb3": {
+      "num_chunks": 3,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_4674fdb3_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_46a3279e": {
+      "num_chunks": 4,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_46a3279e_all_chunks.json"
+    },
+    "dataset=bill_bill_queensland_1992_bill_queensland_1992_4801627d": {
+      "num_chunks": 3,
+      "chunks_file": "chunks\\dataset=bill\\bill\\queensland\\1992\\bill_queensland_1992_4801627d_all_chunks.json"
+    }
+  }
+}
