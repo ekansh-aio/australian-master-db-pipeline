@@ -207,6 +207,7 @@ class TestPipeline:
             similarity_threshold=CHUNKING_CONFIG["similarity_threshold"],
             min_sentences_per_chunk=CHUNKING_CONFIG["min_sentences_per_chunk"],
             max_sentences_per_chunk=CHUNKING_CONFIG["max_sentences_per_chunk"],
+            role_file_path="role_desc.py",
             min_chunk_size=CHUNKING_CONFIG["min_chunk_size"]
         )
         
@@ -651,4 +652,6 @@ def main():
 
 
 if __name__ == "__main__":
+    print("DEBUG MODEL:", EMBEDDING_CONFIG["model_name"])
+
     main()

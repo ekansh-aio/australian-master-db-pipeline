@@ -2,43 +2,43 @@
   "total_documents": 10,
   "documents": {
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7": {
-      "num_chunks": 9,
+      "num_chunks": 6,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330": {
-      "num_chunks": 5,
+      "num_chunks": 3,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_6ce64330_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af": {
-      "num_chunks": 14,
+      "num_chunks": 9,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_81575e74": {
-      "num_chunks": 130,
+      "num_chunks": 89,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0": {
-      "num_chunks": 23,
+      "num_chunks": 15,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144": {
-      "num_chunks": 27,
+      "num_chunks": 18,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_a3b3f446": {
-      "num_chunks": 128,
+      "num_chunks": 88,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_a9bf4b0e": {
-      "num_chunks": 130,
+      "num_chunks": 82,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a": {
-      "num_chunks": 10,
+      "num_chunks": 6,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json"
     },
     "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_d5334388": {
-      "num_chunks": 8,
+      "num_chunks": 5,
       "chunks_file": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json"
     }
   }

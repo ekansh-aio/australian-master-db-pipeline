@@ -49,8 +49,8 @@ SEARCH_CONFIG = {
 # EMBEDDING MODEL CONFIGURATION
 # ========================================
 EMBEDDING_CONFIG = {
-    "model_name": os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2"),
-    "dimensions": int(os.getenv("EMBEDDING_DIMENSIONS", "384")),  # Must match model output
+    "model_name": os.getenv("EMBEDDING_MODEL", "intfloat/e5-base-v2"),
+    "dimensions": int(os.getenv("EMBEDDING_DIMENSIONS", "768")),  # Must match model output
     "batch_size": int(os.getenv("EMBEDDING_BATCH_SIZE", "32"))  # For encoding in batches
 }
 
@@ -73,7 +73,7 @@ ROLE_CLASSIFICATION_CONFIG = {
     # Confidence threshold for embedding-based classification (0.0-1.0)
     # Lower = more chunks classified, higher = stricter classification
     # Recommended: 0.25-0.4 for legal documents
-    "confidence_threshold": float(os.getenv("ROLE_CONFIDENCE_THRESHOLD", "0.5")),
+    "confidence_threshold": float(os.getenv("ROLE_CONFIDENCE_THRESHOLD", "0.6")),
     
     # How to aggregate multiple descriptions per role: "max" or "mean"
     # "max" = use highest similarity among descriptions (recommended)
@@ -107,7 +107,7 @@ ROLE_CLASSIFICATION_CONFIG = {
     
     # Processing settings (shared by both methods)
     "batch_size": int(os.getenv("ROLE_CLASSIFICATION_BATCH_SIZE", "32")),
-    "max_length": int(os.getenv("ROLE_MAX_LENGTH", "512")),
+    "max_length": int(os.getenv("ROLE_MAX_LENGTH", "1024")),
     "device": os.getenv("ROLE_DEVICE", None),  # None for auto-detect, 'cuda' or 'cpu'
     
     # Output settings
@@ -118,7 +118,7 @@ ROLE_CLASSIFICATION_CONFIG = {
 # SEMANTIC CHUNKING CONFIGURATION
 # ========================================
 CHUNKING_CONFIG = {
-    "similarity_threshold": float(os.getenv("SIMILARITY_THRESHOLD", "0.70")),
+    "similarity_threshold": float(os.getenv("SIMILARITY_THRESHOLD", "0.80")),
     "min_sentences_per_chunk": int(os.getenv("MIN_SENTENCES_PER_CHUNK", "3")),
     "max_sentences_per_chunk": int(os.getenv("MAX_SENTENCES_PER_CHUNK", "10")),
     "min_chunk_size": int(os.getenv("MIN_CHUNK_SIZE", "100")),  # Minimum character count

@@ -1,15 +1,23 @@
 """
-Semantic Chunker Module (Modified)
+Semantic Chunker Module (Enhanced with Role Awareness)
+BACKWARD COMPATIBLE - Drop-in replacement for original semantic_chunker.py
+
 Splits legal text into semantically coherent chunks using embedding similarity.
 No overlap between chunks.
 Includes chunk-to-document similarity calculation and top-k selection.
+
+NEW: Optional role-awareness to prevent false chunking in legal documents.
+If role_file_path is provided, uses role detection. Otherwise, works exactly as before.
 """
 import re
 import logging
 import numpy as np
 from typing import List, Dict, Optional, Tuple
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from sentence_transformers import SentenceTransformer
+from collections import Counter
+import importlib.util
+import sys
 
 # Configure logger
 logger = logging.getLogger(__name__)
@@ -24,11 +32,15 @@ class SemanticChunk:
     end_char: int
     sentences: List[str]
     avg_similarity: float
-    doc_similarity: float = 0.0  # New field for chunk-to-document similarity
+    doc_similarity: float = 0.0
+    # New optional fields for role-awareness (backward compatible)
+    dominant_role: Optional[str] = None
+    role_distribution: Optional[Dict[str, int]] = field(default_factory=dict)
+    role_purity: Optional[float] = None
     
     def to_dict(self) -> Dict:
         """Convert to dictionary format."""
-        return {
+        base_dict = {
             "chunk_id": self.chunk_id,
             "text": self.text,
             "start_char": self.start_char,
@@ -37,6 +49,83 @@ class SemanticChunk:
             "avg_similarity": round(self.avg_similarity, 4),
             "doc_similarity": round(self.doc_similarity, 4)
         }
+        
+        # Add role fields only if they exist (backward compatible)
+        if self.dominant_role is not None:
+            base_dict["dominant_role"] = self.dominant_role
+            base_dict["role_distribution"] = self.role_distribution
+            base_dict["role_purity"] = round(self.role_purity, 4) if self.role_purity else None
+        
+        return base_dict
+
+
+class _LegalRoleClassifier:
+    """
+    Internal role classifier (only used if role_file_path provided).
+    Not exposed in public API.
+    """
+    
+    def __init__(self, role_file_path: str, model: SentenceTransformer):
+        self.model = model
+        self.role_file_path = role_file_path
+        self.role_descriptions = {}
+        self.role_embeddings = {}
+        
+        self._load_role_descriptions()
+        self._compute_role_embeddings()
+    
+    def _load_role_descriptions(self):
+        """Load role descriptions from external Python file."""
+        try:
+            spec = importlib.util.spec_from_file_location("role_desc", self.role_file_path)
+            if spec is None or spec.loader is None:
+                raise ImportError(f"Could not load module from {self.role_file_path}")
+            
+            role_module = importlib.util.module_from_spec(spec)
+            sys.modules["role_desc"] = role_module
+            spec.loader.exec_module(role_module)
+            
+            self.role_descriptions = role_module.ROLE_DESCRIPTIONS_DICT
+            logger.info(f"Loaded {len(self.role_descriptions)} role categories")
+            
+        except Exception as e:
+            logger.error(f"Failed to load role descriptions: {e}")
+            raise
+    
+    def _compute_role_embeddings(self):
+        """Compute embeddings for each role's description texts."""
+        for role_name, descriptions in self.role_descriptions.items():
+            combined_text = " ".join(descriptions)
+            embedding = self.model.encode(combined_text, show_progress_bar=False)
+            self.role_embeddings[role_name] = np.asarray(embedding)
+    
+    def classify_sentences(self, sentences: List[str], sentence_embeddings: np.ndarray) -> List[str]:
+        """Classify multiple sentences efficiently."""
+        roles = []
+        for i, sentence in enumerate(sentences):
+            # Compute similarity with each role
+            similarities = {}
+            for role_name, role_embedding in self.role_embeddings.items():
+                sim = self._cosine_similarity(sentence_embeddings[i], role_embedding)
+                similarities[role_name] = sim
+            
+            # Return role with highest similarity
+            best_role = max(similarities.items(), key=lambda x: x[1])[0]
+            roles.append(best_role)
+        
+        return roles
+    
+    @staticmethod
+    def _cosine_similarity(emb1: np.ndarray, emb2: np.ndarray) -> float:
+        """Compute cosine similarity between two embeddings."""
+        dot_product = np.dot(emb1, emb2)
+        norm1 = np.linalg.norm(emb1)
+        norm2 = np.linalg.norm(emb2)
+        
+        if norm1 == 0 or norm2 == 0:
+            return 0.0
+        
+        return dot_product / (norm1 * norm2)
 
 
 class SemanticChunker:
@@ -45,6 +134,10 @@ class SemanticChunker:
     Uses cosine similarity between consecutive sentences to determine chunk boundaries.
     No overlap between chunks.
     Includes chunk-to-document similarity calculation.
+    
+    NEW: Optional role-awareness to prevent false chunking.
+    - If role_file_path is provided: Uses role-aware chunking
+    - If role_file_path is None: Works exactly as original (backward compatible)
     """
     
     def __init__(
@@ -53,7 +146,11 @@ class SemanticChunker:
         similarity_threshold: float = 0.5,
         min_sentences_per_chunk: int = 2,
         max_sentences_per_chunk: int = 10,
-        min_chunk_size: int = 100
+        min_chunk_size: int = 100,
+        # NEW OPTIONAL PARAMETERS (backward compatible - default to None)
+        role_file_path: Optional[str] = None,
+        enforce_role_boundaries: bool = True,
+        role_change_penalty: float = 0.3
     ):
         """
         Initialize semantic chunker.
@@ -64,11 +161,17 @@ class SemanticChunker:
             min_sentences_per_chunk: Minimum sentences per chunk
             max_sentences_per_chunk: Maximum sentences per chunk
             min_chunk_size: Minimum characters for valid chunks
+            role_file_path: Optional path to role descriptions file (enables role-awareness)
+            enforce_role_boundaries: If True, force split on role changes (only if role_file_path provided)
+            role_change_penalty: Similarity penalty when role changes (only if role_file_path provided)
         """
         self.similarity_threshold = similarity_threshold
         self.min_sentences_per_chunk = min_sentences_per_chunk
         self.max_sentences_per_chunk = max_sentences_per_chunk
         self.min_chunk_size = min_chunk_size
+        self.role_file_path = role_file_path
+        self.enforce_role_boundaries = enforce_role_boundaries
+        self.role_change_penalty = role_change_penalty
         
         logger.info(f"Loading sentence transformer model: {model_name}")
         try:
@@ -77,6 +180,14 @@ class SemanticChunker:
         except Exception as e:
             logger.error(f"Failed to load model: {e}")
             raise
+        
+        # Initialize role classifier only if role_file_path provided
+        self.role_classifier = None
+        if role_file_path:
+            logger.info(f"Role-awareness enabled with file: {role_file_path}")
+            self.role_classifier = _LegalRoleClassifier(role_file_path, self.model)
+        else:
+            logger.info("Role-awareness disabled (backward compatible mode)")
         
         # Pre-compile sentence splitting pattern
         self.sentence_pattern = re.compile(r'(?<=[.!?])\s+(?=[A-Z])')
@@ -131,14 +242,17 @@ class SemanticChunker:
     def _create_semantic_chunks(
         self,
         sentences: List[str],
-        embeddings: np.ndarray
+        embeddings: np.ndarray,
+        roles: Optional[List[str]] = None
     ) -> List[List[int]]:
         """
         Group sentences into chunks based on semantic similarity.
+        Optionally considers role changes if role classifier is enabled.
         
         Args:
             sentences: List of sentence strings
             embeddings: Sentence embeddings matrix
+            roles: Optional list of role classifications (if role-aware mode)
             
         Returns:
             List of sentence index groups
@@ -151,6 +265,7 @@ class SemanticChunker:
         
         chunks = []
         current_chunk = [0]
+        current_role = roles[0] if roles else None
         similarities = []
         
         for i in range(1, len(sentences)):
@@ -158,15 +273,32 @@ class SemanticChunker:
             similarity = self._compute_similarity(embeddings[i-1], embeddings[i])
             similarities.append(similarity)
             
+            # Check for role change (if role-aware mode)
+            role_changed = False
+            effective_sim = similarity
+            
+            if roles and self.enforce_role_boundaries:
+                role_changed = roles[i] != current_role
+                if role_changed:
+                    # Apply penalty to similarity when role changes
+                    effective_sim = similarity - self.role_change_penalty
+                    logger.debug(
+                        f"Role change at sentence {i}: {current_role} -> {roles[i]}. "
+                        f"Similarity: {similarity:.3f} -> {effective_sim:.3f}"
+                    )
+            
             # Check if we should start a new chunk
             should_split = (
-                similarity < self.similarity_threshold or
-                len(current_chunk) >= self.max_sentences_per_chunk
+                effective_sim < self.similarity_threshold or
+                len(current_chunk) >= self.max_sentences_per_chunk or
+                (role_changed and self.enforce_role_boundaries)
             )
             
             if should_split and len(current_chunk) >= self.min_sentences_per_chunk:
                 chunks.append(current_chunk)
                 current_chunk = [i]
+                if roles:
+                    current_role = roles[i]
             else:
                 current_chunk.append(i)
         
@@ -234,6 +366,9 @@ class SemanticChunker:
         No overlap between chunks.
         Optionally compute chunk-to-document similarity.
         
+        If role_file_path was provided during init, uses role-aware chunking.
+        Otherwise, uses pure semantic chunking (backward compatible).
+        
         Args:
             text: Input text to split
             compute_doc_similarity: Whether to compute chunk-to-document similarity
@@ -246,7 +381,8 @@ class SemanticChunker:
             return [], None
         
         original_length = len(text)
-        logger.info(f"Starting semantic chunking. Text length: {original_length} chars")
+        mode = "role-aware" if self.role_classifier else "semantic-only"
+        logger.info(f"Starting {mode} chunking. Text length: {original_length} chars")
         
         try:
             # Compute document embedding first if needed
@@ -270,11 +406,19 @@ class SemanticChunker:
             embeddings = np.asarray(embeddings)
             logger.debug(f"Generated embeddings with shape {embeddings.shape}")
             
-            # Step 3: Create semantic chunks
-            logger.debug("Creating semantic chunks")
-            chunk_groups = self._create_semantic_chunks(sentences, embeddings)
+            # Step 3: Classify sentences into roles (if role-aware mode)
+            roles = None
+            if self.role_classifier:
+                logger.debug("Classifying sentences into legal roles")
+                roles = self.role_classifier.classify_sentences(sentences, embeddings)
+                role_counter = Counter(roles)
+                logger.info(f"Role distribution: {dict(role_counter)}")
             
-            # Step 4: Build chunk objects with offsets
+            # Step 4: Create semantic chunks (with or without role awareness)
+            logger.debug("Creating semantic chunks")
+            chunk_groups = self._create_semantic_chunks(sentences, embeddings, roles)
+            
+            # Step 5: Build chunk objects with offsets
             chunks: List[SemanticChunk] = []
             current_pos = 0
             skipped_count = 0
@@ -307,6 +451,17 @@ class SemanticChunker:
                 else:
                     avg_similarity = 1.0
                 
+                # Compute role metadata (if role-aware mode)
+                dominant_role = None
+                role_dist = None
+                role_purity = None
+                
+                if roles:
+                    chunk_roles = [roles[i] for i in sentence_indices]
+                    role_dist = dict(Counter(chunk_roles))
+                    dominant_role = max(role_dist.items(), key=lambda x: x[1])[0]
+                    role_purity = role_dist[dominant_role] / len(chunk_roles)
+                
                 # Find chunk position in original text
                 start_char = text.find(chunk_text, current_pos)
                 if start_char == -1:
@@ -314,7 +469,6 @@ class SemanticChunker:
                     first_sentence = chunk_sentences[0]
                     start_char = text.find(first_sentence, current_pos)
                     if start_char == -1:
-                        
                         start_char = current_pos
                 
                 end_char = start_char + len(chunk_text)
@@ -327,13 +481,16 @@ class SemanticChunker:
                         end_char=end_char,
                         sentences=chunk_sentences,
                         avg_similarity=float(avg_similarity),
-                        doc_similarity=0.0  # Will be updated below
+                        doc_similarity=0.0,  # Will be updated below
+                        dominant_role=dominant_role,
+                        role_distribution=role_dist,
+                        role_purity=role_purity
                     )
                 )
                 
                 current_pos = end_char
             
-            # Step 5: Compute chunk-to-document similarities
+            # Step 6: Compute chunk-to-document similarities
             if compute_doc_similarity and doc_embedding is not None and chunk_texts:
                 doc_similarities = self._compute_chunk_doc_similarities(chunk_texts, doc_embedding)
                 
@@ -348,10 +505,17 @@ class SemanticChunker:
                     f"Max: {np.max(doc_similarities):.4f}"
                 )
             
-            logger.info(
-                f"Semantic chunking complete. "
-                f"Created {len(chunks)} chunks, skipped {skipped_count} small chunks"
-            )
+            # Log final statistics
+            if roles:
+                logger.info(
+                    f"Role-aware chunking complete. "
+                    f"Created {len(chunks)} chunks, skipped {skipped_count} small chunks. "
+                )
+            else:
+                logger.info(
+                    f"Semantic chunking complete. "
+                    f"Created {len(chunks)} chunks, skipped {skipped_count} small chunks"
+                )
             
             # Convert to dict format
             return [c.to_dict() for c in chunks], doc_embedding
@@ -372,7 +536,7 @@ class SemanticChunker:
         Args:
             chunks: List of chunk dictionaries
             k: Number of chunks to select
-            sort_by: Field to sort by ('doc_similarity' or 'avg_similarity')
+            sort_by: Field to sort by ('doc_similarity', 'avg_similarity', or 'role_purity')
             
         Returns:
             List of top k chunks, sorted by original chunk order
@@ -408,16 +572,26 @@ class SemanticChunker:
         return top_k_sorted
 
 
+# BACKWARD COMPATIBLE CONVENIENCE FUNCTIONS
+# These maintain the exact same signatures as the original
+
 def split_into_semantic_chunks(
     text: str,
     model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
     similarity_threshold: float = 0.8,
     min_sentences_per_chunk: int = 3,
     max_sentences_per_chunk: int = 11,
-    compute_doc_similarity: bool = True
+    compute_doc_similarity: bool = True,
+    # NEW OPTIONAL PARAMETERS (backward compatible)
+    role_file_path: Optional[str] = None,
+    enforce_role_boundaries: bool = True,
+    role_change_penalty: float = 0.3
 ) -> Tuple[List[Dict], Optional[np.ndarray]]:
     """
     Split text into semantic chunks with no overlap.
+    
+    BACKWARD COMPATIBLE: Works exactly as before if role_file_path is not provided.
+    NEW: Optionally enable role-awareness by providing role_file_path.
     
     Args:
         text: Input text
@@ -426,6 +600,9 @@ def split_into_semantic_chunks(
         min_sentences_per_chunk: Minimum sentences per chunk
         max_sentences_per_chunk: Maximum sentences per chunk
         compute_doc_similarity: Whether to compute chunk-to-document similarity
+        role_file_path: Optional path to role descriptions file (enables role-awareness)
+        enforce_role_boundaries: Force split on role changes (only if role_file_path provided)
+        role_change_penalty: Similarity penalty for role changes (only if role_file_path provided)
         
     Returns:
         Tuple of (list of chunk dictionaries, document embedding)
@@ -434,7 +611,10 @@ def split_into_semantic_chunks(
         model_name=model_name,
         similarity_threshold=similarity_threshold,
         min_sentences_per_chunk=min_sentences_per_chunk,
-        max_sentences_per_chunk=max_sentences_per_chunk
+        max_sentences_per_chunk=max_sentences_per_chunk,
+        role_file_path=role_file_path,
+        enforce_role_boundaries=enforce_role_boundaries,
+        role_change_penalty=role_change_penalty
     )
     return chunker.split(text, compute_doc_similarity=compute_doc_similarity)
 
@@ -446,10 +626,17 @@ def select_top_k_chunks_from_text(
     similarity_threshold: float = 0.8,
     min_sentences_per_chunk: int = 3,
     max_sentences_per_chunk: int = 11,
-    sort_by: str = "doc_similarity"
+    sort_by: str = "doc_similarity",
+    # NEW OPTIONAL PARAMETERS (backward compatible)
+    role_file_path: Optional[str] = None,
+    enforce_role_boundaries: bool = True,
+    role_change_penalty: float = 0.3
 ) -> List[Dict]:
     """
     Convenience function to chunk text and select top k chunks in one call.
+    
+    BACKWARD COMPATIBLE: Works exactly as before if role_file_path is not provided.
+    NEW: Optionally enable role-awareness by providing role_file_path.
     
     Args:
         text: Input text
@@ -458,7 +645,10 @@ def select_top_k_chunks_from_text(
         similarity_threshold: Similarity threshold for grouping
         min_sentences_per_chunk: Minimum sentences per chunk
         max_sentences_per_chunk: Maximum sentences per chunk
-        sort_by: Field to sort by ('doc_similarity' or 'avg_similarity')
+        sort_by: Field to sort by ('doc_similarity', 'avg_similarity', or 'role_purity')
+        role_file_path: Optional path to role descriptions file (enables role-awareness)
+        enforce_role_boundaries: Force split on role changes (only if role_file_path provided)
+        role_change_penalty: Similarity penalty for role changes (only if role_file_path provided)
         
     Returns:
         List of top k chunks
@@ -467,7 +657,10 @@ def select_top_k_chunks_from_text(
         model_name=model_name,
         similarity_threshold=similarity_threshold,
         min_sentences_per_chunk=min_sentences_per_chunk,
-        max_sentences_per_chunk=max_sentences_per_chunk
+        max_sentences_per_chunk=max_sentences_per_chunk,
+        role_file_path=role_file_path,
+        enforce_role_boundaries=enforce_role_boundaries,
+        role_change_penalty=role_change_penalty
     )
     
     chunks, _ = chunker.split(text, compute_doc_similarity=True)
@@ -501,13 +694,15 @@ if __name__ == "__main__":
     The decision was delivered unanimously by a three-judge bench.
     """
     
-    print("\n=== SEMANTIC CHUNKING WITH DOC SIMILARITY ===")
+    print("\n=== BACKWARD COMPATIBLE MODE (SEMANTIC-ONLY) ===")
+    # Works exactly as before - no role_file_path provided
     chunks, doc_emb = split_into_semantic_chunks(
         sample,
         similarity_threshold=0.5,
         min_sentences_per_chunk=2,
         max_sentences_per_chunk=5,
         compute_doc_similarity=True
+        # role_file_path NOT provided = backward compatible mode
     )
     
     print(f"\nTotal semantic chunks: {len(chunks)}")
@@ -516,22 +711,20 @@ if __name__ == "__main__":
         print(f"  Sentences: {chunk['num_sentences']}")
         print(f"  Avg Similarity: {chunk['avg_similarity']}")
         print(f"  Doc Similarity: {chunk['doc_similarity']}")
+        print(f"  Has role info: {'dominant_role' in chunk}")
         print(f"  Text: {chunk['text'][:100]}...")
-        print(f"  Position: [{chunk['start_char']}:{chunk['end_char']}]")
     
-    print("\n=== TOP-K CHUNK SELECTION ===")
-    k = 3
-    top_k_chunks = select_top_k_chunks_from_text(
+    print("\n\n=== ENHANCED MODE (ROLE-AWARE) ===")
+    print("Note: Requires role_desc.py file to run this mode")
+    print("Usage:")
+    print("""
+    chunks, doc_emb = split_into_semantic_chunks(
         sample,
-        k=k,
-        similarity_threshold=0.8,
-        min_sentences_per_chunk=3,
-        max_sentences_per_chunk=11,
-        sort_by="doc_similarity"
+        similarity_threshold=0.5,
+        min_sentences_per_chunk=2,
+        max_sentences_per_chunk=5,
+        role_file_path="/path/to/role_desc.py",  # Enable role-awareness
+        enforce_role_boundaries=True,
+        role_change_penalty=0.3
     )
-    
-    print(f"\nSelected top {k} chunks based on document similarity:")
-    for chunk in top_k_chunks:
-        print(f"\nChunk {chunk['chunk_id']}:")
-        print(f"  Doc Similarity: {chunk['doc_similarity']}")
-        print(f"  Text: {chunk['text'][:100]}...")
+    """)

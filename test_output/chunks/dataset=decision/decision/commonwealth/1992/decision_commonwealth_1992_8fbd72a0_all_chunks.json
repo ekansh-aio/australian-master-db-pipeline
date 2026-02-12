@@ -3,7 +3,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_0",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "JUDGMENT No. lO. dis nL Zou IN THE FEDERAL COURT OF AUSTRALIA ) ) VICTORIA DISTRICT REGISTRY ) No VG 3266 of 1992 ) GENERAL DIVISION ) BETWEEN: AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED (Applicant) AND: TWO AUSTRALIA LIMITED (Respondent ) Coram: Ryan J Place: Melbourne Date: 8 September 1992 EX TEMPORE REASONS FOR JUDGMENT Ryan J: The applicant in this matter on 23 July 1992 served on the respondent a notice under s.460 of the Corporations Law which contained the following recitals: \"WHEREAS AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED {A.C.N. 005 357 522) having its head office at 55 Collins Street, Melbourne (\"the Bank\"), did provide banking accommodation and facilities (\"the Facilities\") from time to time to TOURIST INFORMATION CHANNEL PTY LTD A.C.N. 006 869 923 (\"TIC\"); AND WHEREAS you have from time to time, both verbally and in writing, undertaken to make payment to the Bank, on demand, of the Facilities provided and owing by TIC; AND WHEREAS you have made payment of certain sums on account of the facilities leaving a balance owing in respect of the facilities; AND WHEREAS the Bank did, on 3 April 1992 demand from you repayment of the balance of the Facilities and you have failed to comply with such demand; AND _ WHEREAS the amount owing by you to the Bank in respect of the balance of the Facilities as at close of business on 24 June 1992 is $57,804.56 and which amount is still owing...\" The notice then proceeds to demand the sum of $57,804.56 plus interest at $27.25 per day from 25 June 1992 to the date of -2payment and indicates that, unless the amount is paid, secured or compounded to the reasonable satisfaction of the Bank, the respondent will be deemed to be unable to pay its debts and proceedings will be instituted against it for its winding up in terms of s.460(1) of the Corporations Law. The respondent disputes that any debt is due to the applicant, contending that the debt has at all times been owed by a related company, Tourist Information Channel Pty Ltd (\"T.I.C.\").",
+    "text": "JUDGMENT No. lO. dis nL Zou IN THE FEDERAL COURT OF AUSTRALIA ) ) VICTORIA DISTRICT REGISTRY ) No VG 3266 of 1992 ) GENERAL DIVISION ) BETWEEN: AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED (Applicant) AND: TWO AUSTRALIA LIMITED (Respondent ) Coram: Ryan J Place: Melbourne Date: 8 September 1992 EX TEMPORE REASONS FOR JUDGMENT Ryan J: The applicant in this matter on 23 July 1992 served on the respondent a notice under s.460 of the Corporations Law which contained the following recitals: \"WHEREAS AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED {A.C.N. 005 357 522) having its head office at 55 Collins Street, Melbourne (\"the Bank\"), did provide banking accommodation and facilities (\"the Facilities\") from time to time to TOURIST INFORMATION CHANNEL PTY LTD A.C.N. 006 869 923 (\"TIC\"); AND WHEREAS you have from time to time, both verbally and in writing, undertaken to make payment to the Bank, on demand, of the Facilities provided and owing by TIC; AND WHEREAS you have made payment of certain sums on account of the facilities leaving a balance owing in respect of the facilities; AND WHEREAS the Bank did, on 3 April 1992 demand from you repayment of the balance of the Facilities and you have failed to comply with such demand; AND _ WHEREAS the amount owing by you to the Bank in respect of the balance of the Facilities as at close of business on 24 June 1992 is $57,804.56 and which amount is still owing...\" The notice then proceeds to demand the sum of $57,804.56 plus interest at $27.25 per day from 25 June 1992 to the date of -2payment and indicates that, unless the amount is paid, secured or compounded to the reasonable satisfaction of the Bank, the respondent will be deemed to be unable to pay its debts and proceedings will be instituted against it for its winding up in terms of s.460(1) of the Corporations Law. The respondent disputes that any debt is due to the applicant, contending that the debt has at all times been owed by a related company, Tourist Information Channel Pty Ltd (\"T.I.C.\"). The material indicates that considerable correspondence and discussions ensued between the Bank and persons acting on behalf of the respondent, T.I.C., and another related company, the Wheatley Organisation Pty Limited.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -14,16 +14,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.441631555557251,
+      "role": "other",
+      "confidence": 0.8111921548843384,
       "all_scores": {
-        "case_metadata": 0.441631555557251,
-        "procedural_history": 0.40421172976493835,
-        "factual_background": 0.34017255902290344,
-        "legal_issues": 0.28212597966194153,
-        "legal_analysis": 0.2841343283653259,
-        "holdings_and_conclusions": 0.39797210693359375,
-        "other": 0.34140586853027344
+        "procedural_history": 0.7898235321044922,
+        "case_facts": 0.7869255542755127,
+        "legal_issues": 0.7685527205467224,
+        "arguments": 0.7647837996482849,
+        "legal_reasoning": 0.7635689973831177,
+        "decision": 0.7812448740005493,
+        "other": 0.8111921548843384
       }
     }
   },
@@ -31,7 +31,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_1",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "The material indicates that considerable correspondence and discussions ensued between the Bank and persons acting on behalf of the respondent, T.I.C., and another related company, the Wheatley Organisation Pty Limited. On 13 March 1990 a Mr Semmens wrote to the regional manager of the applicant Bank under the letterhead of the Wheatley Organisation Pty Limited in these terms: \"RE: TOURIST INFORMATION CHANNEL PTY.",
+    "text": "On 13 March 1990 a Mr Semmens wrote to the regional manager of the applicant Bank under the letterhead of the Wheatley Organisation Pty Limited in these terms: \"RE: TOURIST INFORMATION CHANNEL PTY. LTD. FULLY DRAWN ADVANCE FACILITY Further to my recent discussions with Mr.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -42,16 +42,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.310119092464447,
+      "role": "case_facts",
+      "confidence": 0.8066280484199524,
       "all_scores": {
-        "case_metadata": 0.27422767877578735,
-        "procedural_history": 0.2926560640335083,
-        "factual_background": 0.2618924081325531,
-        "legal_issues": 0.214800626039505,
-        "legal_analysis": 0.2909146547317505,
-        "holdings_and_conclusions": 0.310119092464447,
-        "other": 0.20696647465229034
+        "procedural_history": 0.795727014541626,
+        "case_facts": 0.8066280484199524,
+        "legal_issues": 0.755256175994873,
+        "arguments": 0.783018946647644,
+        "legal_reasoning": 0.7509726285934448,
+        "decision": 0.7562944293022156,
+        "other": 0.7529460787773132
       }
     }
   },
@@ -59,7 +59,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_2",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Peter Giasoumi of your office and previous correspondence dated 12th January 1990, we wish to propose the following arrangement in order for us to satisfactorily service the facility and to cover the arrears. TWO Australia Limited is in the process of finalising a private share placement to raise $2,000,000.",
+    "text": "Peter Giasoumi of your office and previous correspondence dated 12th January 1990, we wish to propose the following arrangement in order for us to satisfactorily service the facility and to cover the arrears. TWO Australia Limited is in the process of finalising a private share placement to raise $2,000,000. These funds will be utilised as working capital and also to pay outstanding creditors 'inherited' from the takeover of Corporate Data Services.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -70,16 +70,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.394283652305603,
+      "role": "case_facts",
+      "confidence": 0.7736493945121765,
       "all_scores": {
-        "case_metadata": 0.394283652305603,
-        "procedural_history": 0.3233720660209656,
-        "factual_background": 0.32735174894332886,
-        "legal_issues": 0.23323985934257507,
-        "legal_analysis": 0.16989129781723022,
-        "holdings_and_conclusions": 0.3681444227695465,
-        "other": 0.16486886143684387
+        "procedural_history": 0.7680377960205078,
+        "case_facts": 0.7736493945121765,
+        "legal_issues": 0.7547848224639893,
+        "arguments": 0.7388391494750977,
+        "legal_reasoning": 0.7367561459541321,
+        "decision": 0.7610138654708862,
+        "other": 0.7677195072174072
       }
     }
   },
@@ -87,7 +87,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_3",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "These funds will be utilised as working capital and also to pay outstanding creditors 'inherited' from the takeover of Corporate Data Services. We envisage the placement to be completed within 60 days.",
+    "text": "We envisage the placement to be completed within 60 days. It is our intention to pay the ANZ Bank two instalments of $3,681 for the month of April and May. Upon successful completion of the share Placement, the company will be in a position to clear the arrears position currently outstanding on the Fully Drawn Advance and maintain the facility in an orderly manner until expiry.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -98,16 +98,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.37069880962371826,
+      "role": "decision",
+      "confidence": 0.7762384414672852,
       "all_scores": {
-        "case_metadata": 0.21006618440151215,
-        "procedural_history": 0.26486650109291077,
-        "factual_background": 0.37069880962371826,
-        "legal_issues": 0.17297175526618958,
-        "legal_analysis": 0.11375919729471207,
-        "holdings_and_conclusions": 0.22826431691646576,
-        "other": 0.11195264756679535
+        "procedural_history": 0.767703652381897,
+        "case_facts": 0.7682526111602783,
+        "legal_issues": 0.7420541048049927,
+        "arguments": 0.7146143913269043,
+        "legal_reasoning": 0.7317507266998291,
+        "decision": 0.7762384414672852,
+        "other": 0.7486820220947266
       }
     }
   },
@@ -115,7 +115,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_4",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "It is our intention to pay the ANZ Bank two instalments of $3,681 for the month of April and May. Upon successful completion of the share Placement, the company will be in a position to clear the arrears position currently outstanding on the Fully Drawn Advance and maintain the facility in an orderly manner until expiry.",
+    "text": "We trust this proposal meets with your approval. TWO Australia Limited is keen to maintain the existing relationship with the ANZ and to this end, we are using our best endeavours to rectify our current situation. We thank you for your consideration in this matter.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -126,16 +126,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.32468563318252563,
+      "role": "case_facts",
+      "confidence": 0.7633287310600281,
       "all_scores": {
-        "case_metadata": 0.24005237221717834,
-        "procedural_history": 0.2618981599807739,
-        "factual_background": 0.32468563318252563,
-        "legal_issues": 0.22824008762836456,
-        "legal_analysis": 0.16124798357486725,
-        "holdings_and_conclusions": 0.31587037444114685,
-        "other": 0.12859471142292023
+        "procedural_history": 0.755408763885498,
+        "case_facts": 0.7633287310600281,
+        "legal_issues": 0.7508105635643005,
+        "arguments": 0.7625886797904968,
+        "legal_reasoning": 0.7586285471916199,
+        "decision": 0.7559367418289185,
+        "other": 0.7527481913566589
       }
     }
   },
@@ -143,7 +143,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_5",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "We trust this proposal meets with your approval. TWO Australia Limited is keen to maintain the existing relationship with the ANZ and to this end, we are using our best endeavours to rectify our current situation.",
+    "text": "I£ you have any questions, please do not hesitate to contact the writer on...\" -3The Bank replied to that letter on 15 March 1990 by a letter .. addressed to Mr Semmens of the Wheatley Organisation Pty Limited in these terms: \"TOURIST INFORMATION CHANNEL PTY LTD FULLY DRAWN ADVANCE PRESENT BALANCE DR. $45,650-71 (ACCRUED INTEREST $2,221~32) We acknowledge receipt of your letter dated 13 March 1990. The repayment programme as proposed is acceptable to the Bank, but on the Clear understanding that reductions of $3,681 a month are received commencing 10 April 1990 and ~ that the existing arrears position of $29,448 is fully adjusted by 31/5/90. Your written concurrence to the above arrangements will be appreciated.\" On 19 April 1990, Mr Semmens, again under the letterhead of the Wheatley Organisation Pty Limited, wrote to Mr Giasoumi in these _terms, omitting formal parts: \"RE: Tourist Information Channel Pty Ltd Fully Drawn Advance Facility.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -154,16 +154,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.39962872862815857,
+      "role": "case_facts",
+      "confidence": 0.7905008792877197,
       "all_scores": {
-        "case_metadata": 0.39962872862815857,
-        "procedural_history": 0.26522064208984375,
-        "factual_background": 0.3326966166496277,
-        "legal_issues": 0.3403189182281494,
-        "legal_analysis": 0.2764796018600464,
-        "holdings_and_conclusions": 0.33486050367355347,
-        "other": 0.1921309530735016
+        "procedural_history": 0.7746840119361877,
+        "case_facts": 0.7905008792877197,
+        "legal_issues": 0.756860077381134,
+        "arguments": 0.7602165937423706,
+        "legal_reasoning": 0.7474409937858582,
+        "decision": 0.7688248157501221,
+        "other": 0.7640066146850586
       }
     }
   },
@@ -171,7 +171,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_6",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "We thank you for your consideration in this matter. I£ you have any questions, please do not hesitate to contact the writer on...\" -3The Bank replied to that letter on 15 March 1990 by a letter .. addressed to Mr Semmens of the Wheatley Organisation Pty Limited in these terms: \"TOURIST INFORMATION CHANNEL PTY LTD FULLY DRAWN ADVANCE PRESENT BALANCE DR. $45,650-71 (ACCRUED INTEREST $2,221~32) We acknowledge receipt of your letter dated 13 March 1990.",
+    "text": "Further to our telephone conversation today and also your letter to us dated 15 March 1990, I apologise for the delay in confirming repayment arrangements with you. As discussed in your letter we will be making regular repayments of $3681.00 per month from the 10th May 1990 with an initial instalment of $3681.00 being paid to you by no later than Thursday 26th April 1990. We will endeavour to adjust the arrears position by the end of May.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -182,16 +182,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.3231223523616791,
+      "role": "case_facts",
+      "confidence": 0.789042592048645,
       "all_scores": {
-        "case_metadata": 0.2881309986114502,
-        "procedural_history": 0.3231223523616791,
-        "factual_background": 0.254554808139801,
-        "legal_issues": 0.18388597667217255,
-        "legal_analysis": 0.21545197069644928,
-        "holdings_and_conclusions": 0.29279497265815735,
-        "other": 0.20726697146892548
+        "procedural_history": 0.7815002202987671,
+        "case_facts": 0.789042592048645,
+        "legal_issues": 0.7441670894622803,
+        "arguments": 0.7451484203338623,
+        "legal_reasoning": 0.7469099760055542,
+        "decision": 0.7787272334098816,
+        "other": 0.772525429725647
       }
     }
   },
@@ -199,259 +199,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_7",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "The repayment programme as proposed is acceptable to the Bank, but on the Clear understanding that reductions of $3,681 a month are received commencing 10 April 1990 and ~ that the existing arrears position of $29,448 is fully adjusted by 31/5/90. Your written concurrence to the above arrangements will be appreciated.\" On 19 April 1990, Mr Semmens, again under the letterhead of the Wheatley Organisation Pty Limited, wrote to Mr Giasoumi in these _terms, omitting formal parts: \"RE: Tourist Information Channel Pty Ltd Fully Drawn Advance Facility.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.40771839022636414,
-      "all_scores": {
-        "case_metadata": 0.3444679379463196,
-        "procedural_history": 0.29390019178390503,
-        "factual_background": 0.33134329319000244,
-        "legal_issues": 0.2937905788421631,
-        "legal_analysis": 0.23651856184005737,
-        "holdings_and_conclusions": 0.40771839022636414,
-        "other": 0.18190336227416992
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_8",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Further to our telephone conversation today and also your letter to us dated 15 March 1990, I apologise for the delay in confirming repayment arrangements with you. As discussed in your letter we will be making regular repayments of $3681.00 per month from the 10th May 1990 with an initial instalment of $3681.00 being paid to you by no later than Thursday 26th April 1990.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.33752772212028503,
-      "all_scores": {
-        "case_metadata": 0.32925042510032654,
-        "procedural_history": 0.2868262231349945,
-        "factual_background": 0.33752772212028503,
-        "legal_issues": 0.21916447579860687,
-        "legal_analysis": 0.1197187528014183,
-        "holdings_and_conclusions": 0.31052595376968384,
-        "other": 0.15179868042469025
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_9",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "We will endeavour to adjust the arrears position by the end of May. If you have any questions please do not hesitate to contact the writer On ..2\" In fact, payments of instalments of $3681 were made on 27 April 1990 by a cheque drawn, apparently, by another associated company Two Australia Narrowcasting Pty Limited, on 15 May 1990 by a cheque drawn by TIC itself, and by a third payment made on 29 June 1990 by the respondent Two Australia Limited.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.346979022026062,
-      "all_scores": {
-        "case_metadata": 0.346979022026062,
-        "procedural_history": 0.2909044921398163,
-        "factual_background": 0.3270110487937927,
-        "legal_issues": 0.22779837250709534,
-        "legal_analysis": 0.1853523850440979,
-        "holdings_and_conclusions": 0.32782894372940063,
-        "other": 0.1737176775932312
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_10",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "On 11 October 1991 a telephone conversation occurred between Mr Obel, who is -4the company secretary and financial controller of the respondent and who has deposed that he was appointed financial controller of the respondent and its subsidiaries in December 1990, anda Mr Richards on behalf of the Bank. Mr Obel has deposed that the subsidiaries of the respondent include TIC.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.3257890045642853,
-      "all_scores": {
-        "case_metadata": 0.3257890045642853,
-        "procedural_history": 0.3182755708694458,
-        "factual_background": 0.2683454751968384,
-        "legal_issues": 0.23516738414764404,
-        "legal_analysis": 0.2544090449810028,
-        "holdings_and_conclusions": 0.29170727729797363,
-        "other": 0.18018755316734314
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_11",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "According to a note made by Mr Richards, the Lending Manager of the applicant Bank, of the conversation of 11 October: \"He [Obel] advised that around October 1989 TIC was a fully owned subsidiary of Corporate Data Services Ltd, a second board listed company. The directors of CDS then reached agreement to acquire the Wheatley Organisation and related operations.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.25348424911499023,
-      "all_scores": {
-        "case_metadata": 0.25348424911499023,
-        "procedural_history": 0.24117694795131683,
-        "factual_background": 0.22881586849689484,
-        "legal_issues": 0.1582801192998886,
-        "legal_analysis": 0.14021813869476318,
-        "holdings_and_conclusions": 0.21502773463726044,
-        "other": 0.18490508198738098
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_12",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "On completion of restructure Wheatley had a Majority shareholding in the company and board control. In March 1990, TWO agreed to pay 2 instalments of $3,681 for April and May when upon successful completion of a share placement, company would be in a position to correct arrears which stood at $29,448 which was to be cleared by 31/8/90 and an orderly red arrangement to continue.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.349203884601593,
-      "all_scores": {
-        "case_metadata": 0.2805095911026001,
-        "procedural_history": 0.27865034341812134,
-        "factual_background": 0.349203884601593,
-        "legal_issues": 0.2813602089881897,
-        "legal_analysis": 0.20139408111572266,
-        "holdings_and_conclusions": 0.2756950557231903,
-        "other": 0.13996675610542297
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_13",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "We received $3,681 on 27/4/90, 15/5/90 and 29/6/90 however, since that time no further repayments have been received. Account was transferred to group JMT from Macro Video file and details of this arrangement were not recorded.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4803699254989624,
-      "all_scores": {
-        "case_metadata": 0.3202396035194397,
-        "procedural_history": 0.26194238662719727,
-        "factual_background": 0.4803699254989624,
-        "legal_issues": 0.20769520103931427,
-        "legal_analysis": 0.18223991990089417,
-        "holdings_and_conclusions": 0.29653438925743103,
-        "other": 0.15084680914878845
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_14",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Spoke to Simon Obel regarding present unsatisfactory position and he advised he was surprised that we had not made an approach regarding the debt and he had not pushed it. In August 1990, person dealing with the debt at Two resigned and therefore little was understood in regard to the repayment arrangement.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.40205100178718567,
-      "all_scores": {
-        "case_metadata": 0.3226430416107178,
-        "procedural_history": 0.32488110661506653,
-        "factual_background": 0.40205100178718567,
-        "legal_issues": 0.30577075481414795,
-        "legal_analysis": 0.2558230757713318,
-        "holdings_and_conclusions": 0.314797043800354,
-        "other": 0.1960718035697937
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_15",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Simon Obel stated that he has to complete the group's financial statements by 31/10/91 and will therefore not be in a position to assess a repayment arrangement until early November. Have noted to contact Simon Obel early November in an attempt to obtain a suitable repayment arrangement although he did mention a \"compromise arrangement\".\"\" By motion on notice dated 4 September 1992 the respondent seeks orders, amongst others: \"2.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4283081889152527,
-      "all_scores": {
-        "case_metadata": 0.3684178590774536,
-        "procedural_history": 0.4021194577217102,
-        "factual_background": 0.4283081889152527,
-        "legal_issues": 0.37950825691223145,
-        "legal_analysis": 0.317491352558136,
-        "holdings_and_conclusions": 0.35774868726730347,
-        "other": 0.20387648046016693
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_16",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Restraining the applicant from proceeding any further with the application filed by it in this proceeding pursuant to section 460 of the Corporations Law on 2 September 1992; 3. Restraining the applicant from advertising notice of the application to wind up the xespondent in accordance with the -5provisions of Order 71 Rule 37 (5) of the Federal Court Rules...\" It is accepted by Counsel on both sides that the test which should be applied by the Court in deciding whether or not to grant interlocutory relief is whether the respondent has demonstrated an arguable case in support of the relief which it seeks.",
+    "text": "If you have any questions please do not hesitate to contact the writer On ..2\" In fact, payments of instalments of $3681 were made on 27 April 1990 by a cheque drawn, apparently, by another associated company Two Australia Narrowcasting Pty Limited, on 15 May 1990 by a cheque drawn by TIC itself, and by a third payment made on 29 June 1990 by the respondent Two Australia Limited. On 11 October 1991 a telephone conversation occurred between Mr Obel, who is -4the company secretary and financial controller of the respondent and who has deposed that he was appointed financial controller of the respondent and its subsidiaries in December 1990, anda Mr Richards on behalf of the Bank. Mr Obel has deposed that the subsidiaries of the respondent include TIC. According to a note made by Mr Richards, the Lending Manager of the applicant Bank, of the conversation of 11 October: \"He [Obel] advised that around October 1989 TIC was a fully owned subsidiary of Corporate Data Services Ltd, a second board listed company.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -463,23 +211,135 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5081052780151367,
+      "confidence": 0.8097320795059204,
       "all_scores": {
-        "case_metadata": 0.4527360200881958,
-        "procedural_history": 0.5081052780151367,
-        "factual_background": 0.38394027948379517,
-        "legal_issues": 0.41739845275878906,
-        "legal_analysis": 0.45347705483436584,
-        "holdings_and_conclusions": 0.4347838759422302,
-        "other": 0.3370555341243744
+        "procedural_history": 0.8097320795059204,
+        "case_facts": 0.793583869934082,
+        "legal_issues": 0.7735816240310669,
+        "arguments": 0.7770322561264038,
+        "legal_reasoning": 0.7658400535583496,
+        "decision": 0.7866452932357788,
+        "other": 0.7901558876037598
       }
     }
   },
   {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_17",
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_8",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "As I understand it from the submissions made by Mr Bornstein for the respondent, the respondent proposes, in due course, to move for the dismissal of the winding up petition on the ground that the debt on which it is founded is the subject of a genuine dispute. * I consider, in the light of all the material, that it is strongly arguable that a genuine dispute can be shown to exist as to \"whether the respondent, Two Australia Limited, ever assumed liability for the debt primarily undertaken by TIC. In the circumstances, it is undesirable for me to indicate the reasons why I consider such an argument to be available, or to point to strengths and weaknesses which might emerge in the case to be made for and against that argument.",
+    "text": "The directors of CDS then reached agreement to acquire the Wheatley Organisation and related operations. On completion of restructure Wheatley had a Majority shareholding in the company and board control. In March 1990, TWO agreed to pay 2 instalments of $3,681 for April and May when upon successful completion of a share placement, company would be in a position to correct arrears which stood at $29,448 which was to be cleared by 31/8/90 and an orderly red arrangement to continue.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-09-08",
+    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
+    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
+    "role_prediction": {
+      "role": "case_facts",
+      "confidence": 0.7603247165679932,
+      "all_scores": {
+        "procedural_history": 0.7564992904663086,
+        "case_facts": 0.7603247165679932,
+        "legal_issues": 0.7343747615814209,
+        "arguments": 0.7168951034545898,
+        "legal_reasoning": 0.7320430874824524,
+        "decision": 0.7542771697044373,
+        "other": 0.7191060781478882
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_9",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
+    "text": "We received $3,681 on 27/4/90, 15/5/90 and 29/6/90 however, since that time no further repayments have been received. Account was transferred to group JMT from Macro Video file and details of this arrangement were not recorded. Spoke to Simon Obel regarding present unsatisfactory position and he advised he was surprised that we had not made an approach regarding the debt and he had not pushed it.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-09-08",
+    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
+    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
+    "role_prediction": {
+      "role": "case_facts",
+      "confidence": 0.7985802888870239,
+      "all_scores": {
+        "procedural_history": 0.7639775276184082,
+        "case_facts": 0.7985802888870239,
+        "legal_issues": 0.7678484320640564,
+        "arguments": 0.7691957950592041,
+        "legal_reasoning": 0.7516841888427734,
+        "decision": 0.7695016860961914,
+        "other": 0.7486260533332825
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_10",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
+    "text": "In August 1990, person dealing with the debt at Two resigned and therefore little was understood in regard to the repayment arrangement. Simon Obel stated that he has to complete the group's financial statements by 31/10/91 and will therefore not be in a position to assess a repayment arrangement until early November. Have noted to contact Simon Obel early November in an attempt to obtain a suitable repayment arrangement although he did mention a \"compromise arrangement\".\"\" By motion on notice dated 4 September 1992 the respondent seeks orders, amongst others: \"2.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-09-08",
+    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
+    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
+    "role_prediction": {
+      "role": "case_facts",
+      "confidence": 0.7675952315330505,
+      "all_scores": {
+        "procedural_history": 0.76407390832901,
+        "case_facts": 0.7675952315330505,
+        "legal_issues": 0.7522909045219421,
+        "arguments": 0.7536929845809937,
+        "legal_reasoning": 0.7475444078445435,
+        "decision": 0.75340336561203,
+        "other": 0.7376539707183838
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_11",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
+    "text": "Restraining the applicant from proceeding any further with the application filed by it in this proceeding pursuant to section 460 of the Corporations Law on 2 September 1992; 3. Restraining the applicant from advertising notice of the application to wind up the xespondent in accordance with the -5provisions of Order 71 Rule 37 (5) of the Federal Court Rules...\" It is accepted by Counsel on both sides that the test which should be applied by the Court in deciding whether or not to grant interlocutory relief is whether the respondent has demonstrated an arguable case in support of the relief which it seeks. As I understand it from the submissions made by Mr Bornstein for the respondent, the respondent proposes, in due course, to move for the dismissal of the winding up petition on the ground that the debt on which it is founded is the subject of a genuine dispute. * I consider, in the light of all the material, that it is strongly arguable that a genuine dispute can be shown to exist as to \"whether the respondent, Two Australia Limited, ever assumed liability for the debt primarily undertaken by TIC.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-09-08",
+    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
+    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.8299986124038696,
+      "all_scores": {
+        "procedural_history": 0.8299986124038696,
+        "case_facts": 0.7945646643638611,
+        "legal_issues": 0.8177343606948853,
+        "arguments": 0.8208571076393127,
+        "legal_reasoning": 0.8140369057655334,
+        "decision": 0.8102594614028931,
+        "other": 0.7945582866668701
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_12",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
+    "text": "In the circumstances, it is undesirable for me to indicate the reasons why I consider such an argument to be available, or to point to strengths and weaknesses which might emerge in the case to be made for and against that argument. It was also accepted that I should take account of the balance of convenience in deciding whether or not to grant any form of interlocutory relief. Mr Bick of Counsel for the Bank urged that to restrain the publication of the advertisement which the Bank is required to publish, having filed its winding-up petition, would not inflict any further damage on the respondent, since the institution of the proceeding itself makes moneys secured under -6first and second mortgage debentures issued by the respondent immediately due and payable.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -491,23 +351,23 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "legal_issues",
-      "confidence": 0.5194898247718811,
+      "confidence": 0.8070189952850342,
       "all_scores": {
-        "case_metadata": 0.41352975368499756,
-        "procedural_history": 0.3606962561607361,
-        "factual_background": 0.3602915406227112,
-        "legal_issues": 0.5194898247718811,
-        "legal_analysis": 0.42272770404815674,
-        "holdings_and_conclusions": 0.47835588455200195,
-        "other": 0.37070608139038086
+        "procedural_history": 0.8040995001792908,
+        "case_facts": 0.7915984988212585,
+        "legal_issues": 0.8070189952850342,
+        "arguments": 0.7956442832946777,
+        "legal_reasoning": 0.7941358685493469,
+        "decision": 0.784214437007904,
+        "other": 0.7850543260574341
       }
     }
   },
   {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_18",
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_13",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "It was also accepted that I should take account of the balance of convenience in deciding whether or not to grant any form of interlocutory relief. Mr Bick of Counsel for the Bank urged that to restrain the publication of the advertisement which the Bank is required to publish, having filed its winding-up petition, would not inflict any further damage on the respondent, since the institution of the proceeding itself makes moneys secured under -6first and second mortgage debentures issued by the respondent immediately due and payable.",
+    "text": "However, I am not persuaded by that argument. I consider it to be a reasonable apprehension that further damage could be inflicted on the respondent by the publication of an advertisement to the effect that winding-up proceedings have been instituted. Since I propose to grant the interlocutory relief only for a short time to allow the respondent to move to set aside the winding up petition, I do not perceive that the Bank will suffer any irreparable damage which cannot be compensated by the usual undertaking as to damages. Accordingly, I propose to grant an interlocutory injunction restraining the applicant from advertising notice of the application to wind up the respondent in accordance with the provisions of 0.71 x.37(5) of the Rules of this Court.",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -519,51 +379,23 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.520167887210846,
+      "confidence": 0.813625156879425,
       "all_scores": {
-        "case_metadata": 0.39089563488960266,
-        "procedural_history": 0.520167887210846,
-        "factual_background": 0.36175745725631714,
-        "legal_issues": 0.4407373368740082,
-        "legal_analysis": 0.35212281346321106,
-        "holdings_and_conclusions": 0.47629454731941223,
-        "other": 0.32491618394851685
+        "procedural_history": 0.813625156879425,
+        "case_facts": 0.7824945449829102,
+        "legal_issues": 0.7930026054382324,
+        "arguments": 0.810386061668396,
+        "legal_reasoning": 0.7718236446380615,
+        "decision": 0.7857047915458679,
+        "other": 0.7701757550239563
       }
     }
   },
   {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_19",
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_14",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "However, I am not persuaded by that argument. I consider it to be a reasonable apprehension that further damage could be inflicted on the respondent by the publication of an advertisement to the effect that winding-up proceedings have been instituted.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4330768287181854,
-      "all_scores": {
-        "case_metadata": 0.37697112560272217,
-        "procedural_history": 0.3745584487915039,
-        "factual_background": 0.33919888734817505,
-        "legal_issues": 0.4330768287181854,
-        "legal_analysis": 0.4105967581272125,
-        "holdings_and_conclusions": 0.38072359561920166,
-        "other": 0.36439579725265503
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_20",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Since I propose to grant the interlocutory relief only for a short time to allow the respondent to move to set aside the winding up petition, I do not perceive that the Bank will suffer any irreparable damage which cannot be compensated by the usual undertaking as to damages. Accordingly, I propose to grant an interlocutory injunction restraining the applicant from advertising notice of the application to wind up the respondent in accordance with the provisions of 0.71 x.37(5) of the Rules of this Court.",
+    "text": "The injunction should remain in force until the return of a motion by the respondent seeking that the petition be dismissed. I certify that this and the preceding five (5) pages are a true copy of the reasons for judgment herein of his Honour Mr Justice Ryan. Associate: Mg Callin . Date: 8 September 1992 Solicitor for the Applicant: Freehill Hollingdale and Page Counsel for the Applicant: Mr P J. Bick Solicitor for the Respondent: Phillips Fox Counsel for the Respondent: Mr P Bornstein",
     "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -575,71 +407,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5262748599052429,
+      "confidence": 0.8223849534988403,
       "all_scores": {
-        "case_metadata": 0.3604738116264343,
-        "procedural_history": 0.5262748599052429,
-        "factual_background": 0.3385894298553467,
-        "legal_issues": 0.3846326470375061,
-        "legal_analysis": 0.3051847219467163,
-        "holdings_and_conclusions": 0.464546799659729,
-        "other": 0.2820183038711548
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_21",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "The injunction should remain in force until the return of a motion by the respondent seeking that the petition be dismissed. I certify that this and the preceding five (5) pages are a true copy of the reasons for judgment herein of his Honour Mr Justice Ryan.",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "holdings_and_conclusions",
-      "confidence": 0.5209620594978333,
-      "all_scores": {
-        "case_metadata": 0.37569165229797363,
-        "procedural_history": 0.4510537385940552,
-        "factual_background": 0.4346970319747925,
-        "legal_issues": 0.39046576619148254,
-        "legal_analysis": 0.31732332706451416,
-        "holdings_and_conclusions": 0.5209620594978333,
-        "other": 0.3561908006668091
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0_22",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_8fbd72a0",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json",
-    "text": "Associate: Mg Callin . Date: 8 September 1992 Solicitor for the Applicant: Freehill Hollingdale and Page Counsel for the Applicant: Mr P J. Bick Solicitor for the Respondent: Phillips Fox Counsel for the Respondent: Mr P Bornstein",
-    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1099",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "federal_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-09-08",
-    "citation": "Australia and New Zealand Banking Group Limited v Two Australia Limited [1992] FCA 1099",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
-    "when_scraped": "2024-09-15T14:59:49.491815+10:00",
-    "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.46312159299850464,
-      "all_scores": {
-        "case_metadata": 0.4257756471633911,
-        "procedural_history": 0.46312159299850464,
-        "factual_background": 0.3744901418685913,
-        "legal_issues": 0.2520136833190918,
-        "legal_analysis": 0.3319298028945923,
-        "holdings_and_conclusions": 0.43741491436958313,
-        "other": 0.23100654780864716
+        "procedural_history": 0.8223849534988403,
+        "case_facts": 0.7925297617912292,
+        "legal_issues": 0.8059104681015015,
+        "arguments": 0.8022181987762451,
+        "legal_reasoning": 0.7868291139602661,
+        "decision": 0.7941800355911255,
+        "other": 0.8001279234886169
       }
     }
   }

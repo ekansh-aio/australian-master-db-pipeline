@@ -3,7 +3,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330_0",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json",
-    "text": "JUDGMENT JONES SKYRING TOOHEY J. SKYRING On 27 August 1992 I made an order in these proceedings on the following terms: \" The respondent shall not, without the leave of the Court or a Justice, begin any action, appeal or other proceeding in the Court other than an appeal against this | order.",
+    "text": "JUDGMENT JONES SKYRING TOOHEY J. SKYRING On 27 August 1992 I made an order in these proceedings on the following terms: \" The respondent shall not, without the leave of the Court or a Justice, begin any action, appeal or other proceeding in the Court other than an appeal against this | order. Reserve the costs of the notice of motion.\" I reserved the costs of the notice of motion because Mr Skyring, the respondent, was not present at the delivery of judgment and I wished to give him the opportunity to make written submissions as to why an order for costs should not be made against him as the unsuccessful respondent.",
     "version_id": "high_court_of_australia:/historical/showbyHandle/1/16818",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -14,16 +14,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16818/782_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
-      "role": "holdings_and_conclusions",
-      "confidence": 0.5441367626190186,
+      "role": "procedural_history",
+      "confidence": 0.8180884122848511,
       "all_scores": {
-        "case_metadata": 0.5324790477752686,
-        "procedural_history": 0.4782748222351074,
-        "factual_background": 0.4488857388496399,
-        "legal_issues": 0.46987485885620117,
-        "legal_analysis": 0.34484100341796875,
-        "holdings_and_conclusions": 0.5441367626190186,
-        "other": 0.46967869997024536
+        "procedural_history": 0.8180884122848511,
+        "case_facts": 0.8071286678314209,
+        "legal_issues": 0.7792458534240723,
+        "arguments": 0.7728196382522583,
+        "legal_reasoning": 0.7671865820884705,
+        "decision": 0.8179208040237427,
+        "other": 0.7726237773895264
       }
     }
   },
@@ -31,7 +31,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330_1",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json",
-    "text": "Reserve the costs of the notice of motion.\" I reserved the costs of the notice of motion because Mr Skyring, the respondent, was not present at the delivery of judgment and I wished to give him the opportunity to make written submissions as to why an order for costs should not be made against him as the unsuccessful respondent. Mr Skyring made written submissions, to which the i applicant's solicitor has responded, and Mr Skyring, i though not directed to do so, has now made further submissions in reply.",
+    "text": "Mr Skyring made written submissions, to which the i applicant's solicitor has responded, and Mr Skyring, i though not directed to do so, has now made further submissions in reply. Order 71 r.1(1) of the High Court Rules provides that \"the costs of and incidental to all proceedings in the Court ... are in the discretion of the Court\". While the rule vests a discretion in the Court, it is a discretion to be exercised judicially and it has long been settled law that a successful party is entitled to his or her costs of proceedings unless special circumstances exist that make such an order inappropriate.",
     "version_id": "high_court_of_australia:/historical/showbyHandle/1/16818",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -43,15 +43,15 @@
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5669106245040894,
+      "confidence": 0.8090161085128784,
       "all_scores": {
-        "case_metadata": 0.3533960282802582,
-        "procedural_history": 0.5669106245040894,
-        "factual_background": 0.43696606159210205,
-        "legal_issues": 0.3484826982021332,
-        "legal_analysis": 0.3658442497253418,
-        "holdings_and_conclusions": 0.4771299362182617,
-        "other": 0.31281185150146484
+        "procedural_history": 0.8090161085128784,
+        "case_facts": 0.7926779985427856,
+        "legal_issues": 0.8001815676689148,
+        "arguments": 0.7877006530761719,
+        "legal_reasoning": 0.7840775847434998,
+        "decision": 0.8057070970535278,
+        "other": 0.7736698389053345
       }
     }
   },
@@ -59,7 +59,7 @@
     "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330_2",
     "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330",
     "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json",
-    "text": "Order 71 r.1(1) of the High Court Rules provides that \"the costs of and incidental to all proceedings in the Court ... are in the discretion of the Court\". While the rule vests a discretion in the Court, it is a discretion to be exercised judicially and it has long been settled law that a successful party is entitled to his or her costs of proceedings unless special circumstances exist that make such an order inappropriate.",
+    "text": "The relevant decisions are noted in Ritchie's Supreme Court Procedure, New South Wales! 1) . I have taken into account everything said by Mr Skyring but he has offered no persuasive reason why the ordinary costs order should not be made. Indeed, his written submissions to some extent re-agitate the matters which earlier were resolved against him in this Court and which led to the present application. It follows that there is no justification to depart from the general rule. Mr Skyring must pay the applicant's costs of the notice of motion. (1) vol.1, par.52.11.1.",
     "version_id": "high_court_of_australia:/historical/showbyHandle/1/16818",
     "type": "decision",
     "jurisdiction": "commonwealth",
@@ -71,71 +71,15 @@
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5320519208908081,
+      "confidence": 0.8251333236694336,
       "all_scores": {
-        "case_metadata": 0.4344336688518524,
-        "procedural_history": 0.5320519208908081,
-        "factual_background": 0.46039530634880066,
-        "legal_issues": 0.4490956664085388,
-        "legal_analysis": 0.4371412992477417,
-        "holdings_and_conclusions": 0.5099796056747437,
-        "other": 0.44297367334365845
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330_3",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json",
-    "text": "The relevant decisions are noted in Ritchie's Supreme Court Procedure, New South Wales! 1) . I have taken into account everything said by Mr Skyring but he has offered no persuasive reason why the ordinary costs order should not be made.",
-    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16818",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "high_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-11-06",
-    "citation": "JONES V. SKYRING",
-    "url": "https://eresources.hcourt.gov.au/getPdf/1/16818/782_1992.pdf?sequence=1&amp;isAllowed=y",
-    "when_scraped": "2024-09-15T23:44:53.913522+10:00",
-    "role_prediction": {
-      "role": "holdings_and_conclusions",
-      "confidence": 0.5644065737724304,
-      "all_scores": {
-        "case_metadata": 0.32447317242622375,
-        "procedural_history": 0.39502957463264465,
-        "factual_background": 0.35921454429626465,
-        "legal_issues": 0.4063267111778259,
-        "legal_analysis": 0.4481072425842285,
-        "holdings_and_conclusions": 0.5644065737724304,
-        "other": 0.3167858123779297
-      }
-    }
-  },
-  {
-    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330_4",
-    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_6ce64330",
-    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json",
-    "text": "Indeed, his written submissions to some extent re-agitate the matters which earlier were resolved against him in this Court and which led to the present application. It follows that there is no justification to depart from the general rule. Mr Skyring must pay the applicant's costs of the notice of motion. (1) vol.1, par.52.11.1.",
-    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16818",
-    "type": "decision",
-    "jurisdiction": "commonwealth",
-    "source": "high_court_of_australia",
-    "mime": "application/pdf",
-    "date": "1992-11-06",
-    "citation": "JONES V. SKYRING",
-    "url": "https://eresources.hcourt.gov.au/getPdf/1/16818/782_1992.pdf?sequence=1&amp;isAllowed=y",
-    "when_scraped": "2024-09-15T23:44:53.913522+10:00",
-    "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5586826801300049,
-      "all_scores": {
-        "case_metadata": 0.38497549295425415,
-        "procedural_history": 0.5586826801300049,
-        "factual_background": 0.3982827663421631,
-        "legal_issues": 0.3768657445907593,
-        "legal_analysis": 0.38153842091560364,
-        "holdings_and_conclusions": 0.43048095703125,
-        "other": 0.3636515736579895
+        "procedural_history": 0.8251333236694336,
+        "case_facts": 0.795835554599762,
+        "legal_issues": 0.7939968109130859,
+        "arguments": 0.783687174320221,
+        "legal_reasoning": 0.7979661226272583,
+        "decision": 0.8105375170707703,
+        "other": 0.8147115707397461
       }
     }
   }
