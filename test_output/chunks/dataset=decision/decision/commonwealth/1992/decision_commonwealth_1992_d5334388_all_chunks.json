@@ -14,16 +14,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5770269632339478,
+      "role": "unclassified",
+      "confidence": 0.4807124435901642,
       "all_scores": {
-        "case_metadata": 0.5770269632339478,
-        "procedural_history": 0.4503377377986908,
-        "factual_background": 0.365100622177124,
-        "legal_issues": 0.3313337564468384,
-        "legal_analysis": 0.28911465406417847,
-        "holdings_and_conclusions": 0.4067709147930145,
-        "other": 0.1472296416759491
+        "case_metadata": 0.4807124435901642,
+        "procedural_history": 0.4370248317718506,
+        "factual_background": 0.36427974700927734,
+        "legal_issues": 0.331333726644516,
+        "legal_analysis": 0.304363489151001,
+        "holdings_and_conclusions": 0.44232842326164246,
+        "other": 0.3375677466392517
       }
     }
   },
@@ -42,16 +42,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5550272464752197,
+      "role": "unclassified",
+      "confidence": 0.49217891693115234,
       "all_scores": {
-        "case_metadata": 0.5550272464752197,
-        "procedural_history": 0.42700493335723877,
-        "factual_background": 0.3676883578300476,
-        "legal_issues": 0.4245278537273407,
-        "legal_analysis": 0.4144851863384247,
-        "holdings_and_conclusions": 0.4079526662826538,
-        "other": 0.18879689276218414
+        "case_metadata": 0.461271733045578,
+        "procedural_history": 0.4195781648159027,
+        "factual_background": 0.4112953543663025,
+        "legal_issues": 0.4738559424877167,
+        "legal_analysis": 0.4148659110069275,
+        "holdings_and_conclusions": 0.49217891693115234,
+        "other": 0.4051446318626404
       }
     }
   },
@@ -70,16 +70,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4445887804031372,
+      "role": "procedural_history",
+      "confidence": 0.5353779196739197,
       "all_scores": {
-        "case_metadata": 0.4081820845603943,
-        "procedural_history": 0.4445887804031372,
-        "factual_background": 0.2674514055252075,
-        "legal_issues": 0.3220720887184143,
-        "legal_analysis": 0.2996823787689209,
-        "holdings_and_conclusions": 0.3328617811203003,
-        "other": 0.15389910340309143
+        "case_metadata": 0.3333726227283478,
+        "procedural_history": 0.5353779196739197,
+        "factual_background": 0.31460869312286377,
+        "legal_issues": 0.35964977741241455,
+        "legal_analysis": 0.2893381118774414,
+        "holdings_and_conclusions": 0.3934739828109741,
+        "other": 0.26371365785598755
       }
     }
   },
@@ -99,15 +99,15 @@
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.41117095947265625,
+      "confidence": 0.42929500341415405,
       "all_scores": {
-        "case_metadata": 0.41117095947265625,
-        "procedural_history": 0.3505268692970276,
-        "factual_background": 0.24969902634620667,
-        "legal_issues": 0.3361142873764038,
-        "legal_analysis": 0.28098514676094055,
-        "holdings_and_conclusions": 0.37180083990097046,
-        "other": 0.16924580931663513
+        "case_metadata": 0.37796908617019653,
+        "procedural_history": 0.37197843194007874,
+        "factual_background": 0.3293209373950958,
+        "legal_issues": 0.42929500341415405,
+        "legal_analysis": 0.34711241722106934,
+        "holdings_and_conclusions": 0.37180089950561523,
+        "other": 0.27549633383750916
       }
     }
   },
@@ -126,16 +126,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.42092031240463257,
+      "role": "legal_issues",
+      "confidence": 0.5460159778594971,
       "all_scores": {
-        "case_metadata": 0.3598105311393738,
-        "procedural_history": 0.4187479019165039,
-        "factual_background": 0.3605116605758667,
-        "legal_issues": 0.42092031240463257,
-        "legal_analysis": 0.39771315455436707,
-        "holdings_and_conclusions": 0.38128307461738586,
-        "other": 0.25001659989356995
+        "case_metadata": 0.420025110244751,
+        "procedural_history": 0.4383774697780609,
+        "factual_background": 0.4288956820964813,
+        "legal_issues": 0.5460159778594971,
+        "legal_analysis": 0.40813079476356506,
+        "holdings_and_conclusions": 0.5302696824073792,
+        "other": 0.37741389870643616
       }
     }
   },
@@ -155,15 +155,15 @@
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5054277181625366,
+      "confidence": 0.52936851978302,
       "all_scores": {
-        "case_metadata": 0.39690354466438293,
-        "procedural_history": 0.5054277181625366,
-        "factual_background": 0.3710649907588959,
-        "legal_issues": 0.4354114532470703,
-        "legal_analysis": 0.4172910451889038,
-        "holdings_and_conclusions": 0.4674442410469055,
-        "other": 0.20744793117046356
+        "case_metadata": 0.4406040906906128,
+        "procedural_history": 0.52936851978302,
+        "factual_background": 0.43779006600379944,
+        "legal_issues": 0.44404730200767517,
+        "legal_analysis": 0.4696221351623535,
+        "holdings_and_conclusions": 0.501407265663147,
+        "other": 0.3644700050354004
       }
     }
   },
@@ -185,13 +185,13 @@
       "role": "procedural_history",
       "confidence": 0.5094842910766602,
       "all_scores": {
-        "case_metadata": 0.3932044804096222,
+        "case_metadata": 0.3245120644569397,
         "procedural_history": 0.5094842910766602,
-        "factual_background": 0.3026576638221741,
-        "legal_issues": 0.27606844902038574,
-        "legal_analysis": 0.3250809609889984,
-        "holdings_and_conclusions": 0.3860502243041992,
-        "other": 0.12998443841934204
+        "factual_background": 0.3582117557525635,
+        "legal_issues": 0.28905975818634033,
+        "legal_analysis": 0.327243834733963,
+        "holdings_and_conclusions": 0.42319023609161377,
+        "other": 0.3948327898979187
       }
     }
   },
@@ -210,16 +210,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.48691225051879883,
+      "role": "unclassified",
+      "confidence": 0.49054086208343506,
       "all_scores": {
-        "case_metadata": 0.48691225051879883,
-        "procedural_history": 0.4795364737510681,
-        "factual_background": 0.32067593932151794,
+        "case_metadata": 0.47000062465667725,
+        "procedural_history": 0.4795365631580353,
+        "factual_background": 0.3076193630695343,
         "legal_issues": 0.33758753538131714,
-        "legal_analysis": 0.3249588906764984,
-        "holdings_and_conclusions": 0.4348878860473633,
-        "other": 0.10120975971221924
+        "legal_analysis": 0.3243325352668762,
+        "holdings_and_conclusions": 0.49054086208343506,
+        "other": 0.3557632863521576
       }
     }
   }

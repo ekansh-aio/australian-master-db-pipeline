@@ -14,16 +14,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5751101970672607,
+      "role": "unclassified",
+      "confidence": 0.441631555557251,
       "all_scores": {
-        "case_metadata": 0.5751101970672607,
-        "procedural_history": 0.35124701261520386,
-        "factual_background": 0.3105630874633789,
-        "legal_issues": 0.2914848327636719,
-        "legal_analysis": 0.26528167724609375,
-        "holdings_and_conclusions": 0.4119260907173157,
-        "other": 0.16807550191879272
+        "case_metadata": 0.441631555557251,
+        "procedural_history": 0.40421172976493835,
+        "factual_background": 0.34017255902290344,
+        "legal_issues": 0.28212597966194153,
+        "legal_analysis": 0.2841343283653259,
+        "holdings_and_conclusions": 0.39797210693359375,
+        "other": 0.34140586853027344
       }
     }
   },
@@ -43,15 +43,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.25802135467529297,
+      "confidence": 0.310119092464447,
       "all_scores": {
-        "case_metadata": 0.25656941533088684,
-        "procedural_history": 0.25802135467529297,
-        "factual_background": 0.18734106421470642,
-        "legal_issues": 0.2132214903831482,
-        "legal_analysis": 0.16116350889205933,
-        "holdings_and_conclusions": 0.2563672661781311,
-        "other": 0.2069665491580963
+        "case_metadata": 0.27422767877578735,
+        "procedural_history": 0.2926560640335083,
+        "factual_background": 0.2618924081325531,
+        "legal_issues": 0.214800626039505,
+        "legal_analysis": 0.2909146547317505,
+        "holdings_and_conclusions": 0.310119092464447,
+        "other": 0.20696647465229034
       }
     }
   },
@@ -71,15 +71,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.41101959347724915,
+      "confidence": 0.394283652305603,
       "all_scores": {
-        "case_metadata": 0.41101959347724915,
-        "procedural_history": 0.24620352685451508,
-        "factual_background": 0.20536752045154572,
-        "legal_issues": 0.17557385563850403,
-        "legal_analysis": 0.23092493414878845,
-        "holdings_and_conclusions": 0.2643696665763855,
-        "other": 0.16486883163452148
+        "case_metadata": 0.394283652305603,
+        "procedural_history": 0.3233720660209656,
+        "factual_background": 0.32735174894332886,
+        "legal_issues": 0.23323985934257507,
+        "legal_analysis": 0.16989129781723022,
+        "holdings_and_conclusions": 0.3681444227695465,
+        "other": 0.16486886143684387
       }
     }
   },
@@ -99,15 +99,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.22826427221298218,
+      "confidence": 0.37069880962371826,
       "all_scores": {
-        "case_metadata": 0.18478113412857056,
-        "procedural_history": 0.22390367090702057,
-        "factual_background": 0.18744125962257385,
-        "legal_issues": 0.11871100217103958,
-        "legal_analysis": 0.13019700348377228,
-        "holdings_and_conclusions": 0.22826427221298218,
-        "other": 0.08362126350402832
+        "case_metadata": 0.21006618440151215,
+        "procedural_history": 0.26486650109291077,
+        "factual_background": 0.37069880962371826,
+        "legal_issues": 0.17297175526618958,
+        "legal_analysis": 0.11375919729471207,
+        "holdings_and_conclusions": 0.22826431691646576,
+        "other": 0.11195264756679535
       }
     }
   },
@@ -127,15 +127,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2298683226108551,
+      "confidence": 0.32468563318252563,
       "all_scores": {
-        "case_metadata": 0.2298683226108551,
-        "procedural_history": 0.18805868923664093,
-        "factual_background": 0.21955044567584991,
-        "legal_issues": 0.19641011953353882,
-        "legal_analysis": 0.13246756792068481,
-        "holdings_and_conclusions": 0.19827112555503845,
-        "other": 0.1285947859287262
+        "case_metadata": 0.24005237221717834,
+        "procedural_history": 0.2618981599807739,
+        "factual_background": 0.32468563318252563,
+        "legal_issues": 0.22824008762836456,
+        "legal_analysis": 0.16124798357486725,
+        "holdings_and_conclusions": 0.31587037444114685,
+        "other": 0.12859471142292023
       }
     }
   },
@@ -155,15 +155,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4003009498119354,
+      "confidence": 0.39962872862815857,
       "all_scores": {
-        "case_metadata": 0.39962881803512573,
-        "procedural_history": 0.1894623190164566,
-        "factual_background": 0.16677813231945038,
-        "legal_issues": 0.4003009498119354,
-        "legal_analysis": 0.25246548652648926,
-        "holdings_and_conclusions": 0.28800976276397705,
-        "other": 0.13943439722061157
+        "case_metadata": 0.39962872862815857,
+        "procedural_history": 0.26522064208984375,
+        "factual_background": 0.3326966166496277,
+        "legal_issues": 0.3403189182281494,
+        "legal_analysis": 0.2764796018600464,
+        "holdings_and_conclusions": 0.33486050367355347,
+        "other": 0.1921309530735016
       }
     }
   },
@@ -183,15 +183,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2750130593776703,
+      "confidence": 0.3231223523616791,
       "all_scores": {
-        "case_metadata": 0.2750130593776703,
-        "procedural_history": 0.26146399974823,
-        "factual_background": 0.21550683677196503,
-        "legal_issues": 0.17444118857383728,
-        "legal_analysis": 0.11747615039348602,
-        "holdings_and_conclusions": 0.24134667217731476,
-        "other": 0.20726698637008667
+        "case_metadata": 0.2881309986114502,
+        "procedural_history": 0.3231223523616791,
+        "factual_background": 0.254554808139801,
+        "legal_issues": 0.18388597667217255,
+        "legal_analysis": 0.21545197069644928,
+        "holdings_and_conclusions": 0.29279497265815735,
+        "other": 0.20726697146892548
       }
     }
   },
@@ -211,15 +211,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3418613374233246,
+      "confidence": 0.40771839022636414,
       "all_scores": {
-        "case_metadata": 0.2613481879234314,
-        "procedural_history": 0.2734295725822449,
-        "factual_background": 0.24503086507320404,
-        "legal_issues": 0.2937905490398407,
-        "legal_analysis": 0.21058505773544312,
-        "holdings_and_conclusions": 0.3418613374233246,
-        "other": 0.1819033920764923
+        "case_metadata": 0.3444679379463196,
+        "procedural_history": 0.29390019178390503,
+        "factual_background": 0.33134329319000244,
+        "legal_issues": 0.2937905788421631,
+        "legal_analysis": 0.23651856184005737,
+        "holdings_and_conclusions": 0.40771839022636414,
+        "other": 0.18190336227416992
       }
     }
   },
@@ -239,15 +239,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.34823787212371826,
+      "confidence": 0.33752772212028503,
       "all_scores": {
-        "case_metadata": 0.34823787212371826,
-        "procedural_history": 0.2839134931564331,
-        "factual_background": 0.292427659034729,
-        "legal_issues": 0.21916449069976807,
-        "legal_analysis": 0.08346709609031677,
-        "holdings_and_conclusions": 0.19866947829723358,
-        "other": 0.15179872512817383
+        "case_metadata": 0.32925042510032654,
+        "procedural_history": 0.2868262231349945,
+        "factual_background": 0.33752772212028503,
+        "legal_issues": 0.21916447579860687,
+        "legal_analysis": 0.1197187528014183,
+        "holdings_and_conclusions": 0.31052595376968384,
+        "other": 0.15179868042469025
       }
     }
   },
@@ -267,15 +267,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3692808747291565,
+      "confidence": 0.346979022026062,
       "all_scores": {
-        "case_metadata": 0.3692808747291565,
-        "procedural_history": 0.3106886148452759,
-        "factual_background": 0.2635366916656494,
-        "legal_issues": 0.22331970930099487,
-        "legal_analysis": 0.19421178102493286,
-        "holdings_and_conclusions": 0.2556421160697937,
-        "other": 0.1366187483072281
+        "case_metadata": 0.346979022026062,
+        "procedural_history": 0.2909044921398163,
+        "factual_background": 0.3270110487937927,
+        "legal_issues": 0.22779837250709534,
+        "legal_analysis": 0.1853523850440979,
+        "holdings_and_conclusions": 0.32782894372940063,
+        "other": 0.1737176775932312
       }
     }
   },
@@ -295,15 +295,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.34136390686035156,
+      "confidence": 0.3257890045642853,
       "all_scores": {
-        "case_metadata": 0.266260027885437,
-        "procedural_history": 0.34136390686035156,
-        "factual_background": 0.3158913254737854,
-        "legal_issues": 0.23516741394996643,
-        "legal_analysis": 0.21648141741752625,
-        "holdings_and_conclusions": 0.2519518733024597,
-        "other": 0.18018753826618195
+        "case_metadata": 0.3257890045642853,
+        "procedural_history": 0.3182755708694458,
+        "factual_background": 0.2683454751968384,
+        "legal_issues": 0.23516738414764404,
+        "legal_analysis": 0.2544090449810028,
+        "holdings_and_conclusions": 0.29170727729797363,
+        "other": 0.18018755316734314
       }
     }
   },
@@ -323,15 +323,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.25505486130714417,
+      "confidence": 0.25348424911499023,
       "all_scores": {
-        "case_metadata": 0.25505486130714417,
-        "procedural_history": 0.24806736409664154,
-        "factual_background": 0.22881588339805603,
-        "legal_issues": 0.15092891454696655,
-        "legal_analysis": 0.12123526632785797,
-        "holdings_and_conclusions": 0.17949365079402924,
-        "other": 0.18490511178970337
+        "case_metadata": 0.25348424911499023,
+        "procedural_history": 0.24117694795131683,
+        "factual_background": 0.22881586849689484,
+        "legal_issues": 0.1582801192998886,
+        "legal_analysis": 0.14021813869476318,
+        "holdings_and_conclusions": 0.21502773463726044,
+        "other": 0.18490508198738098
       }
     }
   },
@@ -353,13 +353,13 @@
       "role": "unclassified",
       "confidence": 0.349203884601593,
       "all_scores": {
-        "case_metadata": 0.3021036386489868,
-        "procedural_history": 0.32360804080963135,
+        "case_metadata": 0.2805095911026001,
+        "procedural_history": 0.27865034341812134,
         "factual_background": 0.349203884601593,
         "legal_issues": 0.2813602089881897,
-        "legal_analysis": 0.22139480710029602,
-        "holdings_and_conclusions": 0.2282896339893341,
-        "other": 0.09260274469852448
+        "legal_analysis": 0.20139408111572266,
+        "holdings_and_conclusions": 0.2756950557231903,
+        "other": 0.13996675610542297
       }
     }
   },
@@ -379,15 +379,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.32434216141700745,
+      "confidence": 0.4803699254989624,
       "all_scores": {
-        "case_metadata": 0.32434216141700745,
-        "procedural_history": 0.23548276722431183,
-        "factual_background": 0.28473103046417236,
-        "legal_issues": 0.18751394748687744,
-        "legal_analysis": 0.11102369427680969,
-        "holdings_and_conclusions": 0.2633335292339325,
-        "other": 0.12305661290884018
+        "case_metadata": 0.3202396035194397,
+        "procedural_history": 0.26194238662719727,
+        "factual_background": 0.4803699254989624,
+        "legal_issues": 0.20769520103931427,
+        "legal_analysis": 0.18223991990089417,
+        "holdings_and_conclusions": 0.29653438925743103,
+        "other": 0.15084680914878845
       }
     }
   },
@@ -407,15 +407,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3492143750190735,
+      "confidence": 0.40205100178718567,
       "all_scores": {
-        "case_metadata": 0.25937196612358093,
-        "procedural_history": 0.3155158758163452,
-        "factual_background": 0.3492143750190735,
-        "legal_issues": 0.28625887632369995,
-        "legal_analysis": 0.17861396074295044,
-        "holdings_and_conclusions": 0.2527279257774353,
-        "other": 0.15245243906974792
+        "case_metadata": 0.3226430416107178,
+        "procedural_history": 0.32488110661506653,
+        "factual_background": 0.40205100178718567,
+        "legal_issues": 0.30577075481414795,
+        "legal_analysis": 0.2558230757713318,
+        "holdings_and_conclusions": 0.314797043800354,
+        "other": 0.1960718035697937
       }
     }
   },
@@ -435,15 +435,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3904559314250946,
+      "confidence": 0.4283081889152527,
       "all_scores": {
-        "case_metadata": 0.3026335835456848,
-        "procedural_history": 0.3904559314250946,
-        "factual_background": 0.2916141152381897,
-        "legal_issues": 0.32059383392333984,
-        "legal_analysis": 0.22167159616947174,
-        "holdings_and_conclusions": 0.3322199285030365,
-        "other": 0.20387649536132812
+        "case_metadata": 0.3684178590774536,
+        "procedural_history": 0.4021194577217102,
+        "factual_background": 0.4283081889152527,
+        "legal_issues": 0.37950825691223145,
+        "legal_analysis": 0.317491352558136,
+        "holdings_and_conclusions": 0.35774868726730347,
+        "other": 0.20387648046016693
       }
     }
   },
@@ -463,15 +463,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5071766972541809,
+      "confidence": 0.5081052780151367,
       "all_scores": {
-        "case_metadata": 0.2894885241985321,
-        "procedural_history": 0.5071766972541809,
-        "factual_background": 0.3328081965446472,
-        "legal_issues": 0.3806408941745758,
+        "case_metadata": 0.4527360200881958,
+        "procedural_history": 0.5081052780151367,
+        "factual_background": 0.38394027948379517,
+        "legal_issues": 0.41739845275878906,
         "legal_analysis": 0.45347705483436584,
-        "holdings_and_conclusions": 0.43478381633758545,
-        "other": 0.19458654522895813
+        "holdings_and_conclusions": 0.4347838759422302,
+        "other": 0.3370555341243744
       }
     }
   },
@@ -491,15 +491,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "legal_issues",
-      "confidence": 0.5018740892410278,
+      "confidence": 0.5194898247718811,
       "all_scores": {
-        "case_metadata": 0.4922149181365967,
-        "procedural_history": 0.36653921008110046,
-        "factual_background": 0.38607001304626465,
-        "legal_issues": 0.5018740892410278,
-        "legal_analysis": 0.3866714835166931,
-        "holdings_and_conclusions": 0.4805915057659149,
-        "other": 0.22256503999233246
+        "case_metadata": 0.41352975368499756,
+        "procedural_history": 0.3606962561607361,
+        "factual_background": 0.3602915406227112,
+        "legal_issues": 0.5194898247718811,
+        "legal_analysis": 0.42272770404815674,
+        "holdings_and_conclusions": 0.47835588455200195,
+        "other": 0.37070608139038086
       }
     }
   },
@@ -519,15 +519,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.4860039949417114,
+      "confidence": 0.520167887210846,
       "all_scores": {
-        "case_metadata": 0.38449525833129883,
-        "procedural_history": 0.4860039949417114,
-        "factual_background": 0.3184427320957184,
-        "legal_issues": 0.3751392364501953,
-        "legal_analysis": 0.33419448137283325,
-        "holdings_and_conclusions": 0.4762945771217346,
-        "other": 0.26564639806747437
+        "case_metadata": 0.39089563488960266,
+        "procedural_history": 0.520167887210846,
+        "factual_background": 0.36175745725631714,
+        "legal_issues": 0.4407373368740082,
+        "legal_analysis": 0.35212281346321106,
+        "holdings_and_conclusions": 0.47629454731941223,
+        "other": 0.32491618394851685
       }
     }
   },
@@ -547,15 +547,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4330768585205078,
+      "confidence": 0.4330768287181854,
       "all_scores": {
-        "case_metadata": 0.3215954899787903,
-        "procedural_history": 0.38445571064949036,
-        "factual_background": 0.32961177825927734,
-        "legal_issues": 0.4330768585205078,
-        "legal_analysis": 0.3830069303512573,
-        "holdings_and_conclusions": 0.3799228072166443,
-        "other": 0.22607693076133728
+        "case_metadata": 0.37697112560272217,
+        "procedural_history": 0.3745584487915039,
+        "factual_background": 0.33919888734817505,
+        "legal_issues": 0.4330768287181854,
+        "legal_analysis": 0.4105967581272125,
+        "holdings_and_conclusions": 0.38072359561920166,
+        "other": 0.36439579725265503
       }
     }
   },
@@ -575,15 +575,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5460734367370605,
+      "confidence": 0.5262748599052429,
       "all_scores": {
-        "case_metadata": 0.2931962013244629,
-        "procedural_history": 0.5460734367370605,
-        "factual_background": 0.34419918060302734,
-        "legal_issues": 0.3623749315738678,
-        "legal_analysis": 0.3691089153289795,
-        "holdings_and_conclusions": 0.42864805459976196,
-        "other": 0.2186965048313141
+        "case_metadata": 0.3604738116264343,
+        "procedural_history": 0.5262748599052429,
+        "factual_background": 0.3385894298553467,
+        "legal_issues": 0.3846326470375061,
+        "legal_analysis": 0.3051847219467163,
+        "holdings_and_conclusions": 0.464546799659729,
+        "other": 0.2820183038711548
       }
     }
   },
@@ -605,13 +605,13 @@
       "role": "holdings_and_conclusions",
       "confidence": 0.5209620594978333,
       "all_scores": {
-        "case_metadata": 0.3578203022480011,
-        "procedural_history": 0.45105379819869995,
-        "factual_background": 0.3750059902667999,
-        "legal_issues": 0.3711494505405426,
-        "legal_analysis": 0.3251802921295166,
+        "case_metadata": 0.37569165229797363,
+        "procedural_history": 0.4510537385940552,
+        "factual_background": 0.4346970319747925,
+        "legal_issues": 0.39046576619148254,
+        "legal_analysis": 0.31732332706451416,
         "holdings_and_conclusions": 0.5209620594978333,
-        "other": 0.2422705888748169
+        "other": 0.3561908006668091
       }
     }
   },
@@ -630,16 +630,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.4631216824054718,
+      "role": "unclassified",
+      "confidence": 0.46312159299850464,
       "all_scores": {
-        "case_metadata": 0.4376682639122009,
-        "procedural_history": 0.4631216824054718,
-        "factual_background": 0.22596055269241333,
-        "legal_issues": 0.20793649554252625,
-        "legal_analysis": 0.32851049304008484,
-        "holdings_and_conclusions": 0.4374149441719055,
-        "other": 0.20758689939975739
+        "case_metadata": 0.4257756471633911,
+        "procedural_history": 0.46312159299850464,
+        "factual_background": 0.3744901418685913,
+        "legal_issues": 0.2520136833190918,
+        "legal_analysis": 0.3319298028945923,
+        "holdings_and_conclusions": 0.43741491436958313,
+        "other": 0.23100654780864716
       }
     }
   }

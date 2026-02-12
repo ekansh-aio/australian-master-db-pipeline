@@ -15,15 +15,15 @@
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.6225782036781311,
+      "confidence": 0.6225782632827759,
       "all_scores": {
-        "case_metadata": 0.5113750696182251,
-        "procedural_history": 0.5930200815200806,
-        "factual_background": 0.4087413251399994,
-        "legal_issues": 0.33240318298339844,
-        "legal_analysis": 0.42366570234298706,
-        "holdings_and_conclusions": 0.6225782036781311,
-        "other": 0.15695220232009888
+        "case_metadata": 0.493461549282074,
+        "procedural_history": 0.5658221244812012,
+        "factual_background": 0.37600505352020264,
+        "legal_issues": 0.3742896318435669,
+        "legal_analysis": 0.4501687288284302,
+        "holdings_and_conclusions": 0.6225782632827759,
+        "other": 0.33773866295814514
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -432,13 +432,13 @@
       "role": "holdings_and_conclusions",
       "confidence": 0.6932152509689331,
       "all_scores": {
-        "case_metadata": 0.47203630208969116,
-        "procedural_history": 0.622809886932373,
-        "factual_background": 0.4556836485862732,
-        "legal_issues": 0.38197073340415955,
-        "legal_analysis": 0.35661235451698303,
+        "case_metadata": 0.45909440517425537,
+        "procedural_history": 0.5467386841773987,
+        "factual_background": 0.42613494396209717,
+        "legal_issues": 0.38664400577545166,
+        "legal_analysis": 0.36704081296920776,
         "holdings_and_conclusions": 0.6932152509689331,
-        "other": 0.15174393355846405
+        "other": 0.42218130826950073
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -844,16 +844,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5307884216308594,
+      "role": "unclassified",
+      "confidence": 0.4808303415775299,
       "all_scores": {
-        "case_metadata": 0.5307884216308594,
-        "procedural_history": 0.4282015860080719,
-        "factual_background": 0.32919394969940186,
-        "legal_issues": 0.33348026871681213,
-        "legal_analysis": 0.48460373282432556,
-        "holdings_and_conclusions": 0.380492627620697,
-        "other": 0.16388776898384094
+        "case_metadata": 0.4339848756790161,
+        "procedural_history": 0.4233877658843994,
+        "factual_background": 0.3415950834751129,
+        "legal_issues": 0.4808303415775299,
+        "legal_analysis": 0.4330199658870697,
+        "holdings_and_conclusions": 0.45044273138046265,
+        "other": 0.34250715374946594
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -1259,16 +1259,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5039786100387573,
+      "role": "unclassified",
+      "confidence": 0.49707096815109253,
       "all_scores": {
-        "case_metadata": 0.3902013897895813,
-        "procedural_history": 0.5039786100387573,
-        "factual_background": 0.45203524827957153,
+        "case_metadata": 0.419425904750824,
+        "procedural_history": 0.4715471565723419,
+        "factual_background": 0.41091036796569824,
         "legal_issues": 0.4375015199184418,
-        "legal_analysis": 0.3867088556289673,
-        "holdings_and_conclusions": 0.47969087958335876,
-        "other": 0.16896218061447144
+        "legal_analysis": 0.4334676265716553,
+        "holdings_and_conclusions": 0.49707096815109253,
+        "other": 0.3734745383262634
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -1675,15 +1675,15 @@
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4274406135082245,
+      "confidence": 0.41296541690826416,
       "all_scores": {
-        "case_metadata": 0.4274406135082245,
-        "procedural_history": 0.3874666392803192,
-        "factual_background": 0.3256351351737976,
-        "legal_issues": 0.23983320593833923,
-        "legal_analysis": 0.33625853061676025,
-        "holdings_and_conclusions": 0.36280345916748047,
-        "other": 0.23640157282352448
+        "case_metadata": 0.36713966727256775,
+        "procedural_history": 0.35015052556991577,
+        "factual_background": 0.36253517866134644,
+        "legal_issues": 0.3985901176929474,
+        "legal_analysis": 0.3302634358406067,
+        "holdings_and_conclusions": 0.41296541690826416,
+        "other": 0.34621661901474
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -2092,13 +2092,13 @@
       "role": "holdings_and_conclusions",
       "confidence": 0.6285569667816162,
       "all_scores": {
-        "case_metadata": 0.3473625183105469,
-        "procedural_history": 0.5186744928359985,
-        "factual_background": 0.39404889941215515,
-        "legal_issues": 0.30710041522979736,
-        "legal_analysis": 0.41636887192726135,
+        "case_metadata": 0.43061500787734985,
+        "procedural_history": 0.490814208984375,
+        "factual_background": 0.6222808957099915,
+        "legal_issues": 0.5883352756500244,
+        "legal_analysis": 0.4736778140068054,
         "holdings_and_conclusions": 0.6285569667816162,
-        "other": 0.1550220251083374
+        "other": 0.500504732131958
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -2504,16 +2504,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.520018458366394,
+      "role": "unclassified",
+      "confidence": 0.46389567852020264,
       "all_scores": {
-        "case_metadata": 0.30202746391296387,
-        "procedural_history": 0.520018458366394,
-        "factual_background": 0.3319815397262573,
-        "legal_issues": 0.3251323103904724,
-        "legal_analysis": 0.37657052278518677,
-        "holdings_and_conclusions": 0.4220198690891266,
-        "other": 0.19120213389396667
+        "case_metadata": 0.36889955401420593,
+        "procedural_history": 0.43391549587249756,
+        "factual_background": 0.4041951894760132,
+        "legal_issues": 0.46389567852020264,
+        "legal_analysis": 0.40548616647720337,
+        "holdings_and_conclusions": 0.4374925494194031,
+        "other": 0.2852517068386078
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -2920,15 +2920,15 @@
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
       "role": "legal_analysis",
-      "confidence": 0.5164703130722046,
+      "confidence": 0.6044007539749146,
       "all_scores": {
-        "case_metadata": 0.41690778732299805,
-        "procedural_history": 0.4117933511734009,
-        "factual_background": 0.29435694217681885,
-        "legal_issues": 0.43821001052856445,
-        "legal_analysis": 0.5164703130722046,
-        "holdings_and_conclusions": 0.4066736400127411,
-        "other": 0.20513711869716644
+        "case_metadata": 0.4050236940383911,
+        "procedural_history": 0.47735387086868286,
+        "factual_background": 0.4484788477420807,
+        "legal_issues": 0.5351917743682861,
+        "legal_analysis": 0.6044007539749146,
+        "holdings_and_conclusions": 0.5567076206207275,
+        "other": 0.4142545461654663
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -3334,16 +3334,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:29:10.621538+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5600131750106812,
+      "role": "unclassified",
+      "confidence": 0.42279940843582153,
       "all_scores": {
-        "case_metadata": 0.31459102034568787,
-        "procedural_history": 0.5600131750106812,
-        "factual_background": 0.36604630947113037,
-        "legal_issues": 0.37472373247146606,
-        "legal_analysis": 0.3050016760826111,
+        "case_metadata": 0.4021662473678589,
+        "procedural_history": 0.42279940843582153,
+        "factual_background": 0.3844476044178009,
+        "legal_issues": 0.3035653829574585,
+        "legal_analysis": 0.3723638355731964,
         "holdings_and_conclusions": 0.40266233682632446,
-        "other": 0.14352013170719147
+        "other": 0.24203461408615112
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_2ed874f7_all_chunks.json",
@@ -3750,14 +3750,14 @@
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.46308207511901855,
+      "confidence": 0.5669106245040894,
       "all_scores": {
-        "case_metadata": 0.31018105149269104,
-        "procedural_history": 0.46308207511901855,
-        "factual_background": 0.40092796087265015,
-        "legal_issues": 0.35911446809768677,
-        "legal_analysis": 0.3429953157901764,
-        "holdings_and_conclusions": 0.44267165660858154,
+        "case_metadata": 0.3533960282802582,
+        "procedural_history": 0.5669106245040894,
+        "factual_background": 0.43696606159210205,
+        "legal_issues": 0.3484826982021332,
+        "legal_analysis": 0.3658442497253418,
+        "holdings_and_conclusions": 0.4771299362182617,
         "other": 0.31281185150146484
       }
     },
@@ -4165,15 +4165,15 @@
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.5512755513191223,
+      "confidence": 0.5441367626190186,
       "all_scores": {
-        "case_metadata": 0.4713154733181,
+        "case_metadata": 0.5324790477752686,
         "procedural_history": 0.4782748222351074,
-        "factual_background": 0.35249584913253784,
-        "legal_issues": 0.3170469105243683,
-        "legal_analysis": 0.39926889538764954,
-        "holdings_and_conclusions": 0.5512755513191223,
-        "other": 0.19285768270492554
+        "factual_background": 0.4488857388496399,
+        "legal_issues": 0.46987485885620117,
+        "legal_analysis": 0.34484100341796875,
+        "holdings_and_conclusions": 0.5441367626190186,
+        "other": 0.46967869997024536
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_6ce64330_all_chunks.json",
@@ -4580,15 +4580,15 @@
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.514101505279541,
+      "confidence": 0.5586826801300049,
       "all_scores": {
-        "case_metadata": 0.40103504061698914,
-        "procedural_history": 0.514101505279541,
-        "factual_background": 0.4114636778831482,
-        "legal_issues": 0.41656750440597534,
-        "legal_analysis": 0.44437935948371887,
-        "holdings_and_conclusions": 0.42542436718940735,
-        "other": 0.21944855153560638
+        "case_metadata": 0.38497549295425415,
+        "procedural_history": 0.5586826801300049,
+        "factual_background": 0.3982827663421631,
+        "legal_issues": 0.3768657445907593,
+        "legal_analysis": 0.38153842091560364,
+        "holdings_and_conclusions": 0.43048095703125,
+        "other": 0.3636515736579895
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_6ce64330_all_chunks.json",
@@ -4994,16 +4994,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16818/782_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5911068916320801,
+      "role": "procedural_history",
+      "confidence": 0.5320519208908081,
       "all_scores": {
-        "case_metadata": 0.36242127418518066,
-        "procedural_history": 0.49238812923431396,
-        "factual_background": 0.447748064994812,
-        "legal_issues": 0.4273371696472168,
-        "legal_analysis": 0.5911068916320801,
-        "holdings_and_conclusions": 0.5130184292793274,
-        "other": 0.2779802978038788
+        "case_metadata": 0.4344336688518524,
+        "procedural_history": 0.5320519208908081,
+        "factual_background": 0.46039530634880066,
+        "legal_issues": 0.4490956664085388,
+        "legal_analysis": 0.4371412992477417,
+        "holdings_and_conclusions": 0.5099796056747437,
+        "other": 0.44297367334365845
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_6ce64330_all_chunks.json",
@@ -5409,16 +5409,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16818/782_1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:44:53.913522+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.43885546922683716,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5644065737724304,
       "all_scores": {
-        "case_metadata": 0.4050285220146179,
-        "procedural_history": 0.3993379473686218,
-        "factual_background": 0.3120434880256653,
-        "legal_issues": 0.319683313369751,
-        "legal_analysis": 0.43885546922683716,
-        "holdings_and_conclusions": 0.40279620885849,
-        "other": 0.16303323209285736
+        "case_metadata": 0.32447317242622375,
+        "procedural_history": 0.39502957463264465,
+        "factual_background": 0.35921454429626465,
+        "legal_issues": 0.4063267111778259,
+        "legal_analysis": 0.4481072425842285,
+        "holdings_and_conclusions": 0.5644065737724304,
+        "other": 0.3167858123779297
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_6ce64330_all_chunks.json",
@@ -5825,15 +5825,15 @@
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.5706244707107544,
+      "confidence": 0.5352801084518433,
       "all_scores": {
-        "case_metadata": 0.5706244707107544,
-        "procedural_history": 0.4411764144897461,
-        "factual_background": 0.31110310554504395,
-        "legal_issues": 0.3071569800376892,
-        "legal_analysis": 0.3201233744621277,
-        "holdings_and_conclusions": 0.32972997426986694,
-        "other": 0.19105282425880432
+        "case_metadata": 0.5352801084518433,
+        "procedural_history": 0.388782262802124,
+        "factual_background": 0.2833259701728821,
+        "legal_issues": 0.30992740392684937,
+        "legal_analysis": 0.3272285461425781,
+        "holdings_and_conclusions": 0.34123387932777405,
+        "other": 0.33347398042678833
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -6239,16 +6239,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5481105446815491,
+      "role": "unclassified",
+      "confidence": 0.490247905254364,
       "all_scores": {
-        "case_metadata": 0.5481105446815491,
-        "procedural_history": 0.39985424280166626,
-        "factual_background": 0.25185465812683105,
-        "legal_issues": 0.2575574517250061,
-        "legal_analysis": 0.27651357650756836,
-        "holdings_and_conclusions": 0.2896997928619385,
-        "other": 0.19994762539863586
+        "case_metadata": 0.490247905254364,
+        "procedural_history": 0.36873090267181396,
+        "factual_background": 0.26587262749671936,
+        "legal_issues": 0.2567066550254822,
+        "legal_analysis": 0.298137366771698,
+        "holdings_and_conclusions": 0.3213179111480713,
+        "other": 0.2746846675872803
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -6654,16 +6654,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5640909671783447,
+      "role": "procedural_history",
+      "confidence": 0.5134291648864746,
       "all_scores": {
-        "case_metadata": 0.5640909671783447,
-        "procedural_history": 0.5322485566139221,
-        "factual_background": 0.4077356159687042,
-        "legal_issues": 0.3165200650691986,
-        "legal_analysis": 0.3342902362346649,
-        "holdings_and_conclusions": 0.4089246392250061,
-        "other": 0.1504734307527542
+        "case_metadata": 0.4836491346359253,
+        "procedural_history": 0.5134291648864746,
+        "factual_background": 0.46295008063316345,
+        "legal_issues": 0.3447721600532532,
+        "legal_analysis": 0.27695390582084656,
+        "holdings_and_conclusions": 0.4209338426589966,
+        "other": 0.29079383611679077
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -7069,16 +7069,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.6855303049087524,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6007357835769653,
       "all_scores": {
-        "case_metadata": 0.38653793931007385,
-        "procedural_history": 0.6855303049087524,
-        "factual_background": 0.5306658744812012,
-        "legal_issues": 0.4181476831436157,
-        "legal_analysis": 0.4436511993408203,
+        "case_metadata": 0.427165687084198,
+        "procedural_history": 0.5963228344917297,
+        "factual_background": 0.4632214903831482,
+        "legal_issues": 0.41814762353897095,
+        "legal_analysis": 0.38055920600891113,
         "holdings_and_conclusions": 0.6007357835769653,
-        "other": 0.18247556686401367
+        "other": 0.3484525680541992
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -7485,15 +7485,15 @@
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.4744793176651001,
+      "confidence": 0.5724182724952698,
       "all_scores": {
-        "case_metadata": 0.39700859785079956,
-        "procedural_history": 0.4744793176651001,
-        "factual_background": 0.36535781621932983,
-        "legal_issues": 0.34419822692871094,
-        "legal_analysis": 0.4010334014892578,
-        "holdings_and_conclusions": 0.43184396624565125,
-        "other": 0.22291794419288635
+        "case_metadata": 0.4447990357875824,
+        "procedural_history": 0.5724182724952698,
+        "factual_background": 0.40298283100128174,
+        "legal_issues": 0.35502439737319946,
+        "legal_analysis": 0.33287978172302246,
+        "holdings_and_conclusions": 0.42770516872406006,
+        "other": 0.35782110691070557
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -7900,15 +7900,15 @@
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.5167254209518433,
+      "confidence": 0.52054762840271,
       "all_scores": {
-        "case_metadata": 0.4548856317996979,
-        "procedural_history": 0.4827778935432434,
-        "factual_background": 0.4819996953010559,
-        "legal_issues": 0.39300307631492615,
-        "legal_analysis": 0.4509507715702057,
-        "holdings_and_conclusions": 0.5167254209518433,
-        "other": 0.1701292097568512
+        "case_metadata": 0.4641073942184448,
+        "procedural_history": 0.4827779531478882,
+        "factual_background": 0.40138769149780273,
+        "legal_issues": 0.3966825008392334,
+        "legal_analysis": 0.36906713247299194,
+        "holdings_and_conclusions": 0.52054762840271,
+        "other": 0.38389331102371216
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -8314,16 +8314,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5849114656448364,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5354815125465393,
       "all_scores": {
-        "case_metadata": 0.34632712602615356,
-        "procedural_history": 0.5849114656448364,
-        "factual_background": 0.511863648891449,
-        "legal_issues": 0.4237023591995239,
-        "legal_analysis": 0.4920251965522766,
-        "holdings_and_conclusions": 0.5354815721511841,
-        "other": 0.16376541554927826
+        "case_metadata": 0.37836986780166626,
+        "procedural_history": 0.5019704103469849,
+        "factual_background": 0.36630719900131226,
+        "legal_issues": 0.4377480745315552,
+        "legal_analysis": 0.409898042678833,
+        "holdings_and_conclusions": 0.5354815125465393,
+        "other": 0.3245947062969208
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -8732,13 +8732,13 @@
       "role": "unclassified",
       "confidence": 0.4460766911506653,
       "all_scores": {
-        "case_metadata": 0.22295142710208893,
+        "case_metadata": 0.2830007076263428,
         "procedural_history": 0.39684516191482544,
-        "factual_background": 0.23965631425380707,
-        "legal_issues": 0.25308769941329956,
-        "legal_analysis": 0.1933172345161438,
+        "factual_background": 0.20836777985095978,
+        "legal_issues": 0.26072725653648376,
+        "legal_analysis": 0.2119157314300537,
         "holdings_and_conclusions": 0.4460766911506653,
-        "other": 0.07215383648872375
+        "other": 0.2079412043094635
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -9145,15 +9145,15 @@
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3784150779247284,
+      "confidence": 0.3784151077270508,
       "all_scores": {
-        "case_metadata": 0.2048637568950653,
-        "procedural_history": 0.3568115234375,
-        "factual_background": 0.25656723976135254,
-        "legal_issues": 0.30291977524757385,
-        "legal_analysis": 0.30626797676086426,
-        "holdings_and_conclusions": 0.3784150779247284,
-        "other": 0.07798238098621368
+        "case_metadata": 0.3249720633029938,
+        "procedural_history": 0.3671972155570984,
+        "factual_background": 0.2745603621006012,
+        "legal_issues": 0.31311842799186707,
+        "legal_analysis": 0.3666120171546936,
+        "holdings_and_conclusions": 0.3784151077270508,
+        "other": 0.22985878586769104
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -9560,15 +9560,15 @@
     "when_scraped": "2024-09-14T13:39:14.590474+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.5665786266326904,
+      "confidence": 0.5710588097572327,
       "all_scores": {
-        "case_metadata": 0.5665786266326904,
-        "procedural_history": 0.4954844117164612,
-        "factual_background": 0.45055410265922546,
-        "legal_issues": 0.4008975625038147,
-        "legal_analysis": 0.4076582193374634,
-        "holdings_and_conclusions": 0.506446361541748,
-        "other": 0.22692257165908813
+        "case_metadata": 0.5710588097572327,
+        "procedural_history": 0.49548429250717163,
+        "factual_background": 0.43498694896698,
+        "legal_issues": 0.4137252867221832,
+        "legal_analysis": 0.39023083448410034,
+        "holdings_and_conclusions": 0.5078338384628296,
+        "other": 0.4780696630477905
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_73bba0af_all_chunks.json",
@@ -9974,16 +9974,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5093570351600647,
+      "role": "case_metadata",
+      "confidence": 0.5898133516311646,
       "all_scores": {
-        "case_metadata": 0.33482664823532104,
-        "procedural_history": 0.25014448165893555,
-        "factual_background": 0.5093570351600647,
-        "legal_issues": 0.28423142433166504,
-        "legal_analysis": 0.4216258227825165,
-        "holdings_and_conclusions": 0.30616480112075806,
-        "other": 0.42930883169174194
+        "case_metadata": 0.5898133516311646,
+        "procedural_history": 0.3847728371620178,
+        "factual_background": 0.47526752948760986,
+        "legal_issues": 0.4192763566970825,
+        "legal_analysis": 0.4103262424468994,
+        "holdings_and_conclusions": 0.3655674457550049,
+        "other": 0.42930877208709717
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -10389,16 +10389,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5238398313522339,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5490366220474243,
       "all_scores": {
-        "case_metadata": 0.4991980195045471,
-        "procedural_history": 0.3629699945449829,
-        "factual_background": 0.3566122055053711,
-        "legal_issues": 0.3807537257671356,
-        "legal_analysis": 0.5238398313522339,
-        "holdings_and_conclusions": 0.3585096001625061,
-        "other": 0.4292162358760834
+        "case_metadata": 0.5193314552307129,
+        "procedural_history": 0.37528979778289795,
+        "factual_background": 0.523054838180542,
+        "legal_issues": 0.3740748465061188,
+        "legal_analysis": 0.29751402139663696,
+        "holdings_and_conclusions": 0.5490366220474243,
+        "other": 0.4292161464691162
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -10805,15 +10805,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.4915706515312195,
+      "confidence": 0.6665935516357422,
       "all_scores": {
-        "case_metadata": 0.4915706515312195,
-        "procedural_history": 0.49083828926086426,
-        "factual_background": 0.34939074516296387,
-        "legal_issues": 0.3317005932331085,
-        "legal_analysis": 0.47564730048179626,
-        "holdings_and_conclusions": 0.34174326062202454,
-        "other": 0.4672062397003174
+        "case_metadata": 0.6665935516357422,
+        "procedural_history": 0.39680546522140503,
+        "factual_background": 0.5082846879959106,
+        "legal_issues": 0.3872387409210205,
+        "legal_analysis": 0.31225350499153137,
+        "holdings_and_conclusions": 0.4658225476741791,
+        "other": 0.4672061800956726
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -11219,16 +11219,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5266356468200684,
+      "role": "case_metadata",
+      "confidence": 0.6590290665626526,
       "all_scores": {
-        "case_metadata": 0.45848679542541504,
-        "procedural_history": 0.26439565420150757,
-        "factual_background": 0.5266356468200684,
-        "legal_issues": 0.3019532561302185,
-        "legal_analysis": 0.3424569368362427,
-        "holdings_and_conclusions": 0.2807095944881439,
-        "other": 0.45929771661758423
+        "case_metadata": 0.6590290665626526,
+        "procedural_history": 0.360291987657547,
+        "factual_background": 0.425377756357193,
+        "legal_issues": 0.3217722177505493,
+        "legal_analysis": 0.24540580809116364,
+        "holdings_and_conclusions": 0.293745219707489,
+        "other": 0.45929768681526184
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -11634,16 +11634,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5739057660102844,
+      "role": "factual_background",
+      "confidence": 0.5666545033454895,
       "all_scores": {
-        "case_metadata": 0.44153618812561035,
-        "procedural_history": 0.408502995967865,
-        "factual_background": 0.35295748710632324,
-        "legal_issues": 0.42732295393943787,
-        "legal_analysis": 0.5739057660102844,
-        "holdings_and_conclusions": 0.4774106740951538,
-        "other": 0.30021047592163086
+        "case_metadata": 0.5397664308547974,
+        "procedural_history": 0.5548175573348999,
+        "factual_background": 0.5666545033454895,
+        "legal_issues": 0.44399261474609375,
+        "legal_analysis": 0.3959254324436188,
+        "holdings_and_conclusions": 0.5034531354904175,
+        "other": 0.3456916809082031
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -12049,16 +12049,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.6449630856513977,
+      "role": "unclassified",
+      "confidence": 0.457716703414917,
       "all_scores": {
-        "case_metadata": 0.3343240022659302,
-        "procedural_history": 0.11693385243415833,
-        "factual_background": 0.6449630856513977,
-        "legal_issues": 0.27580171823501587,
-        "legal_analysis": 0.4693669080734253,
-        "holdings_and_conclusions": 0.2352009266614914,
-        "other": 0.3390885591506958
+        "case_metadata": 0.3343239724636078,
+        "procedural_history": 0.23416513204574585,
+        "factual_background": 0.457716703414917,
+        "legal_issues": 0.2840285897254944,
+        "legal_analysis": 0.25758516788482666,
+        "holdings_and_conclusions": 0.43340855836868286,
+        "other": 0.28349170088768005
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -12464,16 +12464,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5511928796768188,
+      "role": "unclassified",
+      "confidence": 0.4949550926685333,
       "all_scores": {
-        "case_metadata": 0.30146029591560364,
-        "procedural_history": 0.3138267993927002,
-        "factual_background": 0.5511928796768188,
-        "legal_issues": 0.3137055039405823,
-        "legal_analysis": 0.5274925231933594,
-        "holdings_and_conclusions": 0.38924020528793335,
-        "other": 0.32387155294418335
+        "case_metadata": 0.44419893622398376,
+        "procedural_history": 0.3433162271976471,
+        "factual_background": 0.4949550926685333,
+        "legal_issues": 0.3760882616043091,
+        "legal_analysis": 0.3297731280326843,
+        "holdings_and_conclusions": 0.4875454306602478,
+        "other": 0.26344555616378784
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -12879,16 +12879,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5881710052490234,
+      "role": "factual_background",
+      "confidence": 0.5782046914100647,
       "all_scores": {
-        "case_metadata": 0.3345504403114319,
-        "procedural_history": 0.24007423222064972,
-        "factual_background": 0.4128132462501526,
-        "legal_issues": 0.3979214131832123,
-        "legal_analysis": 0.5881710052490234,
-        "holdings_and_conclusions": 0.32702815532684326,
-        "other": 0.4548074007034302
+        "case_metadata": 0.5207995772361755,
+        "procedural_history": 0.40504682064056396,
+        "factual_background": 0.5782046914100647,
+        "legal_issues": 0.4442897439002991,
+        "legal_analysis": 0.4225042462348938,
+        "holdings_and_conclusions": 0.48717623949050903,
+        "other": 0.4548073410987854
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -13294,16 +13294,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "other",
-      "confidence": 0.475757360458374,
+      "role": "case_metadata",
+      "confidence": 0.6192518472671509,
       "all_scores": {
-        "case_metadata": 0.1947578489780426,
-        "procedural_history": 0.2216079831123352,
-        "factual_background": 0.4350346326828003,
-        "legal_issues": 0.31481507420539856,
-        "legal_analysis": 0.27793845534324646,
-        "holdings_and_conclusions": 0.2848297953605652,
-        "other": 0.475757360458374
+        "case_metadata": 0.6192518472671509,
+        "procedural_history": 0.32716673612594604,
+        "factual_background": 0.3730277419090271,
+        "legal_issues": 0.330145001411438,
+        "legal_analysis": 0.2883211672306061,
+        "holdings_and_conclusions": 0.28798049688339233,
+        "other": 0.47575733065605164
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_81575e74_all_chunks.json",
@@ -13709,15 +13709,15 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5481424927711487,
+      "role": "unclassified",
+      "confidence": 0.47113314270973206,
       "all_scores": {
-        "case_metadata": 0.3202112913131714,
-        "procedural_history": 0.20123791694641113,
-        "factual_background": 0.5481424927711487,
-        "legal_issues": 0.3068506419658661,
-        "legal_analysis": 0.488750696182251,
-        "holdings_and_conclusions": 0.27634334564208984,
+        "case_metadata": 0.4383446276187897,
+        "procedural_history": 0.46009325981140137,
+        "factual_background": 0.47113314270973206,
+        "legal_issues": 0.3127363324165344,
+        "legal_analysis": 0.27872171998023987,
+        "holdings_and_conclusions": 0.370189368724823,
         "other": 0.31999900937080383
       }
     },
@@ -14124,16 +14124,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1099.pdf",
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5751101970672607,
+      "role": "unclassified",
+      "confidence": 0.441631555557251,
       "all_scores": {
-        "case_metadata": 0.5751101970672607,
-        "procedural_history": 0.35124701261520386,
-        "factual_background": 0.3105630874633789,
-        "legal_issues": 0.2914848327636719,
-        "legal_analysis": 0.26528167724609375,
-        "holdings_and_conclusions": 0.4119260907173157,
-        "other": 0.16807550191879272
+        "case_metadata": 0.441631555557251,
+        "procedural_history": 0.40421172976493835,
+        "factual_background": 0.34017255902290344,
+        "legal_issues": 0.28212597966194153,
+        "legal_analysis": 0.2841343283653259,
+        "holdings_and_conclusions": 0.39797210693359375,
+        "other": 0.34140586853027344
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -14540,15 +14540,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3692808747291565,
+      "confidence": 0.346979022026062,
       "all_scores": {
-        "case_metadata": 0.3692808747291565,
-        "procedural_history": 0.3106886148452759,
-        "factual_background": 0.2635366916656494,
-        "legal_issues": 0.22331970930099487,
-        "legal_analysis": 0.19421178102493286,
-        "holdings_and_conclusions": 0.2556421160697937,
-        "other": 0.1366187483072281
+        "case_metadata": 0.346979022026062,
+        "procedural_history": 0.2909044921398163,
+        "factual_background": 0.3270110487937927,
+        "legal_issues": 0.22779837250709534,
+        "legal_analysis": 0.1853523850440979,
+        "holdings_and_conclusions": 0.32782894372940063,
+        "other": 0.1737176775932312
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -14955,15 +14955,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "legal_issues",
-      "confidence": 0.5018740892410278,
+      "confidence": 0.5194898247718811,
       "all_scores": {
-        "case_metadata": 0.4922149181365967,
-        "procedural_history": 0.36653921008110046,
-        "factual_background": 0.38607001304626465,
-        "legal_issues": 0.5018740892410278,
-        "legal_analysis": 0.3866714835166931,
-        "holdings_and_conclusions": 0.4805915057659149,
-        "other": 0.22256503999233246
+        "case_metadata": 0.41352975368499756,
+        "procedural_history": 0.3606962561607361,
+        "factual_background": 0.3602915406227112,
+        "legal_issues": 0.5194898247718811,
+        "legal_analysis": 0.42272770404815674,
+        "holdings_and_conclusions": 0.47835588455200195,
+        "other": 0.37070608139038086
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -15370,15 +15370,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2750130593776703,
+      "confidence": 0.3231223523616791,
       "all_scores": {
-        "case_metadata": 0.2750130593776703,
-        "procedural_history": 0.26146399974823,
-        "factual_background": 0.21550683677196503,
-        "legal_issues": 0.17444118857383728,
-        "legal_analysis": 0.11747615039348602,
-        "holdings_and_conclusions": 0.24134667217731476,
-        "other": 0.20726698637008667
+        "case_metadata": 0.2881309986114502,
+        "procedural_history": 0.3231223523616791,
+        "factual_background": 0.254554808139801,
+        "legal_issues": 0.18388597667217255,
+        "legal_analysis": 0.21545197069644928,
+        "holdings_and_conclusions": 0.29279497265815735,
+        "other": 0.20726697146892548
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -15785,15 +15785,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.25802135467529297,
+      "confidence": 0.310119092464447,
       "all_scores": {
-        "case_metadata": 0.25656941533088684,
-        "procedural_history": 0.25802135467529297,
-        "factual_background": 0.18734106421470642,
-        "legal_issues": 0.2132214903831482,
-        "legal_analysis": 0.16116350889205933,
-        "holdings_and_conclusions": 0.2563672661781311,
-        "other": 0.2069665491580963
+        "case_metadata": 0.27422767877578735,
+        "procedural_history": 0.2926560640335083,
+        "factual_background": 0.2618924081325531,
+        "legal_issues": 0.214800626039505,
+        "legal_analysis": 0.2909146547317505,
+        "holdings_and_conclusions": 0.310119092464447,
+        "other": 0.20696647465229034
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -16200,15 +16200,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3418613374233246,
+      "confidence": 0.40771839022636414,
       "all_scores": {
-        "case_metadata": 0.2613481879234314,
-        "procedural_history": 0.2734295725822449,
-        "factual_background": 0.24503086507320404,
-        "legal_issues": 0.2937905490398407,
-        "legal_analysis": 0.21058505773544312,
-        "holdings_and_conclusions": 0.3418613374233246,
-        "other": 0.1819033920764923
+        "case_metadata": 0.3444679379463196,
+        "procedural_history": 0.29390019178390503,
+        "factual_background": 0.33134329319000244,
+        "legal_issues": 0.2937905788421631,
+        "legal_analysis": 0.23651856184005737,
+        "holdings_and_conclusions": 0.40771839022636414,
+        "other": 0.18190336227416992
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -16615,15 +16615,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.41101959347724915,
+      "confidence": 0.394283652305603,
       "all_scores": {
-        "case_metadata": 0.41101959347724915,
-        "procedural_history": 0.24620352685451508,
-        "factual_background": 0.20536752045154572,
-        "legal_issues": 0.17557385563850403,
-        "legal_analysis": 0.23092493414878845,
-        "holdings_and_conclusions": 0.2643696665763855,
-        "other": 0.16486883163452148
+        "case_metadata": 0.394283652305603,
+        "procedural_history": 0.3233720660209656,
+        "factual_background": 0.32735174894332886,
+        "legal_issues": 0.23323985934257507,
+        "legal_analysis": 0.16989129781723022,
+        "holdings_and_conclusions": 0.3681444227695465,
+        "other": 0.16486886143684387
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -17030,15 +17030,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.4860039949417114,
+      "confidence": 0.520167887210846,
       "all_scores": {
-        "case_metadata": 0.38449525833129883,
-        "procedural_history": 0.4860039949417114,
-        "factual_background": 0.3184427320957184,
-        "legal_issues": 0.3751392364501953,
-        "legal_analysis": 0.33419448137283325,
-        "holdings_and_conclusions": 0.4762945771217346,
-        "other": 0.26564639806747437
+        "case_metadata": 0.39089563488960266,
+        "procedural_history": 0.520167887210846,
+        "factual_background": 0.36175745725631714,
+        "legal_issues": 0.4407373368740082,
+        "legal_analysis": 0.35212281346321106,
+        "holdings_and_conclusions": 0.47629454731941223,
+        "other": 0.32491618394851685
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -17445,15 +17445,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.34136390686035156,
+      "confidence": 0.3257890045642853,
       "all_scores": {
-        "case_metadata": 0.266260027885437,
-        "procedural_history": 0.34136390686035156,
-        "factual_background": 0.3158913254737854,
-        "legal_issues": 0.23516741394996643,
-        "legal_analysis": 0.21648141741752625,
-        "holdings_and_conclusions": 0.2519518733024597,
-        "other": 0.18018753826618195
+        "case_metadata": 0.3257890045642853,
+        "procedural_history": 0.3182755708694458,
+        "factual_background": 0.2683454751968384,
+        "legal_issues": 0.23516738414764404,
+        "legal_analysis": 0.2544090449810028,
+        "holdings_and_conclusions": 0.29170727729797363,
+        "other": 0.18018755316734314
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -17860,15 +17860,15 @@
     "when_scraped": "2024-09-15T14:59:49.491815+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2298683226108551,
+      "confidence": 0.32468563318252563,
       "all_scores": {
-        "case_metadata": 0.2298683226108551,
-        "procedural_history": 0.18805868923664093,
-        "factual_background": 0.21955044567584991,
-        "legal_issues": 0.19641011953353882,
-        "legal_analysis": 0.13246756792068481,
-        "holdings_and_conclusions": 0.19827112555503845,
-        "other": 0.1285947859287262
+        "case_metadata": 0.24005237221717834,
+        "procedural_history": 0.2618981599807739,
+        "factual_background": 0.32468563318252563,
+        "legal_issues": 0.22824008762836456,
+        "legal_analysis": 0.16124798357486725,
+        "holdings_and_conclusions": 0.31587037444114685,
+        "other": 0.12859471142292023
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_8fbd72a0_all_chunks.json",
@@ -18274,16 +18274,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.4727388918399811,
+      "role": "unclassified",
+      "confidence": 0.4428393244743347,
       "all_scores": {
-        "case_metadata": 0.41919010877609253,
-        "procedural_history": 0.4727388918399811,
-        "factual_background": 0.27983322739601135,
-        "legal_issues": 0.35503363609313965,
-        "legal_analysis": 0.35428309440612793,
-        "holdings_and_conclusions": 0.3656846582889557,
-        "other": 0.20381096005439758
+        "case_metadata": 0.40633028745651245,
+        "procedural_history": 0.4197097420692444,
+        "factual_background": 0.3721016049385071,
+        "legal_issues": 0.4160093069076538,
+        "legal_analysis": 0.35880181193351746,
+        "holdings_and_conclusions": 0.4428393244743347,
+        "other": 0.2868688106536865
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -18689,16 +18689,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
-      "role": "legal_issues",
-      "confidence": 0.5016834735870361,
+      "role": "unclassified",
+      "confidence": 0.4995679259300232,
       "all_scores": {
-        "case_metadata": 0.36295175552368164,
-        "procedural_history": 0.45289331674575806,
-        "factual_background": 0.35129714012145996,
-        "legal_issues": 0.5016834735870361,
-        "legal_analysis": 0.42661961913108826,
-        "holdings_and_conclusions": 0.4664911925792694,
-        "other": 0.2576160430908203
+        "case_metadata": 0.43721503019332886,
+        "procedural_history": 0.48663198947906494,
+        "factual_background": 0.45028072595596313,
+        "legal_issues": 0.4521721601486206,
+        "legal_analysis": 0.42661967873573303,
+        "holdings_and_conclusions": 0.4995679259300232,
+        "other": 0.37612414360046387
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -19107,13 +19107,13 @@
       "role": "holdings_and_conclusions",
       "confidence": 0.5330212712287903,
       "all_scores": {
-        "case_metadata": 0.33828204870224,
-        "procedural_history": 0.45993438363075256,
-        "factual_background": 0.3693777918815613,
-        "legal_issues": 0.4107692837715149,
+        "case_metadata": 0.3863368630409241,
+        "procedural_history": 0.4599343538284302,
+        "factual_background": 0.4381759762763977,
+        "legal_issues": 0.4785972833633423,
         "legal_analysis": 0.381497323513031,
         "holdings_and_conclusions": 0.5330212712287903,
-        "other": 0.21492286026477814
+        "other": 0.40284594893455505
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -19519,16 +19519,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
-      "role": "legal_issues",
-      "confidence": 0.48942869901657104,
+      "role": "procedural_history",
+      "confidence": 0.5576829314231873,
       "all_scores": {
-        "case_metadata": 0.33923035860061646,
-        "procedural_history": 0.43441563844680786,
-        "factual_background": 0.343252569437027,
-        "legal_issues": 0.48942869901657104,
+        "case_metadata": 0.39309850335121155,
+        "procedural_history": 0.5576829314231873,
+        "factual_background": 0.413999080657959,
+        "legal_issues": 0.45651960372924805,
         "legal_analysis": 0.42403334379196167,
-        "holdings_and_conclusions": 0.44120949506759644,
-        "other": 0.2367892861366272
+        "holdings_and_conclusions": 0.47200173139572144,
+        "other": 0.3216579258441925
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -19935,15 +19935,15 @@
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4427929222583771,
+      "confidence": 0.4429249167442322,
       "all_scores": {
-        "case_metadata": 0.27085185050964355,
-        "procedural_history": 0.4427929222583771,
-        "factual_background": 0.33453893661499023,
-        "legal_issues": 0.39596521854400635,
+        "case_metadata": 0.4429249167442322,
+        "procedural_history": 0.4406903386116028,
+        "factual_background": 0.3539137840270996,
+        "legal_issues": 0.4187481999397278,
         "legal_analysis": 0.3776700496673584,
-        "holdings_and_conclusions": 0.36437422037124634,
-        "other": 0.15897107124328613
+        "holdings_and_conclusions": 0.40315908193588257,
+        "other": 0.3182394504547119
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -20350,15 +20350,15 @@
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4147552251815796,
+      "confidence": 0.4098657965660095,
       "all_scores": {
-        "case_metadata": 0.2671680450439453,
-        "procedural_history": 0.31704896688461304,
-        "factual_background": 0.19789445400238037,
-        "legal_issues": 0.4147552251815796,
-        "legal_analysis": 0.34033504128456116,
-        "holdings_and_conclusions": 0.33630892634391785,
-        "other": 0.20510756969451904
+        "case_metadata": 0.3501271903514862,
+        "procedural_history": 0.4098657965660095,
+        "factual_background": 0.36864328384399414,
+        "legal_issues": 0.40303897857666016,
+        "legal_analysis": 0.3403351306915283,
+        "holdings_and_conclusions": 0.37487882375717163,
+        "other": 0.26440566778182983
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -20765,15 +20765,15 @@
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.462821900844574,
+      "confidence": 0.510863721370697,
       "all_scores": {
-        "case_metadata": 0.26508504152297974,
-        "procedural_history": 0.462821900844574,
-        "factual_background": 0.23007354140281677,
-        "legal_issues": 0.43466147780418396,
-        "legal_analysis": 0.37752997875213623,
-        "holdings_and_conclusions": 0.4522511661052704,
-        "other": 0.17299894988536835
+        "case_metadata": 0.3742969036102295,
+        "procedural_history": 0.510863721370697,
+        "factual_background": 0.427642285823822,
+        "legal_issues": 0.4097091555595398,
+        "legal_analysis": 0.3679184317588806,
+        "holdings_and_conclusions": 0.45225125551223755,
+        "other": 0.30879920721054077
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -21179,16 +21179,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4537215530872345,
+      "role": "unclassified",
+      "confidence": 0.4537215232849121,
       "all_scores": {
-        "case_metadata": 0.31261146068573,
-        "procedural_history": 0.44443362951278687,
-        "factual_background": 0.2779717445373535,
-        "legal_issues": 0.3069204092025757,
-        "legal_analysis": 0.4537215530872345,
-        "holdings_and_conclusions": 0.395232230424881,
-        "other": 0.17285120487213135
+        "case_metadata": 0.4192473888397217,
+        "procedural_history": 0.43079739809036255,
+        "factual_background": 0.33273959159851074,
+        "legal_issues": 0.3681630790233612,
+        "legal_analysis": 0.4537215232849121,
+        "holdings_and_conclusions": 0.42243021726608276,
+        "other": 0.3525031507015228
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -21595,15 +21595,15 @@
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
       "role": "legal_issues",
-      "confidence": 0.4736116826534271,
+      "confidence": 0.5695221424102783,
       "all_scores": {
-        "case_metadata": 0.2898098826408386,
-        "procedural_history": 0.4417266249656677,
-        "factual_background": 0.4036382734775543,
-        "legal_issues": 0.4736116826534271,
-        "legal_analysis": 0.44258612394332886,
-        "holdings_and_conclusions": 0.4069760739803314,
-        "other": 0.2591540217399597
+        "case_metadata": 0.4320406913757324,
+        "procedural_history": 0.4097254276275635,
+        "factual_background": 0.4568156898021698,
+        "legal_issues": 0.5695221424102783,
+        "legal_analysis": 0.44258615374565125,
+        "holdings_and_conclusions": 0.5172045230865479,
+        "other": 0.3902180790901184
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -22009,16 +22009,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T23:21:29.471755+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.47917577624320984,
+      "role": "legal_issues",
+      "confidence": 0.5079280734062195,
       "all_scores": {
-        "case_metadata": 0.3944894075393677,
-        "procedural_history": 0.47917577624320984,
-        "factual_background": 0.35176023840904236,
-        "legal_issues": 0.3792400360107422,
-        "legal_analysis": 0.4212906062602997,
-        "holdings_and_conclusions": 0.4471415877342224,
-        "other": 0.23939158022403717
+        "case_metadata": 0.4186531901359558,
+        "procedural_history": 0.4435964822769165,
+        "factual_background": 0.4113140106201172,
+        "legal_issues": 0.5079280734062195,
+        "legal_analysis": 0.41905897855758667,
+        "holdings_and_conclusions": 0.46966552734375,
+        "other": 0.42243170738220215
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_92ab2144_all_chunks.json",
@@ -22425,15 +22425,15 @@
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.5631043314933777,
+      "confidence": 0.5154780745506287,
       "all_scores": {
-        "case_metadata": 0.5631043314933777,
-        "procedural_history": 0.43696218729019165,
-        "factual_background": 0.29571211338043213,
-        "legal_issues": 0.37952691316604614,
-        "legal_analysis": 0.2840910255908966,
-        "holdings_and_conclusions": 0.39593300223350525,
-        "other": 0.21690194308757782
+        "case_metadata": 0.5154780745506287,
+        "procedural_history": 0.4230678677558899,
+        "factual_background": 0.33758169412612915,
+        "legal_issues": 0.2477818727493286,
+        "legal_analysis": 0.3247154653072357,
+        "holdings_and_conclusions": 0.39593303203582764,
+        "other": 0.2903103828430176
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -22840,15 +22840,15 @@
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.6134599447250366,
+      "confidence": 0.5224876403808594,
       "all_scores": {
-        "case_metadata": 0.4355841875076294,
-        "procedural_history": 0.6134599447250366,
-        "factual_background": 0.35125732421875,
-        "legal_issues": 0.3444051742553711,
-        "legal_analysis": 0.31998080015182495,
-        "holdings_and_conclusions": 0.5186705589294434,
-        "other": 0.1636192500591278
+        "case_metadata": 0.5017489790916443,
+        "procedural_history": 0.5224876403808594,
+        "factual_background": 0.40591561794281006,
+        "legal_issues": 0.31124842166900635,
+        "legal_analysis": 0.27152299880981445,
+        "holdings_and_conclusions": 0.5186706185340881,
+        "other": 0.33302438259124756
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -23254,16 +23254,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16901/780-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.49585649371147156,
+      "role": "unclassified",
+      "confidence": 0.47498613595962524,
       "all_scores": {
-        "case_metadata": 0.49585649371147156,
-        "procedural_history": 0.47889578342437744,
-        "factual_background": 0.33424633741378784,
-        "legal_issues": 0.32109010219573975,
-        "legal_analysis": 0.341309130191803,
-        "holdings_and_conclusions": 0.4340776801109314,
-        "other": 0.23481978476047516
+        "case_metadata": 0.4101892113685608,
+        "procedural_history": 0.47498613595962524,
+        "factual_background": 0.31578320264816284,
+        "legal_issues": 0.3517472445964813,
+        "legal_analysis": 0.2753846347332001,
+        "holdings_and_conclusions": 0.43407773971557617,
+        "other": 0.3034989535808563
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -23669,15 +23669,15 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16901/780-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.4531382918357849,
+      "role": "unclassified",
+      "confidence": 0.42905259132385254,
       "all_scores": {
-        "case_metadata": 0.3396298885345459,
-        "procedural_history": 0.4531382918357849,
-        "factual_background": 0.24970635771751404,
-        "legal_issues": 0.25456106662750244,
-        "legal_analysis": 0.30541521310806274,
-        "holdings_and_conclusions": 0.42074012756347656,
+        "case_metadata": 0.35747814178466797,
+        "procedural_history": 0.42905259132385254,
+        "factual_background": 0.2896538972854614,
+        "legal_issues": 0.2825963795185089,
+        "legal_analysis": 0.334505558013916,
+        "holdings_and_conclusions": 0.42074018716812134,
         "other": 0.2832013666629791
       }
     },
@@ -24084,16 +24084,16 @@
     "url": "https://eresources.hcourt.gov.au/getPdf/1/16901/780-1992.pdf?sequence=1&amp;isAllowed=y",
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
-      "role": "holdings_and_conclusions",
-      "confidence": 0.6071511507034302,
+      "role": "procedural_history",
+      "confidence": 0.6289925575256348,
       "all_scores": {
-        "case_metadata": 0.46807944774627686,
-        "procedural_history": 0.5972659587860107,
-        "factual_background": 0.38674429059028625,
-        "legal_issues": 0.3678075075149536,
-        "legal_analysis": 0.3936748504638672,
+        "case_metadata": 0.5163385272026062,
+        "procedural_history": 0.6289925575256348,
+        "factual_background": 0.47699034214019775,
+        "legal_issues": 0.41435348987579346,
+        "legal_analysis": 0.3472514748573303,
         "holdings_and_conclusions": 0.6071511507034302,
-        "other": 0.27038678526878357
+        "other": 0.3360404372215271
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -24500,15 +24500,15 @@
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.7476792931556702,
+      "confidence": 0.7476793527603149,
       "all_scores": {
-        "case_metadata": 0.33620280027389526,
-        "procedural_history": 0.7476792931556702,
-        "factual_background": 0.3859094977378845,
-        "legal_issues": 0.3585054278373718,
-        "legal_analysis": 0.39986374974250793,
+        "case_metadata": 0.3779994249343872,
+        "procedural_history": 0.7476793527603149,
+        "factual_background": 0.33560389280319214,
+        "legal_issues": 0.3718300759792328,
+        "legal_analysis": 0.3600125312805176,
         "holdings_and_conclusions": 0.7344247102737427,
-        "other": 0.11106725037097931
+        "other": 0.38812679052352905
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -24917,13 +24917,13 @@
       "role": "holdings_and_conclusions",
       "confidence": 0.5898929238319397,
       "all_scores": {
-        "case_metadata": 0.46475666761398315,
-        "procedural_history": 0.5529496669769287,
-        "factual_background": 0.41425013542175293,
-        "legal_issues": 0.3434736728668213,
-        "legal_analysis": 0.32307571172714233,
+        "case_metadata": 0.5389825105667114,
+        "procedural_history": 0.553307294845581,
+        "factual_background": 0.4442000389099121,
+        "legal_issues": 0.379239022731781,
+        "legal_analysis": 0.32289403676986694,
         "holdings_and_conclusions": 0.5898929238319397,
-        "other": 0.1893197000026703
+        "other": 0.3873387575149536
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -25330,15 +25330,15 @@
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5569677352905273,
+      "confidence": 0.5337177515029907,
       "all_scores": {
-        "case_metadata": 0.39526915550231934,
-        "procedural_history": 0.5569677352905273,
-        "factual_background": 0.39467641711235046,
-        "legal_issues": 0.3519654870033264,
-        "legal_analysis": 0.3457845449447632,
-        "holdings_and_conclusions": 0.47211307287216187,
-        "other": 0.18801987171173096
+        "case_metadata": 0.4692823886871338,
+        "procedural_history": 0.5337177515029907,
+        "factual_background": 0.45173871517181396,
+        "legal_issues": 0.41437041759490967,
+        "legal_analysis": 0.3779686689376831,
+        "holdings_and_conclusions": 0.47211310267448425,
+        "other": 0.3567144572734833
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -25745,15 +25745,15 @@
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.7275536060333252,
+      "confidence": 0.5580050945281982,
       "all_scores": {
-        "case_metadata": 0.37809300422668457,
-        "procedural_history": 0.7275536060333252,
-        "factual_background": 0.4389689862728119,
-        "legal_issues": 0.4534605145454407,
-        "legal_analysis": 0.4282815754413605,
-        "holdings_and_conclusions": 0.5363976359367371,
-        "other": 0.23049244284629822
+        "case_metadata": 0.5353628396987915,
+        "procedural_history": 0.5580050945281982,
+        "factual_background": 0.42035436630249023,
+        "legal_issues": 0.5038627982139587,
+        "legal_analysis": 0.4172763526439667,
+        "holdings_and_conclusions": 0.5412542223930359,
+        "other": 0.39633992314338684
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -26160,15 +26160,15 @@
     "when_scraped": "2024-09-15T20:57:56.606730+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.48936909437179565,
+      "confidence": 0.626225471496582,
       "all_scores": {
-        "case_metadata": 0.29152727127075195,
-        "procedural_history": 0.48936909437179565,
-        "factual_background": 0.344414621591568,
-        "legal_issues": 0.3222758173942566,
-        "legal_analysis": 0.3231348991394043,
+        "case_metadata": 0.3819168210029602,
+        "procedural_history": 0.626225471496582,
+        "factual_background": 0.485268771648407,
+        "legal_issues": 0.3357088267803192,
+        "legal_analysis": 0.38963770866394043,
         "holdings_and_conclusions": 0.47407689690589905,
-        "other": 0.18402382731437683
+        "other": 0.3300967812538147
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a3b3f446_all_chunks.json",
@@ -26574,16 +26574,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/adfdat/1992/1992ADFDAT01",
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5005976557731628,
+      "role": "unclassified",
+      "confidence": 0.4649008810520172,
       "all_scores": {
-        "case_metadata": 0.5005976557731628,
-        "procedural_history": 0.44161221385002136,
-        "factual_background": 0.3470226526260376,
+        "case_metadata": 0.4649008810520172,
+        "procedural_history": 0.41979801654815674,
+        "factual_background": 0.32250821590423584,
         "legal_issues": 0.271902859210968,
-        "legal_analysis": 0.29059770703315735,
-        "holdings_and_conclusions": 0.37965935468673706,
-        "other": 0.14750462770462036
+        "legal_analysis": 0.2817496359348297,
+        "holdings_and_conclusions": 0.3834626376628876,
+        "other": 0.32963836193084717
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -26990,15 +26990,15 @@
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5134906768798828,
+      "confidence": 0.5290315747261047,
       "all_scores": {
-        "case_metadata": 0.4864840507507324,
-        "procedural_history": 0.5134906768798828,
-        "factual_background": 0.344179630279541,
+        "case_metadata": 0.4543234407901764,
+        "procedural_history": 0.5290315747261047,
+        "factual_background": 0.27961015701293945,
         "legal_issues": 0.346645712852478,
-        "legal_analysis": 0.2971360683441162,
-        "holdings_and_conclusions": 0.45997971296310425,
-        "other": 0.13301235437393188
+        "legal_analysis": 0.27069592475891113,
+        "holdings_and_conclusions": 0.4599796533584595,
+        "other": 0.28014039993286133
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -27404,16 +27404,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/adfdat/1992/1992ADFDAT01",
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.48427659273147583,
+      "role": "unclassified",
+      "confidence": 0.43336614966392517,
       "all_scores": {
-        "case_metadata": 0.48427659273147583,
-        "procedural_history": 0.4016750454902649,
-        "factual_background": 0.29921263456344604,
-        "legal_issues": 0.23358090221881866,
-        "legal_analysis": 0.22716349363327026,
-        "holdings_and_conclusions": 0.3042539358139038,
-        "other": 0.14805392920970917
+        "case_metadata": 0.43336614966392517,
+        "procedural_history": 0.36253494024276733,
+        "factual_background": 0.2540341019630432,
+        "legal_issues": 0.2383037805557251,
+        "legal_analysis": 0.2349160611629486,
+        "holdings_and_conclusions": 0.34353524446487427,
+        "other": 0.24542303383350372
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -27819,16 +27819,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/adfdat/1992/1992ADFDAT01",
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5631270408630371,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5364345908164978,
       "all_scores": {
-        "case_metadata": 0.36533188819885254,
-        "procedural_history": 0.5631270408630371,
-        "factual_background": 0.4725375175476074,
-        "legal_issues": 0.38621705770492554,
-        "legal_analysis": 0.34250408411026,
-        "holdings_and_conclusions": 0.5364346504211426,
-        "other": 0.16957157850265503
+        "case_metadata": 0.40018439292907715,
+        "procedural_history": 0.48308849334716797,
+        "factual_background": 0.383586049079895,
+        "legal_issues": 0.3808131814002991,
+        "legal_analysis": 0.3425041437149048,
+        "holdings_and_conclusions": 0.5364345908164978,
+        "other": 0.29646915197372437
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -28234,16 +28234,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/adfdat/1992/1992ADFDAT01",
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5324674248695374,
+      "role": "unclassified",
+      "confidence": 0.47976064682006836,
       "all_scores": {
-        "case_metadata": 0.4351767301559448,
-        "procedural_history": 0.46894770860671997,
-        "factual_background": 0.3441781997680664,
-        "legal_issues": 0.41917791962623596,
-        "legal_analysis": 0.5324674248695374,
-        "holdings_and_conclusions": 0.4528340995311737,
-        "other": 0.16630622744560242
+        "case_metadata": 0.47976064682006836,
+        "procedural_history": 0.47340288758277893,
+        "factual_background": 0.3721467852592468,
+        "legal_issues": 0.44498032331466675,
+        "legal_analysis": 0.45805123448371887,
+        "holdings_and_conclusions": 0.4528340697288513,
+        "other": 0.34070563316345215
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -28650,15 +28650,15 @@
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.5146375894546509,
+      "confidence": 0.5146375298500061,
       "all_scores": {
-        "case_metadata": 0.35182660818099976,
-        "procedural_history": 0.5054424405097961,
-        "factual_background": 0.36629414558410645,
-        "legal_issues": 0.4072064161300659,
-        "legal_analysis": 0.38908183574676514,
-        "holdings_and_conclusions": 0.5146375894546509,
-        "other": 0.1595139503479004
+        "case_metadata": 0.469807893037796,
+        "procedural_history": 0.4627998471260071,
+        "factual_background": 0.3634149730205536,
+        "legal_issues": 0.3825141191482544,
+        "legal_analysis": 0.3890818655490875,
+        "holdings_and_conclusions": 0.5146375298500061,
+        "other": 0.3962746858596802
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -29065,15 +29065,15 @@
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.42377233505249023,
+      "confidence": 0.41390156745910645,
       "all_scores": {
-        "case_metadata": 0.3079336881637573,
-        "procedural_history": 0.3742217421531677,
-        "factual_background": 0.3625844717025757,
-        "legal_issues": 0.42377233505249023,
-        "legal_analysis": 0.35068291425704956,
-        "holdings_and_conclusions": 0.35755404829978943,
-        "other": 0.2021573781967163
+        "case_metadata": 0.3535941243171692,
+        "procedural_history": 0.41390156745910645,
+        "factual_background": 0.3750428259372711,
+        "legal_issues": 0.381991446018219,
+        "legal_analysis": 0.35068297386169434,
+        "holdings_and_conclusions": 0.3984878659248352,
+        "other": 0.2627577781677246
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -29480,15 +29480,15 @@
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.46970200538635254,
+      "confidence": 0.5033264756202698,
       "all_scores": {
-        "case_metadata": 0.3312039375305176,
-        "procedural_history": 0.4537390172481537,
-        "factual_background": 0.2948604226112366,
-        "legal_issues": 0.4222725033760071,
-        "legal_analysis": 0.3700847029685974,
-        "holdings_and_conclusions": 0.46970200538635254,
-        "other": 0.15945786237716675
+        "case_metadata": 0.3635489344596863,
+        "procedural_history": 0.485869824886322,
+        "factual_background": 0.3351653814315796,
+        "legal_issues": 0.3532840311527252,
+        "legal_analysis": 0.3701135516166687,
+        "holdings_and_conclusions": 0.5033264756202698,
+        "other": 0.28778672218322754
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -29894,16 +29894,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/adfdat/1992/1992ADFDAT01",
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.49442335963249207,
+      "role": "unclassified",
+      "confidence": 0.48639756441116333,
       "all_scores": {
-        "case_metadata": 0.3730939030647278,
-        "procedural_history": 0.49442335963249207,
-        "factual_background": 0.4613775610923767,
-        "legal_issues": 0.46235379576683044,
-        "legal_analysis": 0.44489988684654236,
-        "holdings_and_conclusions": 0.45756497979164124,
-        "other": 0.21916481852531433
+        "case_metadata": 0.43329980969429016,
+        "procedural_history": 0.48639756441116333,
+        "factual_background": 0.42547017335891724,
+        "legal_issues": 0.4680255055427551,
+        "legal_analysis": 0.44489991664886475,
+        "holdings_and_conclusions": 0.48337167501449585,
+        "other": 0.3676578998565674
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -30309,16 +30309,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/adfdat/1992/1992ADFDAT01",
     "when_scraped": "2024-09-14T06:28:02.525845+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.6107713580131531,
+      "role": "unclassified",
+      "confidence": 0.48394280672073364,
       "all_scores": {
-        "case_metadata": 0.3964630961418152,
-        "procedural_history": 0.6107713580131531,
-        "factual_background": 0.43036699295043945,
-        "legal_issues": 0.4208034873008728,
-        "legal_analysis": 0.4878615140914917,
-        "holdings_and_conclusions": 0.4432687759399414,
-        "other": 0.25827330350875854
+        "case_metadata": 0.4377349019050598,
+        "procedural_history": 0.48049986362457275,
+        "factual_background": 0.44113731384277344,
+        "legal_issues": 0.4444279670715332,
+        "legal_analysis": 0.4322839677333832,
+        "holdings_and_conclusions": 0.48394280672073364,
+        "other": 0.3600056767463684
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_a9bf4b0e_all_chunks.json",
@@ -30724,16 +30724,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.450781911611557,
+      "role": "unclassified",
+      "confidence": 0.420369952917099,
       "all_scores": {
-        "case_metadata": 0.450781911611557,
-        "procedural_history": 0.42393428087234497,
-        "factual_background": 0.3335411548614502,
-        "legal_issues": 0.31475815176963806,
-        "legal_analysis": 0.2560115456581116,
+        "case_metadata": 0.4153996706008911,
+        "procedural_history": 0.420369952917099,
+        "factual_background": 0.3478096127510071,
+        "legal_issues": 0.3330349922180176,
+        "legal_analysis": 0.25175654888153076,
         "holdings_and_conclusions": 0.4150802493095398,
-        "other": 0.25078725814819336
+        "other": 0.29601502418518066
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -31140,15 +31140,15 @@
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.43178021907806396,
+      "confidence": 0.4317801892757416,
       "all_scores": {
-        "case_metadata": 0.33560192584991455,
-        "procedural_history": 0.43178021907806396,
-        "factual_background": 0.28651243448257446,
-        "legal_issues": 0.2365572303533554,
-        "legal_analysis": 0.2836334705352783,
-        "holdings_and_conclusions": 0.41036519408226013,
-        "other": 0.2235882431268692
+        "case_metadata": 0.3627379536628723,
+        "procedural_history": 0.4317801892757416,
+        "factual_background": 0.33671921491622925,
+        "legal_issues": 0.3170490264892578,
+        "legal_analysis": 0.23516187071800232,
+        "holdings_and_conclusions": 0.4103652834892273,
+        "other": 0.22358815371990204
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -31554,16 +31554,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.49114155769348145,
+      "role": "unclassified",
+      "confidence": 0.45898348093032837,
       "all_scores": {
-        "case_metadata": 0.37513408064842224,
-        "procedural_history": 0.49114155769348145,
-        "factual_background": 0.31118112802505493,
-        "legal_issues": 0.27770233154296875,
-        "legal_analysis": 0.3431031107902527,
-        "holdings_and_conclusions": 0.39058300852775574,
-        "other": 0.13701076805591583
+        "case_metadata": 0.371491938829422,
+        "procedural_history": 0.45898348093032837,
+        "factual_background": 0.37267783284187317,
+        "legal_issues": 0.2813035547733307,
+        "legal_analysis": 0.24844345450401306,
+        "holdings_and_conclusions": 0.3905830681324005,
+        "other": 0.26211026310920715
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -31970,15 +31970,15 @@
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3661239445209503,
+      "confidence": 0.416830837726593,
       "all_scores": {
-        "case_metadata": 0.2749740183353424,
-        "procedural_history": 0.3661239445209503,
-        "factual_background": 0.35480421781539917,
-        "legal_issues": 0.35359930992126465,
-        "legal_analysis": 0.35460585355758667,
-        "holdings_and_conclusions": 0.345477819442749,
-        "other": 0.22010907530784607
+        "case_metadata": 0.3345445990562439,
+        "procedural_history": 0.416830837726593,
+        "factual_background": 0.3791341781616211,
+        "legal_issues": 0.3679697513580322,
+        "legal_analysis": 0.3316962718963623,
+        "holdings_and_conclusions": 0.38913559913635254,
+        "other": 0.2562972903251648
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -32385,14 +32385,14 @@
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.533779501914978,
+      "confidence": 0.533444881439209,
       "all_scores": {
-        "case_metadata": 0.3131733536720276,
-        "procedural_history": 0.533779501914978,
-        "factual_background": 0.3348187208175659,
-        "legal_issues": 0.3345394730567932,
-        "legal_analysis": 0.3620401620864868,
-        "holdings_and_conclusions": 0.41236406564712524,
+        "case_metadata": 0.3255285322666168,
+        "procedural_history": 0.533444881439209,
+        "factual_background": 0.3911861181259155,
+        "legal_issues": 0.3757118880748749,
+        "legal_analysis": 0.299782931804657,
+        "holdings_and_conclusions": 0.44875800609588623,
         "other": 0.2928270101547241
       }
     },
@@ -32799,16 +32799,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5652462840080261,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5564990639686584,
       "all_scores": {
-        "case_metadata": 0.3541613221168518,
-        "procedural_history": 0.5652462840080261,
-        "factual_background": 0.353509783744812,
-        "legal_issues": 0.31568044424057007,
-        "legal_analysis": 0.42985957860946655,
-        "holdings_and_conclusions": 0.5564990043640137,
-        "other": 0.16480450332164764
+        "case_metadata": 0.37381434440612793,
+        "procedural_history": 0.505043089389801,
+        "factual_background": 0.3659166097640991,
+        "legal_issues": 0.4522969722747803,
+        "legal_analysis": 0.3879881799221039,
+        "holdings_and_conclusions": 0.5564990639686584,
+        "other": 0.33358579874038696
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -33217,13 +33217,13 @@
       "role": "procedural_history",
       "confidence": 0.7409241199493408,
       "all_scores": {
-        "case_metadata": 0.4667520225048065,
+        "case_metadata": 0.45770859718322754,
         "procedural_history": 0.7409241199493408,
-        "factual_background": 0.39432579278945923,
-        "legal_issues": 0.3413887917995453,
-        "legal_analysis": 0.4254111051559448,
-        "holdings_and_conclusions": 0.6417018175125122,
-        "other": 0.16992498934268951
+        "factual_background": 0.3543715476989746,
+        "legal_issues": 0.37473660707473755,
+        "legal_analysis": 0.33822953701019287,
+        "holdings_and_conclusions": 0.641701877117157,
+        "other": 0.4241243004798889
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -33632,13 +33632,13 @@
       "role": "procedural_history",
       "confidence": 0.661163330078125,
       "all_scores": {
-        "case_metadata": 0.33373919129371643,
+        "case_metadata": 0.3966439366340637,
         "procedural_history": 0.661163330078125,
-        "factual_background": 0.38285031914711,
-        "legal_issues": 0.3545709252357483,
-        "legal_analysis": 0.37180519104003906,
-        "holdings_and_conclusions": 0.549465000629425,
-        "other": 0.16017493605613708
+        "factual_background": 0.5232628583908081,
+        "legal_issues": 0.4993153214454651,
+        "legal_analysis": 0.4551575779914856,
+        "holdings_and_conclusions": 0.5494650602340698,
+        "other": 0.4575313925743103
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -34044,16 +34044,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
-      "role": "legal_issues",
-      "confidence": 0.4760390520095825,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5053279399871826,
       "all_scores": {
-        "case_metadata": 0.41272422671318054,
-        "procedural_history": 0.4367472529411316,
-        "factual_background": 0.42612385749816895,
-        "legal_issues": 0.4760390520095825,
-        "legal_analysis": 0.3931970000267029,
-        "holdings_and_conclusions": 0.4641278386116028,
-        "other": 0.18046948313713074
+        "case_metadata": 0.41332995891571045,
+        "procedural_history": 0.4048997163772583,
+        "factual_background": 0.40178728103637695,
+        "legal_issues": 0.47603902220726013,
+        "legal_analysis": 0.4880330264568329,
+        "holdings_and_conclusions": 0.5053279399871826,
+        "other": 0.31587010622024536
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -34459,16 +34459,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
     "when_scraped": "2024-09-15T15:07:57.104243+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5105023384094238,
+      "role": "legal_analysis",
+      "confidence": 0.5726195573806763,
       "all_scores": {
-        "case_metadata": 0.3702777028083801,
-        "procedural_history": 0.5105023384094238,
-        "factual_background": 0.42144930362701416,
-        "legal_issues": 0.40545400977134705,
-        "legal_analysis": 0.47556328773498535,
-        "holdings_and_conclusions": 0.45113134384155273,
-        "other": 0.1551036536693573
+        "case_metadata": 0.4303780794143677,
+        "procedural_history": 0.4943499267101288,
+        "factual_background": 0.41707730293273926,
+        "legal_issues": 0.47539234161376953,
+        "legal_analysis": 0.5726195573806763,
+        "holdings_and_conclusions": 0.45791590213775635,
+        "other": 0.4062001705169678
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_caf4830a_all_chunks.json",
@@ -34874,16 +34874,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5770269632339478,
+      "role": "unclassified",
+      "confidence": 0.4807124435901642,
       "all_scores": {
-        "case_metadata": 0.5770269632339478,
-        "procedural_history": 0.4503377377986908,
-        "factual_background": 0.365100622177124,
-        "legal_issues": 0.3313337564468384,
-        "legal_analysis": 0.28911465406417847,
-        "holdings_and_conclusions": 0.4067709147930145,
-        "other": 0.1472296416759491
+        "case_metadata": 0.4807124435901642,
+        "procedural_history": 0.4370248317718506,
+        "factual_background": 0.36427974700927734,
+        "legal_issues": 0.331333726644516,
+        "legal_analysis": 0.304363489151001,
+        "holdings_and_conclusions": 0.44232842326164246,
+        "other": 0.3375677466392517
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -35289,16 +35289,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.5550272464752197,
+      "role": "unclassified",
+      "confidence": 0.49217891693115234,
       "all_scores": {
-        "case_metadata": 0.5550272464752197,
-        "procedural_history": 0.42700493335723877,
-        "factual_background": 0.3676883578300476,
-        "legal_issues": 0.4245278537273407,
-        "legal_analysis": 0.4144851863384247,
-        "holdings_and_conclusions": 0.4079526662826538,
-        "other": 0.18879689276218414
+        "case_metadata": 0.461271733045578,
+        "procedural_history": 0.4195781648159027,
+        "factual_background": 0.4112953543663025,
+        "legal_issues": 0.4738559424877167,
+        "legal_analysis": 0.4148659110069275,
+        "holdings_and_conclusions": 0.49217891693115234,
+        "other": 0.4051446318626404
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -35704,16 +35704,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.48691225051879883,
+      "role": "unclassified",
+      "confidence": 0.49054086208343506,
       "all_scores": {
-        "case_metadata": 0.48691225051879883,
-        "procedural_history": 0.4795364737510681,
-        "factual_background": 0.32067593932151794,
+        "case_metadata": 0.47000062465667725,
+        "procedural_history": 0.4795365631580353,
+        "factual_background": 0.3076193630695343,
         "legal_issues": 0.33758753538131714,
-        "legal_analysis": 0.3249588906764984,
-        "holdings_and_conclusions": 0.4348878860473633,
-        "other": 0.10120975971221924
+        "legal_analysis": 0.3243325352668762,
+        "holdings_and_conclusions": 0.49054086208343506,
+        "other": 0.3557632863521576
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -36120,15 +36120,15 @@
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.41117095947265625,
+      "confidence": 0.42929500341415405,
       "all_scores": {
-        "case_metadata": 0.41117095947265625,
-        "procedural_history": 0.3505268692970276,
-        "factual_background": 0.24969902634620667,
-        "legal_issues": 0.3361142873764038,
-        "legal_analysis": 0.28098514676094055,
-        "holdings_and_conclusions": 0.37180083990097046,
-        "other": 0.16924580931663513
+        "case_metadata": 0.37796908617019653,
+        "procedural_history": 0.37197843194007874,
+        "factual_background": 0.3293209373950958,
+        "legal_issues": 0.42929500341415405,
+        "legal_analysis": 0.34711241722106934,
+        "holdings_and_conclusions": 0.37180089950561523,
+        "other": 0.27549633383750916
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -36534,16 +36534,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4445887804031372,
+      "role": "procedural_history",
+      "confidence": 0.5353779196739197,
       "all_scores": {
-        "case_metadata": 0.4081820845603943,
-        "procedural_history": 0.4445887804031372,
-        "factual_background": 0.2674514055252075,
-        "legal_issues": 0.3220720887184143,
-        "legal_analysis": 0.2996823787689209,
-        "holdings_and_conclusions": 0.3328617811203003,
-        "other": 0.15389910340309143
+        "case_metadata": 0.3333726227283478,
+        "procedural_history": 0.5353779196739197,
+        "factual_background": 0.31460869312286377,
+        "legal_issues": 0.35964977741241455,
+        "legal_analysis": 0.2893381118774414,
+        "holdings_and_conclusions": 0.3934739828109741,
+        "other": 0.26371365785598755
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -36952,13 +36952,13 @@
       "role": "procedural_history",
       "confidence": 0.5094842910766602,
       "all_scores": {
-        "case_metadata": 0.3932044804096222,
+        "case_metadata": 0.3245120644569397,
         "procedural_history": 0.5094842910766602,
-        "factual_background": 0.3026576638221741,
-        "legal_issues": 0.27606844902038574,
-        "legal_analysis": 0.3250809609889984,
-        "holdings_and_conclusions": 0.3860502243041992,
-        "other": 0.12998443841934204
+        "factual_background": 0.3582117557525635,
+        "legal_issues": 0.28905975818634033,
+        "legal_analysis": 0.327243834733963,
+        "holdings_and_conclusions": 0.42319023609161377,
+        "other": 0.3948327898979187
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -37364,16 +37364,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1098.pdf",
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.42092031240463257,
+      "role": "legal_issues",
+      "confidence": 0.5460159778594971,
       "all_scores": {
-        "case_metadata": 0.3598105311393738,
-        "procedural_history": 0.4187479019165039,
-        "factual_background": 0.3605116605758667,
-        "legal_issues": 0.42092031240463257,
-        "legal_analysis": 0.39771315455436707,
-        "holdings_and_conclusions": 0.38128307461738586,
-        "other": 0.25001659989356995
+        "case_metadata": 0.420025110244751,
+        "procedural_history": 0.4383774697780609,
+        "factual_background": 0.4288956820964813,
+        "legal_issues": 0.5460159778594971,
+        "legal_analysis": 0.40813079476356506,
+        "holdings_and_conclusions": 0.5302696824073792,
+        "other": 0.37741389870643616
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",
@@ -37780,15 +37780,15 @@
     "when_scraped": "2024-09-13T23:17:40.900065+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5054277181625366,
+      "confidence": 0.52936851978302,
       "all_scores": {
-        "case_metadata": 0.39690354466438293,
-        "procedural_history": 0.5054277181625366,
-        "factual_background": 0.3710649907588959,
-        "legal_issues": 0.4354114532470703,
-        "legal_analysis": 0.4172910451889038,
-        "holdings_and_conclusions": 0.4674442410469055,
-        "other": 0.20744793117046356
+        "case_metadata": 0.4406040906906128,
+        "procedural_history": 0.52936851978302,
+        "factual_background": 0.43779006600379944,
+        "legal_issues": 0.44404730200767517,
+        "legal_analysis": 0.4696221351623535,
+        "holdings_and_conclusions": 0.501407265663147,
+        "other": 0.3644700050354004
       }
     },
     "all_chunks_path": "chunks\\dataset=decision\\decision\\commonwealth\\1992\\decision_commonwealth_1992_d5334388_all_chunks.json",

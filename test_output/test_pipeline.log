@@ -6761,3 +6761,2427 @@ Response headers:
 2026-02-12 13:43:15,943 - __main__ - INFO - Documents processed: 10
 2026-02-12 13:43:15,944 - __main__ - INFO - Total chunks: 484
 2026-02-12 13:43:15,944 - __main__ - INFO - all_chunks files saved: 10
+2026-02-12 14:36:13,476 - __main__ - INFO - Starting Test Pipeline (UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER)
+2026-02-12 14:36:13,477 - __main__ - INFO - ================================================================================
+2026-02-12 14:36:13,478 - __main__ - INFO - TEST PIPELINE - UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER
+2026-02-12 14:36:13,478 - __main__ - INFO - ================================================================================
+2026-02-12 14:36:13,478 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 14:36:13,478 - __main__ - INFO - Initializing ADLS connection...
+2026-02-12 14:36:13,478 - core.adls_fetcher - INFO - Initializing ADLS connection: account=ausmasterdb, container=raw
+2026-02-12 14:36:13,544 - core.adls_fetcher - INFO - ADLS connection established successfully
+2026-02-12 14:36:13,545 - __main__ - INFO - Initializing text processors...
+2026-02-12 14:36:13,546 - core.semantic_chunker - INFO - Loading sentence transformer model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:36:13,547 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 14:36:13,548 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:36:15,709 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:15,728 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:15,979 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:16,005 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:16,255 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:16,256 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-12 14:36:16,279 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:16,535 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:16,551 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 14:36:16,802 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:16,822 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:17,404 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:17,429 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:17,698 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 14:36:20,697 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:20,715 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:21,462 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:21,480 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:21,739 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:21,756 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:22,023 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 14:36:23,141 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 14:36:24,166 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:24,184 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:24,456 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 14:36:24,472 - core.semantic_chunker - INFO - Model loaded successfully
+2026-02-12 14:36:24,473 - core.semantic_chunker - INFO - SemanticChunker initialized with threshold=0.8, min_sentences=2, max_sentences=10
+2026-02-12 14:36:24,474 - __main__ - INFO - Using embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:36:24,474 - __main__ - INFO - Initializing Embedding-Based Role Classifier...
+2026-02-12 14:36:24,474 - __main__ - INFO - Method: embedding
+2026-02-12 14:36:24,474 - core.role_classifier_embedding - INFO - Creating embedding-based classifier with model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:36:24,474 - core.role_classifier_embedding - INFO - Confidence threshold: 0.45
+2026-02-12 14:36:24,474 - core.role_classifier_embedding - INFO - Aggregation method: max
+2026-02-12 14:36:24,474 - core.role_classifier_embedding - INFO - Initializing EmbeddingRoleClassifier with 7 roles
+2026-02-12 14:36:24,474 - core.role_classifier_embedding - INFO - Roles: ['case_metadata', 'procedural_history', 'factual_background', 'legal_issues', 'legal_analysis', 'holdings_and_conclusions', 'other']
+2026-02-12 14:36:24,474 - core.role_classifier_embedding - INFO - Confidence threshold: 0.45
+2026-02-12 14:36:24,476 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 14:36:24,476 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:36:25,379 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:25,401 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:25,654 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:25,675 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:25,931 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:25,948 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:26,204 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:26,224 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 14:36:26,483 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:26,502 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:26,749 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:26,769 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:27,020 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 14:36:30,023 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:30,046 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:30,436 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:30,455 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:32,151 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:32,166 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:32,834 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 14:36:34,201 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 14:36:36,176 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:36:36,196 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 14:36:36,456 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 14:36:36,462 - core.role_classifier_embedding - INFO - Loaded embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:36:36,462 - core.role_classifier_embedding - INFO - Computing role description embeddings...
+2026-02-12 14:36:37,370 - core.role_classifier_embedding - INFO - Role embeddings computed successfully
+2026-02-12 14:36:37,371 - __main__ - INFO - Role Classifier initialized successfully
+2026-02-12 14:36:37,372 - __main__ - INFO -   Number of roles: 7
+2026-02-12 14:36:37,372 - __main__ - INFO -   Confidence threshold: 0.45
+2026-02-12 14:36:37,372 - __main__ - INFO -   Aggregation method: max
+2026-02-12 14:36:37,373 - __main__ - INFO - Test pipeline initialized successfully
+2026-02-12 14:36:37,373 - __main__ - INFO - 
+================================================================================
+2026-02-12 14:36:37,374 - __main__ - INFO - STAGE 1: FETCHING DOCUMENTS FROM ADLS
+2026-02-12 14:36:37,374 - __main__ - INFO - ================================================================================
+2026-02-12 14:36:37,375 - core.adls_fetcher - INFO - Listing files in path: newapp/dataset=decision/decision/commonwealth/1992, pattern: *.json, recursive: True
+2026-02-12 14:36:37,378 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.dfs.core.windows.net/raw?resource=REDACTED&directory=REDACTED&recursive=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '22dfbdce-07f2-11f1-a1ab-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:39,786 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json;charset=utf-8'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'c2ce5147-101f-001c-12fe-9bdfa4000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '22dfbdce-07f2-11f1-a1ab-880a048c7ae7'
+    'Date': 'Thu, 12 Feb 2026 09:06:38 GMT'
+2026-02-12 14:36:39,789 - core.adls_fetcher - INFO - Found 13 files matching pattern
+2026-02-12 14:36:39,790 - core.adls_fetcher - INFO - Limiting to 10 files (out of 13)
+2026-02-12 14:36:39,791 - core.adls_fetcher - INFO - Reading 10 files from ADLS
+2026-02-12 14:36:39,794 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '245094e6-07f2-11f1-903e-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:42,940 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '3660'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:18 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB60133C8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef30fc7-401e-002e-2ffe-9bdfd3000000'
+    'x-ms-client-request-id': '245094e6-07f2-11f1-903e-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:41 GMT'
+2026-02-12 14:36:42,944 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '263141eb-07f2-11f1-ab91-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:43,718 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '2279'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:06 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CAEC64F88"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef3112e-401e-002e-69fe-9bdfd3000000'
+    'x-ms-client-request-id': '263141eb-07f2-11f1-ab91-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:42 GMT'
+2026-02-12 14:36:43,722 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '26a7fdf0-07f2-11f1-8758-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:44,507 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4522'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:17 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB592B68C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef3127f-401e-002e-13fe-9bdfd3000000'
+    'x-ms-client-request-id': '26a7fdf0-07f2-11f1-8758-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:43 GMT'
+2026-02-12 14:36:44,513 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_81575e74.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2720ba98-07f2-11f1-9c4e-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:45,104 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '52092'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:49 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA48DE428"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef31412-401e-002e-6ffe-9bdfd3000000'
+    'x-ms-client-request-id': '2720ba98-07f2-11f1-9c4e-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:44 GMT'
+2026-02-12 14:36:46,139 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2818e17d-07f2-11f1-8117-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:46,959 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '11507'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:14 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3765280"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef317e4-401e-002e-0bfe-9bdfd3000000'
+    'x-ms-client-request-id': '2818e17d-07f2-11f1-8117-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:45 GMT'
+2026-02-12 14:36:46,964 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2896cbbf-07f2-11f1-80fd-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:47,231 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '17239'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:45 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA2862404"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef31967-401e-002e-58fe-9bdfd3000000'
+    'x-ms-client-request-id': '2896cbbf-07f2-11f1-80fd-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:46 GMT'
+2026-02-12 14:36:47,233 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a3b3f446.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '28bfcf4c-07f2-11f1-bb80-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:47,441 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '42760'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:13 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3035ED8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef319fb-401e-002e-62fe-9bdfd3000000'
+    'x-ms-client-request-id': '28bfcf4c-07f2-11f1-bb80-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:46 GMT'
+2026-02-12 14:36:49,669 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a9bf4b0e.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2a3372f2-07f2-11f1-ac02-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:51,186 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '59967'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:12 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB26DAF40"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef31e15-401e-002e-7ffe-9bdfd3000000'
+    'x-ms-client-request-id': '2a3372f2-07f2-11f1-ac02-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:49 GMT'
+2026-02-12 14:36:52,422 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2bd78955-07f2-11f1-bb49-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:53,125 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4255'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:22 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB8958B0C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef3245e-401e-002e-43fe-9bdfd3000000'
+    'x-ms-client-request-id': '2bd78955-07f2-11f1-bb49-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:51 GMT'
+2026-02-12 14:36:53,129 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_d5334388.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2c435d01-07f2-11f1-8897-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:36:54,001 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '5055'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA7D195F4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aef325d1-401e-002e-0afe-9bdfd3000000'
+    'x-ms-client-request-id': '2c435d01-07f2-11f1-8897-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:06:52 GMT'
+2026-02-12 14:36:54,003 - core.adls_fetcher - INFO - Successfully read 10 documents
+2026-02-12 14:36:54,003 - __main__ - INFO - Fetched 10 documents in 16.63s
+2026-02-12 14:36:54,003 - __main__ - INFO - 
+================================================================================
+2026-02-12 14:36:54,004 - __main__ - INFO - STAGE 2: PROCESSING DOCUMENTS
+2026-02-12 14:36:54,004 - __main__ - INFO - ================================================================================
+2026-02-12 14:36:54,005 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3143 chars
+2026-02-12 14:36:54,005 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3123 chars (0.6% reduction)
+2026-02-12 14:36:54,006 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3123 chars
+2026-02-12 14:36:54,160 - core.semantic_chunker - INFO - Extracted 20 sentences
+2026-02-12 14:36:54,772 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5644, Min: 0.4399, Max: 0.8194
+2026-02-12 14:36:54,773 - core.semantic_chunker - INFO - Semantic chunking complete. Created 9 chunks, skipped 1 small chunks
+2026-02-12 14:36:54,774 - core.role_classifier_embedding - INFO - Classifying 9 chunks...
+2026-02-12 14:36:55,062 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 14:36:55,063 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 14:36:55,064 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 6 (66.7%)
+2026-02-12 14:36:55,065 - core.role_classifier_embedding - INFO -   unclassified: 2 (22.2%)
+2026-02-12 14:36:55,065 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (11.1%)
+2026-02-12 14:36:55,067 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 1822 chars
+2026-02-12 14:36:55,069 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 1801 chars (1.2% reduction)
+2026-02-12 14:36:55,069 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 1801 chars
+2026-02-12 14:36:55,181 - core.semantic_chunker - INFO - Extracted 11 sentences
+2026-02-12 14:36:55,485 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7238, Min: 0.5292, Max: 0.8142
+2026-02-12 14:36:55,486 - core.semantic_chunker - INFO - Semantic chunking complete. Created 5 chunks, skipped 0 small chunks
+2026-02-12 14:36:55,487 - core.role_classifier_embedding - INFO - Classifying 5 chunks...
+2026-02-12 14:36:55,662 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 14:36:55,662 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 14:36:55,663 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 3 (60.0%)
+2026-02-12 14:36:55,663 - core.role_classifier_embedding - INFO -   procedural_history: 2 (40.0%)
+2026-02-12 14:36:55,664 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3895 chars
+2026-02-12 14:36:55,665 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3829 chars (1.7% reduction)
+2026-02-12 14:36:55,666 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3829 chars
+2026-02-12 14:36:55,775 - core.semantic_chunker - INFO - Extracted 30 sentences
+2026-02-12 14:36:56,556 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5062, Min: 0.1369, Max: 0.8331
+2026-02-12 14:36:56,557 - core.semantic_chunker - INFO - Semantic chunking complete. Created 14 chunks, skipped 1 small chunks
+2026-02-12 14:36:56,559 - core.role_classifier_embedding - INFO - Classifying 14 chunks...
+2026-02-12 14:36:56,889 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 14:36:56,889 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 14:36:56,890 - core.role_classifier_embedding - INFO -   unclassified: 5 (35.7%)
+2026-02-12 14:36:56,890 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (28.6%)
+2026-02-12 14:36:56,891 - core.role_classifier_embedding - INFO -   procedural_history: 2 (14.3%)
+2026-02-12 14:36:56,891 - core.role_classifier_embedding - INFO -   case_metadata: 2 (14.3%)
+2026-02-12 14:36:56,892 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (7.1%)
+2026-02-12 14:36:56,893 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 51254 chars
+2026-02-12 14:36:56,903 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 50826 chars (0.8% reduction)
+2026-02-12 14:36:56,904 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 50826 chars
+2026-02-12 14:36:57,082 - core.semantic_chunker - INFO - Extracted 292 sentences
+2026-02-12 14:37:03,827 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3742, Min: -0.0383, Max: 0.9358
+2026-02-12 14:37:03,828 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 15 small chunks
+2026-02-12 14:37:03,831 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 14:37:09,818 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 14:37:09,819 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 14:37:09,819 - core.role_classifier_embedding - INFO -   unclassified: 50 (38.5%)
+2026-02-12 14:37:09,820 - core.role_classifier_embedding - INFO -   legal_analysis: 32 (24.6%)
+2026-02-12 14:37:09,820 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 20 (15.4%)
+2026-02-12 14:37:09,820 - core.role_classifier_embedding - INFO -   factual_background: 13 (10.0%)
+2026-02-12 14:37:09,821 - core.role_classifier_embedding - INFO -   procedural_history: 11 (8.5%)
+2026-02-12 14:37:09,822 - core.role_classifier_embedding - INFO -   case_metadata: 3 (2.3%)
+2026-02-12 14:37:09,822 - core.role_classifier_embedding - INFO -   legal_issues: 1 (0.8%)
+2026-02-12 14:37:09,823 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 10737 chars
+2026-02-12 14:37:09,826 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 10636 chars (0.9% reduction)
+2026-02-12 14:37:09,826 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 10636 chars
+2026-02-12 14:37:09,946 - core.semantic_chunker - INFO - Extracted 49 sentences
+2026-02-12 14:37:13,082 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3928, Min: 0.1491, Max: 1.0000
+2026-02-12 14:37:13,083 - core.semantic_chunker - INFO - Semantic chunking complete. Created 23 chunks, skipped 1 small chunks
+2026-02-12 14:37:13,086 - core.role_classifier_embedding - INFO - Classifying 23 chunks...
+2026-02-12 14:37:14,458 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 14:37:14,459 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 14:37:14,459 - core.role_classifier_embedding - INFO -   unclassified: 17 (73.9%)
+2026-02-12 14:37:14,460 - core.role_classifier_embedding - INFO -   procedural_history: 3 (13.0%)
+2026-02-12 14:37:14,460 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (8.7%)
+2026-02-12 14:37:14,461 - core.role_classifier_embedding - INFO -   legal_issues: 1 (4.3%)
+2026-02-12 14:37:14,462 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 16134 chars
+2026-02-12 14:37:14,464 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 15983 chars (0.9% reduction)
+2026-02-12 14:37:14,465 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 15983 chars
+2026-02-12 14:37:14,591 - core.semantic_chunker - INFO - Extracted 58 sentences
+2026-02-12 14:37:17,997 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5039, Min: 0.2002, Max: 0.9538
+2026-02-12 14:37:17,998 - core.semantic_chunker - INFO - Semantic chunking complete. Created 27 chunks, skipped 1 small chunks
+2026-02-12 14:37:17,999 - core.role_classifier_embedding - INFO - Classifying 27 chunks...
+2026-02-12 14:37:19,619 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 14:37:19,619 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 14:37:19,620 - core.role_classifier_embedding - INFO -   unclassified: 12 (44.4%)
+2026-02-12 14:37:19,620 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 7 (25.9%)
+2026-02-12 14:37:19,621 - core.role_classifier_embedding - INFO -   legal_analysis: 4 (14.8%)
+2026-02-12 14:37:19,621 - core.role_classifier_embedding - INFO -   legal_issues: 4 (14.8%)
+2026-02-12 14:37:19,622 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 41095 chars
+2026-02-12 14:37:19,631 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 40619 chars (1.2% reduction)
+2026-02-12 14:37:19,631 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 40619 chars
+2026-02-12 14:37:19,776 - core.semantic_chunker - INFO - Extracted 290 sentences
+2026-02-12 14:37:25,356 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4492, Min: 0.0856, Max: 0.8629
+2026-02-12 14:37:25,357 - core.semantic_chunker - INFO - Semantic chunking complete. Created 128 chunks, skipped 17 small chunks
+2026-02-12 14:37:25,361 - core.role_classifier_embedding - INFO - Classifying 128 chunks...
+2026-02-12 14:58:42,561 - __main__ - INFO - Starting Test Pipeline (UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER)
+2026-02-12 14:58:42,573 - __main__ - INFO - ================================================================================
+2026-02-12 14:58:42,573 - __main__ - INFO - TEST PIPELINE - UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER
+2026-02-12 14:58:42,573 - __main__ - INFO - ================================================================================
+2026-02-12 14:58:42,573 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 14:58:42,573 - __main__ - INFO - Initializing ADLS connection...
+2026-02-12 14:58:42,573 - core.adls_fetcher - INFO - Initializing ADLS connection: account=ausmasterdb, container=raw
+2026-02-12 14:58:42,656 - core.adls_fetcher - INFO - ADLS connection established successfully
+2026-02-12 14:58:42,657 - __main__ - INFO - Initializing text processors...
+2026-02-12 14:58:42,658 - core.semantic_chunker - INFO - Loading sentence transformer model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:58:42,660 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 14:58:42,661 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:58:48,839 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:58:49,140 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:58:50,318 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:58:51,188 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:58:53,553 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:58:53,554 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-12 14:58:55,732 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:58:56,465 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:58:56,833 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 14:58:57,712 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:58:58,068 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:58:59,161 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:00,700 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:02,437 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 14:59:03,099 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:04,150 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:06,378 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:08,012 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:09,117 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:10,097 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:11,497 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 14:59:12,157 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 14:59:13,018 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:14,463 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:15,430 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 14:59:15,453 - core.semantic_chunker - INFO - Model loaded successfully
+2026-02-12 14:59:15,454 - core.semantic_chunker - INFO - SemanticChunker initialized with threshold=0.8, min_sentences=2, max_sentences=10
+2026-02-12 14:59:15,454 - __main__ - INFO - Using embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:59:15,454 - __main__ - INFO - Initializing Embedding-Based Role Classifier...
+2026-02-12 14:59:15,455 - __main__ - INFO - Method: embedding
+2026-02-12 14:59:15,455 - core.role_classifier_embedding - INFO - Creating embedding-based classifier with model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:59:15,455 - core.role_classifier_embedding - INFO - Confidence threshold: 0.45
+2026-02-12 14:59:15,455 - core.role_classifier_embedding - INFO - Aggregation method: max
+2026-02-12 14:59:15,456 - core.role_classifier_embedding - INFO - Initializing EmbeddingRoleClassifier with 7 roles
+2026-02-12 14:59:15,456 - core.role_classifier_embedding - INFO - Roles: ['case_metadata', 'procedural_history', 'factual_background', 'legal_issues', 'legal_analysis', 'holdings_and_conclusions', 'other']
+2026-02-12 14:59:15,456 - core.role_classifier_embedding - INFO - Confidence threshold: 0.45
+2026-02-12 14:59:15,458 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 14:59:15,459 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:59:16,020 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:16,343 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:17,102 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:17,441 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:17,973 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:18,288 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:19,413 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:20,552 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 14:59:21,570 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:21,865 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:22,650 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:22,915 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:23,774 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 14:59:24,429 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:24,741 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:25,327 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:26,258 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:26,825 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:27,109 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:27,659 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 14:59:28,335 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 14:59:29,140 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 14:59:30,021 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 14:59:30,911 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 14:59:30,915 - core.role_classifier_embedding - INFO - Loaded embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 14:59:30,916 - core.role_classifier_embedding - INFO - Computing role description embeddings...
+2026-02-12 14:59:32,551 - core.role_classifier_embedding - INFO - Role embeddings computed successfully
+2026-02-12 14:59:32,552 - __main__ - INFO - Role Classifier initialized successfully
+2026-02-12 14:59:32,552 - __main__ - INFO -   Number of roles: 7
+2026-02-12 14:59:32,553 - __main__ - INFO -   Confidence threshold: 0.45
+2026-02-12 14:59:32,553 - __main__ - INFO -   Aggregation method: max
+2026-02-12 14:59:32,554 - __main__ - INFO - Test pipeline initialized successfully
+2026-02-12 14:59:32,554 - __main__ - INFO - 
+================================================================================
+2026-02-12 14:59:32,555 - __main__ - INFO - STAGE 1: FETCHING DOCUMENTS FROM ADLS
+2026-02-12 14:59:32,555 - __main__ - INFO - ================================================================================
+2026-02-12 14:59:32,556 - core.adls_fetcher - INFO - Listing files in path: newapp/dataset=decision/decision/commonwealth/1992, pattern: *.json, recursive: True
+2026-02-12 14:59:32,562 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.dfs.core.windows.net/raw?resource=REDACTED&directory=REDACTED&recursive=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '568c3719-07f5-11f1-b5c7-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:35,021 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json;charset=utf-8'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e7f4cb23-501f-0022-2902-9c48db000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '568c3719-07f5-11f1-b5c7-880a048c7ae7'
+    'Date': 'Thu, 12 Feb 2026 09:29:33 GMT'
+2026-02-12 14:59:35,023 - core.adls_fetcher - INFO - Found 13 files matching pattern
+2026-02-12 14:59:35,024 - core.adls_fetcher - INFO - Limiting to 10 files (out of 13)
+2026-02-12 14:59:35,024 - core.adls_fetcher - INFO - Reading 10 files from ADLS
+2026-02-12 14:59:35,027 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '58047aaf-07f5-11f1-a714-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:36,338 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '3660'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:18 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB60133C8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '088562db-a01e-006b-4702-9c0a30000000'
+    'x-ms-client-request-id': '58047aaf-07f5-11f1-a714-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:36 GMT'
+2026-02-12 14:59:36,343 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '58cd5787-07f5-11f1-885a-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:36,531 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '2279'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:06 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CAEC64F88"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0885633e-a01e-006b-1c02-9c0a30000000'
+    'x-ms-client-request-id': '58cd5787-07f5-11f1-885a-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:36 GMT'
+2026-02-12 14:59:36,534 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '58ea98ce-07f5-11f1-a587-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:36,725 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4522'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:17 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB592B68C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '088563a8-a01e-006b-7e02-9c0a30000000'
+    'x-ms-client-request-id': '58ea98ce-07f5-11f1-a587-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:36 GMT'
+2026-02-12 14:59:36,730 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_81575e74.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '59086daf-07f5-11f1-895b-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:36,921 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '52092'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:49 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA48DE428"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '08856424-a01e-006b-6e02-9c0a30000000'
+    'x-ms-client-request-id': '59086daf-07f5-11f1-895b-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:36 GMT'
+2026-02-12 14:59:40,699 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5b65fae2-07f5-11f1-87d0-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:44,881 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '11507'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:14 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3765280"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '08856dc0-a01e-006b-2902-9c0a30000000'
+    'x-ms-client-request-id': '5b65fae2-07f5-11f1-87d0-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:40 GMT'
+2026-02-12 14:59:44,886 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5de4f58c-07f5-11f1-bcb6-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:49,170 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '17239'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:45 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA2862404"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '08857731-a01e-006b-0102-9c0a30000000'
+    'x-ms-client-request-id': '5de4f58c-07f5-11f1-bcb6-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:44 GMT'
+2026-02-12 14:59:49,345 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a3b3f446.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '608d5bc2-07f5-11f1-8cca-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 14:59:50,092 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '42760'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:13 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3035ED8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0885808a-a01e-006b-8002-9c0a30000000'
+    'x-ms-client-request-id': '608d5bc2-07f5-11f1-8cca-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:49 GMT'
+2026-02-12 14:59:56,432 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a9bf4b0e.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '64c6ab50-07f5-11f1-924c-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:00:01,770 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '59967'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:12 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB26DAF40"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '08859032-a01e-006b-7d02-9c0a30000000'
+    'x-ms-client-request-id': '64c6ab50-07f5-11f1-924c-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:29:56 GMT'
+2026-02-12 15:00:02,654 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '687c26c4-07f5-11f1-9089-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:00:03,125 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4255'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:22 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB8958B0C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '08859e1d-a01e-006b-5702-9c0a30000000'
+    'x-ms-client-request-id': '687c26c4-07f5-11f1-9089-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:30:02 GMT'
+2026-02-12 15:00:03,129 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_d5334388.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '68c4a2d5-07f5-11f1-928d-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:00:03,744 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '5055'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA7D195F4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '08859efc-a01e-006b-1902-9c0a30000000'
+    'x-ms-client-request-id': '68c4a2d5-07f5-11f1-928d-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:30:02 GMT'
+2026-02-12 15:00:03,749 - core.adls_fetcher - INFO - Successfully read 10 documents
+2026-02-12 15:00:03,749 - __main__ - INFO - Fetched 10 documents in 31.19s
+2026-02-12 15:00:03,750 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:00:03,750 - __main__ - INFO - STAGE 2: PROCESSING DOCUMENTS
+2026-02-12 15:00:03,751 - __main__ - INFO - ================================================================================
+2026-02-12 15:00:03,753 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3143 chars
+2026-02-12 15:00:03,754 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3123 chars (0.6% reduction)
+2026-02-12 15:00:03,754 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3123 chars
+2026-02-12 15:00:03,884 - core.semantic_chunker - INFO - Extracted 20 sentences
+2026-02-12 15:00:04,485 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5644, Min: 0.4399, Max: 0.8194
+2026-02-12 15:00:04,485 - core.semantic_chunker - INFO - Semantic chunking complete. Created 9 chunks, skipped 1 small chunks
+2026-02-12 15:00:04,488 - core.role_classifier_embedding - INFO - Classifying 9 chunks...
+2026-02-12 15:00:04,754 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:04,755 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:04,755 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (44.4%)
+2026-02-12 15:00:04,756 - core.role_classifier_embedding - INFO -   legal_issues: 2 (22.2%)
+2026-02-12 15:00:04,756 - core.role_classifier_embedding - INFO -   unclassified: 2 (22.2%)
+2026-02-12 15:00:04,757 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (11.1%)
+2026-02-12 15:00:04,758 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 1822 chars
+2026-02-12 15:00:04,759 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 1801 chars (1.2% reduction)
+2026-02-12 15:00:04,759 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 1801 chars
+2026-02-12 15:00:04,861 - core.semantic_chunker - INFO - Extracted 11 sentences
+2026-02-12 15:00:05,151 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7238, Min: 0.5292, Max: 0.8142
+2026-02-12 15:00:05,152 - core.semantic_chunker - INFO - Semantic chunking complete. Created 5 chunks, skipped 0 small chunks
+2026-02-12 15:00:05,154 - core.role_classifier_embedding - INFO - Classifying 5 chunks...
+2026-02-12 15:00:05,329 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:05,329 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:05,330 - core.role_classifier_embedding - INFO -   procedural_history: 3 (60.0%)
+2026-02-12 15:00:05,331 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (40.0%)
+2026-02-12 15:00:05,333 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3895 chars
+2026-02-12 15:00:05,335 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3829 chars (1.7% reduction)
+2026-02-12 15:00:05,336 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3829 chars
+2026-02-12 15:00:05,453 - core.semantic_chunker - INFO - Extracted 30 sentences
+2026-02-12 15:00:06,098 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5062, Min: 0.1369, Max: 0.8331
+2026-02-12 15:00:06,099 - core.semantic_chunker - INFO - Semantic chunking complete. Created 14 chunks, skipped 1 small chunks
+2026-02-12 15:00:06,100 - core.role_classifier_embedding - INFO - Classifying 14 chunks...
+2026-02-12 15:00:06,505 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:06,506 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:06,506 - core.role_classifier_embedding - INFO -   case_metadata: 4 (28.6%)
+2026-02-12 15:00:06,507 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (28.6%)
+2026-02-12 15:00:06,508 - core.role_classifier_embedding - INFO -   unclassified: 3 (21.4%)
+2026-02-12 15:00:06,508 - core.role_classifier_embedding - INFO -   procedural_history: 2 (14.3%)
+2026-02-12 15:00:06,509 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (7.1%)
+2026-02-12 15:00:06,511 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 51254 chars
+2026-02-12 15:00:06,522 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 50826 chars (0.8% reduction)
+2026-02-12 15:00:06,523 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 50826 chars
+2026-02-12 15:00:06,717 - core.semantic_chunker - INFO - Extracted 292 sentences
+2026-02-12 15:00:13,085 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3742, Min: -0.0383, Max: 0.9358
+2026-02-12 15:00:13,086 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 15 small chunks
+2026-02-12 15:00:13,090 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 15:00:19,022 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:19,022 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:19,023 - core.role_classifier_embedding - INFO -   unclassified: 35 (26.9%)
+2026-02-12 15:00:19,023 - core.role_classifier_embedding - INFO -   factual_background: 30 (23.1%)
+2026-02-12 15:00:19,023 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 24 (18.5%)
+2026-02-12 15:00:19,024 - core.role_classifier_embedding - INFO -   case_metadata: 22 (16.9%)
+2026-02-12 15:00:19,024 - core.role_classifier_embedding - INFO -   procedural_history: 10 (7.7%)
+2026-02-12 15:00:19,025 - core.role_classifier_embedding - INFO -   legal_analysis: 6 (4.6%)
+2026-02-12 15:00:19,025 - core.role_classifier_embedding - INFO -   legal_issues: 3 (2.3%)
+2026-02-12 15:00:19,027 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 10737 chars
+2026-02-12 15:00:19,029 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 10636 chars (0.9% reduction)
+2026-02-12 15:00:19,030 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 10636 chars
+2026-02-12 15:00:19,150 - core.semantic_chunker - INFO - Extracted 49 sentences
+2026-02-12 15:00:21,992 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3928, Min: 0.1491, Max: 1.0000
+2026-02-12 15:00:21,993 - core.semantic_chunker - INFO - Semantic chunking complete. Created 23 chunks, skipped 1 small chunks
+2026-02-12 15:00:21,994 - core.role_classifier_embedding - INFO - Classifying 23 chunks...
+2026-02-12 15:00:23,291 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:23,292 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:23,293 - core.role_classifier_embedding - INFO -   unclassified: 16 (69.6%)
+2026-02-12 15:00:23,293 - core.role_classifier_embedding - INFO -   procedural_history: 4 (17.4%)
+2026-02-12 15:00:23,293 - core.role_classifier_embedding - INFO -   factual_background: 1 (4.3%)
+2026-02-12 15:00:23,294 - core.role_classifier_embedding - INFO -   legal_issues: 1 (4.3%)
+2026-02-12 15:00:23,294 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 1 (4.3%)
+2026-02-12 15:00:23,295 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 16134 chars
+2026-02-12 15:00:23,299 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 15983 chars (0.9% reduction)
+2026-02-12 15:00:23,299 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 15983 chars
+2026-02-12 15:00:23,426 - core.semantic_chunker - INFO - Extracted 58 sentences
+2026-02-12 15:00:26,560 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5039, Min: 0.2002, Max: 0.9538
+2026-02-12 15:00:26,561 - core.semantic_chunker - INFO - Semantic chunking complete. Created 27 chunks, skipped 1 small chunks
+2026-02-12 15:00:26,562 - core.role_classifier_embedding - INFO - Classifying 27 chunks...
+2026-02-12 15:00:28,068 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:28,068 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:28,069 - core.role_classifier_embedding - INFO -   unclassified: 9 (33.3%)
+2026-02-12 15:00:28,069 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (14.8%)
+2026-02-12 15:00:28,070 - core.role_classifier_embedding - INFO -   procedural_history: 4 (14.8%)
+2026-02-12 15:00:28,070 - core.role_classifier_embedding - INFO -   legal_issues: 4 (14.8%)
+2026-02-12 15:00:28,071 - core.role_classifier_embedding - INFO -   legal_analysis: 3 (11.1%)
+2026-02-12 15:00:28,071 - core.role_classifier_embedding - INFO -   case_metadata: 3 (11.1%)
+2026-02-12 15:00:28,072 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 41095 chars
+2026-02-12 15:00:28,081 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 40619 chars (1.2% reduction)
+2026-02-12 15:00:28,082 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 40619 chars
+2026-02-12 15:00:28,255 - core.semantic_chunker - INFO - Extracted 290 sentences
+2026-02-12 15:00:33,399 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4492, Min: 0.0856, Max: 0.8629
+2026-02-12 15:00:33,400 - core.semantic_chunker - INFO - Semantic chunking complete. Created 128 chunks, skipped 17 small chunks
+2026-02-12 15:00:33,406 - core.role_classifier_embedding - INFO - Classifying 128 chunks...
+2026-02-12 15:00:37,996 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:37,997 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:37,997 - core.role_classifier_embedding - INFO -   unclassified: 61 (47.7%)
+2026-02-12 15:00:37,997 - core.role_classifier_embedding - INFO -   procedural_history: 32 (25.0%)
+2026-02-12 15:00:37,998 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 15 (11.7%)
+2026-02-12 15:00:37,998 - core.role_classifier_embedding - INFO -   legal_issues: 10 (7.8%)
+2026-02-12 15:00:37,999 - core.role_classifier_embedding - INFO -   case_metadata: 6 (4.7%)
+2026-02-12 15:00:37,999 - core.role_classifier_embedding - INFO -   factual_background: 4 (3.1%)
+2026-02-12 15:00:38,000 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 57927 chars
+2026-02-12 15:00:38,011 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 57409 chars (0.9% reduction)
+2026-02-12 15:00:38,011 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 57409 chars
+2026-02-12 15:00:38,178 - core.semantic_chunker - INFO - Extracted 266 sentences
+2026-02-12 15:00:45,260 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3300, Min: -0.0438, Max: 0.8935
+2026-02-12 15:00:45,261 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 2 small chunks
+2026-02-12 15:00:45,265 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 15:00:52,392 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:52,393 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:52,393 - core.role_classifier_embedding - INFO -   unclassified: 82 (63.1%)
+2026-02-12 15:00:52,394 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 13 (10.0%)
+2026-02-12 15:00:52,394 - core.role_classifier_embedding - INFO -   legal_issues: 11 (8.5%)
+2026-02-12 15:00:52,395 - core.role_classifier_embedding - INFO -   procedural_history: 9 (6.9%)
+2026-02-12 15:00:52,395 - core.role_classifier_embedding - INFO -   legal_analysis: 8 (6.2%)
+2026-02-12 15:00:52,395 - core.role_classifier_embedding - INFO -   case_metadata: 5 (3.8%)
+2026-02-12 15:00:52,396 - core.role_classifier_embedding - INFO -   factual_background: 2 (1.5%)
+2026-02-12 15:00:52,397 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3725 chars
+2026-02-12 15:00:52,399 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3699 chars (0.7% reduction)
+2026-02-12 15:00:52,399 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3699 chars
+2026-02-12 15:00:52,510 - core.semantic_chunker - INFO - Extracted 21 sentences
+2026-02-12 15:00:53,448 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5675, Min: 0.3134, Max: 0.9246
+2026-02-12 15:00:53,448 - core.semantic_chunker - INFO - Semantic chunking complete. Created 10 chunks, skipped 0 small chunks
+2026-02-12 15:00:53,449 - core.role_classifier_embedding - INFO - Classifying 10 chunks...
+2026-02-12 15:00:53,839 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:53,840 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:53,840 - core.role_classifier_embedding - INFO -   procedural_history: 4 (40.0%)
+2026-02-12 15:00:53,841 - core.role_classifier_embedding - INFO -   unclassified: 3 (30.0%)
+2026-02-12 15:00:53,841 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (20.0%)
+2026-02-12 15:00:53,842 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (10.0%)
+2026-02-12 15:00:53,843 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 4482 chars
+2026-02-12 15:00:53,844 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 4414 chars (1.5% reduction)
+2026-02-12 15:00:53,845 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 4414 chars
+2026-02-12 15:00:53,961 - core.semantic_chunker - INFO - Extracted 17 sentences
+2026-02-12 15:00:55,030 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6104, Min: 0.3179, Max: 0.9580
+2026-02-12 15:00:55,030 - core.semantic_chunker - INFO - Semantic chunking complete. Created 8 chunks, skipped 0 small chunks
+2026-02-12 15:00:55,031 - core.role_classifier_embedding - INFO - Classifying 8 chunks...
+2026-02-12 15:00:55,554 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:00:55,554 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:00:55,555 - core.role_classifier_embedding - INFO -   procedural_history: 3 (37.5%)
+2026-02-12 15:00:55,555 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (25.0%)
+2026-02-12 15:00:55,556 - core.role_classifier_embedding - INFO -   case_metadata: 1 (12.5%)
+2026-02-12 15:00:55,556 - core.role_classifier_embedding - INFO -   unclassified: 1 (12.5%)
+2026-02-12 15:00:55,556 - core.role_classifier_embedding - INFO -   legal_issues: 1 (12.5%)
+2026-02-12 15:00:55,557 - __main__ - INFO - Processed 10/10 documents
+2026-02-12 15:00:55,558 - __main__ - INFO - Total chunks: 484, Top-K: 92
+2026-02-12 15:00:55,558 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:00:55,559 - __main__ - INFO - STAGE 3: GENERATING EMBEDDINGS
+2026-02-12 15:00:55,559 - __main__ - INFO - ================================================================================
+2026-02-12 15:00:55,559 - __main__ - INFO - Encoding 92 texts...
+2026-02-12 15:00:58,294 - __main__ - INFO - Generated 92 embeddings in 2.73s
+2026-02-12 15:00:58,295 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:00:58,295 - __main__ - INFO - STAGE 4: SAVING OUTPUTS LOCALLY
+2026-02-12 15:00:58,295 - __main__ - INFO - ================================================================================
+2026-02-12 15:00:58,618 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:00:58,619 - __main__ - INFO - TEST PIPELINE COMPLETED SUCCESSFULLY
+2026-02-12 15:00:58,619 - __main__ - INFO - ================================================================================
+2026-02-12 15:00:58,620 - __main__ - INFO - Total time: 85.74s
+2026-02-12 15:00:58,620 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 15:00:58,620 - __main__ - INFO - Documents processed: 10
+2026-02-12 15:00:58,622 - __main__ - INFO - Total chunks: 484
+2026-02-12 15:00:58,622 - __main__ - INFO - all_chunks files saved: 10
+2026-02-12 15:09:09,054 - __main__ - INFO - Starting Test Pipeline (UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER)
+2026-02-12 15:09:09,054 - __main__ - INFO - ================================================================================
+2026-02-12 15:09:09,054 - __main__ - INFO - TEST PIPELINE - UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER
+2026-02-12 15:09:09,055 - __main__ - INFO - ================================================================================
+2026-02-12 15:09:09,055 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 15:09:09,056 - __main__ - INFO - Initializing ADLS connection...
+2026-02-12 15:09:09,056 - core.adls_fetcher - INFO - Initializing ADLS connection: account=ausmasterdb, container=raw
+2026-02-12 15:09:09,099 - core.adls_fetcher - INFO - ADLS connection established successfully
+2026-02-12 15:09:09,100 - __main__ - INFO - Initializing text processors...
+2026-02-12 15:09:09,100 - core.semantic_chunker - INFO - Loading sentence transformer model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:09:09,102 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 15:09:09,102 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:09:12,340 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:12,361 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:13,148 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:13,166 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:13,423 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:13,441 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:13,692 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:13,717 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 15:09:13,967 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:13,984 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:14,412 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:14,431 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:14,715 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 15:09:15,984 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:16,002 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:16,455 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:16,475 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:16,738 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:16,760 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:17,028 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 15:09:17,480 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 15:09:18,429 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:18,449 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:19,966 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 15:09:19,975 - core.semantic_chunker - INFO - Model loaded successfully
+2026-02-12 15:09:19,985 - core.semantic_chunker - INFO - SemanticChunker initialized with threshold=0.8, min_sentences=2, max_sentences=10
+2026-02-12 15:09:19,986 - __main__ - INFO - Using embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:09:19,987 - __main__ - INFO - Initializing Embedding-Based Role Classifier...
+2026-02-12 15:09:19,987 - __main__ - INFO - Method: embedding
+2026-02-12 15:09:19,987 - core.role_classifier_embedding - INFO - Creating embedding-based classifier with model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:09:19,987 - core.role_classifier_embedding - INFO - Confidence threshold: 0.45
+2026-02-12 15:09:19,987 - core.role_classifier_embedding - INFO - Aggregation method: max
+2026-02-12 15:09:19,988 - core.role_classifier_embedding - INFO - Initializing EmbeddingRoleClassifier with 7 roles
+2026-02-12 15:09:19,988 - core.role_classifier_embedding - INFO - Roles: ['case_metadata', 'procedural_history', 'factual_background', 'legal_issues', 'legal_analysis', 'holdings_and_conclusions', 'other']
+2026-02-12 15:09:19,988 - core.role_classifier_embedding - INFO - Confidence threshold: 0.45
+2026-02-12 15:09:19,989 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 15:09:19,990 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:09:22,505 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:22,522 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:22,780 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:22,781 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-12 15:09:22,799 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:23,055 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:23,075 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:23,339 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:23,363 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 15:09:23,627 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:23,655 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:23,909 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:23,927 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:24,184 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 15:09:27,521 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:27,539 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:27,910 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:27,933 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:28,200 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:28,221 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:28,475 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 15:09:32,639 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 15:09:35,418 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:09:35,438 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 15:09:35,682 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 15:09:35,687 - core.role_classifier_embedding - INFO - Loaded embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:09:35,688 - core.role_classifier_embedding - INFO - Computing role description embeddings...
+2026-02-12 15:09:36,428 - core.role_classifier_embedding - INFO - Role embeddings computed successfully
+2026-02-12 15:09:36,429 - __main__ - INFO - Role Classifier initialized successfully
+2026-02-12 15:09:36,430 - __main__ - INFO -   Number of roles: 7
+2026-02-12 15:09:36,431 - __main__ - INFO -   Confidence threshold: 0.45
+2026-02-12 15:09:36,432 - __main__ - INFO -   Aggregation method: max
+2026-02-12 15:09:36,432 - __main__ - INFO - Test pipeline initialized successfully
+2026-02-12 15:09:36,433 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:09:36,434 - __main__ - INFO - STAGE 1: FETCHING DOCUMENTS FROM ADLS
+2026-02-12 15:09:36,434 - __main__ - INFO - ================================================================================
+2026-02-12 15:09:36,435 - core.adls_fetcher - INFO - Listing files in path: newapp/dataset=decision/decision/commonwealth/1992, pattern: *.json, recursive: True
+2026-02-12 15:09:36,438 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.dfs.core.windows.net/raw?resource=REDACTED&directory=REDACTED&recursive=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'be7c81f0-07f6-11f1-bc40-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:40,730 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json;charset=utf-8'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'c688fe14-401f-003e-7403-9c1abb000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': 'be7c81f0-07f6-11f1-bc40-880a048c7ae7'
+    'Date': 'Thu, 12 Feb 2026 09:39:40 GMT'
+2026-02-12 15:09:40,735 - core.adls_fetcher - INFO - Found 13 files matching pattern
+2026-02-12 15:09:40,735 - core.adls_fetcher - INFO - Limiting to 10 files (out of 13)
+2026-02-12 15:09:40,736 - core.adls_fetcher - INFO - Reading 10 files from ADLS
+2026-02-12 15:09:40,739 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c10cce8f-07f6-11f1-ac5b-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:43,493 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '3660'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:18 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB60133C8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afe41f-301e-001b-6e03-9cb3c7000000'
+    'x-ms-client-request-id': 'c10cce8f-07f6-11f1-ac5b-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:42 GMT'
+2026-02-12 15:09:43,501 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c2b23aa9-07f6-11f1-aa61-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:44,181 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '2279'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:06 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CAEC64F88"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afe61e-301e-001b-4303-9cb3c7000000'
+    'x-ms-client-request-id': 'c2b23aa9-07f6-11f1-aa61-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:42 GMT'
+2026-02-12 15:09:44,183 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c31a7c8d-07f6-11f1-8acf-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:44,376 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4522'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:17 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB592B68C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afe78d-301e-001b-1103-9cb3c7000000'
+    'x-ms-client-request-id': 'c31a7c8d-07f6-11f1-8acf-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:43 GMT'
+2026-02-12 15:09:44,381 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_81575e74.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c33888dd-07f6-11f1-93c0-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:44,749 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '52092'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:49 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA48DE428"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afe805-301e-001b-7a03-9cb3c7000000'
+    'x-ms-client-request-id': 'c33888dd-07f6-11f1-93c0-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:43 GMT'
+2026-02-12 15:09:45,155 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c3aeadc8-07f6-11f1-b758-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:45,848 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '11507'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:14 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3765280"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afe9e7-301e-001b-3303-9cb3c7000000'
+    'x-ms-client-request-id': 'c3aeadc8-07f6-11f1-b758-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:44 GMT'
+2026-02-12 15:09:45,852 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c418feca-07f6-11f1-b76a-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:46,704 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '17239'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:45 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA2862404"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afebdb-301e-001b-0303-9cb3c7000000'
+    'x-ms-client-request-id': 'c418feca-07f6-11f1-b76a-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:45 GMT'
+2026-02-12 15:09:46,708 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a3b3f446.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c49bab0c-07f6-11f1-bbd7-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:47,577 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '42760'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:13 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3035ED8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40afee1f-301e-001b-1e03-9cb3c7000000'
+    'x-ms-client-request-id': 'c49bab0c-07f6-11f1-bbd7-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:46 GMT'
+2026-02-12 15:09:47,899 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a9bf4b0e.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c55166ba-07f6-11f1-a1af-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:48,720 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '59967'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:12 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB26DAF40"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40aff130-301e-001b-6203-9cb3c7000000'
+    'x-ms-client-request-id': 'c55166ba-07f6-11f1-a1af-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:47 GMT'
+2026-02-12 15:09:49,781 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c6709a13-07f6-11f1-b194-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:50,153 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4255'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:22 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB8958B0C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40aff5e4-301e-001b-3503-9cb3c7000000'
+    'x-ms-client-request-id': 'c6709a13-07f6-11f1-b194-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:49 GMT'
+2026-02-12 15:09:50,157 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_d5334388.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c6a9f079-07f6-11f1-8153-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:09:50,740 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '5055'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA7D195F4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '40aff6f0-301e-001b-7e03-9cb3c7000000'
+    'x-ms-client-request-id': 'c6a9f079-07f6-11f1-8153-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:39:49 GMT'
+2026-02-12 15:09:50,743 - core.adls_fetcher - INFO - Successfully read 10 documents
+2026-02-12 15:09:50,743 - __main__ - INFO - Fetched 10 documents in 14.31s
+2026-02-12 15:09:50,744 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:09:50,745 - __main__ - INFO - STAGE 2: PROCESSING DOCUMENTS
+2026-02-12 15:09:50,746 - __main__ - INFO - ================================================================================
+2026-02-12 15:09:50,747 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3143 chars
+2026-02-12 15:09:50,748 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3123 chars (0.6% reduction)
+2026-02-12 15:09:50,748 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3123 chars
+2026-02-12 15:09:50,871 - core.semantic_chunker - INFO - Extracted 20 sentences
+2026-02-12 15:09:51,473 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5644, Min: 0.4399, Max: 0.8194
+2026-02-12 15:09:51,474 - core.semantic_chunker - INFO - Semantic chunking complete. Created 9 chunks, skipped 1 small chunks
+2026-02-12 15:09:51,475 - core.role_classifier_embedding - INFO - Classifying 9 chunks...
+2026-02-12 15:09:51,803 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:09:51,803 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:09:51,804 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (44.4%)
+2026-02-12 15:09:51,804 - core.role_classifier_embedding - INFO -   legal_issues: 2 (22.2%)
+2026-02-12 15:09:51,805 - core.role_classifier_embedding - INFO -   unclassified: 2 (22.2%)
+2026-02-12 15:09:51,805 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (11.1%)
+2026-02-12 15:09:51,806 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 1822 chars
+2026-02-12 15:09:51,807 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 1801 chars (1.2% reduction)
+2026-02-12 15:09:51,808 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 1801 chars
+2026-02-12 15:09:51,927 - core.semantic_chunker - INFO - Extracted 11 sentences
+2026-02-12 15:09:52,287 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7238, Min: 0.5292, Max: 0.8142
+2026-02-12 15:09:52,288 - core.semantic_chunker - INFO - Semantic chunking complete. Created 5 chunks, skipped 0 small chunks
+2026-02-12 15:09:52,289 - core.role_classifier_embedding - INFO - Classifying 5 chunks...
+2026-02-12 15:09:52,482 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:09:52,483 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:09:52,483 - core.role_classifier_embedding - INFO -   procedural_history: 3 (60.0%)
+2026-02-12 15:09:52,484 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (40.0%)
+2026-02-12 15:09:52,485 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3895 chars
+2026-02-12 15:09:52,486 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3829 chars (1.7% reduction)
+2026-02-12 15:09:52,487 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3829 chars
+2026-02-12 15:09:52,593 - core.semantic_chunker - INFO - Extracted 30 sentences
+2026-02-12 15:09:53,240 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5062, Min: 0.1369, Max: 0.8331
+2026-02-12 15:09:53,242 - core.semantic_chunker - INFO - Semantic chunking complete. Created 14 chunks, skipped 1 small chunks
+2026-02-12 15:09:53,243 - core.role_classifier_embedding - INFO - Classifying 14 chunks...
+2026-02-12 15:09:53,565 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:09:53,565 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:09:53,565 - core.role_classifier_embedding - INFO -   case_metadata: 4 (28.6%)
+2026-02-12 15:09:53,566 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (28.6%)
+2026-02-12 15:09:53,566 - core.role_classifier_embedding - INFO -   unclassified: 3 (21.4%)
+2026-02-12 15:09:53,567 - core.role_classifier_embedding - INFO -   procedural_history: 2 (14.3%)
+2026-02-12 15:09:53,567 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (7.1%)
+2026-02-12 15:09:53,568 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 51254 chars
+2026-02-12 15:09:53,579 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 50826 chars (0.8% reduction)
+2026-02-12 15:09:53,579 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 50826 chars
+2026-02-12 15:09:53,752 - core.semantic_chunker - INFO - Extracted 292 sentences
+2026-02-12 15:10:00,521 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3742, Min: -0.0383, Max: 0.9358
+2026-02-12 15:10:00,521 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 15 small chunks
+2026-02-12 15:10:00,525 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 15:10:07,066 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:07,067 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:07,067 - core.role_classifier_embedding - INFO -   unclassified: 35 (26.9%)
+2026-02-12 15:10:07,068 - core.role_classifier_embedding - INFO -   factual_background: 30 (23.1%)
+2026-02-12 15:10:07,068 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 24 (18.5%)
+2026-02-12 15:10:07,069 - core.role_classifier_embedding - INFO -   case_metadata: 22 (16.9%)
+2026-02-12 15:10:07,069 - core.role_classifier_embedding - INFO -   procedural_history: 10 (7.7%)
+2026-02-12 15:10:07,070 - core.role_classifier_embedding - INFO -   legal_analysis: 6 (4.6%)
+2026-02-12 15:10:07,070 - core.role_classifier_embedding - INFO -   legal_issues: 3 (2.3%)
+2026-02-12 15:10:07,072 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 10737 chars
+2026-02-12 15:10:07,074 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 10636 chars (0.9% reduction)
+2026-02-12 15:10:07,075 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 10636 chars
+2026-02-12 15:10:07,207 - core.semantic_chunker - INFO - Extracted 49 sentences
+2026-02-12 15:10:10,180 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3928, Min: 0.1491, Max: 1.0000
+2026-02-12 15:10:10,181 - core.semantic_chunker - INFO - Semantic chunking complete. Created 23 chunks, skipped 1 small chunks
+2026-02-12 15:10:10,182 - core.role_classifier_embedding - INFO - Classifying 23 chunks...
+2026-02-12 15:10:11,539 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:11,540 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:11,540 - core.role_classifier_embedding - INFO -   unclassified: 16 (69.6%)
+2026-02-12 15:10:11,541 - core.role_classifier_embedding - INFO -   procedural_history: 4 (17.4%)
+2026-02-12 15:10:11,541 - core.role_classifier_embedding - INFO -   factual_background: 1 (4.3%)
+2026-02-12 15:10:11,542 - core.role_classifier_embedding - INFO -   legal_issues: 1 (4.3%)
+2026-02-12 15:10:11,542 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 1 (4.3%)
+2026-02-12 15:10:11,543 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 16134 chars
+2026-02-12 15:10:11,547 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 15983 chars (0.9% reduction)
+2026-02-12 15:10:11,547 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 15983 chars
+2026-02-12 15:10:11,682 - core.semantic_chunker - INFO - Extracted 58 sentences
+2026-02-12 15:10:15,261 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5039, Min: 0.2002, Max: 0.9538
+2026-02-12 15:10:15,262 - core.semantic_chunker - INFO - Semantic chunking complete. Created 27 chunks, skipped 1 small chunks
+2026-02-12 15:10:15,263 - core.role_classifier_embedding - INFO - Classifying 27 chunks...
+2026-02-12 15:10:16,832 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:16,833 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:16,833 - core.role_classifier_embedding - INFO -   unclassified: 9 (33.3%)
+2026-02-12 15:10:16,833 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 4 (14.8%)
+2026-02-12 15:10:16,834 - core.role_classifier_embedding - INFO -   procedural_history: 4 (14.8%)
+2026-02-12 15:10:16,834 - core.role_classifier_embedding - INFO -   legal_issues: 4 (14.8%)
+2026-02-12 15:10:16,835 - core.role_classifier_embedding - INFO -   legal_analysis: 3 (11.1%)
+2026-02-12 15:10:16,835 - core.role_classifier_embedding - INFO -   case_metadata: 3 (11.1%)
+2026-02-12 15:10:16,836 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 41095 chars
+2026-02-12 15:10:16,844 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 40619 chars (1.2% reduction)
+2026-02-12 15:10:16,845 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 40619 chars
+2026-02-12 15:10:16,996 - core.semantic_chunker - INFO - Extracted 290 sentences
+2026-02-12 15:10:22,708 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4492, Min: 0.0856, Max: 0.8629
+2026-02-12 15:10:22,709 - core.semantic_chunker - INFO - Semantic chunking complete. Created 128 chunks, skipped 17 small chunks
+2026-02-12 15:10:22,713 - core.role_classifier_embedding - INFO - Classifying 128 chunks...
+2026-02-12 15:10:27,478 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:27,479 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:27,480 - core.role_classifier_embedding - INFO -   unclassified: 61 (47.7%)
+2026-02-12 15:10:27,480 - core.role_classifier_embedding - INFO -   procedural_history: 32 (25.0%)
+2026-02-12 15:10:27,481 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 15 (11.7%)
+2026-02-12 15:10:27,482 - core.role_classifier_embedding - INFO -   legal_issues: 10 (7.8%)
+2026-02-12 15:10:27,483 - core.role_classifier_embedding - INFO -   case_metadata: 6 (4.7%)
+2026-02-12 15:10:27,484 - core.role_classifier_embedding - INFO -   factual_background: 4 (3.1%)
+2026-02-12 15:10:27,486 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 57927 chars
+2026-02-12 15:10:27,504 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 57409 chars (0.9% reduction)
+2026-02-12 15:10:27,506 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 57409 chars
+2026-02-12 15:10:27,697 - core.semantic_chunker - INFO - Extracted 266 sentences
+2026-02-12 15:10:35,068 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3300, Min: -0.0438, Max: 0.8935
+2026-02-12 15:10:35,069 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 2 small chunks
+2026-02-12 15:10:35,073 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 15:10:42,289 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:42,289 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:42,290 - core.role_classifier_embedding - INFO -   unclassified: 82 (63.1%)
+2026-02-12 15:10:42,290 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 13 (10.0%)
+2026-02-12 15:10:42,290 - core.role_classifier_embedding - INFO -   legal_issues: 11 (8.5%)
+2026-02-12 15:10:42,291 - core.role_classifier_embedding - INFO -   procedural_history: 9 (6.9%)
+2026-02-12 15:10:42,291 - core.role_classifier_embedding - INFO -   legal_analysis: 8 (6.2%)
+2026-02-12 15:10:42,291 - core.role_classifier_embedding - INFO -   case_metadata: 5 (3.8%)
+2026-02-12 15:10:42,291 - core.role_classifier_embedding - INFO -   factual_background: 2 (1.5%)
+2026-02-12 15:10:42,293 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3725 chars
+2026-02-12 15:10:42,294 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3699 chars (0.7% reduction)
+2026-02-12 15:10:42,295 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3699 chars
+2026-02-12 15:10:42,390 - core.semantic_chunker - INFO - Extracted 21 sentences
+2026-02-12 15:10:43,227 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5675, Min: 0.3134, Max: 0.9246
+2026-02-12 15:10:43,228 - core.semantic_chunker - INFO - Semantic chunking complete. Created 10 chunks, skipped 0 small chunks
+2026-02-12 15:10:43,229 - core.role_classifier_embedding - INFO - Classifying 10 chunks...
+2026-02-12 15:10:43,632 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:43,633 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:43,633 - core.role_classifier_embedding - INFO -   procedural_history: 4 (40.0%)
+2026-02-12 15:10:43,634 - core.role_classifier_embedding - INFO -   unclassified: 3 (30.0%)
+2026-02-12 15:10:43,634 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (20.0%)
+2026-02-12 15:10:43,635 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (10.0%)
+2026-02-12 15:10:43,636 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 4482 chars
+2026-02-12 15:10:43,637 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 4414 chars (1.5% reduction)
+2026-02-12 15:10:43,638 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 4414 chars
+2026-02-12 15:10:43,740 - core.semantic_chunker - INFO - Extracted 17 sentences
+2026-02-12 15:10:44,834 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6104, Min: 0.3179, Max: 0.9580
+2026-02-12 15:10:44,835 - core.semantic_chunker - INFO - Semantic chunking complete. Created 8 chunks, skipped 0 small chunks
+2026-02-12 15:10:44,836 - core.role_classifier_embedding - INFO - Classifying 8 chunks...
+2026-02-12 15:10:45,399 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:10:45,400 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:10:45,400 - core.role_classifier_embedding - INFO -   procedural_history: 3 (37.5%)
+2026-02-12 15:10:45,401 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (25.0%)
+2026-02-12 15:10:45,401 - core.role_classifier_embedding - INFO -   case_metadata: 1 (12.5%)
+2026-02-12 15:10:45,402 - core.role_classifier_embedding - INFO -   unclassified: 1 (12.5%)
+2026-02-12 15:10:45,402 - core.role_classifier_embedding - INFO -   legal_issues: 1 (12.5%)
+2026-02-12 15:10:45,404 - __main__ - INFO - Processed 10/10 documents
+2026-02-12 15:10:45,404 - __main__ - INFO - Total chunks: 484, Top-K: 92
+2026-02-12 15:10:45,405 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:10:45,405 - __main__ - INFO - STAGE 3: GENERATING EMBEDDINGS
+2026-02-12 15:10:45,406 - __main__ - INFO - ================================================================================
+2026-02-12 15:10:45,406 - __main__ - INFO - Encoding 92 texts...
+2026-02-12 15:10:48,395 - __main__ - INFO - Generated 92 embeddings in 2.99s
+2026-02-12 15:10:48,396 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:10:48,396 - __main__ - INFO - STAGE 4: SAVING OUTPUTS LOCALLY
+2026-02-12 15:10:48,396 - __main__ - INFO - ================================================================================
+2026-02-12 15:10:48,760 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:10:48,761 - __main__ - INFO - TEST PIPELINE COMPLETED SUCCESSFULLY
+2026-02-12 15:10:48,761 - __main__ - INFO - ================================================================================
+2026-02-12 15:10:48,761 - __main__ - INFO - Total time: 71.96s
+2026-02-12 15:10:48,761 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 15:10:48,762 - __main__ - INFO - Documents processed: 10
+2026-02-12 15:10:48,762 - __main__ - INFO - Total chunks: 484
+2026-02-12 15:10:48,762 - __main__ - INFO - all_chunks files saved: 10
+2026-02-12 15:14:25,342 - __main__ - INFO - Starting Test Pipeline (UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER)
+2026-02-12 15:14:25,342 - __main__ - INFO - ================================================================================
+2026-02-12 15:14:25,342 - __main__ - INFO - TEST PIPELINE - UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER
+2026-02-12 15:14:25,343 - __main__ - INFO - ================================================================================
+2026-02-12 15:14:25,344 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 15:14:25,344 - __main__ - INFO - Initializing ADLS connection...
+2026-02-12 15:14:25,344 - core.adls_fetcher - INFO - Initializing ADLS connection: account=ausmasterdb, container=raw
+2026-02-12 15:14:25,401 - core.adls_fetcher - INFO - ADLS connection established successfully
+2026-02-12 15:14:25,402 - __main__ - INFO - Initializing text processors...
+2026-02-12 15:14:25,402 - core.semantic_chunker - INFO - Loading sentence transformer model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:14:25,404 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 15:14:25,404 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:14:26,545 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:26,563 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:26,807 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:26,826 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:27,073 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:27,090 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:27,323 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:27,345 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 15:14:27,603 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:27,620 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:27,866 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:27,886 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:28,210 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 15:14:28,708 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:28,726 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:29,175 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:29,195 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:29,454 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:29,484 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:29,739 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 15:14:30,176 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 15:14:30,637 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:30,655 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:30,914 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 15:14:30,920 - core.semantic_chunker - INFO - Model loaded successfully
+2026-02-12 15:14:30,921 - core.semantic_chunker - INFO - SemanticChunker initialized with threshold=0.8, min_sentences=2, max_sentences=10
+2026-02-12 15:14:30,921 - __main__ - INFO - Using embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:14:30,922 - __main__ - INFO - Initializing Embedding-Based Role Classifier...
+2026-02-12 15:14:30,923 - __main__ - INFO - Method: embedding
+2026-02-12 15:14:30,923 - core.role_classifier_embedding - INFO - Creating embedding-based classifier with model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:14:30,924 - core.role_classifier_embedding - INFO - Confidence threshold: 0.5
+2026-02-12 15:14:30,925 - core.role_classifier_embedding - INFO - Aggregation method: max
+2026-02-12 15:14:30,926 - core.role_classifier_embedding - INFO - Initializing EmbeddingRoleClassifier with 7 roles
+2026-02-12 15:14:30,926 - core.role_classifier_embedding - INFO - Roles: ['case_metadata', 'procedural_history', 'factual_background', 'legal_issues', 'legal_analysis', 'holdings_and_conclusions', 'other']
+2026-02-12 15:14:30,926 - core.role_classifier_embedding - INFO - Confidence threshold: 0.5
+2026-02-12 15:14:30,929 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-12 15:14:30,929 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:14:31,239 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:31,256 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:31,618 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:31,641 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:31,896 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:31,921 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:32,179 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:32,197 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-12 15:14:32,468 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:32,486 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:32,736 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:32,754 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:33,004 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-12 15:14:33,375 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:33,398 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:33,777 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:33,795 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:34,043 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:34,060 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:34,443 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-12 15:14:34,769 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-12 15:14:35,153 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-12 15:14:35,174 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-12 15:14:35,445 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-12 15:14:35,448 - core.role_classifier_embedding - INFO - Loaded embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-12 15:14:35,449 - core.role_classifier_embedding - INFO - Computing role description embeddings...
+2026-02-12 15:14:36,209 - core.role_classifier_embedding - INFO - Role embeddings computed successfully
+2026-02-12 15:14:36,209 - __main__ - INFO - Role Classifier initialized successfully
+2026-02-12 15:14:36,210 - __main__ - INFO -   Number of roles: 7
+2026-02-12 15:14:36,210 - __main__ - INFO -   Confidence threshold: 0.5
+2026-02-12 15:14:36,211 - __main__ - INFO -   Aggregation method: max
+2026-02-12 15:14:36,211 - __main__ - INFO - Test pipeline initialized successfully
+2026-02-12 15:14:36,212 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:14:36,212 - __main__ - INFO - STAGE 1: FETCHING DOCUMENTS FROM ADLS
+2026-02-12 15:14:36,213 - __main__ - INFO - ================================================================================
+2026-02-12 15:14:36,214 - core.adls_fetcher - INFO - Listing files in path: newapp/dataset=decision/decision/commonwealth/1992, pattern: *.json, recursive: True
+2026-02-12 15:14:36,218 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.dfs.core.windows.net/raw?resource=REDACTED&directory=REDACTED&recursive=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '712b20b6-07f7-11f1-ace7-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:42,002 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json;charset=utf-8'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ff4545ab-801f-0021-1204-9ca9bf000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '712b20b6-07f7-11f1-ace7-880a048c7ae7'
+    'Date': 'Thu, 12 Feb 2026 09:44:41 GMT'
+2026-02-12 15:14:42,005 - core.adls_fetcher - INFO - Found 13 files matching pattern
+2026-02-12 15:14:42,005 - core.adls_fetcher - INFO - Limiting to 10 files (out of 13)
+2026-02-12 15:14:42,006 - core.adls_fetcher - INFO - Reading 10 files from ADLS
+2026-02-12 15:14:42,007 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '749eb505-07f7-11f1-ad30-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:44,904 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '3660'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:18 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB60133C8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e0039b34-201e-004a-2404-9c2e4b000000'
+    'x-ms-client-request-id': '749eb505-07f7-11f1-ad30-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:43 GMT'
+2026-02-12 15:14:44,908 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_6ce64330.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '76596276-07f7-11f1-ae11-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:45,636 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '2279'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:06 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CAEC64F88"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e0039cc7-201e-004a-0504-9c2e4b000000'
+    'x-ms-client-request-id': '76596276-07f7-11f1-ae11-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:44 GMT'
+2026-02-12 15:14:45,640 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '76c91efc-07f7-11f1-96ae-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:46,366 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4522'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:17 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB592B68C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e0039e54-201e-004a-6c04-9c2e4b000000'
+    'x-ms-client-request-id': '76c91efc-07f7-11f1-96ae-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:45 GMT'
+2026-02-12 15:14:46,370 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_81575e74.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '773875ed-07f7-11f1-aa4b-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:47,081 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '52092'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:49 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA48DE428"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e0039fa3-201e-004a-0f04-9c2e4b000000'
+    'x-ms-client-request-id': '773875ed-07f7-11f1-aa4b-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:45 GMT'
+2026-02-12 15:14:48,321 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_8fbd72a0.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '78623af7-07f7-11f1-a917-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:49,038 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '11507'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:14 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3765280"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e003a32f-201e-004a-3e04-9c2e4b000000'
+    'x-ms-client-request-id': '78623af7-07f7-11f1-a917-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:47 GMT'
+2026-02-12 15:14:49,041 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '78d014ac-07f7-11f1-9ec9-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:49,765 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '17239'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:45 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA2862404"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e003a48d-201e-004a-7604-9c2e4b000000'
+    'x-ms-client-request-id': '78d014ac-07f7-11f1-9ec9-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:48 GMT'
+2026-02-12 15:14:49,767 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a3b3f446.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '793edb5a-07f7-11f1-b7e2-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:50,380 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '42760'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:13 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB3035ED8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e003a5de-201e-004a-2004-9c2e4b000000'
+    'x-ms-client-request-id': '793edb5a-07f7-11f1-b7e2-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:49 GMT'
+2026-02-12 15:14:50,400 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_a9bf4b0e.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '799f6fa4-07f7-11f1-9fa4-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:51,161 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '59967'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:12 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB26DAF40"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e003a709-201e-004a-3004-9c2e4b000000'
+    'x-ms-client-request-id': '799f6fa4-07f7-11f1-9fa4-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:50 GMT'
+2026-02-12 15:14:52,009 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7a94ea31-07f7-11f1-bbb7-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:52,223 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '4255'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:34:22 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CB8958B0C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e003aaf3-201e-004a-6804-9c2e4b000000'
+    'x-ms-client-request-id': '7a94ea31-07f7-11f1-bbb7-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:51 GMT'
+2026-02-12 15:14:52,227 - azure.core.pipeline.policies.http_logging_policy - INFO - Request URL: 'https://ausmasterdb.blob.core.windows.net/raw/newapp/dataset%3Ddecision/decision/commonwealth/1992/decision_commonwealth_1992_d5334388.json'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-dfs/12.23.0 Python/3.13.5 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7ab62051-07f7-11f1-b83a-880a048c7ae7'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-02-12 15:14:52,496 - azure.core.pipeline.policies.http_logging_policy - INFO - Response status: 206
+Response headers:
+    'Content-Length': '5055'
+    'Content-Type': 'application/json'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 02 Feb 2026 05:33:54 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE621CA7D195F4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e003ab5f-201e-004a-4b04-9c2e4b000000'
+    'x-ms-client-request-id': '7ab62051-07f7-11f1-b83a-880a048c7ae7'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 12 Feb 2026 09:44:51 GMT'
+2026-02-12 15:14:52,499 - core.adls_fetcher - INFO - Successfully read 10 documents
+2026-02-12 15:14:52,499 - __main__ - INFO - Fetched 10 documents in 16.29s
+2026-02-12 15:14:52,499 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:14:52,499 - __main__ - INFO - STAGE 2: PROCESSING DOCUMENTS
+2026-02-12 15:14:52,500 - __main__ - INFO - ================================================================================
+2026-02-12 15:14:52,500 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3143 chars
+2026-02-12 15:14:52,501 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3123 chars (0.6% reduction)
+2026-02-12 15:14:52,501 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3123 chars
+2026-02-12 15:14:52,629 - core.semantic_chunker - INFO - Extracted 20 sentences
+2026-02-12 15:14:53,252 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5644, Min: 0.4399, Max: 0.8194
+2026-02-12 15:14:53,253 - core.semantic_chunker - INFO - Semantic chunking complete. Created 9 chunks, skipped 1 small chunks
+2026-02-12 15:14:53,254 - core.role_classifier_embedding - INFO - Classifying 9 chunks...
+2026-02-12 15:14:53,540 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:14:53,541 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:14:53,541 - core.role_classifier_embedding - INFO -   unclassified: 5 (55.6%)
+2026-02-12 15:14:53,542 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 3 (33.3%)
+2026-02-12 15:14:53,542 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (11.1%)
+2026-02-12 15:14:53,543 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 1822 chars
+2026-02-12 15:14:53,544 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 1801 chars (1.2% reduction)
+2026-02-12 15:14:53,545 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 1801 chars
+2026-02-12 15:14:53,644 - core.semantic_chunker - INFO - Extracted 11 sentences
+2026-02-12 15:14:53,946 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.7238, Min: 0.5292, Max: 0.8142
+2026-02-12 15:14:53,947 - core.semantic_chunker - INFO - Semantic chunking complete. Created 5 chunks, skipped 0 small chunks
+2026-02-12 15:14:53,949 - core.role_classifier_embedding - INFO - Classifying 5 chunks...
+2026-02-12 15:14:54,132 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:14:54,133 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:14:54,134 - core.role_classifier_embedding - INFO -   procedural_history: 3 (60.0%)
+2026-02-12 15:14:54,135 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (40.0%)
+2026-02-12 15:14:54,137 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3895 chars
+2026-02-12 15:14:54,139 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3829 chars (1.7% reduction)
+2026-02-12 15:14:54,140 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3829 chars
+2026-02-12 15:14:54,238 - core.semantic_chunker - INFO - Extracted 30 sentences
+2026-02-12 15:14:55,014 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5062, Min: 0.1369, Max: 0.8331
+2026-02-12 15:14:55,015 - core.semantic_chunker - INFO - Semantic chunking complete. Created 14 chunks, skipped 1 small chunks
+2026-02-12 15:14:55,016 - core.role_classifier_embedding - INFO - Classifying 14 chunks...
+2026-02-12 15:14:55,350 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:14:55,350 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:14:55,351 - core.role_classifier_embedding - INFO -   unclassified: 7 (50.0%)
+2026-02-12 15:14:55,351 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 3 (21.4%)
+2026-02-12 15:14:55,352 - core.role_classifier_embedding - INFO -   case_metadata: 2 (14.3%)
+2026-02-12 15:14:55,352 - core.role_classifier_embedding - INFO -   procedural_history: 2 (14.3%)
+2026-02-12 15:14:55,354 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 51254 chars
+2026-02-12 15:14:55,364 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 50826 chars (0.8% reduction)
+2026-02-12 15:14:55,365 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 50826 chars
+2026-02-12 15:14:55,548 - core.semantic_chunker - INFO - Extracted 292 sentences
+2026-02-12 15:15:02,188 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3742, Min: -0.0383, Max: 0.9358
+2026-02-12 15:15:02,189 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 15 small chunks
+2026-02-12 15:15:02,192 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 15:15:08,766 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:08,766 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:08,767 - core.role_classifier_embedding - INFO -   unclassified: 59 (45.4%)
+2026-02-12 15:15:08,767 - core.role_classifier_embedding - INFO -   factual_background: 26 (20.0%)
+2026-02-12 15:15:08,768 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 18 (13.8%)
+2026-02-12 15:15:08,768 - core.role_classifier_embedding - INFO -   case_metadata: 14 (10.8%)
+2026-02-12 15:15:08,769 - core.role_classifier_embedding - INFO -   procedural_history: 8 (6.2%)
+2026-02-12 15:15:08,769 - core.role_classifier_embedding - INFO -   legal_analysis: 4 (3.1%)
+2026-02-12 15:15:08,769 - core.role_classifier_embedding - INFO -   legal_issues: 1 (0.8%)
+2026-02-12 15:15:08,771 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 10737 chars
+2026-02-12 15:15:08,773 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 10636 chars (0.9% reduction)
+2026-02-12 15:15:08,774 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 10636 chars
+2026-02-12 15:15:08,879 - core.semantic_chunker - INFO - Extracted 49 sentences
+2026-02-12 15:15:12,042 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3928, Min: 0.1491, Max: 1.0000
+2026-02-12 15:15:12,043 - core.semantic_chunker - INFO - Semantic chunking complete. Created 23 chunks, skipped 1 small chunks
+2026-02-12 15:15:12,045 - core.role_classifier_embedding - INFO - Classifying 23 chunks...
+2026-02-12 15:15:13,449 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:13,450 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:13,451 - core.role_classifier_embedding - INFO -   unclassified: 18 (78.3%)
+2026-02-12 15:15:13,451 - core.role_classifier_embedding - INFO -   procedural_history: 3 (13.0%)
+2026-02-12 15:15:13,452 - core.role_classifier_embedding - INFO -   legal_issues: 1 (4.3%)
+2026-02-12 15:15:13,452 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 1 (4.3%)
+2026-02-12 15:15:13,453 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 16134 chars
+2026-02-12 15:15:13,457 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 15983 chars (0.9% reduction)
+2026-02-12 15:15:13,457 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 15983 chars
+2026-02-12 15:15:13,577 - core.semantic_chunker - INFO - Extracted 58 sentences
+2026-02-12 15:15:17,407 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5039, Min: 0.2002, Max: 0.9538
+2026-02-12 15:15:17,408 - core.semantic_chunker - INFO - Semantic chunking complete. Created 27 chunks, skipped 1 small chunks
+2026-02-12 15:15:17,410 - core.role_classifier_embedding - INFO - Classifying 27 chunks...
+2026-02-12 15:15:19,057 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:19,058 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:19,059 - core.role_classifier_embedding - INFO -   unclassified: 19 (70.4%)
+2026-02-12 15:15:19,059 - core.role_classifier_embedding - INFO -   procedural_history: 3 (11.1%)
+2026-02-12 15:15:19,060 - core.role_classifier_embedding - INFO -   legal_issues: 2 (7.4%)
+2026-02-12 15:15:19,060 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 1 (3.7%)
+2026-02-12 15:15:19,061 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (3.7%)
+2026-02-12 15:15:19,061 - core.role_classifier_embedding - INFO -   case_metadata: 1 (3.7%)
+2026-02-12 15:15:19,062 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 41095 chars
+2026-02-12 15:15:19,073 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 40619 chars (1.2% reduction)
+2026-02-12 15:15:19,074 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 40619 chars
+2026-02-12 15:15:19,324 - core.semantic_chunker - INFO - Extracted 290 sentences
+2026-02-12 15:15:26,173 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.4492, Min: 0.0856, Max: 0.8629
+2026-02-12 15:15:26,173 - core.semantic_chunker - INFO - Semantic chunking complete. Created 128 chunks, skipped 17 small chunks
+2026-02-12 15:15:26,177 - core.role_classifier_embedding - INFO - Classifying 128 chunks...
+2026-02-12 15:15:31,388 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:31,389 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:31,389 - core.role_classifier_embedding - INFO -   unclassified: 80 (62.5%)
+2026-02-12 15:15:31,389 - core.role_classifier_embedding - INFO -   procedural_history: 26 (20.3%)
+2026-02-12 15:15:31,390 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 12 (9.4%)
+2026-02-12 15:15:31,390 - core.role_classifier_embedding - INFO -   case_metadata: 5 (3.9%)
+2026-02-12 15:15:31,390 - core.role_classifier_embedding - INFO -   legal_issues: 4 (3.1%)
+2026-02-12 15:15:31,391 - core.role_classifier_embedding - INFO -   factual_background: 1 (0.8%)
+2026-02-12 15:15:31,392 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 57927 chars
+2026-02-12 15:15:31,399 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 57409 chars (0.9% reduction)
+2026-02-12 15:15:31,399 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 57409 chars
+2026-02-12 15:15:31,548 - core.semantic_chunker - INFO - Extracted 266 sentences
+2026-02-12 15:15:38,677 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.3300, Min: -0.0438, Max: 0.8935
+2026-02-12 15:15:38,678 - core.semantic_chunker - INFO - Semantic chunking complete. Created 130 chunks, skipped 2 small chunks
+2026-02-12 15:15:38,682 - core.role_classifier_embedding - INFO - Classifying 130 chunks...
+2026-02-12 15:15:46,052 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:46,053 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:46,053 - core.role_classifier_embedding - INFO -   unclassified: 113 (86.9%)
+2026-02-12 15:15:46,053 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 6 (4.6%)
+2026-02-12 15:15:46,054 - core.role_classifier_embedding - INFO -   procedural_history: 5 (3.8%)
+2026-02-12 15:15:46,054 - core.role_classifier_embedding - INFO -   legal_issues: 4 (3.1%)
+2026-02-12 15:15:46,055 - core.role_classifier_embedding - INFO -   legal_analysis: 2 (1.5%)
+2026-02-12 15:15:46,056 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 3725 chars
+2026-02-12 15:15:46,057 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 3699 chars (0.7% reduction)
+2026-02-12 15:15:46,058 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 3699 chars
+2026-02-12 15:15:46,220 - core.semantic_chunker - INFO - Extracted 21 sentences
+2026-02-12 15:15:47,628 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.5675, Min: 0.3134, Max: 0.9246
+2026-02-12 15:15:47,629 - core.semantic_chunker - INFO - Semantic chunking complete. Created 10 chunks, skipped 0 small chunks
+2026-02-12 15:15:47,630 - core.role_classifier_embedding - INFO - Classifying 10 chunks...
+2026-02-12 15:15:48,273 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:48,274 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:48,275 - core.role_classifier_embedding - INFO -   unclassified: 4 (40.0%)
+2026-02-12 15:15:48,275 - core.role_classifier_embedding - INFO -   procedural_history: 3 (30.0%)
+2026-02-12 15:15:48,275 - core.role_classifier_embedding - INFO -   holdings_and_conclusions: 2 (20.0%)
+2026-02-12 15:15:48,276 - core.role_classifier_embedding - INFO -   legal_analysis: 1 (10.0%)
+2026-02-12 15:15:48,277 - core.legal_text_cleaner - INFO - Starting text cleaning. Original length: 4482 chars
+2026-02-12 15:15:48,278 - core.legal_text_cleaner - INFO - Text cleaning complete. Final length: 4414 chars (1.5% reduction)
+2026-02-12 15:15:48,279 - core.semantic_chunker - INFO - Starting semantic chunking. Text length: 4414 chars
+2026-02-12 15:15:48,446 - core.semantic_chunker - INFO - Extracted 17 sentences
+2026-02-12 15:15:49,595 - core.semantic_chunker - INFO - Computed chunk-to-doc similarities. Avg: 0.6104, Min: 0.3179, Max: 0.9580
+2026-02-12 15:15:49,596 - core.semantic_chunker - INFO - Semantic chunking complete. Created 8 chunks, skipped 0 small chunks
+2026-02-12 15:15:49,596 - core.role_classifier_embedding - INFO - Classifying 8 chunks...
+2026-02-12 15:15:50,165 - core.role_classifier_embedding - INFO - Classification complete!
+2026-02-12 15:15:50,166 - core.role_classifier_embedding - INFO - Role distribution:
+2026-02-12 15:15:50,166 - core.role_classifier_embedding - INFO -   unclassified: 4 (50.0%)
+2026-02-12 15:15:50,166 - core.role_classifier_embedding - INFO -   procedural_history: 3 (37.5%)
+2026-02-12 15:15:50,167 - core.role_classifier_embedding - INFO -   legal_issues: 1 (12.5%)
+2026-02-12 15:15:50,168 - __main__ - INFO - Processed 10/10 documents
+2026-02-12 15:15:50,169 - __main__ - INFO - Total chunks: 484, Top-K: 92
+2026-02-12 15:15:50,169 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:15:50,170 - __main__ - INFO - STAGE 3: GENERATING EMBEDDINGS
+2026-02-12 15:15:50,170 - __main__ - INFO - ================================================================================
+2026-02-12 15:15:50,171 - __main__ - INFO - Encoding 92 texts...
+2026-02-12 15:15:53,090 - __main__ - INFO - Generated 92 embeddings in 2.92s
+2026-02-12 15:15:53,091 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:15:53,092 - __main__ - INFO - STAGE 4: SAVING OUTPUTS LOCALLY
+2026-02-12 15:15:53,093 - __main__ - INFO - ================================================================================
+2026-02-12 15:15:53,385 - __main__ - INFO - 
+================================================================================
+2026-02-12 15:15:53,386 - __main__ - INFO - TEST PIPELINE COMPLETED SUCCESSFULLY
+2026-02-12 15:15:53,386 - __main__ - INFO - ================================================================================
+2026-02-12 15:15:53,386 - __main__ - INFO - Total time: 76.88s
+2026-02-12 15:15:53,387 - __main__ - INFO - Output directory: J:\pipelines\msdb_pipeline\test_output
+2026-02-12 15:15:53,387 - __main__ - INFO - Documents processed: 10
+2026-02-12 15:15:53,388 - __main__ - INFO - Total chunks: 484
+2026-02-12 15:15:53,388 - __main__ - INFO - all_chunks files saved: 10

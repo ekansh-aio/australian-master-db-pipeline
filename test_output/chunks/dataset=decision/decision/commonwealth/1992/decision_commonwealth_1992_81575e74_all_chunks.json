@@ -14,16 +14,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5093570351600647,
+      "role": "case_metadata",
+      "confidence": 0.5898133516311646,
       "all_scores": {
-        "case_metadata": 0.33482664823532104,
-        "procedural_history": 0.25014448165893555,
-        "factual_background": 0.5093570351600647,
-        "legal_issues": 0.28423142433166504,
-        "legal_analysis": 0.4216258227825165,
-        "holdings_and_conclusions": 0.30616480112075806,
-        "other": 0.42930883169174194
+        "case_metadata": 0.5898133516311646,
+        "procedural_history": 0.3847728371620178,
+        "factual_background": 0.47526752948760986,
+        "legal_issues": 0.4192763566970825,
+        "legal_analysis": 0.4103262424468994,
+        "holdings_and_conclusions": 0.3655674457550049,
+        "other": 0.42930877208709717
       }
     }
   },
@@ -42,16 +42,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5238398313522339,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5490366220474243,
       "all_scores": {
-        "case_metadata": 0.4991980195045471,
-        "procedural_history": 0.3629699945449829,
-        "factual_background": 0.3566122055053711,
-        "legal_issues": 0.3807537257671356,
-        "legal_analysis": 0.5238398313522339,
-        "holdings_and_conclusions": 0.3585096001625061,
-        "other": 0.4292162358760834
+        "case_metadata": 0.5193314552307129,
+        "procedural_history": 0.37528979778289795,
+        "factual_background": 0.523054838180542,
+        "legal_issues": 0.3740748465061188,
+        "legal_analysis": 0.29751402139663696,
+        "holdings_and_conclusions": 0.5490366220474243,
+        "other": 0.4292161464691162
       }
     }
   },
@@ -71,15 +71,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.4915706515312195,
+      "confidence": 0.6665935516357422,
       "all_scores": {
-        "case_metadata": 0.4915706515312195,
-        "procedural_history": 0.49083828926086426,
-        "factual_background": 0.34939074516296387,
-        "legal_issues": 0.3317005932331085,
-        "legal_analysis": 0.47564730048179626,
-        "holdings_and_conclusions": 0.34174326062202454,
-        "other": 0.4672062397003174
+        "case_metadata": 0.6665935516357422,
+        "procedural_history": 0.39680546522140503,
+        "factual_background": 0.5082846879959106,
+        "legal_issues": 0.3872387409210205,
+        "legal_analysis": 0.31225350499153137,
+        "holdings_and_conclusions": 0.4658225476741791,
+        "other": 0.4672061800956726
       }
     }
   },
@@ -98,16 +98,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5739057660102844,
+      "role": "factual_background",
+      "confidence": 0.5666545033454895,
       "all_scores": {
-        "case_metadata": 0.44153618812561035,
-        "procedural_history": 0.408502995967865,
-        "factual_background": 0.35295748710632324,
-        "legal_issues": 0.42732295393943787,
-        "legal_analysis": 0.5739057660102844,
-        "holdings_and_conclusions": 0.4774106740951538,
-        "other": 0.30021047592163086
+        "case_metadata": 0.5397664308547974,
+        "procedural_history": 0.5548175573348999,
+        "factual_background": 0.5666545033454895,
+        "legal_issues": 0.44399261474609375,
+        "legal_analysis": 0.3959254324436188,
+        "holdings_and_conclusions": 0.5034531354904175,
+        "other": 0.3456916809082031
       }
     }
   },
@@ -126,16 +126,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.6078707575798035,
+      "role": "unclassified",
+      "confidence": 0.45568764209747314,
       "all_scores": {
-        "case_metadata": 0.24091745913028717,
-        "procedural_history": 0.16449818015098572,
-        "factual_background": 0.6078707575798035,
-        "legal_issues": 0.250507116317749,
-        "legal_analysis": 0.5203549861907959,
-        "holdings_and_conclusions": 0.2912655472755432,
-        "other": 0.33474797010421753
+        "case_metadata": 0.38909849524497986,
+        "procedural_history": 0.2623867690563202,
+        "factual_background": 0.45568764209747314,
+        "legal_issues": 0.22881679236888885,
+        "legal_analysis": 0.23300273716449738,
+        "holdings_and_conclusions": 0.39352118968963623,
+        "other": 0.3048288822174072
       }
     }
   },
@@ -154,16 +154,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5198485851287842,
+      "role": "case_metadata",
+      "confidence": 0.6262325048446655,
       "all_scores": {
-        "case_metadata": 0.3426004648208618,
-        "procedural_history": 0.3372231721878052,
-        "factual_background": 0.4006270170211792,
-        "legal_issues": 0.3984759449958801,
-        "legal_analysis": 0.5198485851287842,
-        "holdings_and_conclusions": 0.31654074788093567,
-        "other": 0.46250730752944946
+        "case_metadata": 0.6262325048446655,
+        "procedural_history": 0.4355934262275696,
+        "factual_background": 0.4564233422279358,
+        "legal_issues": 0.4220975637435913,
+        "legal_analysis": 0.414596825838089,
+        "holdings_and_conclusions": 0.448205828666687,
+        "other": 0.4625072181224823
       }
     }
   },
@@ -182,16 +182,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.6366223096847534,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5593057870864868,
       "all_scores": {
-        "case_metadata": 0.34124353528022766,
-        "procedural_history": 0.3362397253513336,
-        "factual_background": 0.4297333359718323,
-        "legal_issues": 0.4940820336341858,
-        "legal_analysis": 0.6366223096847534,
-        "holdings_and_conclusions": 0.44002866744995117,
-        "other": 0.2954380512237549
+        "case_metadata": 0.44705039262771606,
+        "procedural_history": 0.38550692796707153,
+        "factual_background": 0.5208364725112915,
+        "legal_issues": 0.5067229270935059,
+        "legal_analysis": 0.4195690155029297,
+        "holdings_and_conclusions": 0.5593057870864868,
+        "other": 0.31204313039779663
       }
     }
   },
@@ -210,16 +210,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5266356468200684,
+      "role": "case_metadata",
+      "confidence": 0.6590290665626526,
       "all_scores": {
-        "case_metadata": 0.45848679542541504,
-        "procedural_history": 0.26439565420150757,
-        "factual_background": 0.5266356468200684,
-        "legal_issues": 0.3019532561302185,
-        "legal_analysis": 0.3424569368362427,
-        "holdings_and_conclusions": 0.2807095944881439,
-        "other": 0.45929771661758423
+        "case_metadata": 0.6590290665626526,
+        "procedural_history": 0.360291987657547,
+        "factual_background": 0.425377756357193,
+        "legal_issues": 0.3217722177505493,
+        "legal_analysis": 0.24540580809116364,
+        "holdings_and_conclusions": 0.293745219707489,
+        "other": 0.45929768681526184
       }
     }
   },
@@ -238,16 +238,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.3706192374229431,
+      "role": "factual_background",
+      "confidence": 0.8081763386726379,
       "all_scores": {
-        "case_metadata": 0.2977055311203003,
-        "procedural_history": 0.23830825090408325,
-        "factual_background": 0.3706192374229431,
-        "legal_issues": 0.16156455874443054,
-        "legal_analysis": 0.17972861230373383,
-        "holdings_and_conclusions": 0.2062223106622696,
-        "other": 0.176942378282547
+        "case_metadata": 0.32577434182167053,
+        "procedural_history": 0.30226990580558777,
+        "factual_background": 0.8081763386726379,
+        "legal_issues": 0.18658171594142914,
+        "legal_analysis": 0.2197708785533905,
+        "holdings_and_conclusions": 0.22631262242794037,
+        "other": 0.1769423633813858
       }
     }
   },
@@ -267,15 +267,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4382420778274536,
+      "confidence": 0.48207026720046997,
       "all_scores": {
-        "case_metadata": 0.4382420778274536,
-        "procedural_history": 0.3886987268924713,
-        "factual_background": 0.2764205038547516,
-        "legal_issues": 0.358501136302948,
-        "legal_analysis": 0.2969130277633667,
-        "holdings_and_conclusions": 0.37143373489379883,
-        "other": 0.20776548981666565
+        "case_metadata": 0.48207026720046997,
+        "procedural_history": 0.3577197194099426,
+        "factual_background": 0.34163737297058105,
+        "legal_issues": 0.34802478551864624,
+        "legal_analysis": 0.3999178409576416,
+        "holdings_and_conclusions": 0.4280993342399597,
+        "other": 0.36239856481552124
       }
     }
   },
@@ -294,16 +294,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5511928796768188,
+      "role": "unclassified",
+      "confidence": 0.4949550926685333,
       "all_scores": {
-        "case_metadata": 0.30146029591560364,
-        "procedural_history": 0.3138267993927002,
-        "factual_background": 0.5511928796768188,
-        "legal_issues": 0.3137055039405823,
-        "legal_analysis": 0.5274925231933594,
-        "holdings_and_conclusions": 0.38924020528793335,
-        "other": 0.32387155294418335
+        "case_metadata": 0.44419893622398376,
+        "procedural_history": 0.3433162271976471,
+        "factual_background": 0.4949550926685333,
+        "legal_issues": 0.3760882616043091,
+        "legal_analysis": 0.3297731280326843,
+        "holdings_and_conclusions": 0.4875454306602478,
+        "other": 0.26344555616378784
       }
     }
   },
@@ -322,15 +322,15 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5481424927711487,
+      "role": "unclassified",
+      "confidence": 0.47113314270973206,
       "all_scores": {
-        "case_metadata": 0.3202112913131714,
-        "procedural_history": 0.20123791694641113,
-        "factual_background": 0.5481424927711487,
-        "legal_issues": 0.3068506419658661,
-        "legal_analysis": 0.488750696182251,
-        "holdings_and_conclusions": 0.27634334564208984,
+        "case_metadata": 0.4383446276187897,
+        "procedural_history": 0.46009325981140137,
+        "factual_background": 0.47113314270973206,
+        "legal_issues": 0.3127363324165344,
+        "legal_analysis": 0.27872171998023987,
+        "holdings_and_conclusions": 0.370189368724823,
         "other": 0.31999900937080383
       }
     }
@@ -350,16 +350,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5102284550666809,
+      "role": "factual_background",
+      "confidence": 0.6395089626312256,
       "all_scores": {
-        "case_metadata": 0.2835913300514221,
-        "procedural_history": 0.2761310338973999,
-        "factual_background": 0.3223116397857666,
-        "legal_issues": 0.4016941785812378,
-        "legal_analysis": 0.5102284550666809,
-        "holdings_and_conclusions": 0.34373316168785095,
-        "other": 0.20475022494792938
+        "case_metadata": 0.41498899459838867,
+        "procedural_history": 0.3552795648574829,
+        "factual_background": 0.6395089626312256,
+        "legal_issues": 0.3790491223335266,
+        "legal_analysis": 0.37238508462905884,
+        "holdings_and_conclusions": 0.3973489999771118,
+        "other": 0.23018048703670502
       }
     }
   },
@@ -378,16 +378,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5256780385971069,
+      "role": "factual_background",
+      "confidence": 0.5185321569442749,
       "all_scores": {
-        "case_metadata": 0.23717637360095978,
-        "procedural_history": 0.2474563717842102,
-        "factual_background": 0.26627930998802185,
-        "legal_issues": 0.33575040102005005,
-        "legal_analysis": 0.5256780385971069,
-        "holdings_and_conclusions": 0.27817463874816895,
-        "other": 0.17651784420013428
+        "case_metadata": 0.3770137429237366,
+        "procedural_history": 0.2765219807624817,
+        "factual_background": 0.5185321569442749,
+        "legal_issues": 0.3601965308189392,
+        "legal_analysis": 0.27140870690345764,
+        "holdings_and_conclusions": 0.41819244623184204,
+        "other": 0.19600585103034973
       }
     }
   },
@@ -407,15 +407,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "factual_background",
-      "confidence": 0.4644089341163635,
+      "confidence": 0.6070215106010437,
       "all_scores": {
-        "case_metadata": 0.2016744762659073,
-        "procedural_history": 0.1864505410194397,
-        "factual_background": 0.4644089341163635,
-        "legal_issues": 0.1172129213809967,
-        "legal_analysis": 0.205044224858284,
-        "holdings_and_conclusions": 0.1645425707101822,
-        "other": 0.2034919112920761
+        "case_metadata": 0.22836947441101074,
+        "procedural_history": 0.16609808802604675,
+        "factual_background": 0.6070215106010437,
+        "legal_issues": 0.14021249115467072,
+        "legal_analysis": 0.1774577647447586,
+        "holdings_and_conclusions": 0.3673630654811859,
+        "other": 0.2054869830608368
       }
     }
   },
@@ -434,16 +434,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.34815269708633423,
+      "role": "factual_background",
+      "confidence": 0.7289441227912903,
       "all_scores": {
-        "case_metadata": 0.2213982790708542,
-        "procedural_history": 0.1938246488571167,
-        "factual_background": 0.3165428936481476,
-        "legal_issues": 0.1801663339138031,
-        "legal_analysis": 0.34815269708633423,
-        "holdings_and_conclusions": 0.1913224458694458,
-        "other": 0.16551518440246582
+        "case_metadata": 0.24829049408435822,
+        "procedural_history": 0.2550893723964691,
+        "factual_background": 0.7289441227912903,
+        "legal_issues": 0.20563358068466187,
+        "legal_analysis": 0.22102521359920502,
+        "holdings_and_conclusions": 0.43292567133903503,
+        "other": 0.187448188662529
       }
     }
   },
@@ -462,16 +462,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4542793035507202,
+      "role": "factual_background",
+      "confidence": 0.6593691110610962,
       "all_scores": {
-        "case_metadata": 0.15867044031620026,
-        "procedural_history": 0.2063547670841217,
-        "factual_background": 0.3017958402633667,
-        "legal_issues": 0.2383442223072052,
-        "legal_analysis": 0.4542793035507202,
-        "holdings_and_conclusions": 0.3628193140029907,
-        "other": 0.16007910668849945
+        "case_metadata": 0.2561427056789398,
+        "procedural_history": 0.24488353729248047,
+        "factual_background": 0.6593691110610962,
+        "legal_issues": 0.22613945603370667,
+        "legal_analysis": 0.2533639967441559,
+        "holdings_and_conclusions": 0.46779075264930725,
+        "other": 0.17801396548748016
       }
     }
   },
@@ -491,15 +491,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.39897727966308594,
+      "confidence": 0.49976274371147156,
       "all_scores": {
-        "case_metadata": 0.2701041102409363,
-        "procedural_history": 0.34217554330825806,
-        "factual_background": 0.38430166244506836,
-        "legal_issues": 0.28506535291671753,
-        "legal_analysis": 0.2952978014945984,
-        "holdings_and_conclusions": 0.3527131974697113,
-        "other": 0.39897727966308594
+        "case_metadata": 0.49976274371147156,
+        "procedural_history": 0.34217551350593567,
+        "factual_background": 0.361358642578125,
+        "legal_issues": 0.27515870332717896,
+        "legal_analysis": 0.27785003185272217,
+        "holdings_and_conclusions": 0.32323992252349854,
+        "other": 0.3989771902561188
       }
     }
   },
@@ -519,15 +519,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.32225301861763,
+      "confidence": 0.2828812599182129,
       "all_scores": {
-        "case_metadata": 0.13651423156261444,
-        "procedural_history": 0.20447532832622528,
-        "factual_background": 0.32225301861763,
-        "legal_issues": 0.2630148231983185,
-        "legal_analysis": 0.2666993737220764,
-        "holdings_and_conclusions": 0.19295990467071533,
-        "other": 0.20099297165870667
+        "case_metadata": 0.23372752964496613,
+        "procedural_history": 0.1911708414554596,
+        "factual_background": 0.2828812599182129,
+        "legal_issues": 0.27566665410995483,
+        "legal_analysis": 0.279026061296463,
+        "holdings_and_conclusions": 0.2223075032234192,
+        "other": 0.19651389122009277
       }
     }
   },
@@ -547,15 +547,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4052179157733917,
+      "confidence": 0.4329848289489746,
       "all_scores": {
-        "case_metadata": 0.4052179157733917,
-        "procedural_history": 0.30226022005081177,
-        "factual_background": 0.2997589707374573,
-        "legal_issues": 0.2544991970062256,
-        "legal_analysis": 0.26173126697540283,
-        "holdings_and_conclusions": 0.31934741139411926,
-        "other": 0.25747424364089966
+        "case_metadata": 0.4329848289489746,
+        "procedural_history": 0.29278385639190674,
+        "factual_background": 0.3167189955711365,
+        "legal_issues": 0.3695134222507477,
+        "legal_analysis": 0.2726128101348877,
+        "holdings_and_conclusions": 0.3079279661178589,
+        "other": 0.26777809858322144
       }
     }
   },
@@ -574,16 +574,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4120675325393677,
+      "role": "factual_background",
+      "confidence": 0.5761681795120239,
       "all_scores": {
-        "case_metadata": 0.1915206015110016,
-        "procedural_history": 0.2107170820236206,
-        "factual_background": 0.35987645387649536,
-        "legal_issues": 0.33001118898391724,
-        "legal_analysis": 0.4120675325393677,
-        "holdings_and_conclusions": 0.294856995344162,
-        "other": 0.2994377613067627
+        "case_metadata": 0.3123207092285156,
+        "procedural_history": 0.3151264488697052,
+        "factual_background": 0.5761681795120239,
+        "legal_issues": 0.3785754442214966,
+        "legal_analysis": 0.36535537242889404,
+        "holdings_and_conclusions": 0.45812079310417175,
+        "other": 0.2776334285736084
       }
     }
   },
@@ -603,15 +603,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3173379898071289,
+      "confidence": 0.3846907615661621,
       "all_scores": {
-        "case_metadata": 0.14216245710849762,
-        "procedural_history": 0.3173379898071289,
-        "factual_background": 0.2771254777908325,
-        "legal_issues": 0.2108512818813324,
-        "legal_analysis": 0.20976290106773376,
-        "holdings_and_conclusions": 0.22544768452644348,
-        "other": 0.13963425159454346
+        "case_metadata": 0.24456800520420074,
+        "procedural_history": 0.2524474263191223,
+        "factual_background": 0.3846907615661621,
+        "legal_issues": 0.28382545709609985,
+        "legal_analysis": 0.3158303499221802,
+        "holdings_and_conclusions": 0.27438366413116455,
+        "other": 0.15632709860801697
       }
     }
   },
@@ -631,15 +631,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.29267585277557373,
+      "confidence": 0.2930956780910492,
       "all_scores": {
-        "case_metadata": 0.19919729232788086,
-        "procedural_history": 0.2507397532463074,
-        "factual_background": 0.22365209460258484,
-        "legal_issues": 0.20810562372207642,
-        "legal_analysis": 0.29267585277557373,
-        "holdings_and_conclusions": 0.19175127148628235,
-        "other": 0.14745205640792847
+        "case_metadata": 0.2930956780910492,
+        "procedural_history": 0.23743078112602234,
+        "factual_background": 0.2596239447593689,
+        "legal_issues": 0.270357221364975,
+        "legal_analysis": 0.29232633113861084,
+        "holdings_and_conclusions": 0.2784334421157837,
+        "other": 0.14986631274223328
       }
     }
   },
@@ -659,15 +659,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.41877490282058716,
+      "confidence": 0.41963639855384827,
       "all_scores": {
-        "case_metadata": 0.20063751935958862,
-        "procedural_history": 0.15726101398468018,
-        "factual_background": 0.41877490282058716,
-        "legal_issues": 0.28052249550819397,
-        "legal_analysis": 0.28576454520225525,
-        "holdings_and_conclusions": 0.17861714959144592,
-        "other": 0.16421613097190857
+        "case_metadata": 0.20438559353351593,
+        "procedural_history": 0.21871744096279144,
+        "factual_background": 0.41963639855384827,
+        "legal_issues": 0.2700217068195343,
+        "legal_analysis": 0.22114810347557068,
+        "holdings_and_conclusions": 0.3048270642757416,
+        "other": 0.16822633147239685
       }
     }
   },
@@ -686,16 +686,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4889712929725647,
+      "role": "unclassified",
+      "confidence": 0.4995848834514618,
       "all_scores": {
-        "case_metadata": 0.4179684519767761,
-        "procedural_history": 0.39004528522491455,
-        "factual_background": 0.3651781976222992,
-        "legal_issues": 0.2876894772052765,
-        "legal_analysis": 0.4889712929725647,
-        "holdings_and_conclusions": 0.30677297711372375,
-        "other": 0.3450309634208679
+        "case_metadata": 0.345104843378067,
+        "procedural_history": 0.3900452256202698,
+        "factual_background": 0.47342318296432495,
+        "legal_issues": 0.1898135393857956,
+        "legal_analysis": 0.3005143404006958,
+        "holdings_and_conclusions": 0.4995848834514618,
+        "other": 0.34503087401390076
       }
     }
   },
@@ -715,15 +715,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4485631585121155,
+      "confidence": 0.40048566460609436,
       "all_scores": {
-        "case_metadata": 0.2657454013824463,
-        "procedural_history": 0.4485631585121155,
-        "factual_background": 0.20835325121879578,
-        "legal_issues": 0.19791750609874725,
-        "legal_analysis": 0.11041472107172012,
-        "holdings_and_conclusions": 0.231458842754364,
-        "other": 0.265341192483902
+        "case_metadata": 0.23826028406620026,
+        "procedural_history": 0.40048566460609436,
+        "factual_background": 0.20835328102111816,
+        "legal_issues": 0.16304375231266022,
+        "legal_analysis": 0.1278955340385437,
+        "holdings_and_conclusions": 0.21191346645355225,
+        "other": 0.27425459027290344
       }
     }
   },
@@ -743,14 +743,14 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2775745987892151,
+      "confidence": 0.28193217515945435,
       "all_scores": {
-        "case_metadata": 0.11579714715480804,
-        "procedural_history": 0.2775745987892151,
-        "factual_background": 0.24158787727355957,
-        "legal_issues": 0.0673973485827446,
-        "legal_analysis": 0.08863785117864609,
-        "holdings_and_conclusions": 0.09819138050079346,
+        "case_metadata": 0.28193217515945435,
+        "procedural_history": 0.26856163144111633,
+        "factual_background": 0.19527263939380646,
+        "legal_issues": 0.17437852919101715,
+        "legal_analysis": 0.1590956747531891,
+        "holdings_and_conclusions": 0.13423210382461548,
         "other": 0.19981533288955688
       }
     }
@@ -771,15 +771,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3960076570510864,
+      "confidence": 0.41359540820121765,
       "all_scores": {
-        "case_metadata": 0.3960076570510864,
-        "procedural_history": 0.3091875910758972,
-        "factual_background": 0.2242380976676941,
-        "legal_issues": 0.2996768355369568,
-        "legal_analysis": 0.2557287812232971,
-        "holdings_and_conclusions": 0.37380701303482056,
-        "other": 0.17488700151443481
+        "case_metadata": 0.38081735372543335,
+        "procedural_history": 0.40014541149139404,
+        "factual_background": 0.2965761423110962,
+        "legal_issues": 0.3065991997718811,
+        "legal_analysis": 0.39199116826057434,
+        "holdings_and_conclusions": 0.41359540820121765,
+        "other": 0.21689191460609436
       }
     }
   },
@@ -799,15 +799,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5785083770751953,
+      "confidence": 0.5785082578659058,
       "all_scores": {
-        "case_metadata": 0.3989795744419098,
-        "procedural_history": 0.5785083770751953,
-        "factual_background": 0.3166275918483734,
-        "legal_issues": 0.3399205803871155,
-        "legal_analysis": 0.3562259078025818,
+        "case_metadata": 0.4953708052635193,
+        "procedural_history": 0.5785082578659058,
+        "factual_background": 0.46576616168022156,
+        "legal_issues": 0.3637508749961853,
+        "legal_analysis": 0.3666239082813263,
         "holdings_and_conclusions": 0.47987717390060425,
-        "other": 0.10710582882165909
+        "other": 0.3326871991157532
       }
     }
   },
@@ -827,14 +827,14 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.33083444833755493,
+      "confidence": 0.3475235104560852,
       "all_scores": {
-        "case_metadata": 0.33083444833755493,
-        "procedural_history": 0.21019838750362396,
-        "factual_background": 0.3092551529407501,
-        "legal_issues": 0.18811243772506714,
-        "legal_analysis": 0.18527403473854065,
-        "holdings_and_conclusions": 0.20242524147033691,
+        "case_metadata": 0.3475235104560852,
+        "procedural_history": 0.34095942974090576,
+        "factual_background": 0.2797233760356903,
+        "legal_issues": 0.23928296566009521,
+        "legal_analysis": 0.22576531767845154,
+        "holdings_and_conclusions": 0.23488011956214905,
         "other": 0.2838578224182129
       }
     }
@@ -854,16 +854,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.4886992573738098,
+      "role": "unclassified",
+      "confidence": 0.45759516954421997,
       "all_scores": {
-        "case_metadata": 0.45759522914886475,
-        "procedural_history": 0.22013187408447266,
-        "factual_background": 0.4886992573738098,
-        "legal_issues": 0.1755458116531372,
-        "legal_analysis": 0.2165798842906952,
-        "holdings_and_conclusions": 0.11068960279226303,
-        "other": 0.12077271938323975
+        "case_metadata": 0.45759516954421997,
+        "procedural_history": 0.2482769638299942,
+        "factual_background": 0.36765119433403015,
+        "legal_issues": 0.19169467687606812,
+        "legal_analysis": 0.18672099709510803,
+        "holdings_and_conclusions": 0.17444396018981934,
+        "other": 0.12077267467975616
       }
     }
   },
@@ -883,15 +883,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4061204791069031,
+      "confidence": 0.36743783950805664,
       "all_scores": {
-        "case_metadata": 0.3674379587173462,
-        "procedural_history": 0.10248693078756332,
-        "factual_background": 0.4061204791069031,
-        "legal_issues": 0.13960835337638855,
-        "legal_analysis": 0.18489475548267365,
-        "holdings_and_conclusions": 0.14019334316253662,
-        "other": 0.12059439718723297
+        "case_metadata": 0.36743783950805664,
+        "procedural_history": 0.24851122498512268,
+        "factual_background": 0.3354106545448303,
+        "legal_issues": 0.1862344741821289,
+        "legal_analysis": 0.15577498078346252,
+        "holdings_and_conclusions": 0.15747660398483276,
+        "other": 0.13295570015907288
       }
     }
   },
@@ -910,15 +910,15 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.49014756083488464,
+      "role": "unclassified",
+      "confidence": 0.49014753103256226,
       "all_scores": {
-        "case_metadata": 0.49014756083488464,
-        "procedural_history": 0.20024926960468292,
-        "factual_background": 0.3281180262565613,
-        "legal_issues": 0.2890450954437256,
-        "legal_analysis": 0.4034634232521057,
-        "holdings_and_conclusions": 0.24991674721240997,
+        "case_metadata": 0.49014753103256226,
+        "procedural_history": 0.24610215425491333,
+        "factual_background": 0.38134151697158813,
+        "legal_issues": 0.2593972980976105,
+        "legal_analysis": 0.1812140941619873,
+        "holdings_and_conclusions": 0.31965887546539307,
         "other": 0.2448473870754242
       }
     }
@@ -938,15 +938,15 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
+      "role": "unclassified",
       "confidence": 0.4636372923851013,
       "all_scores": {
         "case_metadata": 0.4636372923851013,
-        "procedural_history": 0.20096662640571594,
-        "factual_background": 0.33155548572540283,
-        "legal_issues": 0.2218371331691742,
-        "legal_analysis": 0.41796988248825073,
-        "holdings_and_conclusions": 0.211870938539505,
+        "procedural_history": 0.18677638471126556,
+        "factual_background": 0.41269803047180176,
+        "legal_issues": 0.20170143246650696,
+        "legal_analysis": 0.16926057636737823,
+        "holdings_and_conclusions": 0.28884363174438477,
         "other": 0.20770573616027832
       }
     }
@@ -966,16 +966,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5629316568374634,
+      "role": "unclassified",
+      "confidence": 0.4130977392196655,
       "all_scores": {
-        "case_metadata": 0.2832474112510681,
-        "procedural_history": 0.12563171982765198,
-        "factual_background": 0.5629316568374634,
-        "legal_issues": 0.13108915090560913,
-        "legal_analysis": 0.13892251253128052,
-        "holdings_and_conclusions": 0.14858347177505493,
-        "other": 0.06882438063621521
+        "case_metadata": 0.28465551137924194,
+        "procedural_history": 0.15209591388702393,
+        "factual_background": 0.4130977392196655,
+        "legal_issues": 0.10653030127286911,
+        "legal_analysis": 0.09970968961715698,
+        "holdings_and_conclusions": 0.14075973629951477,
+        "other": 0.07107238471508026
       }
     }
   },
@@ -995,15 +995,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4216634929180145,
+      "confidence": 0.4273197054862976,
       "all_scores": {
-        "case_metadata": 0.4216634929180145,
-        "procedural_history": 0.36737972497940063,
-        "factual_background": 0.3514101207256317,
-        "legal_issues": 0.260159432888031,
-        "legal_analysis": 0.2726380527019501,
-        "holdings_and_conclusions": 0.3453444540500641,
-        "other": 0.1595294177532196
+        "case_metadata": 0.4273197054862976,
+        "procedural_history": 0.3797910511493683,
+        "factual_background": 0.3340482711791992,
+        "legal_issues": 0.2763621211051941,
+        "legal_analysis": 0.25593891739845276,
+        "holdings_and_conclusions": 0.3625872731208801,
+        "other": 0.19954842329025269
       }
     }
   },
@@ -1023,15 +1023,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5809440612792969,
+      "confidence": 0.7771392464637756,
       "all_scores": {
-        "case_metadata": 0.4084928631782532,
-        "procedural_history": 0.5809440612792969,
-        "factual_background": 0.24305973947048187,
-        "legal_issues": 0.36259084939956665,
-        "legal_analysis": 0.32191532850265503,
-        "holdings_and_conclusions": 0.526779055595398,
-        "other": 0.22153958678245544
+        "case_metadata": 0.38096410036087036,
+        "procedural_history": 0.7771392464637756,
+        "factual_background": 0.5198090076446533,
+        "legal_issues": 0.30705907940864563,
+        "legal_analysis": 0.48037755489349365,
+        "holdings_and_conclusions": 0.41343387961387634,
+        "other": 0.30934959650039673
       }
     }
   },
@@ -1050,16 +1050,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.45214974880218506,
+      "role": "unclassified",
+      "confidence": 0.47324737906455994,
       "all_scores": {
-        "case_metadata": 0.45214974880218506,
-        "procedural_history": 0.3725600838661194,
-        "factual_background": 0.39224541187286377,
-        "legal_issues": 0.3184492886066437,
-        "legal_analysis": 0.29832524061203003,
-        "holdings_and_conclusions": 0.28423452377319336,
-        "other": 0.18754810094833374
+        "case_metadata": 0.43118277192115784,
+        "procedural_history": 0.47324737906455994,
+        "factual_background": 0.3962290585041046,
+        "legal_issues": 0.2620958983898163,
+        "legal_analysis": 0.3400059938430786,
+        "holdings_and_conclusions": 0.3495464622974396,
+        "other": 0.2617027461528778
       }
     }
   },
@@ -1079,15 +1079,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.38020238280296326,
+      "confidence": 0.32099372148513794,
       "all_scores": {
-        "case_metadata": 0.17162589728832245,
-        "procedural_history": 0.1859375536441803,
-        "factual_background": 0.38020238280296326,
-        "legal_issues": 0.12373296171426773,
-        "legal_analysis": 0.12584495544433594,
-        "holdings_and_conclusions": 0.11758312582969666,
-        "other": 0.15877941250801086
+        "case_metadata": 0.24621957540512085,
+        "procedural_history": 0.19009536504745483,
+        "factual_background": 0.32099372148513794,
+        "legal_issues": 0.18172895908355713,
+        "legal_analysis": 0.18765223026275635,
+        "holdings_and_conclusions": 0.2205432504415512,
+        "other": 0.14924395084381104
       }
     }
   },
@@ -1106,16 +1106,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.47750377655029297,
+      "role": "unclassified",
+      "confidence": 0.4775036573410034,
       "all_scores": {
-        "case_metadata": 0.47750377655029297,
-        "procedural_history": 0.17493686079978943,
-        "factual_background": 0.2008098065853119,
-        "legal_issues": 0.11213026940822601,
-        "legal_analysis": 0.14801988005638123,
-        "holdings_and_conclusions": 0.10777057707309723,
-        "other": 0.057362303137779236
+        "case_metadata": 0.4775036573410034,
+        "procedural_history": 0.2200266420841217,
+        "factual_background": 0.19402971863746643,
+        "legal_issues": 0.14701542258262634,
+        "legal_analysis": 0.08810247480869293,
+        "holdings_and_conclusions": 0.1217569038271904,
+        "other": 0.0649196058511734
       }
     }
   },
@@ -1134,16 +1134,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.45684802532196045,
+      "role": "procedural_history",
+      "confidence": 0.5261292457580566,
       "all_scores": {
-        "case_metadata": 0.45684802532196045,
-        "procedural_history": 0.283317506313324,
-        "factual_background": 0.3263722360134125,
-        "legal_issues": 0.26807358860969543,
-        "legal_analysis": 0.282056987285614,
-        "holdings_and_conclusions": 0.2228153645992279,
-        "other": 0.17413583397865295
+        "case_metadata": 0.4568478763103485,
+        "procedural_history": 0.5261292457580566,
+        "factual_background": 0.420532763004303,
+        "legal_issues": 0.22126418352127075,
+        "legal_analysis": 0.28104162216186523,
+        "holdings_and_conclusions": 0.29470598697662354,
+        "other": 0.17413578927516937
       }
     }
   },
@@ -1163,15 +1163,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.35643598437309265,
+      "confidence": 0.3120509386062622,
       "all_scores": {
-        "case_metadata": 0.23345057666301727,
-        "procedural_history": 0.29631152749061584,
-        "factual_background": 0.35643598437309265,
-        "legal_issues": 0.19156092405319214,
-        "legal_analysis": 0.20166687667369843,
-        "holdings_and_conclusions": 0.245005264878273,
-        "other": 0.17923477292060852
+        "case_metadata": 0.3031772971153259,
+        "procedural_history": 0.27379846572875977,
+        "factual_background": 0.3120509386062622,
+        "legal_issues": 0.21102863550186157,
+        "legal_analysis": 0.2116992175579071,
+        "holdings_and_conclusions": 0.24634459614753723,
+        "other": 0.17923478782176971
       }
     }
   },
@@ -1190,16 +1190,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.4681832790374756,
+      "role": "legal_analysis",
+      "confidence": 0.5828951597213745,
       "all_scores": {
-        "case_metadata": 0.4082895517349243,
-        "procedural_history": 0.4681832790374756,
-        "factual_background": 0.37075114250183105,
-        "legal_issues": 0.3492767810821533,
-        "legal_analysis": 0.31515026092529297,
-        "holdings_and_conclusions": 0.458608478307724,
-        "other": 0.13884131610393524
+        "case_metadata": 0.39652299880981445,
+        "procedural_history": 0.5771123170852661,
+        "factual_background": 0.5247405171394348,
+        "legal_issues": 0.3313654661178589,
+        "legal_analysis": 0.5828951597213745,
+        "holdings_and_conclusions": 0.4586085081100464,
+        "other": 0.2588241994380951
       }
     }
   },
@@ -1218,16 +1218,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4141298532485962,
+      "role": "factual_background",
+      "confidence": 0.5974671244621277,
       "all_scores": {
-        "case_metadata": 0.32558274269104004,
+        "case_metadata": 0.32845303416252136,
         "procedural_history": 0.37880879640579224,
-        "factual_background": 0.3207840323448181,
-        "legal_issues": 0.3085988759994507,
-        "legal_analysis": 0.4141298532485962,
-        "holdings_and_conclusions": 0.3267214298248291,
-        "other": 0.16658762097358704
+        "factual_background": 0.5974671244621277,
+        "legal_issues": 0.3070604205131531,
+        "legal_analysis": 0.28359922766685486,
+        "holdings_and_conclusions": 0.42132607102394104,
+        "other": 0.24782191216945648
       }
     }
   },
@@ -1247,15 +1247,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4162027835845947,
+      "confidence": 0.43214982748031616,
       "all_scores": {
-        "case_metadata": 0.4162027835845947,
+        "case_metadata": 0.4162026345729828,
         "procedural_history": 0.3669307827949524,
-        "factual_background": 0.40892478823661804,
-        "legal_issues": 0.3474988639354706,
-        "legal_analysis": 0.3904297947883606,
-        "holdings_and_conclusions": 0.3163244128227234,
-        "other": 0.24236181378364563
+        "factual_background": 0.40892481803894043,
+        "legal_issues": 0.365279883146286,
+        "legal_analysis": 0.24194589257240295,
+        "holdings_and_conclusions": 0.43214982748031616,
+        "other": 0.24236178398132324
       }
     }
   },
@@ -1274,16 +1274,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.44349607825279236,
+      "role": "factual_background",
+      "confidence": 0.7326073050498962,
       "all_scores": {
         "case_metadata": 0.25091713666915894,
-        "procedural_history": 0.24563074111938477,
-        "factual_background": 0.29291418194770813,
-        "legal_issues": 0.23753347992897034,
-        "legal_analysis": 0.44349607825279236,
-        "holdings_and_conclusions": 0.2684866487979889,
-        "other": 0.1731238067150116
+        "procedural_history": 0.2545210123062134,
+        "factual_background": 0.7326073050498962,
+        "legal_issues": 0.27455225586891174,
+        "legal_analysis": 0.2799818813800812,
+        "holdings_and_conclusions": 0.4515460133552551,
+        "other": 0.1731237769126892
       }
     }
   },
@@ -1302,16 +1302,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "holdings_and_conclusions",
-      "confidence": 0.5099448561668396,
+      "role": "unclassified",
+      "confidence": 0.4516993463039398,
       "all_scores": {
-        "case_metadata": 0.26121804118156433,
-        "procedural_history": 0.3730016350746155,
-        "factual_background": 0.2945372760295868,
-        "legal_issues": 0.3303959369659424,
-        "legal_analysis": 0.3574984073638916,
-        "holdings_and_conclusions": 0.5099448561668396,
-        "other": 0.17339271306991577
+        "case_metadata": 0.31058815121650696,
+        "procedural_history": 0.3274967670440674,
+        "factual_background": 0.3403680622577667,
+        "legal_issues": 0.3367512822151184,
+        "legal_analysis": 0.34164008498191833,
+        "holdings_and_conclusions": 0.4516993463039398,
+        "other": 0.27039971947669983
       }
     }
   },
@@ -1330,16 +1330,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.46775513887405396,
+      "role": "factual_background",
+      "confidence": 0.7059065103530884,
       "all_scores": {
-        "case_metadata": 0.24260978400707245,
-        "procedural_history": 0.2790200412273407,
-        "factual_background": 0.3194793462753296,
-        "legal_issues": 0.29092293977737427,
-        "legal_analysis": 0.46775513887405396,
-        "holdings_and_conclusions": 0.32233917713165283,
-        "other": 0.2262466847896576
+        "case_metadata": 0.3788450062274933,
+        "procedural_history": 0.3009573221206665,
+        "factual_background": 0.7059065103530884,
+        "legal_issues": 0.316211998462677,
+        "legal_analysis": 0.3106949031352997,
+        "holdings_and_conclusions": 0.4391944408416748,
+        "other": 0.22624671459197998
       }
     }
   },
@@ -1358,16 +1358,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4575554132461548,
+      "role": "factual_background",
+      "confidence": 0.636650562286377,
       "all_scores": {
-        "case_metadata": 0.24642056226730347,
-        "procedural_history": 0.1535661220550537,
-        "factual_background": 0.3086315393447876,
-        "legal_issues": 0.16242948174476624,
-        "legal_analysis": 0.4575554132461548,
-        "holdings_and_conclusions": 0.18214377760887146,
-        "other": 0.14146941900253296
+        "case_metadata": 0.24642053246498108,
+        "procedural_history": 0.15356609225273132,
+        "factual_background": 0.636650562286377,
+        "legal_issues": 0.12318803369998932,
+        "legal_analysis": 0.1360045224428177,
+        "holdings_and_conclusions": 0.38333365321159363,
+        "other": 0.14146940410137177
       }
     }
   },
@@ -1386,16 +1386,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5243991613388062,
+      "role": "factual_background",
+      "confidence": 0.6646234393119812,
       "all_scores": {
-        "case_metadata": 0.2674553394317627,
-        "procedural_history": 0.17178569734096527,
-        "factual_background": 0.3430134356021881,
-        "legal_issues": 0.32639452815055847,
-        "legal_analysis": 0.5243991613388062,
-        "holdings_and_conclusions": 0.29525014758110046,
-        "other": 0.2206517457962036
+        "case_metadata": 0.36464977264404297,
+        "procedural_history": 0.2788355052471161,
+        "factual_background": 0.6646234393119812,
+        "legal_issues": 0.3247795104980469,
+        "legal_analysis": 0.3268051743507385,
+        "holdings_and_conclusions": 0.43746641278266907,
+        "other": 0.22065171599388123
       }
     }
   },
@@ -1415,15 +1415,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.43464893102645874,
+      "confidence": 0.45440346002578735,
       "all_scores": {
-        "case_metadata": 0.3922428488731384,
-        "procedural_history": 0.43464893102645874,
-        "factual_background": 0.39196962118148804,
-        "legal_issues": 0.41450053453445435,
-        "legal_analysis": 0.4194220304489136,
-        "holdings_and_conclusions": 0.42040693759918213,
-        "other": 0.22671937942504883
+        "case_metadata": 0.4509899318218231,
+        "procedural_history": 0.4297880530357361,
+        "factual_background": 0.4528087079524994,
+        "legal_issues": 0.4400296211242676,
+        "legal_analysis": 0.37280675768852234,
+        "holdings_and_conclusions": 0.45440346002578735,
+        "other": 0.3033514618873596
       }
     }
   },
@@ -1442,16 +1442,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.523766815662384,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.500525712966919,
       "all_scores": {
-        "case_metadata": 0.3323643207550049,
-        "procedural_history": 0.523766815662384,
-        "factual_background": 0.3331514000892639,
-        "legal_issues": 0.4112107753753662,
-        "legal_analysis": 0.48799896240234375,
-        "holdings_and_conclusions": 0.49990931153297424,
-        "other": 0.1985146701335907
+        "case_metadata": 0.43865615129470825,
+        "procedural_history": 0.4226417541503906,
+        "factual_background": 0.47212186455726624,
+        "legal_issues": 0.4283828139305115,
+        "legal_analysis": 0.4179079830646515,
+        "holdings_and_conclusions": 0.500525712966919,
+        "other": 0.39292237162590027
       }
     }
   },
@@ -1471,15 +1471,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.4713950753211975,
+      "confidence": 0.538453221321106,
       "all_scores": {
-        "case_metadata": 0.4593920111656189,
-        "procedural_history": 0.45662111043930054,
-        "factual_background": 0.41265854239463806,
-        "legal_issues": 0.3797718286514282,
-        "legal_analysis": 0.2825086712837219,
-        "holdings_and_conclusions": 0.4713950753211975,
-        "other": 0.19863736629486084
+        "case_metadata": 0.41469377279281616,
+        "procedural_history": 0.44304102659225464,
+        "factual_background": 0.4322061836719513,
+        "legal_issues": 0.37977179884910583,
+        "legal_analysis": 0.3987080454826355,
+        "holdings_and_conclusions": 0.538453221321106,
+        "other": 0.26429033279418945
       }
     }
   },
@@ -1498,16 +1498,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5628387928009033,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5436927080154419,
       "all_scores": {
-        "case_metadata": 0.3505306839942932,
-        "procedural_history": 0.5628387928009033,
-        "factual_background": 0.4723668098449707,
-        "legal_issues": 0.35761669278144836,
-        "legal_analysis": 0.35672080516815186,
-        "holdings_and_conclusions": 0.49876201152801514,
-        "other": 0.2666705548763275
+        "case_metadata": 0.44678574800491333,
+        "procedural_history": 0.5168668031692505,
+        "factual_background": 0.4915291965007782,
+        "legal_issues": 0.5244458913803101,
+        "legal_analysis": 0.5023834705352783,
+        "holdings_and_conclusions": 0.5436927080154419,
+        "other": 0.37439683079719543
       }
     }
   },
@@ -1527,14 +1527,14 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3822326064109802,
+      "confidence": 0.33910471200942993,
       "all_scores": {
-        "case_metadata": 0.31273573637008667,
-        "procedural_history": 0.3058399558067322,
-        "factual_background": 0.3822326064109802,
-        "legal_issues": 0.20199549198150635,
-        "legal_analysis": 0.23253752291202545,
-        "holdings_and_conclusions": 0.22069618105888367,
+        "case_metadata": 0.3217005133628845,
+        "procedural_history": 0.3151397407054901,
+        "factual_background": 0.33910471200942993,
+        "legal_issues": 0.2777714729309082,
+        "legal_analysis": 0.23253750801086426,
+        "holdings_and_conclusions": 0.31220218539237976,
         "other": 0.2553040385246277
       }
     }
@@ -1554,16 +1554,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.5512782335281372,
+      "role": "unclassified",
+      "confidence": 0.37971973419189453,
       "all_scores": {
-        "case_metadata": 0.29647812247276306,
-        "procedural_history": 0.16578131914138794,
-        "factual_background": 0.5512782335281372,
-        "legal_issues": 0.18372176587581635,
-        "legal_analysis": 0.20003020763397217,
-        "holdings_and_conclusions": 0.2448769211769104,
-        "other": 0.20377430319786072
+        "case_metadata": 0.32904303073883057,
+        "procedural_history": 0.22320348024368286,
+        "factual_background": 0.37971973419189453,
+        "legal_issues": 0.2942270040512085,
+        "legal_analysis": 0.2493906319141388,
+        "holdings_and_conclusions": 0.30987119674682617,
+        "other": 0.27541205286979675
       }
     }
   },
@@ -1582,16 +1582,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5785220861434937,
+      "role": "case_metadata",
+      "confidence": 0.5538733601570129,
       "all_scores": {
-        "case_metadata": 0.3980315923690796,
-        "procedural_history": 0.5785220861434937,
-        "factual_background": 0.4684835374355316,
-        "legal_issues": 0.4707767963409424,
-        "legal_analysis": 0.4850462079048157,
-        "holdings_and_conclusions": 0.5335944890975952,
-        "other": 0.38163161277770996
+        "case_metadata": 0.5538733601570129,
+        "procedural_history": 0.5387243032455444,
+        "factual_background": 0.47245025634765625,
+        "legal_issues": 0.5109861493110657,
+        "legal_analysis": 0.5090142488479614,
+        "holdings_and_conclusions": 0.5182540416717529,
+        "other": 0.4440608620643616
       }
     }
   },
@@ -1610,16 +1610,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
+      "role": "unclassified",
       "confidence": 0.46764737367630005,
       "all_scores": {
-        "case_metadata": 0.24686452746391296,
+        "case_metadata": 0.2866440415382385,
         "procedural_history": 0.46764737367630005,
-        "factual_background": 0.40572014451026917,
-        "legal_issues": 0.2648772895336151,
+        "factual_background": 0.37614741921424866,
+        "legal_issues": 0.26850882172584534,
         "legal_analysis": 0.3106561303138733,
-        "holdings_and_conclusions": 0.36151793599128723,
-        "other": 0.1933305710554123
+        "holdings_and_conclusions": 0.4244237542152405,
+        "other": 0.1933305561542511
       }
     }
   },
@@ -1638,16 +1638,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.4905427396297455,
+      "role": "unclassified",
+      "confidence": 0.4786057472229004,
       "all_scores": {
-        "case_metadata": 0.4905427396297455,
-        "procedural_history": 0.42559272050857544,
-        "factual_background": 0.30362027883529663,
-        "legal_issues": 0.2748674154281616,
-        "legal_analysis": 0.2949422597885132,
-        "holdings_and_conclusions": 0.3864628076553345,
-        "other": 0.22855284810066223
+        "case_metadata": 0.4786057472229004,
+        "procedural_history": 0.36467108130455017,
+        "factual_background": 0.3845817446708679,
+        "legal_issues": 0.3428015112876892,
+        "legal_analysis": 0.2949538826942444,
+        "holdings_and_conclusions": 0.3903772532939911,
+        "other": 0.29420292377471924
       }
     }
   },
@@ -1667,15 +1667,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.5656654238700867,
+      "confidence": 0.5037067532539368,
       "all_scores": {
-        "case_metadata": 0.5656654238700867,
-        "procedural_history": 0.5272032022476196,
-        "factual_background": 0.3670257329940796,
-        "legal_issues": 0.28150424361228943,
-        "legal_analysis": 0.33873575925827026,
-        "holdings_and_conclusions": 0.4465976655483246,
-        "other": 0.21837739646434784
+        "case_metadata": 0.5037067532539368,
+        "procedural_history": 0.47092944383621216,
+        "factual_background": 0.4248844385147095,
+        "legal_issues": 0.31831884384155273,
+        "legal_analysis": 0.30891430377960205,
+        "holdings_and_conclusions": 0.5003095269203186,
+        "other": 0.2796347439289093
       }
     }
   },
@@ -1694,16 +1694,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "case_metadata",
-      "confidence": 0.45640137791633606,
+      "role": "unclassified",
+      "confidence": 0.45091837644577026,
       "all_scores": {
-        "case_metadata": 0.45640137791633606,
-        "procedural_history": 0.4232468008995056,
-        "factual_background": 0.30320900678634644,
-        "legal_issues": 0.33444833755493164,
-        "legal_analysis": 0.3144949674606323,
-        "holdings_and_conclusions": 0.403769850730896,
-        "other": 0.22049954533576965
+        "case_metadata": 0.42213091254234314,
+        "procedural_history": 0.42196550965309143,
+        "factual_background": 0.33503586053848267,
+        "legal_issues": 0.45091837644577026,
+        "legal_analysis": 0.39762553572654724,
+        "holdings_and_conclusions": 0.44468697905540466,
+        "other": 0.3486899733543396
       }
     }
   },
@@ -1722,16 +1722,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5128482580184937,
+      "role": "unclassified",
+      "confidence": 0.4779510796070099,
       "all_scores": {
-        "case_metadata": 0.419899582862854,
-        "procedural_history": 0.5128482580184937,
-        "factual_background": 0.38798174262046814,
-        "legal_issues": 0.32130876183509827,
-        "legal_analysis": 0.3666241765022278,
-        "holdings_and_conclusions": 0.4762500822544098,
-        "other": 0.17532092332839966
+        "case_metadata": 0.4317958950996399,
+        "procedural_history": 0.4556501805782318,
+        "factual_background": 0.46635162830352783,
+        "legal_issues": 0.46601808071136475,
+        "legal_analysis": 0.4252723157405853,
+        "holdings_and_conclusions": 0.4779510796070099,
+        "other": 0.33422666788101196
       }
     }
   },
@@ -1751,15 +1751,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.24762625992298126,
+      "confidence": 0.2731626033782959,
       "all_scores": {
-        "case_metadata": 0.16630981862545013,
-        "procedural_history": 0.24762625992298126,
-        "factual_background": 0.21572211384773254,
-        "legal_issues": 0.1858072429895401,
-        "legal_analysis": 0.14472731947898865,
-        "holdings_and_conclusions": 0.18142077326774597,
-        "other": 0.19139781594276428
+        "case_metadata": 0.21626222133636475,
+        "procedural_history": 0.20429623126983643,
+        "factual_background": 0.2731626033782959,
+        "legal_issues": 0.17933258414268494,
+        "legal_analysis": 0.1315121352672577,
+        "holdings_and_conclusions": 0.22512021660804749,
+        "other": 0.19139784574508667
       }
     }
   },
@@ -1779,15 +1779,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5255483388900757,
+      "confidence": 0.5255482792854309,
       "all_scores": {
-        "case_metadata": 0.3500045835971832,
-        "procedural_history": 0.5255483388900757,
-        "factual_background": 0.43851780891418457,
-        "legal_issues": 0.41574716567993164,
-        "legal_analysis": 0.36035752296447754,
-        "holdings_and_conclusions": 0.4383169412612915,
-        "other": 0.13579314947128296
+        "case_metadata": 0.4058159589767456,
+        "procedural_history": 0.5255482792854309,
+        "factual_background": 0.4255000948905945,
+        "legal_issues": 0.41078633069992065,
+        "legal_analysis": 0.36238357424736023,
+        "holdings_and_conclusions": 0.4609604477882385,
+        "other": 0.24207890033721924
       }
     }
   },
@@ -1806,16 +1806,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4870302081108093,
+      "role": "factual_background",
+      "confidence": 0.7157061100006104,
       "all_scores": {
-        "case_metadata": 0.21601304411888123,
-        "procedural_history": 0.1858157366514206,
-        "factual_background": 0.316723108291626,
-        "legal_issues": 0.22646057605743408,
-        "legal_analysis": 0.4870302081108093,
-        "holdings_and_conclusions": 0.32425734400749207,
-        "other": 0.15803629159927368
+        "case_metadata": 0.3010735511779785,
+        "procedural_history": 0.23282375931739807,
+        "factual_background": 0.7157061100006104,
+        "legal_issues": 0.25136470794677734,
+        "legal_analysis": 0.22793105244636536,
+        "holdings_and_conclusions": 0.48939380049705505,
+        "other": 0.15803620219230652
       }
     }
   },
@@ -1834,16 +1834,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.6492586135864258,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5237899422645569,
       "all_scores": {
-        "case_metadata": 0.3457452058792114,
-        "procedural_history": 0.3729274570941925,
-        "factual_background": 0.3771599531173706,
-        "legal_issues": 0.3733627200126648,
-        "legal_analysis": 0.6492586135864258,
-        "holdings_and_conclusions": 0.38410288095474243,
-        "other": 0.25944265723228455
+        "case_metadata": 0.44194427132606506,
+        "procedural_history": 0.41805145144462585,
+        "factual_background": 0.4717767834663391,
+        "legal_issues": 0.39589446783065796,
+        "legal_analysis": 0.3415805995464325,
+        "holdings_and_conclusions": 0.5237899422645569,
+        "other": 0.2832704186439514
       }
     }
   },
@@ -1862,16 +1862,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.48710235953330994,
+      "role": "case_metadata",
+      "confidence": 0.5834488868713379,
       "all_scores": {
-        "case_metadata": 0.2918300926685333,
-        "procedural_history": 0.33320069313049316,
-        "factual_background": 0.26844674348831177,
-        "legal_issues": 0.36634397506713867,
-        "legal_analysis": 0.48710235953330994,
-        "holdings_and_conclusions": 0.28536537289619446,
-        "other": 0.19084258377552032
+        "case_metadata": 0.5834488868713379,
+        "procedural_history": 0.49640560150146484,
+        "factual_background": 0.4393438398838043,
+        "legal_issues": 0.4486386775970459,
+        "legal_analysis": 0.32441017031669617,
+        "holdings_and_conclusions": 0.370866596698761,
+        "other": 0.22016260027885437
       }
     }
   },
@@ -1891,15 +1891,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5137561559677124,
+      "confidence": 0.5137560963630676,
       "all_scores": {
-        "case_metadata": 0.23563669621944427,
-        "procedural_history": 0.5137561559677124,
-        "factual_background": 0.39912694692611694,
-        "legal_issues": 0.21460199356079102,
+        "case_metadata": 0.2714466452598572,
+        "procedural_history": 0.5137560963630676,
+        "factual_background": 0.34011727571487427,
+        "legal_issues": 0.2746827006340027,
         "legal_analysis": 0.19799959659576416,
-        "holdings_and_conclusions": 0.3111458420753479,
-        "other": 0.15757963061332703
+        "holdings_and_conclusions": 0.3821914494037628,
+        "other": 0.18348465859889984
       }
     }
   },
@@ -1919,15 +1919,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.6427397727966309,
+      "confidence": 0.6427396535873413,
       "all_scores": {
-        "case_metadata": 0.5057752132415771,
-        "procedural_history": 0.6427397727966309,
-        "factual_background": 0.402921199798584,
-        "legal_issues": 0.3245135545730591,
-        "legal_analysis": 0.30512797832489014,
-        "holdings_and_conclusions": 0.5426590442657471,
-        "other": 0.1494522988796234
+        "case_metadata": 0.4204716682434082,
+        "procedural_history": 0.6427396535873413,
+        "factual_background": 0.47318899631500244,
+        "legal_issues": 0.3460308611392975,
+        "legal_analysis": 0.3653632402420044,
+        "holdings_and_conclusions": 0.5426591038703918,
+        "other": 0.3198723793029785
       }
     }
   },
@@ -1946,16 +1946,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5939046144485474,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6374631524085999,
       "all_scores": {
-        "case_metadata": 0.3357636034488678,
-        "procedural_history": 0.357354074716568,
-        "factual_background": 0.30685266852378845,
-        "legal_issues": 0.4502817392349243,
-        "legal_analysis": 0.5939046144485474,
-        "holdings_and_conclusions": 0.49520066380500793,
-        "other": 0.25278884172439575
+        "case_metadata": 0.4252665340900421,
+        "procedural_history": 0.3667699992656708,
+        "factual_background": 0.5529400110244751,
+        "legal_issues": 0.4293012022972107,
+        "legal_analysis": 0.3942597806453705,
+        "holdings_and_conclusions": 0.6374631524085999,
+        "other": 0.32136040925979614
       }
     }
   },
@@ -1974,16 +1974,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.4959723949432373,
+      "role": "case_metadata",
+      "confidence": 0.5827761888504028,
       "all_scores": {
-        "case_metadata": 0.3849549889564514,
-        "procedural_history": 0.4959723949432373,
-        "factual_background": 0.35183048248291016,
-        "legal_issues": 0.3642613887786865,
-        "legal_analysis": 0.3627963066101074,
-        "holdings_and_conclusions": 0.3662543296813965,
-        "other": 0.2708858847618103
+        "case_metadata": 0.5827761888504028,
+        "procedural_history": 0.5680404305458069,
+        "factual_background": 0.333686500787735,
+        "legal_issues": 0.39761781692504883,
+        "legal_analysis": 0.40686047077178955,
+        "holdings_and_conclusions": 0.506342887878418,
+        "other": 0.30585771799087524
       }
     }
   },
@@ -2003,15 +2003,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.6062694787979126,
+      "confidence": 0.6446692943572998,
       "all_scores": {
-        "case_metadata": 0.32791009545326233,
-        "procedural_history": 0.5557564496994019,
-        "factual_background": 0.29369843006134033,
-        "legal_issues": 0.4415123164653778,
-        "legal_analysis": 0.37630200386047363,
-        "holdings_and_conclusions": 0.6062694787979126,
-        "other": 0.23097491264343262
+        "case_metadata": 0.42415735125541687,
+        "procedural_history": 0.5627820491790771,
+        "factual_background": 0.39867186546325684,
+        "legal_issues": 0.4396401345729828,
+        "legal_analysis": 0.4365840256214142,
+        "holdings_and_conclusions": 0.6446692943572998,
+        "other": 0.3146546483039856
       }
     }
   },
@@ -2030,16 +2030,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4261420667171478,
+      "role": "legal_analysis",
+      "confidence": 0.5682768821716309,
       "all_scores": {
-        "case_metadata": 0.30238115787506104,
-        "procedural_history": 0.4261420667171478,
-        "factual_background": 0.1917394995689392,
-        "legal_issues": 0.4117775857448578,
-        "legal_analysis": 0.3611581325531006,
-        "holdings_and_conclusions": 0.3701048195362091,
-        "other": 0.2792622447013855
+        "case_metadata": 0.5656485557556152,
+        "procedural_history": 0.5160204768180847,
+        "factual_background": 0.42988598346710205,
+        "legal_issues": 0.4914857745170593,
+        "legal_analysis": 0.5682768821716309,
+        "holdings_and_conclusions": 0.53026282787323,
+        "other": 0.27926236391067505
       }
     }
   },
@@ -2058,16 +2058,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5136544108390808,
+      "role": "case_metadata",
+      "confidence": 0.5317916870117188,
       "all_scores": {
-        "case_metadata": 0.36086505651474,
-        "procedural_history": 0.31335219740867615,
-        "factual_background": 0.31235453486442566,
-        "legal_issues": 0.4390164315700531,
-        "legal_analysis": 0.5136544108390808,
-        "holdings_and_conclusions": 0.3498378396034241,
-        "other": 0.32809919118881226
+        "case_metadata": 0.5317916870117188,
+        "procedural_history": 0.5026843547821045,
+        "factual_background": 0.4719153642654419,
+        "legal_issues": 0.4557870924472809,
+        "legal_analysis": 0.44090747833251953,
+        "holdings_and_conclusions": 0.5160618424415588,
+        "other": 0.3280991315841675
       }
     }
   },
@@ -2086,16 +2086,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5869343280792236,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5045309662818909,
       "all_scores": {
-        "case_metadata": 0.3481358587741852,
-        "procedural_history": 0.427529513835907,
-        "factual_background": 0.33804428577423096,
-        "legal_issues": 0.4636077880859375,
-        "legal_analysis": 0.5869343280792236,
-        "holdings_and_conclusions": 0.4543943405151367,
-        "other": 0.2771354913711548
+        "case_metadata": 0.4977874159812927,
+        "procedural_history": 0.4517596960067749,
+        "factual_background": 0.4839304983615875,
+        "legal_issues": 0.47650283575057983,
+        "legal_analysis": 0.4565756916999817,
+        "holdings_and_conclusions": 0.5045309662818909,
+        "other": 0.31372225284576416
       }
     }
   },
@@ -2114,16 +2114,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5741027593612671,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.7320201396942139,
       "all_scores": {
-        "case_metadata": 0.3074030876159668,
-        "procedural_history": 0.4349938929080963,
-        "factual_background": 0.3415865898132324,
-        "legal_issues": 0.3986583948135376,
-        "legal_analysis": 0.5741027593612671,
-        "holdings_and_conclusions": 0.40145862102508545,
-        "other": 0.22608402371406555
+        "case_metadata": 0.42536044120788574,
+        "procedural_history": 0.4043986201286316,
+        "factual_background": 0.5356423854827881,
+        "legal_issues": 0.4167096018791199,
+        "legal_analysis": 0.3650790750980377,
+        "holdings_and_conclusions": 0.7320201396942139,
+        "other": 0.3041790723800659
       }
     }
   },
@@ -2143,15 +2143,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "procedural_history",
-      "confidence": 0.5149878859519958,
+      "confidence": 0.5588617324829102,
       "all_scores": {
-        "case_metadata": 0.3168131709098816,
-        "procedural_history": 0.5149878859519958,
-        "factual_background": 0.32609325647354126,
-        "legal_issues": 0.40922456979751587,
-        "legal_analysis": 0.42501765489578247,
-        "holdings_and_conclusions": 0.404183030128479,
-        "other": 0.20962128043174744
+        "case_metadata": 0.5480787754058838,
+        "procedural_history": 0.5588617324829102,
+        "factual_background": 0.5046597123146057,
+        "legal_issues": 0.4514232873916626,
+        "legal_analysis": 0.5060117840766907,
+        "holdings_and_conclusions": 0.4762466549873352,
+        "other": 0.356620728969574
       }
     }
   },
@@ -2170,16 +2170,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5881710052490234,
+      "role": "factual_background",
+      "confidence": 0.5782046914100647,
       "all_scores": {
-        "case_metadata": 0.3345504403114319,
-        "procedural_history": 0.24007423222064972,
-        "factual_background": 0.4128132462501526,
-        "legal_issues": 0.3979214131832123,
-        "legal_analysis": 0.5881710052490234,
-        "holdings_and_conclusions": 0.32702815532684326,
-        "other": 0.4548074007034302
+        "case_metadata": 0.5207995772361755,
+        "procedural_history": 0.40504682064056396,
+        "factual_background": 0.5782046914100647,
+        "legal_issues": 0.4442897439002991,
+        "legal_analysis": 0.4225042462348938,
+        "holdings_and_conclusions": 0.48717623949050903,
+        "other": 0.4548073410987854
       }
     }
   },
@@ -2198,16 +2198,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5589882731437683,
+      "role": "factual_background",
+      "confidence": 0.5584940910339355,
       "all_scores": {
-        "case_metadata": 0.3763435184955597,
-        "procedural_history": 0.4408411979675293,
-        "factual_background": 0.37325501441955566,
-        "legal_issues": 0.42855361104011536,
-        "legal_analysis": 0.5589882731437683,
-        "holdings_and_conclusions": 0.46424156427383423,
-        "other": 0.32110944390296936
+        "case_metadata": 0.48630744218826294,
+        "procedural_history": 0.4377914369106293,
+        "factual_background": 0.5584940910339355,
+        "legal_issues": 0.4393553137779236,
+        "legal_analysis": 0.47351697087287903,
+        "holdings_and_conclusions": 0.5550249814987183,
+        "other": 0.3809388279914856
       }
     }
   },
@@ -2226,16 +2226,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.6017299890518188,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6010899543762207,
       "all_scores": {
-        "case_metadata": 0.3015266954898834,
-        "procedural_history": 0.3752939701080322,
-        "factual_background": 0.40960127115249634,
-        "legal_issues": 0.5199074149131775,
-        "legal_analysis": 0.6017299890518188,
-        "holdings_and_conclusions": 0.48970380425453186,
-        "other": 0.3035590648651123
+        "case_metadata": 0.4532426595687866,
+        "procedural_history": 0.33834633231163025,
+        "factual_background": 0.5535790324211121,
+        "legal_issues": 0.5115759372711182,
+        "legal_analysis": 0.4012559652328491,
+        "holdings_and_conclusions": 0.6010899543762207,
+        "other": 0.33571237325668335
       }
     }
   },
@@ -2254,16 +2254,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.6193352341651917,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5800207257270813,
       "all_scores": {
-        "case_metadata": 0.27526044845581055,
-        "procedural_history": 0.26425662636756897,
-        "factual_background": 0.3447892665863037,
-        "legal_issues": 0.39326030015945435,
-        "legal_analysis": 0.6193352341651917,
-        "holdings_and_conclusions": 0.3623892068862915,
-        "other": 0.23533043265342712
+        "case_metadata": 0.48683422803878784,
+        "procedural_history": 0.38474491238594055,
+        "factual_background": 0.5599538087844849,
+        "legal_issues": 0.43922820687294006,
+        "legal_analysis": 0.4005240797996521,
+        "holdings_and_conclusions": 0.5800207257270813,
+        "other": 0.2820255756378174
       }
     }
   },
@@ -2282,16 +2282,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.5708557367324829,
+      "role": "factual_background",
+      "confidence": 0.714291512966156,
       "all_scores": {
-        "case_metadata": 0.23432114720344543,
-        "procedural_history": 0.18501988053321838,
-        "factual_background": 0.38782238960266113,
-        "legal_issues": 0.37642741203308105,
-        "legal_analysis": 0.5708557367324829,
-        "holdings_and_conclusions": 0.3430522382259369,
-        "other": 0.27090680599212646
+        "case_metadata": 0.4265277683734894,
+        "procedural_history": 0.3349705636501312,
+        "factual_background": 0.714291512966156,
+        "legal_issues": 0.3800950050354004,
+        "legal_analysis": 0.35217171907424927,
+        "holdings_and_conclusions": 0.5023772716522217,
+        "other": 0.2709066867828369
       }
     }
   },
@@ -2310,16 +2310,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.366812527179718,
+      "role": "case_metadata",
+      "confidence": 0.5476785898208618,
       "all_scores": {
-        "case_metadata": 0.2612501084804535,
-        "procedural_history": 0.2617245316505432,
-        "factual_background": 0.3532317280769348,
-        "legal_issues": 0.32712632417678833,
-        "legal_analysis": 0.27912890911102295,
-        "holdings_and_conclusions": 0.28821617364883423,
-        "other": 0.366812527179718
+        "case_metadata": 0.5476785898208618,
+        "procedural_history": 0.3154338598251343,
+        "factual_background": 0.3734357953071594,
+        "legal_issues": 0.3274412751197815,
+        "legal_analysis": 0.3062085509300232,
+        "holdings_and_conclusions": 0.3343217372894287,
+        "other": 0.36681246757507324
       }
     }
   },
@@ -2338,16 +2338,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.35913628339767456,
+      "role": "case_metadata",
+      "confidence": 0.5392104387283325,
       "all_scores": {
-        "case_metadata": 0.16189096868038177,
-        "procedural_history": 0.17607080936431885,
-        "factual_background": 0.3264337182044983,
-        "legal_issues": 0.2299777716398239,
-        "legal_analysis": 0.24985042214393616,
-        "holdings_and_conclusions": 0.21642322838306427,
-        "other": 0.35913628339767456
+        "case_metadata": 0.5392104387283325,
+        "procedural_history": 0.27323034405708313,
+        "factual_background": 0.2748098373413086,
+        "legal_issues": 0.2895923852920532,
+        "legal_analysis": 0.2660941481590271,
+        "holdings_and_conclusions": 0.2389962077140808,
+        "other": 0.3591362535953522
       }
     }
   },
@@ -2366,16 +2366,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "other",
-      "confidence": 0.475757360458374,
+      "role": "case_metadata",
+      "confidence": 0.6192518472671509,
       "all_scores": {
-        "case_metadata": 0.1947578489780426,
-        "procedural_history": 0.2216079831123352,
-        "factual_background": 0.4350346326828003,
-        "legal_issues": 0.31481507420539856,
-        "legal_analysis": 0.27793845534324646,
-        "holdings_and_conclusions": 0.2848297953605652,
-        "other": 0.475757360458374
+        "case_metadata": 0.6192518472671509,
+        "procedural_history": 0.32716673612594604,
+        "factual_background": 0.3730277419090271,
+        "legal_issues": 0.330145001411438,
+        "legal_analysis": 0.2883211672306061,
+        "holdings_and_conclusions": 0.28798049688339233,
+        "other": 0.47575733065605164
       }
     }
   },
@@ -2394,16 +2394,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.40599218010902405,
+      "role": "case_metadata",
+      "confidence": 0.5672047734260559,
       "all_scores": {
-        "case_metadata": 0.2095189392566681,
-        "procedural_history": 0.2004890739917755,
-        "factual_background": 0.30785679817199707,
-        "legal_issues": 0.22632986307144165,
-        "legal_analysis": 0.1814834177494049,
-        "holdings_and_conclusions": 0.3266892731189728,
-        "other": 0.40599218010902405
+        "case_metadata": 0.5672047734260559,
+        "procedural_history": 0.22917808592319489,
+        "factual_background": 0.27062350511550903,
+        "legal_issues": 0.22973217070102692,
+        "legal_analysis": 0.25581085681915283,
+        "holdings_and_conclusions": 0.21917466819286346,
+        "other": 0.40599220991134644
       }
     }
   },
@@ -2423,15 +2423,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.37321266531944275,
+      "confidence": 0.42103829979896545,
       "all_scores": {
-        "case_metadata": 0.16930803656578064,
-        "procedural_history": 0.24282386898994446,
-        "factual_background": 0.37321266531944275,
-        "legal_issues": 0.35643845796585083,
-        "legal_analysis": 0.2845820486545563,
-        "holdings_and_conclusions": 0.2844029366970062,
-        "other": 0.3354951739311218
+        "case_metadata": 0.42103829979896545,
+        "procedural_history": 0.28285783529281616,
+        "factual_background": 0.3349197208881378,
+        "legal_issues": 0.2882393002510071,
+        "legal_analysis": 0.24944746494293213,
+        "holdings_and_conclusions": 0.29805314540863037,
+        "other": 0.33549514412879944
       }
     }
   },
@@ -2451,15 +2451,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4150938391685486,
+      "confidence": 0.45228883624076843,
       "all_scores": {
-        "case_metadata": 0.4097696542739868,
-        "procedural_history": 0.3508986234664917,
-        "factual_background": 0.3457179665565491,
-        "legal_issues": 0.4150938391685486,
-        "legal_analysis": 0.3765687942504883,
-        "holdings_and_conclusions": 0.34413427114486694,
-        "other": 0.20147079229354858
+        "case_metadata": 0.40894919633865356,
+        "procedural_history": 0.4160666763782501,
+        "factual_background": 0.3603515923023224,
+        "legal_issues": 0.38482466340065,
+        "legal_analysis": 0.45228883624076843,
+        "holdings_and_conclusions": 0.3818899691104889,
+        "other": 0.31106477975845337
       }
     }
   },
@@ -2478,16 +2478,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5187153220176697,
+      "role": "unclassified",
+      "confidence": 0.4456707537174225,
       "all_scores": {
-        "case_metadata": 0.2923405170440674,
-        "procedural_history": 0.5187153220176697,
-        "factual_background": 0.4144754409790039,
-        "legal_issues": 0.3488726019859314,
-        "legal_analysis": 0.3477468490600586,
-        "holdings_and_conclusions": 0.3977089524269104,
-        "other": 0.16409239172935486
+        "case_metadata": 0.33096903562545776,
+        "procedural_history": 0.361803263425827,
+        "factual_background": 0.38712644577026367,
+        "legal_issues": 0.4456707537174225,
+        "legal_analysis": 0.27590230107307434,
+        "holdings_and_conclusions": 0.4455377459526062,
+        "other": 0.23306016623973846
       }
     }
   },
@@ -2506,16 +2506,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5526352524757385,
+      "role": "legal_issues",
+      "confidence": 0.509321928024292,
       "all_scores": {
-        "case_metadata": 0.362786203622818,
-        "procedural_history": 0.5526352524757385,
-        "factual_background": 0.38530033826828003,
-        "legal_issues": 0.5053280591964722,
-        "legal_analysis": 0.4120892584323883,
-        "holdings_and_conclusions": 0.4880017638206482,
-        "other": 0.19648045301437378
+        "case_metadata": 0.40844622254371643,
+        "procedural_history": 0.4186892509460449,
+        "factual_background": 0.4012795090675354,
+        "legal_issues": 0.509321928024292,
+        "legal_analysis": 0.42952412366867065,
+        "holdings_and_conclusions": 0.5016069412231445,
+        "other": 0.3315190076828003
       }
     }
   },
@@ -2534,16 +2534,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.40186426043510437,
+      "role": "factual_background",
+      "confidence": 0.6254934668540955,
       "all_scores": {
-        "case_metadata": 0.2288113832473755,
-        "procedural_history": 0.20910288393497467,
-        "factual_background": 0.31553635001182556,
-        "legal_issues": 0.31900694966316223,
-        "legal_analysis": 0.40186426043510437,
-        "holdings_and_conclusions": 0.32619062066078186,
-        "other": 0.1870562732219696
+        "case_metadata": 0.23894624412059784,
+        "procedural_history": 0.21700114011764526,
+        "factual_background": 0.6254934668540955,
+        "legal_issues": 0.33859819173812866,
+        "legal_analysis": 0.23684516549110413,
+        "holdings_and_conclusions": 0.4293174147605896,
+        "other": 0.22640585899353027
       }
     }
   },
@@ -2562,16 +2562,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_issues",
-      "confidence": 0.46677112579345703,
+      "role": "procedural_history",
+      "confidence": 0.5193071365356445,
       "all_scores": {
-        "case_metadata": 0.326487272977829,
-        "procedural_history": 0.4473024606704712,
-        "factual_background": 0.44726061820983887,
-        "legal_issues": 0.46677112579345703,
-        "legal_analysis": 0.3753178119659424,
-        "holdings_and_conclusions": 0.45654356479644775,
-        "other": 0.2643488645553589
+        "case_metadata": 0.49789172410964966,
+        "procedural_history": 0.5193071365356445,
+        "factual_background": 0.47150853276252747,
+        "legal_issues": 0.5054383277893066,
+        "legal_analysis": 0.3436787724494934,
+        "holdings_and_conclusions": 0.4122296869754791,
+        "other": 0.348347008228302
       }
     }
   },
@@ -2591,15 +2591,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3612101078033447,
+      "confidence": 0.40729260444641113,
       "all_scores": {
-        "case_metadata": 0.21277043223381042,
-        "procedural_history": 0.3089452087879181,
-        "factual_background": 0.3511922359466553,
+        "case_metadata": 0.32000860571861267,
+        "procedural_history": 0.34727975726127625,
+        "factual_background": 0.40729260444641113,
         "legal_issues": 0.3552486300468445,
-        "legal_analysis": 0.31261229515075684,
-        "holdings_and_conclusions": 0.3612101078033447,
-        "other": 0.05548112839460373
+        "legal_analysis": 0.3170773684978485,
+        "holdings_and_conclusions": 0.3345792293548584,
+        "other": 0.2265341579914093
       }
     }
   },
@@ -2618,16 +2618,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.5672885179519653,
+      "role": "legal_analysis",
+      "confidence": 0.5125231146812439,
       "all_scores": {
-        "case_metadata": 0.33433809876441956,
-        "procedural_history": 0.5672885179519653,
-        "factual_background": 0.34035608172416687,
-        "legal_issues": 0.4436666667461395,
-        "legal_analysis": 0.46974438428878784,
-        "holdings_and_conclusions": 0.5629644989967346,
-        "other": 0.16652247309684753
+        "case_metadata": 0.49226754903793335,
+        "procedural_history": 0.46013379096984863,
+        "factual_background": 0.3388341963291168,
+        "legal_issues": 0.48617926239967346,
+        "legal_analysis": 0.5125231146812439,
+        "holdings_and_conclusions": 0.488484263420105,
+        "other": 0.3543272018432617
       }
     }
   },
@@ -2646,16 +2646,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.6470824480056763,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5334371328353882,
       "all_scores": {
-        "case_metadata": 0.3021206259727478,
-        "procedural_history": 0.34059733152389526,
-        "factual_background": 0.36165377497673035,
-        "legal_issues": 0.35452911257743835,
-        "legal_analysis": 0.6470824480056763,
-        "holdings_and_conclusions": 0.48428767919540405,
-        "other": 0.21996577084064484
+        "case_metadata": 0.302120566368103,
+        "procedural_history": 0.44129520654678345,
+        "factual_background": 0.5021997094154358,
+        "legal_issues": 0.3517288565635681,
+        "legal_analysis": 0.3894995450973511,
+        "holdings_and_conclusions": 0.5334371328353882,
+        "other": 0.21996569633483887
       }
     }
   },
@@ -2674,16 +2674,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.48432600498199463,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5100769996643066,
       "all_scores": {
-        "case_metadata": 0.3529853820800781,
-        "procedural_history": 0.42365342378616333,
-        "factual_background": 0.354011595249176,
-        "legal_issues": 0.4608139395713806,
-        "legal_analysis": 0.48432600498199463,
-        "holdings_and_conclusions": 0.4627918004989624,
-        "other": 0.23640680313110352
+        "case_metadata": 0.4275490641593933,
+        "procedural_history": 0.364830881357193,
+        "factual_background": 0.45887285470962524,
+        "legal_issues": 0.4732701778411865,
+        "legal_analysis": 0.39930078387260437,
+        "holdings_and_conclusions": 0.5100769996643066,
+        "other": 0.38985589146614075
       }
     }
   },
@@ -2703,15 +2703,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.38380879163742065,
+      "confidence": 0.431782603263855,
       "all_scores": {
-        "case_metadata": 0.29858094453811646,
-        "procedural_history": 0.33732160925865173,
-        "factual_background": 0.3706068992614746,
-        "legal_issues": 0.3043154180049896,
-        "legal_analysis": 0.35724639892578125,
-        "holdings_and_conclusions": 0.38380879163742065,
-        "other": 0.2748383581638336
+        "case_metadata": 0.35857102274894714,
+        "procedural_history": 0.36242562532424927,
+        "factual_background": 0.431782603263855,
+        "legal_issues": 0.38142669200897217,
+        "legal_analysis": 0.39282751083374023,
+        "holdings_and_conclusions": 0.38169509172439575,
+        "other": 0.3928084373474121
       }
     }
   },
@@ -2730,16 +2730,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.44274693727493286,
+      "role": "factual_background",
+      "confidence": 0.5314093828201294,
       "all_scores": {
-        "case_metadata": 0.16288124024868011,
-        "procedural_history": 0.22734999656677246,
-        "factual_background": 0.44274693727493286,
-        "legal_issues": 0.20568807423114777,
-        "legal_analysis": 0.1686936914920807,
-        "holdings_and_conclusions": 0.23267140984535217,
-        "other": 0.3540259599685669
+        "case_metadata": 0.3473987579345703,
+        "procedural_history": 0.31650370359420776,
+        "factual_background": 0.5314093828201294,
+        "legal_issues": 0.3160521984100342,
+        "legal_analysis": 0.2618093490600586,
+        "holdings_and_conclusions": 0.28137505054473877,
+        "other": 0.27749234437942505
       }
     }
   },
@@ -2759,15 +2759,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.22449275851249695,
+      "confidence": 0.3407607674598694,
       "all_scores": {
-        "case_metadata": 0.14536726474761963,
-        "procedural_history": 0.15501879155635834,
-        "factual_background": 0.22449275851249695,
-        "legal_issues": 0.20632556080818176,
-        "legal_analysis": 0.16550028324127197,
-        "holdings_and_conclusions": 0.1688401699066162,
-        "other": 0.1528625190258026
+        "case_metadata": 0.22354276478290558,
+        "procedural_history": 0.2035142332315445,
+        "factual_background": 0.3407607674598694,
+        "legal_issues": 0.16904249787330627,
+        "legal_analysis": 0.1491251438856125,
+        "holdings_and_conclusions": 0.31611156463623047,
+        "other": 0.12248270213603973
       }
     }
   },
@@ -2787,15 +2787,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2753400504589081,
+      "confidence": 0.30791032314300537,
       "all_scores": {
-        "case_metadata": 0.24128715693950653,
-        "procedural_history": 0.15235711634159088,
-        "factual_background": 0.2753400504589081,
-        "legal_issues": 0.22624057531356812,
-        "legal_analysis": 0.19738386571407318,
-        "holdings_and_conclusions": 0.20440073311328888,
-        "other": 0.13128842413425446
+        "case_metadata": 0.2534712851047516,
+        "procedural_history": 0.250531405210495,
+        "factual_background": 0.2983054518699646,
+        "legal_issues": 0.1756885051727295,
+        "legal_analysis": 0.2486461102962494,
+        "holdings_and_conclusions": 0.30791032314300537,
+        "other": 0.15372996032238007
       }
     }
   },
@@ -2814,16 +2814,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.49363332986831665,
+      "role": "unclassified",
+      "confidence": 0.48639917373657227,
       "all_scores": {
-        "case_metadata": 0.330619752407074,
-        "procedural_history": 0.49363332986831665,
-        "factual_background": 0.3853691816329956,
-        "legal_issues": 0.3530162572860718,
-        "legal_analysis": 0.3632352352142334,
-        "holdings_and_conclusions": 0.4402742087841034,
-        "other": 0.2927466034889221
+        "case_metadata": 0.48639917373657227,
+        "procedural_history": 0.394109845161438,
+        "factual_background": 0.4563787877559662,
+        "legal_issues": 0.37884461879730225,
+        "legal_analysis": 0.39933425188064575,
+        "holdings_and_conclusions": 0.4564909338951111,
+        "other": 0.34494781494140625
       }
     }
   },
@@ -2843,15 +2843,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "factual_background",
-      "confidence": 0.5625001788139343,
+      "confidence": 0.5479092001914978,
       "all_scores": {
-        "case_metadata": 0.18491661548614502,
-        "procedural_history": 0.12731243669986725,
-        "factual_background": 0.5625001788139343,
-        "legal_issues": 0.23313745856285095,
-        "legal_analysis": 0.3773592412471771,
-        "holdings_and_conclusions": 0.21767866611480713,
-        "other": 0.2947019338607788
+        "case_metadata": 0.36339402198791504,
+        "procedural_history": 0.21770331263542175,
+        "factual_background": 0.5479092001914978,
+        "legal_issues": 0.23273614048957825,
+        "legal_analysis": 0.2002907693386078,
+        "holdings_and_conclusions": 0.3473818302154541,
+        "other": 0.2293570190668106
       }
     }
   },
@@ -2870,16 +2870,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4451782703399658,
+      "role": "factual_background",
+      "confidence": 0.5986415147781372,
       "all_scores": {
-        "case_metadata": 0.17135977745056152,
-        "procedural_history": 0.16257822513580322,
-        "factual_background": 0.23444817960262299,
-        "legal_issues": 0.22439640760421753,
-        "legal_analysis": 0.4451782703399658,
-        "holdings_and_conclusions": 0.2198954075574875,
-        "other": 0.10632787644863129
+        "case_metadata": 0.2364572435617447,
+        "procedural_history": 0.19256439805030823,
+        "factual_background": 0.5986415147781372,
+        "legal_issues": 0.22204731404781342,
+        "legal_analysis": 0.17802153527736664,
+        "holdings_and_conclusions": 0.35688328742980957,
+        "other": 0.1063278317451477
       }
     }
   },
@@ -2899,15 +2899,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2594397962093353,
+      "confidence": 0.26875072717666626,
       "all_scores": {
-        "case_metadata": 0.13978174328804016,
-        "procedural_history": 0.09659546613693237,
-        "factual_background": 0.18686771392822266,
-        "legal_issues": 0.2594397962093353,
-        "legal_analysis": 0.22178693115711212,
-        "holdings_and_conclusions": 0.18233752250671387,
-        "other": 0.0563751757144928
+        "case_metadata": 0.20120176672935486,
+        "procedural_history": 0.2613781690597534,
+        "factual_background": 0.26875072717666626,
+        "legal_issues": 0.22543036937713623,
+        "legal_analysis": 0.26506567001342773,
+        "holdings_and_conclusions": 0.20747995376586914,
+        "other": 0.14453184604644775
       }
     }
   },
@@ -2927,15 +2927,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.43877604603767395,
+      "confidence": 0.4105228781700134,
       "all_scores": {
-        "case_metadata": 0.17023396492004395,
-        "procedural_history": 0.15433767437934875,
-        "factual_background": 0.2009665071964264,
-        "legal_issues": 0.22721773386001587,
-        "legal_analysis": 0.22178658843040466,
-        "holdings_and_conclusions": 0.43877604603767395,
-        "other": 0.0956537276506424
+        "case_metadata": 0.2828059196472168,
+        "procedural_history": 0.25928768515586853,
+        "factual_background": 0.2903091311454773,
+        "legal_issues": 0.34588316082954407,
+        "legal_analysis": 0.2861188054084778,
+        "holdings_and_conclusions": 0.4105228781700134,
+        "other": 0.21465462446212769
       }
     }
   },
@@ -2955,15 +2955,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.33897972106933594,
+      "confidence": 0.24953152239322662,
       "all_scores": {
-        "case_metadata": 0.33897972106933594,
-        "procedural_history": 0.21670013666152954,
-        "factual_background": 0.19655422866344452,
-        "legal_issues": 0.152085542678833,
-        "legal_analysis": 0.07623780518770218,
-        "holdings_and_conclusions": 0.11390528082847595,
-        "other": 0.0767953097820282
+        "case_metadata": 0.23221614956855774,
+        "procedural_history": 0.21670012176036835,
+        "factual_background": 0.23559404909610748,
+        "legal_issues": 0.1306663453578949,
+        "legal_analysis": 0.14494574069976807,
+        "holdings_and_conclusions": 0.24953152239322662,
+        "other": 0.076795294880867
       }
     }
   },
@@ -2982,16 +2982,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4585229754447937,
+      "role": "factual_background",
+      "confidence": 0.5910085439682007,
       "all_scores": {
-        "case_metadata": 0.25466403365135193,
-        "procedural_history": 0.21146802604198456,
-        "factual_background": 0.2912587523460388,
-        "legal_issues": 0.2357611060142517,
-        "legal_analysis": 0.4585229754447937,
-        "holdings_and_conclusions": 0.2238200157880783,
-        "other": 0.17221438884735107
+        "case_metadata": 0.32561832666397095,
+        "procedural_history": 0.23404119908809662,
+        "factual_background": 0.5910085439682007,
+        "legal_issues": 0.3192023038864136,
+        "legal_analysis": 0.28056567907333374,
+        "holdings_and_conclusions": 0.35583627223968506,
+        "other": 0.1722142994403839
       }
     }
   },
@@ -3010,16 +3010,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "holdings_and_conclusions",
-      "confidence": 0.6159835457801819,
+      "role": "legal_analysis",
+      "confidence": 0.5168766975402832,
       "all_scores": {
-        "case_metadata": 0.3129303455352783,
-        "procedural_history": 0.46587109565734863,
-        "factual_background": 0.32575148344039917,
-        "legal_issues": 0.3633558750152588,
-        "legal_analysis": 0.4652246832847595,
-        "holdings_and_conclusions": 0.6159835457801819,
-        "other": 0.18063008785247803
+        "case_metadata": 0.4213440716266632,
+        "procedural_history": 0.4881753921508789,
+        "factual_background": 0.36698976159095764,
+        "legal_issues": 0.5023618936538696,
+        "legal_analysis": 0.5168766975402832,
+        "holdings_and_conclusions": 0.48953109979629517,
+        "other": 0.31790152192115784
       }
     }
   },
@@ -3039,15 +3039,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.4052632451057434,
+      "confidence": 0.403949499130249,
       "all_scores": {
-        "case_metadata": 0.4052632451057434,
-        "procedural_history": 0.24463365972042084,
-        "factual_background": 0.31614038348197937,
-        "legal_issues": 0.2840636968612671,
-        "legal_analysis": 0.3303704261779785,
-        "holdings_and_conclusions": 0.36661574244499207,
-        "other": 0.2219407856464386
+        "case_metadata": 0.36733806133270264,
+        "procedural_history": 0.31125980615615845,
+        "factual_background": 0.3473980128765106,
+        "legal_issues": 0.31628698110580444,
+        "legal_analysis": 0.403949499130249,
+        "holdings_and_conclusions": 0.3320510983467102,
+        "other": 0.2559145987033844
       }
     }
   },
@@ -3067,15 +3067,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.3394211530685425,
+      "confidence": 0.3478330969810486,
       "all_scores": {
-        "case_metadata": 0.2375735640525818,
-        "procedural_history": 0.12159469723701477,
-        "factual_background": 0.22692880034446716,
-        "legal_issues": 0.3394211530685425,
-        "legal_analysis": 0.27223002910614014,
-        "holdings_and_conclusions": 0.3127453923225403,
-        "other": 0.29957154393196106
+        "case_metadata": 0.30048707127571106,
+        "procedural_history": 0.31021881103515625,
+        "factual_background": 0.3478330969810486,
+        "legal_issues": 0.3455149233341217,
+        "legal_analysis": 0.3114432096481323,
+        "holdings_and_conclusions": 0.30184563994407654,
+        "other": 0.2957613468170166
       }
     }
   },
@@ -3095,15 +3095,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.2653229832649231,
+      "confidence": 0.4679418206214905,
       "all_scores": {
-        "case_metadata": 0.11136303842067719,
-        "procedural_history": 0.05478072166442871,
-        "factual_background": 0.1083037480711937,
-        "legal_issues": 0.25586628913879395,
-        "legal_analysis": 0.20999494194984436,
-        "holdings_and_conclusions": 0.2653229832649231,
-        "other": 0.06070398539304733
+        "case_metadata": 0.17528638243675232,
+        "procedural_history": 0.29675301909446716,
+        "factual_background": 0.2736032009124756,
+        "legal_issues": 0.2785224914550781,
+        "legal_analysis": 0.4679418206214905,
+        "holdings_and_conclusions": 0.29439467191696167,
+        "other": 0.16652175784111023
       }
     }
   },
@@ -3123,15 +3123,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.26461201906204224,
+      "confidence": 0.2807168662548065,
       "all_scores": {
-        "case_metadata": 0.09510260820388794,
-        "procedural_history": 0.02672715112566948,
-        "factual_background": 0.10907922685146332,
-        "legal_issues": 0.18409782648086548,
-        "legal_analysis": 0.26461201906204224,
-        "holdings_and_conclusions": 0.20090319216251373,
-        "other": 0.03792158141732216
+        "case_metadata": 0.18251603841781616,
+        "procedural_history": 0.2300570011138916,
+        "factual_background": 0.17517662048339844,
+        "legal_issues": 0.2807168662548065,
+        "legal_analysis": 0.2495829164981842,
+        "holdings_and_conclusions": 0.1792295277118683,
+        "other": 0.17745929956436157
       }
     }
   },
@@ -3151,15 +3151,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.426794171333313,
+      "confidence": 0.35233694314956665,
       "all_scores": {
-        "case_metadata": 0.426794171333313,
-        "procedural_history": 0.1894780695438385,
-        "factual_background": 0.21849846839904785,
-        "legal_issues": 0.22838479280471802,
-        "legal_analysis": 0.18499761819839478,
-        "holdings_and_conclusions": 0.2721986770629883,
-        "other": 0.05975421890616417
+        "case_metadata": 0.35233694314956665,
+        "procedural_history": 0.22816486656665802,
+        "factual_background": 0.2786829471588135,
+        "legal_issues": 0.2709253430366516,
+        "legal_analysis": 0.33015626668930054,
+        "holdings_and_conclusions": 0.3181198835372925,
+        "other": 0.20236703753471375
       }
     }
   },
@@ -3179,15 +3179,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.40187785029411316,
+      "confidence": 0.4624348282814026,
       "all_scores": {
-        "case_metadata": 0.33326804637908936,
-        "procedural_history": 0.3187185227870941,
-        "factual_background": 0.35891473293304443,
-        "legal_issues": 0.40187785029411316,
-        "legal_analysis": 0.37390655279159546,
-        "holdings_and_conclusions": 0.3779747188091278,
-        "other": 0.30485478043556213
+        "case_metadata": 0.38594573736190796,
+        "procedural_history": 0.38501518964767456,
+        "factual_background": 0.41062402725219727,
+        "legal_issues": 0.4624348282814026,
+        "legal_analysis": 0.4528542757034302,
+        "holdings_and_conclusions": 0.38665053248405457,
+        "other": 0.3902777433395386
       }
     }
   },
@@ -3206,16 +3206,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.6050401926040649,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5278491973876953,
       "all_scores": {
-        "case_metadata": 0.3817456066608429,
-        "procedural_history": 0.6050401926040649,
-        "factual_background": 0.3766337037086487,
-        "legal_issues": 0.44955581426620483,
-        "legal_analysis": 0.4503958821296692,
-        "holdings_and_conclusions": 0.49351221323013306,
-        "other": 0.19150808453559875
+        "case_metadata": 0.5066745281219482,
+        "procedural_history": 0.5085572004318237,
+        "factual_background": 0.447182297706604,
+        "legal_issues": 0.4635981619358063,
+        "legal_analysis": 0.4373209774494171,
+        "holdings_and_conclusions": 0.5278491973876953,
+        "other": 0.37898874282836914
       }
     }
   },
@@ -3234,16 +3234,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.6051156520843506,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6338469982147217,
       "all_scores": {
-        "case_metadata": 0.371976375579834,
-        "procedural_history": 0.39662641286849976,
-        "factual_background": 0.35204505920410156,
-        "legal_issues": 0.4486851990222931,
-        "legal_analysis": 0.6051156520843506,
-        "holdings_and_conclusions": 0.5130347013473511,
-        "other": 0.29226720333099365
+        "case_metadata": 0.42687445878982544,
+        "procedural_history": 0.46958404779434204,
+        "factual_background": 0.5029170513153076,
+        "legal_issues": 0.45734703540802,
+        "legal_analysis": 0.4375271499156952,
+        "holdings_and_conclusions": 0.6338469982147217,
+        "other": 0.3481135368347168
       }
     }
   },
@@ -3263,15 +3263,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "holdings_and_conclusions",
-      "confidence": 0.6288426518440247,
+      "confidence": 0.6553295254707336,
       "all_scores": {
-        "case_metadata": 0.3865112066268921,
-        "procedural_history": 0.46072137355804443,
-        "factual_background": 0.40220844745635986,
-        "legal_issues": 0.41753950715065,
-        "legal_analysis": 0.3992457091808319,
-        "holdings_and_conclusions": 0.6288426518440247,
-        "other": 0.2178402692079544
+        "case_metadata": 0.4543870985507965,
+        "procedural_history": 0.42245736718177795,
+        "factual_background": 0.42683643102645874,
+        "legal_issues": 0.4610048532485962,
+        "legal_analysis": 0.43559038639068604,
+        "holdings_and_conclusions": 0.6553295254707336,
+        "other": 0.42422670125961304
       }
     }
   },
@@ -3290,16 +3290,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "procedural_history",
-      "confidence": 0.4752741754055023,
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6721317172050476,
       "all_scores": {
-        "case_metadata": 0.369661420583725,
-        "procedural_history": 0.4752741754055023,
-        "factual_background": 0.39339038729667664,
-        "legal_issues": 0.3715987205505371,
-        "legal_analysis": 0.40382975339889526,
-        "holdings_and_conclusions": 0.38829487562179565,
-        "other": 0.4141709506511688
+        "case_metadata": 0.58734130859375,
+        "procedural_history": 0.40103447437286377,
+        "factual_background": 0.422810435295105,
+        "legal_issues": 0.4637792110443115,
+        "legal_analysis": 0.3962804675102234,
+        "holdings_and_conclusions": 0.6721317172050476,
+        "other": 0.41417089104652405
       }
     }
   },
@@ -3318,16 +3318,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.6449630856513977,
+      "role": "unclassified",
+      "confidence": 0.457716703414917,
       "all_scores": {
-        "case_metadata": 0.3343240022659302,
-        "procedural_history": 0.11693385243415833,
-        "factual_background": 0.6449630856513977,
-        "legal_issues": 0.27580171823501587,
-        "legal_analysis": 0.4693669080734253,
-        "holdings_and_conclusions": 0.2352009266614914,
-        "other": 0.3390885591506958
+        "case_metadata": 0.3343239724636078,
+        "procedural_history": 0.23416513204574585,
+        "factual_background": 0.457716703414917,
+        "legal_issues": 0.2840285897254944,
+        "legal_analysis": 0.25758516788482666,
+        "holdings_and_conclusions": 0.43340855836868286,
+        "other": 0.28349170088768005
       }
     }
   },
@@ -3346,16 +3346,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.4948182702064514,
+      "role": "unclassified",
+      "confidence": 0.38067883253097534,
       "all_scores": {
-        "case_metadata": 0.21590842306613922,
-        "procedural_history": 0.18433284759521484,
-        "factual_background": 0.4948182702064514,
-        "legal_issues": 0.2442118525505066,
-        "legal_analysis": 0.40975135564804077,
-        "holdings_and_conclusions": 0.23135440051555634,
-        "other": 0.3155037760734558
+        "case_metadata": 0.3669850826263428,
+        "procedural_history": 0.2924535870552063,
+        "factual_background": 0.38067883253097534,
+        "legal_issues": 0.3621264398097992,
+        "legal_analysis": 0.340536892414093,
+        "holdings_and_conclusions": 0.27542588114738464,
+        "other": 0.2614390254020691
       }
     }
   },
@@ -3374,16 +3374,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4926767349243164,
+      "role": "factual_background",
+      "confidence": 0.5296556353569031,
       "all_scores": {
-        "case_metadata": 0.30227774381637573,
-        "procedural_history": 0.188715398311615,
-        "factual_background": 0.28117483854293823,
-        "legal_issues": 0.26719164848327637,
-        "legal_analysis": 0.4926767349243164,
-        "holdings_and_conclusions": 0.3425043225288391,
-        "other": 0.22153091430664062
+        "case_metadata": 0.350441038608551,
+        "procedural_history": 0.2691127061843872,
+        "factual_background": 0.5296556353569031,
+        "legal_issues": 0.28884798288345337,
+        "legal_analysis": 0.26146388053894043,
+        "holdings_and_conclusions": 0.4229257106781006,
+        "other": 0.22153085470199585
       }
     }
   },
@@ -3402,15 +3402,15 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "unclassified",
-      "confidence": 0.4432413578033447,
+      "role": "factual_background",
+      "confidence": 0.6101840138435364,
       "all_scores": {
-        "case_metadata": 0.4432413578033447,
-        "procedural_history": 0.13311871886253357,
-        "factual_background": 0.2663273215293884,
-        "legal_issues": 0.18111620843410492,
-        "legal_analysis": 0.42226845026016235,
-        "holdings_and_conclusions": 0.14359262585639954,
+        "case_metadata": 0.44324126839637756,
+        "procedural_history": 0.15746694803237915,
+        "factual_background": 0.6101840138435364,
+        "legal_issues": 0.1361325979232788,
+        "legal_analysis": 0.1382405012845993,
+        "holdings_and_conclusions": 0.34834426641464233,
         "other": 0.1292213499546051
       }
     }
@@ -3430,16 +3430,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4934611916542053,
+      "role": "unclassified",
+      "confidence": 0.44570305943489075,
       "all_scores": {
-        "case_metadata": 0.33396846055984497,
-        "procedural_history": 0.26849493384361267,
-        "factual_background": 0.30663448572158813,
-        "legal_issues": 0.3432596027851105,
-        "legal_analysis": 0.4934611916542053,
-        "holdings_and_conclusions": 0.34080472588539124,
-        "other": 0.287901371717453
+        "case_metadata": 0.3339684009552002,
+        "procedural_history": 0.2892162799835205,
+        "factual_background": 0.38968706130981445,
+        "legal_issues": 0.35320141911506653,
+        "legal_analysis": 0.24097293615341187,
+        "holdings_and_conclusions": 0.44570305943489075,
+        "other": 0.28790128231048584
       }
     }
   },
@@ -3459,15 +3459,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "factual_background",
-      "confidence": 0.4796057939529419,
+      "confidence": 0.5492329597473145,
       "all_scores": {
-        "case_metadata": 0.2154429852962494,
-        "procedural_history": 0.18041810393333435,
-        "factual_background": 0.4796057939529419,
-        "legal_issues": 0.3113453984260559,
-        "legal_analysis": 0.40144383907318115,
-        "holdings_and_conclusions": 0.29109662771224976,
-        "other": 0.21510036289691925
+        "case_metadata": 0.26207035779953003,
+        "procedural_history": 0.27327781915664673,
+        "factual_background": 0.5492329597473145,
+        "legal_issues": 0.25771018862724304,
+        "legal_analysis": 0.2603183090686798,
+        "holdings_and_conclusions": 0.3542317748069763,
+        "other": 0.2017081379890442
       }
     }
   },
@@ -3487,14 +3487,14 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.43744754791259766,
+      "confidence": 0.4643246829509735,
       "all_scores": {
-        "case_metadata": 0.32441282272338867,
-        "procedural_history": 0.2539026439189911,
-        "factual_background": 0.33418989181518555,
-        "legal_issues": 0.33052098751068115,
-        "legal_analysis": 0.43744754791259766,
-        "holdings_and_conclusions": 0.3352683186531067,
+        "case_metadata": 0.3244127631187439,
+        "procedural_history": 0.3045601546764374,
+        "factual_background": 0.44887465238571167,
+        "legal_issues": 0.3154623210430145,
+        "legal_analysis": 0.2561711370944977,
+        "holdings_and_conclusions": 0.4643246829509735,
         "other": 0.2587089538574219
       }
     }
@@ -3515,15 +3515,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "unclassified",
-      "confidence": 0.39009982347488403,
+      "confidence": 0.4973888695240021,
       "all_scores": {
-        "case_metadata": 0.2916848659515381,
+        "case_metadata": 0.34196212887763977,
         "procedural_history": 0.37387940287590027,
-        "factual_background": 0.39009982347488403,
-        "legal_issues": 0.37290090322494507,
-        "legal_analysis": 0.3491012454032898,
-        "holdings_and_conclusions": 0.3538004159927368,
-        "other": 0.2118998020887375
+        "factual_background": 0.33865585923194885,
+        "legal_issues": 0.3729008734226227,
+        "legal_analysis": 0.27111151814460754,
+        "holdings_and_conclusions": 0.4973888695240021,
+        "other": 0.3149073123931885
       }
     }
   },
@@ -3542,16 +3542,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.4972999095916748,
+      "role": "factual_background",
+      "confidence": 0.5231627225875854,
       "all_scores": {
-        "case_metadata": 0.3224382996559143,
-        "procedural_history": 0.27888280153274536,
-        "factual_background": 0.32335165143013,
-        "legal_issues": 0.36332565546035767,
-        "legal_analysis": 0.4972999095916748,
-        "holdings_and_conclusions": 0.3689729869365692,
-        "other": 0.3545142710208893
+        "case_metadata": 0.3438395857810974,
+        "procedural_history": 0.3269723951816559,
+        "factual_background": 0.5231627225875854,
+        "legal_issues": 0.3318222463130951,
+        "legal_analysis": 0.30427953600883484,
+        "holdings_and_conclusions": 0.4879721403121948,
+        "other": 0.3545142412185669
       }
     }
   },
@@ -3570,16 +3570,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "factual_background",
-      "confidence": 0.4816167652606964,
+      "role": "unclassified",
+      "confidence": 0.4401707053184509,
       "all_scores": {
-        "case_metadata": 0.2492597997188568,
-        "procedural_history": 0.3431113660335541,
-        "factual_background": 0.4816167652606964,
-        "legal_issues": 0.33128854632377625,
-        "legal_analysis": 0.4371391534805298,
-        "holdings_and_conclusions": 0.3183663785457611,
-        "other": 0.34109658002853394
+        "case_metadata": 0.43846073746681213,
+        "procedural_history": 0.4401707053184509,
+        "factual_background": 0.4351663589477539,
+        "legal_issues": 0.3455314636230469,
+        "legal_analysis": 0.3214232325553894,
+        "holdings_and_conclusions": 0.3976491391658783,
+        "other": 0.34109652042388916
       }
     }
   },
@@ -3598,16 +3598,16 @@
     "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/tribunals/acopyt/1992/1992acopyt02",
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
-      "role": "legal_analysis",
-      "confidence": 0.47111839056015015,
+      "role": "unclassified",
+      "confidence": 0.43410342931747437,
       "all_scores": {
-        "case_metadata": 0.31875866651535034,
-        "procedural_history": 0.24615700542926788,
-        "factual_background": 0.2761722505092621,
-        "legal_issues": 0.38224416971206665,
-        "legal_analysis": 0.47111839056015015,
-        "holdings_and_conclusions": 0.3125748038291931,
-        "other": 0.22650496661663055
+        "case_metadata": 0.3614477217197418,
+        "procedural_history": 0.43410342931747437,
+        "factual_background": 0.3615529239177704,
+        "legal_issues": 0.39406895637512207,
+        "legal_analysis": 0.41416844725608826,
+        "holdings_and_conclusions": 0.362203449010849,
+        "other": 0.31861019134521484
       }
     }
   },
@@ -3627,15 +3627,15 @@
     "when_scraped": "2024-09-14T18:40:23.194832+10:00",
     "role_prediction": {
       "role": "case_metadata",
-      "confidence": 0.4652773141860962,
+      "confidence": 0.5457755923271179,
       "all_scores": {
-        "case_metadata": 0.4652773141860962,
-        "procedural_history": 0.4131511449813843,
-        "factual_background": 0.2854742109775543,
-        "legal_issues": 0.196068674325943,
-        "legal_analysis": 0.2426680028438568,
-        "holdings_and_conclusions": 0.3374520242214203,
-        "other": 0.13949333131313324
+        "case_metadata": 0.5457755923271179,
+        "procedural_history": 0.3970816135406494,
+        "factual_background": 0.4569600820541382,
+        "legal_issues": 0.22614695131778717,
+        "legal_analysis": 0.21868228912353516,
+        "holdings_and_conclusions": 0.33060210943222046,
+        "other": 0.2320830225944519
       }
     }
   }

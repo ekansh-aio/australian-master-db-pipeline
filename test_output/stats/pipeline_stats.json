@@ -1,13 +1,13 @@
 {
   "status": "success",
   "mode": "test_with_embedding_classifier",
-  "pipeline_time_seconds": 43.42,
+  "pipeline_time_seconds": 76.88,
   "documents_fetched": 10,
   "documents_processed": 10,
   "documents_failed": 0,
   "total_chunks_generated": 484,
   "top_k_chunks_selected": 92,
   "chunks_with_embeddings": 92,
-  "timestamp": "2026-02-12T13:43:15.680008",
+  "timestamp": "2026-02-12T15:15:53.091368",
   "output_directory": "J:\\pipelines\\msdb_pipeline\\test_output"
 }
