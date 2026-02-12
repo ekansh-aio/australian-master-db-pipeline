@@ -1,19 +1,35 @@
 """
-Role Classifier for Legal Document Chunks using DistilBERT
+FUTURE/TODO: Fine-tuned Role Classifier for Legal Document Chunks using DistilBERT
+
+⚠️ THIS MODULE IS NOT CURRENTLY IN USE ⚠️
 
 This module provides fine-tuned classification of legal document chunks into custom roles.
 Uses DistilBERT as the base model with a custom classification head.
+
+STATUS: This classifier requires a fine-tuned model to work effectively. 
+        Without fine-tuning, it produces low confidence scores and poor results.
+        
+CURRENT SOLUTION: Use role_classifier_embedding.py instead, which uses 
+                  semantic similarity and requires no training.
+
+FUTURE USE: Keep this module for when you have:
+            1. Annotated training data for your specific roles
+            2. Time and resources to fine-tune a model
+            3. Need for higher accuracy than embedding-based approach
+
+To use in future:
+    1. Prepare annotated training data
+    2. Fine-tune the model using the train() method
+    3. Update config.py to use the fine-tuned model
+    4. Replace role_classifier_embedding with this module in pipeline
+
+UPDATED: Now reads configuration from config.py
 """
 import logging
 import torch
 import numpy as np
-from typing import List, Dict, Optional, Union
-from transformers import (
-    DistilBertTokenizer,
-    DistilBertForSequenceClassification,
-    Trainer,
-    TrainingArguments
-)
+from typing import List, Dict, Optional, Union, Tuple
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer
 from torch.utils.data import Dataset
 import json
 from pathlib import Path
@@ -106,23 +122,19 @@ class RoleClassifier:
         """Load tokenizer and model."""
         try:
             # Try loading as a fine-tuned model first
-            self.tokenizer = DistilBertTokenizer.from_pretrained(model_name)
-            self.model = DistilBertForSequenceClassification.from_pretrained(
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            self.model = AutoModelForSequenceClassification.from_pretrained(
                 model_name,
-                num_labels=self.num_labels,
-                id2label=self.id2label,
-                label2id=self.label2id
+                num_labels=len(self.role_definitions)
             )
             logger.info(f"Loaded fine-tuned model from: {model_name}")
         except Exception as e:
             # Load base model
             logger.warning(f"Could not load as fine-tuned model, loading base: {e}")
-            self.tokenizer = DistilBertTokenizer.from_pretrained(model_name)
-            self.model = DistilBertForSequenceClassification.from_pretrained(
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            self.model = AutoModelForSequenceClassification.from_pretrained(
                 model_name,
-                num_labels=self.num_labels,
-                id2label=self.id2label,
-                label2id=self.label2id
+                num_labels=len(self.role_definitions)
             )
             logger.info(f"Loaded base model: {model_name}")
         
@@ -449,12 +461,65 @@ def create_default_legal_classifier(device: Optional[str] = None) -> RoleClassif
     return RoleClassifier(role_definitions=default_roles, device=device)
 
 
+def create_classifier_from_config(config: Optional[Dict] = None) -> RoleClassifier:
+    """
+    Create a classifier using settings from config.py.
+    
+    Args:
+        config: Configuration dictionary. If None, will import from config.py
+    
+    Returns:
+        RoleClassifier instance configured from config
+    """
+    if config is None:
+        # Import config from config.py
+        try:
+            from config import ROLE_CLASSIFICATION_CONFIG
+            config = ROLE_CLASSIFICATION_CONFIG
+        except ImportError:
+            logger.warning("Could not import config.py, using defaults")
+            return create_default_legal_classifier()
+    
+    # Check if role classification is enabled
+    if not config.get('enabled', True):
+        logger.warning("Role classification is disabled in config")
+        return None # type: ignore
+    
+    # Determine which model to use
+    if config.get('use_finetuned', False):
+        model_path = config.get('finetuned_model_path')
+        if model_path and Path(model_path).exists():
+            logger.info(f"Loading fine-tuned model from: {model_path}")
+            return RoleClassifier.load(model_path, device=config.get('device'))
+        else:
+            logger.warning(f"Fine-tuned model path not found: {model_path}, using base model")
+    
+    # Use base model
+    model_name = config.get('model_name', 'distilbert-base-uncased')
+    role_definitions = config.get('role_definitions', [
+        'metadata', 'procedural_history', 'factual_background',
+        'legal_analysis', 'application', 'orders', 'other'
+    ])
+    max_length = config.get('max_length', 512)
+    device = config.get('device', None)
+    
+    logger.info(f"Creating classifier with model: {model_name}")
+    logger.info(f"Role definitions: {role_definitions}")
+    
+    return RoleClassifier(
+        role_definitions=role_definitions,
+        model_name=model_name,
+        device=device,
+        max_length=max_length
+    )
+
+
 def prepare_training_data_from_annotated_chunks(
     annotated_chunks: List[Dict],
     role_field: str = 'role',
     text_field: str = 'text',
     role_definitions: Optional[List[str]] = None
-) -> tuple[List[str], List[int], List[str]]:
+) -> Tuple[List[str], List[int], List[str]]:
     """
     Prepare training data from annotated chunks.
     

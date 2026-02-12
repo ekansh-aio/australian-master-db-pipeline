@@ -26,7 +26,7 @@ from config import (
     EMBEDDING_CONFIG,
     CHUNKING_CONFIG,
     PROCESSING_CONFIG,
-    OUTPUT_CONFIG,
+    ROLE_CLASSIFICATION_CONFIG,
     PIPELINE_CONFIG,
     validate_config
 )
@@ -39,7 +39,9 @@ from semantic_chunker import SemanticChunker
 from sentence_transformers import SentenceTransformer
 from search_uploader import SearchIndexManager, SearchUploader
 from tqdm import tqdm
-
+# Use embedding-based role classifier (no training required)
+from role_classifier_embedding import EmbeddingRoleClassifier, create_classifier_from_config
+# Old fine-tuned classifier kept for future use (see role_classifier_FUTURE.py)
 logger = logging.getLogger(__name__)
 
 
@@ -157,6 +159,26 @@ class ProductionPipeline:
         )
         
         self.embedding_model = self.semantic_chunker.model
+        self.role_classifier = None
+
+        # Initialize embedding-based role classifier if enabled
+        if ROLE_CLASSIFICATION_CONFIG["enabled"]:
+            logger.info("Initializing Embedding-Based Role Classifier...")
+            logger.info(f"Method: {ROLE_CLASSIFICATION_CONFIG.get('method', 'embedding')}")
+            
+            # Use the new embedding-based classifier
+            # This uses semantic similarity - no training required!
+            self.role_classifier = create_classifier_from_config()
+            
+            if self.role_classifier:
+                logger.info("Role Classifier initialized successfully")
+                # Log role info
+                role_info = self.role_classifier.get_role_info()
+                logger.info(f"  Number of roles: {role_info['num_roles']}")
+                logger.info(f"  Confidence threshold: {role_info['threshold']}")
+                logger.info(f"  Aggregation method: {role_info['aggregation']}")
+            else:
+                logger.warning("Role classification is disabled or failed to initialize")
         
         logger.info(f"Using embedding model: {EMBEDDING_CONFIG['model_name']}")
     
@@ -253,6 +275,19 @@ class ProductionPipeline:
                     # Removed: start_char, end_char, num_sentences, avg_similarity
                 }
                 all_chunks.append(chunk_all)
+            
+            # Classify chunks using embedding-based classifier
+            if self.role_classifier:
+                self.role_classifier.classify_chunks(
+                    all_chunks,
+                    text_field="text",
+                    batch_size=ROLE_CLASSIFICATION_CONFIG["batch_size"],
+                    add_to_chunks=True,
+                    show_progress=False,
+                    return_all_scores=ROLE_CLASSIFICATION_CONFIG.get("add_probabilities", False)
+                )
+                # Note: Threshold is now handled inside the classifier
+                # No need for post-processing here
             
             # Select top-k chunks if configured
             if CHUNKING_CONFIG["top_k"]:

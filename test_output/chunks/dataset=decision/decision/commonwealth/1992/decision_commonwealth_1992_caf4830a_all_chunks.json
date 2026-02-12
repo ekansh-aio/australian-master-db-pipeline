@@ -1,0 +1,282 @@
+[
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_0",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "IN THE FEDERAL COURT OF AUSTRALIA QUEENSLAND DISTRICT REGISTRY GENERAL DIVISION No. QG 171 of 1992 BETWEEN: DAVIDS HOLDINGS PROPRIETARY LIMITED Appellant AND: COLES MYER LIMITED Respondent EX TEMPORE REASONS FOR JUDGMENT CORAM: — BLACK CJ, RYAN, HILL JJ PLACE: BRISBANE DATE: 20 NOVEMBER 1992 THE COURT: This is an application by Davids Holdings oe Limited for leave to appeal from a judgment of a judge of this court declining further to extend an interim injunction restraining the first respondent, Coles Myer Limited, from acquiring or taking any step to acquire any shares in QIW Retailers Limited (QIW).",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.450781911611557,
+      "all_scores": {
+        "case_metadata": 0.450781911611557,
+        "procedural_history": 0.42393428087234497,
+        "factual_background": 0.3335411548614502,
+        "legal_issues": 0.31475815176963806,
+        "legal_analysis": 0.2560115456581116,
+        "holdings_and_conclusions": 0.4150802493095398,
+        "other": 0.25078725814819336
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_1",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "The proceeding in which this application is made was commenced two days ago on Wednesday 18 November 1992. In that proceeding, the applicant seeks orders against Coles Myer Limited and 10 other respondents who are the directors of QIW.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.43178021907806396,
+      "all_scores": {
+        "case_metadata": 0.33560192584991455,
+        "procedural_history": 0.43178021907806396,
+        "factual_background": 0.28651243448257446,
+        "legal_issues": 0.2365572303533554,
+        "legal_analysis": 0.2836334705352783,
+        "holdings_and_conclusions": 0.41036519408226013,
+        "other": 0.2235882431268692
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_2",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "The primary judge granted an interim injunction on 18 November 1992 on an ex parte application by Davids Holdings. The injunction operated until 10.15 yesterday morning, when an application was made to extend it.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.49114155769348145,
+      "all_scores": {
+        "case_metadata": 0.37513408064842224,
+        "procedural_history": 0.49114155769348145,
+        "factual_background": 0.31118112802505493,
+        "legal_issues": 0.27770233154296875,
+        "legal_analysis": 0.3431031107902527,
+        "holdings_and_conclusions": 0.39058300852775574,
+        "other": 0.13701076805591583
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_3",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "That application was argued yesterday morning and during the course of the argument, further extensions were granted. Having heard argument, his Honour declined further to extend the interim injunction.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.5652462840080261,
+      "all_scores": {
+        "case_metadata": 0.3541613221168518,
+        "procedural_history": 0.5652462840080261,
+        "factual_background": 0.353509783744812,
+        "legal_issues": 0.31568044424057007,
+        "legal_analysis": 0.42985957860946655,
+        "holdings_and_conclusions": 0.5564990043640137,
+        "other": 0.16480450332164764
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_4",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "His Honour was not satisfied, on the material placed before him, that there was a serious issue to be tried on the two substantive issues raised by the applicant, namely, that an acquisition said to be proposed by Coles Myer Limited of up to 20 per cent of the shares in QIW would be in breach of section 46 of the Trade Practices Act 1974 and that, in pursuing that acquisition, Coles Myer was knowingly involved in a breach by the directors of QIW of their fiduciary duty. His Honour was also of the view that the applicant had not satisfied the onus of demonstrating that the applicant, seeking injunctive relief, could give effect to its undertaking as to damages.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.3661239445209503,
+      "all_scores": {
+        "case_metadata": 0.2749740183353424,
+        "procedural_history": 0.3661239445209503,
+        "factual_background": 0.35480421781539917,
+        "legal_issues": 0.35359930992126465,
+        "legal_analysis": 0.35460585355758667,
+        "holdings_and_conclusions": 0.345477819442749,
+        "other": 0.22010907530784607
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_5",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "We have referred to the applications to extend the interim injunction. It should be noted, however, that the extension of the interim injunction was sought in the course of an application for interlocutory relief, which is still continuing, in which further evidence may yet be adduced and in respect of which a notice to Coles Myer to produce documents is proposed to be called on.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.533779501914978,
+      "all_scores": {
+        "case_metadata": 0.3131733536720276,
+        "procedural_history": 0.533779501914978,
+        "factual_background": 0.3348187208175659,
+        "legal_issues": 0.3345394730567932,
+        "legal_analysis": 0.3620401620864868,
+        "holdings_and_conclusions": 0.41236406564712524,
+        "other": 0.2928270101547241
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_6",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "It is of course well established that an appellate court will not grant leave to appeal from an interlocutory order unless it is satisfied that there is both an error and the likelihood of injustice if the error is not corrected. In our view, no error has been demonstrated in this case.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.661163330078125,
+      "all_scores": {
+        "case_metadata": 0.33373919129371643,
+        "procedural_history": 0.661163330078125,
+        "factual_background": 0.38285031914711,
+        "legal_issues": 0.3545709252357483,
+        "legal_analysis": 0.37180519104003906,
+        "holdings_and_conclusions": 0.549465000629425,
+        "other": 0.16017493605613708
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_7",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "On the very limited evidence so far adduced before his Honour, we do not think that it can be said that the applicant has shown an arguable case in respect of either of the two substantive matters raised. Should further evidence be adduced, the matter will no doubt be considered in the light of that evidence by the trial judge.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.5105023384094238,
+      "all_scores": {
+        "case_metadata": 0.3702777028083801,
+        "procedural_history": 0.5105023384094238,
+        "factual_background": 0.42144930362701416,
+        "legal_issues": 0.40545400977134705,
+        "legal_analysis": 0.47556328773498535,
+        "holdings_and_conclusions": 0.45113134384155273,
+        "other": 0.1551036536693573
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_8",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "His Honour's reasons for judgment were criticised by counsel for the applicant for declining to take into account an offer of an undertaking by Mr David personally, by way of reinforcing the worth of the applicant company's undertaking as to damages, when a challenge to the worth of that undertaking had been made. Having regard to our view that the applicant has failed to show that his Honour's conclusions about the substantive issues were in error, we consider it unnecessary to reach any conclusion about this aspect of this matter.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.4760390520095825,
+      "all_scores": {
+        "case_metadata": 0.41272422671318054,
+        "procedural_history": 0.4367472529411316,
+        "factual_background": 0.42612385749816895,
+        "legal_issues": 0.4760390520095825,
+        "legal_analysis": 0.3931970000267029,
+        "holdings_and_conclusions": 0.4641278386116028,
+        "other": 0.18046948313713074
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a_9",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_caf4830a",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_caf4830a.json",
+    "text": "In these circumstances, we refuse leave to appeal, with costs. I certify that this and the preceding two (2) pages are a true copy of the reasons for judgment herein of the Full Court of the Federal Court. Date: 20 November 1992",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1102",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-11-20",
+    "citation": "David Holdings Proprietary Limited v Coles Myer Limited [1992] FCA 1102",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1102.pdf",
+    "when_scraped": "2024-09-15T15:07:57.104243+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.7409241199493408,
+      "all_scores": {
+        "case_metadata": 0.4667520225048065,
+        "procedural_history": 0.7409241199493408,
+        "factual_background": 0.39432579278945923,
+        "legal_issues": 0.3413887917995453,
+        "legal_analysis": 0.4254111051559448,
+        "holdings_and_conclusions": 0.6417018175125122,
+        "other": 0.16992498934268951
+      }
+    }
+  }
+]

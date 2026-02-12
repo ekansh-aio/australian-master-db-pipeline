@@ -1,0 +1,758 @@
+[
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_0",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "7) -41092 IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE | THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION JUDGMENT McHUGH J. IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION The Construction, Forestry and Mining Employees Union, an organisation registered under the Industrial Relations Act 1988 (Cth), (\"the organisation\") seeks orders nisi for writs of prohibition, mandamus, and certiorari against The Australian Industrial Relations Commission in respect of the proposed amalgamation of four organisations which are also registered under the Act.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.4727388918399811,
+      "all_scores": {
+        "case_metadata": 0.41919010877609253,
+        "procedural_history": 0.4727388918399811,
+        "factual_background": 0.27983322739601135,
+        "legal_issues": 0.35503363609313965,
+        "legal_analysis": 0.35428309440612793,
+        "holdings_and_conclusions": 0.3656846582889557,
+        "other": 0.20381096005439758
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_1",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "The organisation contends that the Commission has failed to exercise or has exceeded its jurisdiction because it has held that, in a hearing under s.250 of the Act for \"the granting of an approval for the submission of the amalgamation to ballot\", the organisation had no right to ask the Commission to dismiss the proceedings pursuant to s.111(1)(g) of the Act. That paragraph enables the Commission to dismiss proceedings in the Commission on the ground, inter alia, that they \"are not necessary or desirable in the public interest\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5330212712287903,
+      "all_scores": {
+        "case_metadata": 0.33828204870224,
+        "procedural_history": 0.45993438363075256,
+        "factual_background": 0.3693777918815613,
+        "legal_issues": 0.4107692837715149,
+        "legal_analysis": 0.381497323513031,
+        "holdings_and_conclusions": 0.5330212712287903,
+        "other": 0.21492286026477814
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_2",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Division 7 of Pt IX of the Act provides for the amalgamation of organisations which, by definition, means organisations \"registered under this Act\". Section 242(1), which is found in Div.7, provides: \"The existing organisations concerned in a proposed amalgamation, and any association proposed to be registered as an organisation under the amalgamation, must jointly lodge in the Industrial Registry an application for approval for the submission of the amalgamation to ballot.\" The persons entitled to vote in the ballot are those persons who, on the day determined in accordance with s.253C of the Act, have the right under the rules of the existing organisation concerned to vote at such a ballot or, if the rules do not provide for the right to vote at such a ballot, \"have the right under the rules of the organisation to vote at a ballot for an election for an office in the organisation that is conducted by a direct voting system\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.43722406029701233,
+      "all_scores": {
+        "case_metadata": 0.2961709201335907,
+        "procedural_history": 0.2857895493507385,
+        "factual_background": 0.24295271933078766,
+        "legal_issues": 0.3748665153980255,
+        "legal_analysis": 0.43722406029701233,
+        "holdings_and_conclusions": 0.32446226477622986,
+        "other": 0.17359712719917297
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_3",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Section 250 of the Act provides for the hearing of submissions in relation to the granting of an approval for the submission of the amalgamation to ballot. It provides: \"Where an application is lodged under section 242 in relation to a proposed amalgamation, a designated Presidential Member: (a) must immediately fix a time and place for hearing submissions in relation to: (i) the granting of an approval for the submission of the amalgamation to ballot; and (ii) if an application for a declaration under section 241 was lodged with the application the making of a declaration under section 241 in relation to the amalgamation; and (iii) if an application was lodged under section 244 for exemption from the requirement that a ballot be held in relation to the amalgamation the granting of the exemption; and (iv) if an application was lodged under section 245 for approval of a proposal for the submission of the amalgamation to a ballot that is not conducted under section 2533 the granting of the approval; and (b) must ensure that all organisations are promptly notified of the time and place of the hearing; and (c) may inform any other person who is likely to be interested of the time and place of the hearing.\" Although s.250 does not expressly refer to the Matters which are to be considered by the Presidential Member in determining whether he or she should grant approval for the submission of the amalgamation to ballot, the Act does not leave those matters at large.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.462821900844574,
+      "all_scores": {
+        "case_metadata": 0.26508504152297974,
+        "procedural_history": 0.462821900844574,
+        "factual_background": 0.23007354140281677,
+        "legal_issues": 0.43466147780418396,
+        "legal_analysis": 0.37752997875213623,
+        "holdings_and_conclusions": 0.4522511661052704,
+        "other": 0.17299894988536835
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_4",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "By necessary inference, s.252 circumscribes the matters on which submissions can be made in an application under s.250(a)(i). Section 252(1) provides: \"If, at the conclusion of the hearing arranged under section 250 in relation to a proposed amalgamation, a designated Presidential Member is satisfied: (a) that the amalgamation does not involve the registration of an association as an organisation; and (b) that a person who is not eligible for membership of an existing organisation concerned in the amalgamation would not be eligible for membership of the proposed amalgamated organisation immediately after the amalgamation takes effect; and (c) that any proposed alteration of the name of an existing organisation concerned in the amalgamation will not result in the organisation having a name that is the same as the name of another organisation or is so similar to the name of another organisation as to be likely to cause confusion; and (d) that any proposed alterations of the rules of an existing organisation comply with, and are not contrary to, this Act and awards and are not contrary to law; and (e) that any proposed de-registration of an existing organisation complies with this Act and is not otherwise contrary to law; the Presidential Member must approve the submission of the amalgamation to ballot.\" It would be an exercise in futility for the Presidential Member to hear submissions in respect of Matters outside the terms of s.252 because, ex fAypothesi, they are irrelevant to the obligation to approve the submission of the amalgamation to the ballot.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.4147552251815796,
+      "all_scores": {
+        "case_metadata": 0.2671680450439453,
+        "procedural_history": 0.31704896688461304,
+        "factual_background": 0.19789445400238037,
+        "legal_issues": 0.4147552251815796,
+        "legal_analysis": 0.34033504128456116,
+        "holdings_and_conclusions": 0.33630892634391785,
+        "other": 0.20510756969451904
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_5",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Consequently, no submission can be made in relation to the granting of that approval unless it falls within the terms of s.252. Moreover, the submissions which can be put by a person who is not an applicant for approval for the submission of the amalgamation to ballot are further circumscribed by s.251 and reg.70.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.38356342911720276,
+      "all_scores": {
+        "case_metadata": 0.23375558853149414,
+        "procedural_history": 0.3512971103191376,
+        "factual_background": 0.20511923730373383,
+        "legal_issues": 0.38356342911720276,
+        "legal_analysis": 0.302720844745636,
+        "holdings_and_conclusions": 0.3802354037761688,
+        "other": 0.18065790832042694
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_6",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Section 251 provides: \"(1) Submissions at a hearing arranged under subsection 241(3) or section 250 may only be made under this section. (2) Submissions may be made by the applicants. (3) Submissions may be made by another person only with the leave of a designated Presidential Member and may be made by the person only in relation to a prescribed matter.\" Regulation 70 provides: \"For the purposes of subsection 251(3) of the Act, the following matters are prescribed: (a) any proposed alteration in the name of an existing organisation concerned in the proposed amalgamation; (b) any proposed alterations of the eligibility rules of an existing organisation concerned in the proposed amalgamation.\" Notwithstanding the mandatory terms of s.251(3) and the matters prescribed by reg.70, the organisation contended that it had the right under the Act to submit that the proceedings should be dismissed pursuant to the provisions of s.111(1)(g) of the Act. In furtherance of that contention, the organisation lodged an application to dismiss the amalgamation proceedings on the ground that the eligibility rules of the proposed amalgamated organisation would be contrary to the public interest.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.5016834735870361,
+      "all_scores": {
+        "case_metadata": 0.36295175552368164,
+        "procedural_history": 0.45289331674575806,
+        "factual_background": 0.35129714012145996,
+        "legal_issues": 0.5016834735870361,
+        "legal_analysis": 0.42661961913108826,
+        "holdings_and_conclusions": 0.4664911925792694,
+        "other": 0.2576160430908203
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_7",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "The organisation claimed the right to intervene and support this contention not under s.251(3) but under s.43 of the Act which empowers the Commission to give leave to an organisation to intervene \"in a matter before the Commission\". The Full Bench of the Commission rejected the claim of the organisation to intervene under s.43 because s.251 made \"clear and specific provision as to who may appear at the hearing and in respect of what they may make submissions\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_analysis",
+      "confidence": 0.4537215530872345,
+      "all_scores": {
+        "case_metadata": 0.31261146068573,
+        "procedural_history": 0.44443362951278687,
+        "factual_background": 0.2779717445373535,
+        "legal_issues": 0.3069204092025757,
+        "legal_analysis": 0.4537215530872345,
+        "holdings_and_conclusions": 0.395232230424881,
+        "other": 0.17285120487213135
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_8",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "The Full Bench also rejected the right of the organisation to contend that the proceedings should be dismissed under s.111(1)(g). It did so on the ground that the \"invocation of the powers under s.111(1)(g) is not a prescribed matter and by operation of s.251(3) is not a matter that may be raised in submissions by an organisation or person who might otherwise have been given leave under that section\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.49628642201423645,
+      "all_scores": {
+        "case_metadata": 0.378543496131897,
+        "procedural_history": 0.4825323820114136,
+        "factual_background": 0.43841177225112915,
+        "legal_issues": 0.3565513789653778,
+        "legal_analysis": 0.4339030981063843,
+        "holdings_and_conclusions": 0.49628642201423645,
+        "other": 0.19216498732566833
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_9",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Furthermore, the Full Bench held that, notwithstanding the difference in language between s.252(1)(b) and reg.70(b), \"the scope of reg 70(b) is relevantly limited to the matter required to be considered by the Commission under s.252(1)(b).\" In this Court, the organisation did not seek to rely on the filing of the application which it made in purported reliance on s.111(1)(g). Nor did it contend that it had a right to intervene under s.43.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.39989370107650757,
+      "all_scores": {
+        "case_metadata": 0.3312477171421051,
+        "procedural_history": 0.3848147392272949,
+        "factual_background": 0.24091050028800964,
+        "legal_issues": 0.3783496022224426,
+        "legal_analysis": 0.39989370107650757,
+        "holdings_and_conclusions": 0.3423510193824768,
+        "other": 0.17562949657440186
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_10",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Instead, it contended that the Full Bench had failed to distinguish between the organisation's right to make submissions under s.251(3) and the power of the Commission, after hearing those submissions, to dismiss the proceedings under s.111(1)(g). The organisation contended that the terms of reg.70(b) go beyond the subject matter of s.252(1)(b) of the Act.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.47917577624320984,
+      "all_scores": {
+        "case_metadata": 0.3944894075393677,
+        "procedural_history": 0.47917577624320984,
+        "factual_background": 0.35176023840904236,
+        "legal_issues": 0.3792400360107422,
+        "legal_analysis": 0.4212906062602997,
+        "holdings_and_conclusions": 0.4471415877342224,
+        "other": 0.23939158022403717
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_11",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "It submitted that reg.70(b) entitles a person who is given leave under s.251(3) to make any submission which touches or concerns \"any proposed alterations of the eligibility rules of an existing organisation concerned in the proposed amalgamation\", irrespective of whether the submission goes beyond discussing whether \"a person who is not eligible for membership of an existing organisation concerned in the amalgamation would not be eligible for membership of the proposed amalgamated organisation\" under s.252(1)(b). The organisation contended that, if a submission concerning \"any proposed alterations of the eligibility rules\" leads the Presidential Member to conclude that the alteration is contrary to the public interest, that Member has the power, by reason of s.111(1)(g) and s.33 of the Act, to dismiss the proceedings of his own motion.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.48942869901657104,
+      "all_scores": {
+        "case_metadata": 0.33923035860061646,
+        "procedural_history": 0.43441563844680786,
+        "factual_background": 0.343252569437027,
+        "legal_issues": 0.48942869901657104,
+        "legal_analysis": 0.42403334379196167,
+        "holdings_and_conclusions": 0.44120949506759644,
+        "other": 0.2367892861366272
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_12",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Section 33(a) empowers the Commission to exercise a power \"of its own motion\". However, the contention that the organisation had a right to address generally on the alteration of the rules is not one which is reasonably open on the proper construction of the Act and Regulations.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_analysis",
+      "confidence": 0.5108052492141724,
+      "all_scores": {
+        "case_metadata": 0.2814442217350006,
+        "procedural_history": 0.3729463219642639,
+        "factual_background": 0.26400619745254517,
+        "legal_issues": 0.47063323855400085,
+        "legal_analysis": 0.5108052492141724,
+        "holdings_and_conclusions": 0.3546043336391449,
+        "other": 0.2270166128873825
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_13",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "This is so even even though the Commission has power of its own motion to dismiss proceedings under Div.7 of Pt IX ona ground specified in s.111(1)(g) of the Act. \"Subject to this Act\", s.111(1) confers a number of specific powers on the Commission \"in relation to an industrial dispute\". Unless the context otherwise requires, the term \"industrial dispute\" in s.111(1) is defined by s.111(2) to include \"a reference to any other proceeding before the Commission\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.4427929222583771,
+      "all_scores": {
+        "case_metadata": 0.27085185050964355,
+        "procedural_history": 0.4427929222583771,
+        "factual_background": 0.33453893661499023,
+        "legal_issues": 0.39596521854400635,
+        "legal_analysis": 0.3776700496673584,
+        "holdings_and_conclusions": 0.36437422037124634,
+        "other": 0.15897107124328613
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_14",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "It is unnecessary to set out the terms of s.11ll. It is enough to say that many of the powers which it confers on the Commission are capable of being applied in proceedings under Div.7 of Pt IX of the Act.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.4997767508029938,
+      "all_scores": {
+        "case_metadata": 0.36486223340034485,
+        "procedural_history": 0.35553836822509766,
+        "factual_background": 0.2546529173851013,
+        "legal_issues": 0.4997767508029938,
+        "legal_analysis": 0.3951883912086487,
+        "holdings_and_conclusions": 0.3721557855606079,
+        "other": 0.2571341097354889
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_15",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "The powers to take evidence on oath or affirmation (par.(a)), to sit at any place (par.(j)), to adjourn to any time and place (par.(m)), and to correct, amend or waive any error, defect or irregularity, whether in substance or form (par.(q)), for example, are powers which are capable of being applied in Div.7 proceedings. Not all the powers conferred by s.111(1), however, are capable of being applied in Div.7 proceedings. In some cases, powers conferred by 10. s.111(1) are not capable of being applied in those proceedings because they apply only to particular types of proceedings instituted under the Act; in other cases, powers conferred by s.111(1) are not capable of being applied in Div.7 proceedings because the nature of those proceedings makes it impossible to apply those powers.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.4451614320278168,
+      "all_scores": {
+        "case_metadata": 0.35478711128234863,
+        "procedural_history": 0.3721616268157959,
+        "factual_background": 0.3514726161956787,
+        "legal_issues": 0.4451614320278168,
+        "legal_analysis": 0.3310904800891876,
+        "holdings_and_conclusions": 0.35080084204673767,
+        "other": 0.19324138760566711
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_16",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Thus, some parts of s.111(1)(g) are, and some parts are not, capable of being applied in Div.7 proceedings. Section 111(1)(g) provides: \"Subject to this Act, the Commission may, in relation to an industrial dispute: (g) dismiss a matter or part of a matter, or refrain from further hearing or from determining the industrial dispute or part of the industrial dispute, if it appears: (i) that the industrial dispute or part is trivial; (ii) that the industrial dispute or part has been dealt with, is being dealt with or is proper to be dealt with by a State industrial authority; (iii) that further proceedings are not necessary or desirable in the public interest; (iv) that a party to the industrial dispute is engaging in conduct that, in the Commission's opinion, is hindering the settlement of the industrial dispute or another industrial dispute; or ll. (v) that a party to the industrial dispute: (A) has breached an award or order of the Commission; or (B) has contravened a direction or recommendation of the Commission to stop industrial action\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.4736116826534271,
+      "all_scores": {
+        "case_metadata": 0.2898098826408386,
+        "procedural_history": 0.4417266249656677,
+        "factual_background": 0.4036382734775543,
+        "legal_issues": 0.4736116826534271,
+        "legal_analysis": 0.44258612394332886,
+        "holdings_and_conclusions": 0.4069760739803314,
+        "other": 0.2591540217399597
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_17",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "The nature of Div.7 proceedings makes it impossible to. exercise the power conferred by sub-par.(g) (ii). Moreover, it is difficult to imagine a case where subpar.(g)(i) could be applied.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.3023534417152405,
+      "all_scores": {
+        "case_metadata": 0.2584121823310852,
+        "procedural_history": 0.2568392753601074,
+        "factual_background": 0.17372402548789978,
+        "legal_issues": 0.3023534417152405,
+        "legal_analysis": 0.23406964540481567,
+        "holdings_and_conclusions": 0.19722488522529602,
+        "other": 0.18298855423927307
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_18",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "But nothing in the nature of the power conferred by sub-par.(g)(iii) makes it inappropriate to exercise that power in Div.7 proceedings. That power, therefore, is available to the Commission in such proceedings.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.3869248926639557,
+      "all_scores": {
+        "case_metadata": 0.35756370425224304,
+        "procedural_history": 0.2973177433013916,
+        "factual_background": 0.2069450169801712,
+        "legal_issues": 0.3869248926639557,
+        "legal_analysis": 0.3399779200553894,
+        "holdings_and_conclusions": 0.26585543155670166,
+        "other": 0.23689895868301392
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_19",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "It does not follow, however, that a person who is not an applicant for approval for the submission of the amalgamation to the ballot can make submissions which in terms or in effect would enliven the power conferred on the Commission by s.111(1)(g)(iii). It is true that s.33 of the Act provides: \"Subject to this Act, the Commission may perform a function or exercise a power: (b) on the application of: 12. (i) a party to an industrial dispute; or (ii) an organisation or person bound by an award.\" But it is a settled rule of statutory construction that a statutory power, expressed in general terms, is not to be construed so as to avoid a condition or limitation placed on the exercise of a specific power by the same statuto(!), Section 251 mandates that a person who is not an applicant for approval can only be heard with the leave of a designated Presidential Member and \"only in relation to a prescribed matter\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.4378696084022522,
+      "all_scores": {
+        "case_metadata": 0.2297953963279724,
+        "procedural_history": 0.31660258769989014,
+        "factual_background": 0.2183886617422104,
+        "legal_issues": 0.4378696084022522,
+        "legal_analysis": 0.39383041858673096,
+        "holdings_and_conclusions": 0.32737940549850464,
+        "other": 0.17541007697582245
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_20",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "It is impossible therefore to construe s.33, or for that matter s.43, as giving a person who is not an applicant a right independent of s.251 to make submissions in Div.7 proceedings. The general powers conferred by ss.33 and 43 cannot be used to avoid the limitations imposed by s.251.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_analysis",
+      "confidence": 0.4567438066005707,
+      "all_scores": {
+        "case_metadata": 0.3599332571029663,
+        "procedural_history": 0.2885321080684662,
+        "factual_background": 0.23923161625862122,
+        "legal_issues": 0.4162358343601227,
+        "legal_analysis": 0.4567438066005707,
+        "holdings_and_conclusions": 0.35293588042259216,
+        "other": 0.20337483286857605
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_21",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "The right of the organisation to put submissions in the present (1) Anthony Hordern & Sons Ltd. v. Amalgamated Clothing and Allied frades Union of Australia 47 C.L.R. 1, at pp.7, 8; R&. v.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.37301433086395264,
+      "all_scores": {
+        "case_metadata": 0.33459150791168213,
+        "procedural_history": 0.37301433086395264,
+        "factual_background": 0.3439282476902008,
+        "legal_issues": 0.2470434159040451,
+        "legal_analysis": 0.21646001935005188,
+        "holdings_and_conclusions": 0.2664991319179535,
+        "other": 0.3545120060443878
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_22",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Australian Film Commission 141 C.L.R. 672, at p.678; Saraswati v. The Queen 172 C.L.R. 1, at pp.23-24. 13. proceedings was, therefore, limited to the matter prescribed by s.251(3) and reg.70(b).",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5408492088317871,
+      "all_scores": {
+        "case_metadata": 0.5408492088317871,
+        "procedural_history": 0.3499201536178589,
+        "factual_background": 0.2663729786872864,
+        "legal_issues": 0.33719974756240845,
+        "legal_analysis": 0.27893000841140747,
+        "holdings_and_conclusions": 0.2997053265571594,
+        "other": 0.2390907108783722
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_23",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "Moreover, the submissions which are heard pursuant to s.251 are submissions \"at a hearing arranged under +.. section 250\". For present purposes, that is a hearing for \"submissions in relation to ... the granting of an approval for the submission of the amalgamation to ballot\"), But, as I have already pointed out, the effect of s.252 is to confine those submissions to the matters referred to in s.252 because once the Presidential Member is satisfied of those Matters he or she \"must approve the submission of the amalgamation to ballot\".",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.4523696005344391,
+      "all_scores": {
+        "case_metadata": 0.22978068888187408,
+        "procedural_history": 0.4523696005344391,
+        "factual_background": 0.2445748746395111,
+        "legal_issues": 0.31167495250701904,
+        "legal_analysis": 0.29459962248802185,
+        "holdings_and_conclusions": 0.3073407709598541,
+        "other": 0.17134499549865723
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_24",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "A serious question arises, therefore, as to the validity of reg.70(b) because the Act makes no provision \"at a hearing arranged under ... section 250\" for the Presidential Member to consider generally \"any proposed alterations of the eligibility rules of an existing organisation concerned in the proposed amalgamation\". If the sub-regulation is valid, it is valid only to the extent that it is (2) Section 250(a)(i). 14. construed, as the Full Bench construed it, as confined to the matter set out in s.252(1)(b).",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.4918646812438965,
+      "all_scores": {
+        "case_metadata": 0.3020142912864685,
+        "procedural_history": 0.38229525089263916,
+        "factual_background": 0.2648061215877533,
+        "legal_issues": 0.4918646812438965,
+        "legal_analysis": 0.3580970764160156,
+        "holdings_and_conclusions": 0.3378468155860901,
+        "other": 0.2058812975883484
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_25",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "If the sub-regulation is invalid, the organisation had no right to make any submission. If it is valid, it must be construed as limiting the organisation's right to make submissions to the matter specified in s..252(1)(b).",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "legal_issues",
+      "confidence": 0.49599194526672363,
+      "all_scores": {
+        "case_metadata": 0.26209163665771484,
+        "procedural_history": 0.337401807308197,
+        "factual_background": 0.24274024367332458,
+        "legal_issues": 0.49599194526672363,
+        "legal_analysis": 0.3489418029785156,
+        "holdings_and_conclusions": 0.4076422452926636,
+        "other": 0.20628663897514343
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144_26",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_92ab2144",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_92ab2144.json",
+    "text": "In either event, the Full Bench was right to reject the contentions of the organisation. Accordingly, notwithstanding the forceful and able submissions of counsel for the organisation, I have reached the firm conclusion that the applications cannot succeed and that to allow them to proceed \"would (3), involve useless expense\" The applications are dismissed. (3) General Steel Industries Inc. v. Commissioner for Railways (N.S.W.) 112 C.L.R. 125, at p.138.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16886",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-04-22",
+    "citation": "IN THE MATTER OF AN APPLICATION FOR WRITS OF PROHIBITION, MANDAMUS AND CERTIORARI AGAINST THE AUSTRALIAN INDUSTRIAL RELATIONS COMMISSION; EX PARTE THE CONSTRUCTION, FORESTRY AND MINING EMPLOYEES UNION",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16886/783-1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:21:29.471755+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.4740772247314453,
+      "all_scores": {
+        "case_metadata": 0.29156261682510376,
+        "procedural_history": 0.37969833612442017,
+        "factual_background": 0.4427628517150879,
+        "legal_issues": 0.35415199398994446,
+        "legal_analysis": 0.3026411533355713,
+        "holdings_and_conclusions": 0.4740772247314453,
+        "other": 0.1474475860595703
+      }
+    }
+  }
+]

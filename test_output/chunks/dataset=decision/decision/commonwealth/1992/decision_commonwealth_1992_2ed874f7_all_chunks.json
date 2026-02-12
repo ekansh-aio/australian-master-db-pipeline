@@ -1,0 +1,254 @@
+[
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_0",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "ARTHUR LETTS APPELLANT (In person) AND THE COMMONWEALTH OF AUSTRALIA AND ORS RESPONDENTS ORDER Appeal dismissed. 15 October 1992 F.C. 92/038 Notice: This copy of the Court's Reasons for Judgment is subject to formal revision prior to publication in the Commonwealth Law Reports. MASON C.J., BRENNAN, DEANE, DAWSON AND GAUDRON JJ.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6932152509689331,
+      "all_scores": {
+        "case_metadata": 0.47203630208969116,
+        "procedural_history": 0.622809886932373,
+        "factual_background": 0.4556836485862732,
+        "legal_issues": 0.38197073340415955,
+        "legal_analysis": 0.35661235451698303,
+        "holdings_and_conclusions": 0.6932152509689331,
+        "other": 0.15174393355846405
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_1",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "This is an appeal againot a docision of McHugh J. in which he dismissed an application by the appellant seeking relief against various respondents. The principal relief sought was: \"an Order Absolute directed to the Respondents named in the Application for the Principal Registrar to accept and issue according to the known laws of Australia for the administration of Criminal Justice; of Mandamus: to the Respondents to administer complete justice to the Applicant and equality before the law in the dispute with the Respondents denying the Applicant's human and legal rights.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6225782036781311,
+      "all_scores": {
+        "case_metadata": 0.5113750696182251,
+        "procedural_history": 0.5930200815200806,
+        "factual_background": 0.4087413251399994,
+        "legal_issues": 0.33240318298339844,
+        "legal_analysis": 0.42366570234298706,
+        "holdings_and_conclusions": 0.6225782036781311,
+        "other": 0.15695220232009888
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_2",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "And further for Orders that: A. Attorney-Generals observe their duty to make Federal and State Parliaments aware of the dispute to remedy the Applicant's grievances against the assumption of a pretended legislative and executive power to dispense with and suspend the Constitution and laws of Australia and the Common law; B.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5307884216308594,
+      "all_scores": {
+        "case_metadata": 0.5307884216308594,
+        "procedural_history": 0.4282015860080719,
+        "factual_background": 0.32919394969940186,
+        "legal_issues": 0.33348026871681213,
+        "legal_analysis": 0.48460373282432556,
+        "holdings_and_conclusions": 0.380492627620697,
+        "other": 0.16388776898384094
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_3",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "That the exercise of jurisdiction by successive governments representing different classes of people over the extent of their delegated authority to dispense with and suspend the basic principles of democracy without the approval of a majority of electors exceeds the legislative and executive power and is invalid from the moment of its inception; c. That the Respondents observe the human and legal right of the Applicant to legal aid to prepare and be represented before the High Court with a Jury to resolve the dispute over the delegated legislative and executive authority and its extent; D.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "legal_analysis",
+      "confidence": 0.5164703130722046,
+      "all_scores": {
+        "case_metadata": 0.41690778732299805,
+        "procedural_history": 0.4117933511734009,
+        "factual_background": 0.29435694217681885,
+        "legal_issues": 0.43821001052856445,
+        "legal_analysis": 0.5164703130722046,
+        "holdings_and_conclusions": 0.4066736400127411,
+        "other": 0.20513711869716644
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_4",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "That the declarations, judgments, doings and proceedings enforced against the Applicant are matters justiciable are questions of law and fact mandatory for removal to the original jurisdiction of the High Court Jury.\" Mr Letts' complaints appear to relate to his conviction in 1981 for offences against the Crimes Act 1914 (Cth) in relation to obtaining two pensions. Since that date amounts have been deducted from his pension to recover the moneys wrongly paid to him.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.5039786100387573,
+      "all_scores": {
+        "case_metadata": 0.3902013897895813,
+        "procedural_history": 0.5039786100387573,
+        "factual_background": 0.45203524827957153,
+        "legal_issues": 0.4375015199184418,
+        "legal_analysis": 0.3867088556289673,
+        "holdings_and_conclusions": 0.47969087958335876,
+        "other": 0.16896218061447144
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_5",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "It appears also that the appellant seeks to challenge his conviction in 1981 for those offences. Reference is also made to earlier convictions going back to 1956.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.5600131750106812,
+      "all_scores": {
+        "case_metadata": 0.31459102034568787,
+        "procedural_history": 0.5600131750106812,
+        "factual_background": 0.36604630947113037,
+        "legal_issues": 0.37472373247146606,
+        "legal_analysis": 0.3050016760826111,
+        "holdings_and_conclusions": 0.40266233682632446,
+        "other": 0.14352013170719147
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_6",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "Mason CT Brennan J Deane J Dawson J Gaudron J 2. In his reasons for judgment, McHugh J. stated that the relationship between the grievances and the orders which were sought in the application was not readily apparent to him.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.4274406135082245,
+      "all_scores": {
+        "case_metadata": 0.4274406135082245,
+        "procedural_history": 0.3874666392803192,
+        "factual_background": 0.3256351351737976,
+        "legal_issues": 0.23983320593833923,
+        "legal_analysis": 0.33625853061676025,
+        "holdings_and_conclusions": 0.36280345916748047,
+        "other": 0.23640157282352448
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_7",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "The relationship between the grievances and the orders sought is no more apparent to us. Having considered what Mr Letts has put forward in writing and orally in support of his appeal, we are convinced that the decision of McHugh J. was clearly correct.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.520018458366394,
+      "all_scores": {
+        "case_metadata": 0.30202746391296387,
+        "procedural_history": 0.520018458366394,
+        "factual_background": 0.3319815397262573,
+        "legal_issues": 0.3251323103904724,
+        "legal_analysis": 0.37657052278518677,
+        "holdings_and_conclusions": 0.4220198690891266,
+        "other": 0.19120213389396667
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7_8",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_2ed874f7",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_2ed874f7.json",
+    "text": "None of the orders sought is an order that this Court could properly make. The appeal must be dismissed.",
+    "version_id": "high_court_of_australia:/historical/showbyHandle/1/16452",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-15",
+    "citation": "ARTHUR LETTS V. THE COMMONWEALTH OF AUSTRALIA AND ORS",
+    "url": "https://eresources.hcourt.gov.au/getPdf/1/16452/784_1992.pdf?sequence=1&amp;isAllowed=y",
+    "when_scraped": "2024-09-15T23:29:10.621538+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.6285569667816162,
+      "all_scores": {
+        "case_metadata": 0.3473625183105469,
+        "procedural_history": 0.5186744928359985,
+        "factual_background": 0.39404889941215515,
+        "legal_issues": 0.30710041522979736,
+        "legal_analysis": 0.41636887192726135,
+        "holdings_and_conclusions": 0.6285569667816162,
+        "other": 0.1550220251083374
+      }
+    }
+  }
+]

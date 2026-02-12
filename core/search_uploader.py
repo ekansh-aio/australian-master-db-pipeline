@@ -153,7 +153,16 @@ class SearchIndexManager:
                     type=SearchFieldDataType.String,
                     analyzer_name="standard.lucene"
                 ),
-                
+                SimpleField(
+                    name="role",
+                    type= SearchFieldDataType.String,
+                    filterable = True
+                ),
+                SimpleField(
+                    name="confidence",
+                    type= SearchFieldDataType.Double,
+                    filterable = False
+                ),
                 # Source file (optional)
                 SimpleField(
                     name="source_file",
@@ -299,7 +308,9 @@ class SearchUploader:
             "source_file": chunk.get("_source_file", ""),
             "embedding": chunk.get("embedding", [])
         }
-        
+        if "role_prediction" in chunk:
+            doc['role'] = chunk["role_prediction"]["role"]
+            doc['role_confidence'] = chunk["role_prediction"]["confidence"]
         return doc
     
     def upload_batch(

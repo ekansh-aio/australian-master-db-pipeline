@@ -1,0 +1,394 @@
+[
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_0",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "IN THE FEDERAL COURT OF AUSTRALIA VICTORIA DISTRICT REGISTRY No. VG3007 of 1991 GENERAL DIVISION BETWEEN: PETER GRENFELL WINDSOR Appellant AND: THE NATIONAL MUTUAL LIFE ASSOCIATION OF AUSTRALIA LIMITED Respondent THE NATIONAL MUTUAL LIFE ASSOCIATION OF AUSTRALIA LIMITED Cross-appellant PETER GRENFELL WINDSOR Cross~respondent CORAM: BLACK C.J., BEAUMONT AND RYAN JJ.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5706244707107544,
+      "all_scores": {
+        "case_metadata": 0.5706244707107544,
+        "procedural_history": 0.4411764144897461,
+        "factual_background": 0.31110310554504395,
+        "legal_issues": 0.3071569800376892,
+        "legal_analysis": 0.3201233744621277,
+        "holdings_and_conclusions": 0.32972997426986694,
+        "other": 0.19105282425880432
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_1",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "PLACE: MELBOURNE DATE : &6 OCTOBER, INF2Z MINUTES OF ORDER THE COURT ORDERS: The appellant pay the respondent's costs of the appeal and that the cross-appellant pay the crossrespondent's costs of the cross appeal. Note: Settlement and entry of orders is dealt with in Order 36 of the Federal Court Rules.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5640909671783447,
+      "all_scores": {
+        "case_metadata": 0.5640909671783447,
+        "procedural_history": 0.5322485566139221,
+        "factual_background": 0.4077356159687042,
+        "legal_issues": 0.3165200650691986,
+        "legal_analysis": 0.3342902362346649,
+        "holdings_and_conclusions": 0.4089246392250061,
+        "other": 0.1504734307527542
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_2",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "IN THE FEDERAL COURT OF AUSTRALIA ) ) VICTORIA DISTRICT REGISTRY ) No. VG3007 of 1991 ) ) GENERAL DIVISION BETWEEN: PETER GRENFELL WINDSOR Appellant THE NATIONAL MUTUAL LIFE ASSOCIATION OF AUSTRALIA LIMITED Respondent THE NATIONAL MUTUAL LIFE ASSOCIATION OF AUSTRALIA LIMITED Cross-appellant PETER GRENFELL WINDSOR Cross~respondent CORAM: BLACK C.J., BEAUMONT AND RYAN JJ.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5481105446815491,
+      "all_scores": {
+        "case_metadata": 0.5481105446815491,
+        "procedural_history": 0.39985424280166626,
+        "factual_background": 0.25185465812683105,
+        "legal_issues": 0.2575574517250061,
+        "legal_analysis": 0.27651357650756836,
+        "holdings_and_conclusions": 0.2896997928619385,
+        "other": 0.19994762539863586
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_3",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "DATE: 2e COctOoBER WIAA REASONS FOR JUDGMENT (on _ reserved costs) THE COURT: When the appeal and cross-appeal in this matter were dismissed, costs of the appeal and of the cross-appeal were reserved. The parties were given leave to file written submissions.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "holdings_and_conclusions",
+      "confidence": 0.5167254209518433,
+      "all_scores": {
+        "case_metadata": 0.4548856317996979,
+        "procedural_history": 0.4827778935432434,
+        "factual_background": 0.4819996953010559,
+        "legal_issues": 0.39300307631492615,
+        "legal_analysis": 0.4509507715702057,
+        "holdings_and_conclusions": 0.5167254209518433,
+        "other": 0.1701292097568512
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_4",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "The parties have now filed written submissions. At first instance, on the question of costs, Heerey J. said ( 100 ALR 585 at 599): \"Costs I accept what Mr Finkelstein [senior ~counsel for National Mutual] says as to the lack of any suggestion of improper conduct on behalf of his client.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.40933841466903687,
+      "all_scores": {
+        "case_metadata": 0.3105028569698334,
+        "procedural_history": 0.37746626138687134,
+        "factual_background": 0.4006398916244507,
+        "legal_issues": 0.3261631727218628,
+        "legal_analysis": 0.30649614334106445,
+        "holdings_and_conclusions": 0.40933841466903687,
+        "other": 0.17592696845531464
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_5",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "No such suggestion is made or could be made. I accept, of course, that ordinarily the successful party recovers his costs.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.37293392419815063,
+      "all_scores": {
+        "case_metadata": 0.15984401106834412,
+        "procedural_history": 0.19521939754486084,
+        "factual_background": 0.2947247624397278,
+        "legal_issues": 0.28858596086502075,
+        "legal_analysis": 0.23820143938064575,
+        "holdings_and_conclusions": 0.37293392419815063,
+        "other": 0.16570116579532623
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_6",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "Nevertheless, there are some unusual features of this case. While I have found that the applicant's legal submissions are valid, the case has not been without difficulty and there is to my mind a public interest element, having regard to the very large number of members of this company, more in number than one or two of the Australian States.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5344479084014893,
+      "all_scores": {
+        "case_metadata": 0.5344479084014893,
+        "procedural_history": 0.39215993881225586,
+        "factual_background": 0.26215505599975586,
+        "legal_issues": 0.3668455183506012,
+        "legal_analysis": 0.2904263138771057,
+        "holdings_and_conclusions": 0.3803430199623108,
+        "other": 0.22040940821170807
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_7",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "The question of the kind of notice of general meetings members are entitled to get does involve a matter of public interest and takes this case outside the usual run of cases. In all the circumstances, I propose to make no order as to costs.\" National Mutual cross-appealed against this part of the judgment, but abandoned the cross-appeal during the course of argument.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.4744793176651001,
+      "all_scores": {
+        "case_metadata": 0.39700859785079956,
+        "procedural_history": 0.4744793176651001,
+        "factual_background": 0.36535781621932983,
+        "legal_issues": 0.34419822692871094,
+        "legal_analysis": 0.4010334014892578,
+        "holdings_and_conclusions": 0.43184396624565125,
+        "other": 0.22291794419288635
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_8",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "In his written submission, Mr. Windsor relies on considerations of a kind similar to the matters referred to by Heerey J.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.3824745714664459,
+      "all_scores": {
+        "case_metadata": 0.2978195548057556,
+        "procedural_history": 0.28449946641921997,
+        "factual_background": 0.2838478088378906,
+        "legal_issues": 0.3797944188117981,
+        "legal_analysis": 0.3824745714664459,
+        "holdings_and_conclusions": 0.3254159688949585,
+        "other": 0.21170750260353088
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_9",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "In addition, Mr. Windsor points to the circumstance that National Mutual abandoned its cross-appeal.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.4460766911506653,
+      "all_scores": {
+        "case_metadata": 0.22295142710208893,
+        "procedural_history": 0.39684516191482544,
+        "factual_background": 0.23965631425380707,
+        "legal_issues": 0.25308769941329956,
+        "legal_analysis": 0.1933172345161438,
+        "holdings_and_conclusions": 0.4460766911506653,
+        "other": 0.07215383648872375
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_10",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "National Mutual contends that costs of the appeal and cross-appeal should follow the event, in the usual way. Bs In our opinion, so far as the cross-appeal is concerned, there is no reason why costs should not follow the event.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "unclassified",
+      "confidence": 0.3784150779247284,
+      "all_scores": {
+        "case_metadata": 0.2048637568950653,
+        "procedural_history": 0.3568115234375,
+        "factual_background": 0.25656723976135254,
+        "legal_issues": 0.30291977524757385,
+        "legal_analysis": 0.30626797676086426,
+        "holdings_and_conclusions": 0.3784150779247284,
+        "other": 0.07798238098621368
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_11",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "With regard to the costs of the appeal, whilst we can see, with respect, the force of the approach taken by Heerey J. at first instance, we do not think that it is appropriate that this reasoning should again be applied at the appellate stage. Whatever the outcome in terms of costs at first instance, the appeal was prosecuted by the appellant at his own risk as to costs.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.5849114656448364,
+      "all_scores": {
+        "case_metadata": 0.34632712602615356,
+        "procedural_history": 0.5849114656448364,
+        "factual_background": 0.511863648891449,
+        "legal_issues": 0.4237023591995239,
+        "legal_analysis": 0.4920251965522766,
+        "holdings_and_conclusions": 0.5354815721511841,
+        "other": 0.16376541554927826
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_12",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "We are not persuaded that we should depart from the rule that the dismissal of an appeal ordinarily carries with it an order that the unsuccessful appellant bear the costs of the appeal. We propose to order that the appellant pay the respondent's costs of the appeal and that the cross-appellant pay the cross-respondent's costs of the cross-appeal.",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "procedural_history",
+      "confidence": 0.6855303049087524,
+      "all_scores": {
+        "case_metadata": 0.38653793931007385,
+        "procedural_history": 0.6855303049087524,
+        "factual_background": 0.5306658744812012,
+        "legal_issues": 0.4181476831436157,
+        "legal_analysis": 0.4436511993408203,
+        "holdings_and_conclusions": 0.6007357835769653,
+        "other": 0.18247556686401367
+      }
+    }
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af_13",
+    "doc_id": "dataset=decision_decision_commonwealth_1992_decision_commonwealth_1992_73bba0af",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1992/decision_commonwealth_1992_73bba0af.json",
+    "text": "I hereby certify that this and the preceding two (2) pages are a true copy of the Reasons for Judgment of the Court. . Associate \"ey Dated: AG ocTregee (9%",
+    "version_id": "federal_court_of_australia:fca/single/1992/1992FCA1101",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "federal_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1992-10-26",
+    "citation": "Windsor v National Mutual Life Association of Australia Limited [1992] FCA 1101",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/1992/1992FCA1101.pdf",
+    "when_scraped": "2024-09-14T13:39:14.590474+10:00",
+    "role_prediction": {
+      "role": "case_metadata",
+      "confidence": 0.5665786266326904,
+      "all_scores": {
+        "case_metadata": 0.5665786266326904,
+        "procedural_history": 0.4954844117164612,
+        "factual_background": 0.45055410265922546,
+        "legal_issues": 0.4008975625038147,
+        "legal_analysis": 0.4076582193374634,
+        "holdings_and_conclusions": 0.506446361541748,
+        "other": 0.22692257165908813
+      }
+    }
+  }
+]

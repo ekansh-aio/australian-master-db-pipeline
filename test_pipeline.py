@@ -1,10 +1,19 @@
 """
-Test Pipeline for Legal Document Processing (FIXED VERSION 2)
-FIXES:
-1. Ensures all_chunks.json files are saved for each document
-2. Removes duplicate 'id' and 'chunk_id' fields (keeps only 'id')
-3. Cleans up chunk metadata properly
-4. Improves logging for debugging
+Test Pipeline for Legal Document Processing (UPDATED VERSION)
+
+UPDATES:
+1. Uses new embedding-based role classifier (no training required!)
+2. Fixes missing top_k_chunks.append() bug
+3. Ensures all_chunks.json files are saved for each document
+4. Removes duplicate 'id' and 'chunk_id' fields (keeps only 'id')
+5. Cleans up chunk metadata properly
+6. Improves logging for debugging
+
+ROLE CLASSIFICATION:
+- Now uses semantic similarity between chunks and role descriptions
+- No fine-tuned model required
+- Better confidence scores (0.3-0.8 instead of 0.1-0.2)
+- Easy to customize via role_descriptions_dict in config.py
 """
 import json
 import logging
@@ -27,6 +36,7 @@ from config import (
     EMBEDDING_CONFIG,
     CHUNKING_CONFIG,
     PROCESSING_CONFIG,
+    ROLE_CLASSIFICATION_CONFIG
 )
 
 # Import pipeline components
@@ -35,6 +45,9 @@ from core.legal_text_cleaner import LegalTextCleaner
 from core.semantic_chunker import SemanticChunker
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
+# Use embedding-based role classifier (no training required)
+from core.role_classifier_embedding import EmbeddingRoleClassifier, create_classifier_from_config
+# Old fine-tuned classifier kept for future use (see role_classifier_FUTURE.py)
 
 logger = logging.getLogger(__name__)
 
@@ -96,10 +109,12 @@ def get_local_chunks_path(source_file_path: str, base_output: str) -> Path:
 
 class TestPipeline:
     """
-    Fixed test pipeline with:
+    Updated test pipeline with:
+    - Embedding-based role classification (no training required)
     - Proper all_chunks.json saving
     - No duplicate id/chunk_id fields
     - Clean metadata
+    - Fixed top_k_chunks bug
     """
     
     def __init__(self, output_dir: str = "test_output"):
@@ -110,7 +125,7 @@ class TestPipeline:
             output_dir: Local directory for all outputs
         """
         logger.info("=" * 80)
-        logger.info("TEST PIPELINE - FIXED VERSION 2")
+        logger.info("TEST PIPELINE - UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER")
         logger.info("=" * 80)
         
         self.output_dir = Path(output_dir)
@@ -131,7 +146,29 @@ class TestPipeline:
         # Initialize components
         self._init_adls()
         self._init_processors()
-        
+        self.role_classifier = None
+
+        # Initialize embedding-based role classifier if enabled
+        if ROLE_CLASSIFICATION_CONFIG["enabled"]:
+            logger.info("Initializing Embedding-Based Role Classifier...")
+            logger.info(f"Method: {ROLE_CLASSIFICATION_CONFIG.get('method', 'embedding')}")
+            
+            # Use the new embedding-based classifier
+            # This uses semantic similarity - no training required!
+            self.role_classifier = create_classifier_from_config()
+            
+            if self.role_classifier:
+                logger.info("Role Classifier initialized successfully")
+                # Log role info
+                role_info = self.role_classifier.get_role_info()
+                logger.info(f"  Number of roles: {role_info['num_roles']}")
+                logger.info(f"  Confidence threshold: {role_info['threshold']}")
+                logger.info(f"  Aggregation method: {role_info['aggregation']}")
+            else:
+                logger.warning("Role classification is disabled or failed to initialize")
+        else:
+            logger.info("Role classification disabled")
+
         logger.info("Test pipeline initialized successfully")
     
     def _validate_adls_config(self):
@@ -268,7 +305,19 @@ class TestPipeline:
                     # Removed: chunk_id (duplicate), start_char, end_char, num_sentences, similarities
                 }
                 all_chunks.append(chunk_all)
-            
+            # Role classification using embedding-based classifier
+            if self.role_classifier:
+                self.role_classifier.classify_chunks(
+                    all_chunks,
+                    text_field="text",
+                    batch_size=ROLE_CLASSIFICATION_CONFIG["batch_size"],
+                    add_to_chunks=True,
+                    show_progress=True,  # Useful in testing to see progress
+                    return_all_scores=ROLE_CLASSIFICATION_CONFIG.get("add_probabilities", False)
+                )
+                # Note: Threshold is now handled inside the classifier
+                # No need for post-processing here
+
             # Select top-k chunks if configured
             if CHUNKING_CONFIG["top_k"]:
                 sort_key = CHUNKING_CONFIG["top_k_method"]  # 'doc_similarity' or 'avg_similarity'
@@ -285,17 +334,10 @@ class TestPipeline:
             # Use only 'id' field and include all_chunks_path
             top_k_chunks = []
             for idx in selected_indices:
-                chunk_topk = {
-                    "id": f"{doc_id}_{idx}",  # ONLY id field
-                    "doc_id": doc_id,
-                    "original_source_path": source_file,
-                    "all_chunks_path": relative_chunks_path,  # Added for traceability
-                    "text": chunks[idx]["text"],
-                    **metadata
-                    # Removed: chunk_id (duplicate), similarity scores, char positions
-                }
-                top_k_chunks.append(chunk_topk)
-            
+                chunk_topk = all_chunks[idx].copy()
+                chunk_topk["all_chunks_path"] = relative_chunks_path
+                top_k_chunks.append(chunk_topk)  # FIX: Actually append the chunk!
+
             logger.debug(f"Processed {doc_id}: {len(all_chunks)} total chunks, {len(top_k_chunks)} top-k chunks")
             
             return (doc_id, all_chunks, top_k_chunks, local_chunks_path)
@@ -519,7 +561,7 @@ class TestPipeline:
             
             stats = {
                 "status": "success",
-                "mode": "test_fixed_v2",
+                "mode": "test_with_embedding_classifier",
                 "pipeline_time_seconds": round(pipeline_time, 2),
                 "documents_fetched": len(documents),
                 "documents_processed": proc_stats["successful_documents"],
@@ -579,7 +621,7 @@ def main():
     # Setup logging
     setup_logging()
     
-    logger.info("Starting Test Pipeline (FIXED VERSION 2)")
+    logger.info("Starting Test Pipeline (UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER)")
     
     try:
         # Create and run test pipeline
