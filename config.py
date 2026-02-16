@@ -78,7 +78,7 @@ ROLE_CLASSIFICATION_CONFIG = {
     # How to aggregate multiple descriptions per role: "max" or "mean"
     # "max" = use highest similarity among descriptions (recommended)
     # "mean" = use average similarity among descriptions
-    "aggregation_method": os.getenv("ROLE_AGGREGATION_METHOD", "max"),
+    "aggregation_method": os.getenv("ROLE_AGGREGATION_METHOD", "mean"),
     
     # Role descriptions dictionary for embedding-based classification
     # Maps role names to lists of description sentences
@@ -118,7 +118,7 @@ ROLE_CLASSIFICATION_CONFIG = {
 # SEMANTIC CHUNKING CONFIGURATION
 # ========================================
 CHUNKING_CONFIG = {
-    "similarity_threshold": float(os.getenv("SIMILARITY_THRESHOLD", "0.80")),
+    "similarity_threshold": float(os.getenv("SIMILARITY_THRESHOLD", "0.7")),
     "min_sentences_per_chunk": int(os.getenv("MIN_SENTENCES_PER_CHUNK", "3")),
     "max_sentences_per_chunk": int(os.getenv("MAX_SENTENCES_PER_CHUNK", "10")),
     "min_chunk_size": int(os.getenv("MIN_CHUNK_SIZE", "100")),  # Minimum character count

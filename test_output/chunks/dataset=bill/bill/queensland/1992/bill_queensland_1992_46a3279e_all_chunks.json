@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dataset=bill_bill_queensland_1992_bill_queensland_1992_46a3279e_0",
+    "doc_id": "dataset=bill_bill_queensland_1992_bill_queensland_1992_46a3279e",
+    "original_source_path": "newapp/dataset=bill/bill/queensland/1992/bill_queensland_1992_46a3279e.json",
+    "text": "Queensland ANTI-DISCRIMINATION AMENDMENT BILL 1992 Queensland ANTI-DISCRIMINATION AMENDMENT BILL 1992 TABLE OF PROVISIONS Section Page 1 Short title 2.2... eee eee 2 Amended Act ....... 0... cee cee eee eens 3 Amendment of s.32 (Compulsory retirement age) .................0.. 4 Amendment of s.127 (Discriminatory advertisements) ................. 5 Amendment of s.249 (Tribunal's powers) ..........0......000 000000 A BILL FOR An Act to amend the Anti-Discrimination Act 1991 Anti-Discrimination Amendment BE IT ENACTED by the Queen's Most Excellent Majesty, by and with the advice and consent of the Legislative Assembly of Queensland in Parliament assembled, and by the authority of the same, as follows. Short title Clause1. This Act may be cited as the Anti-Discrimination Amendment Act 1992. Amended Act Clause2. The Anti-Discrimination Act 199] is amended as set out in this Act.",
+    "version_id": "queensland_legislation:bill.first/bill-1992-001",
+    "type": "bill",
+    "jurisdiction": "queensland",
+    "source": "queensland_legislation",
+    "mime": "application/pdf",
+    "date": "1992-11-11",
+    "citation": "Anti-Discrimination Amendment Bill 1992 (Qld)",
+    "url": "https://legislation.qld.gov.au/view/whole/pdf/inforce/bill.first/bill-1992-001",
+    "when_scraped": "2024-09-14T01:47:58.289181+10:00"
+  },
+  {
+    "id": "dataset=bill_bill_queensland_1992_bill_queensland_1992_46a3279e_1",
+    "doc_id": "dataset=bill_bill_queensland_1992_bill_queensland_1992_46a3279e",
+    "original_source_path": "newapp/dataset=bill/bill/queensland/1992/bill_queensland_1992_46a3279e.json",
+    "text": "Amendment of s.32 (Compulsory retirement age) Clause3. Section 32(1)— omit, insert— *(1) A person may set an age for the compulsory retirement of people whether— (a) generally; or (b) by reference to sex, category or type of position.'. Amendment of s.127 (Discriminatory advertisements) Clause4. After section 127(1)— insert— '(1A) To remove any doubt, subsection (1) does not apply to an advertisement so far as it advertises for a worker who is under 21 years of age, whether by specifying a particular age, a particular age group or otherwise. Example—An employer may advertise for an 18 year old sales assistant or for a 15 to 17 year old sales assistant.'. 1114 16 182123 25 Anti-Discrimination Amendment Amendment of s.249 (Tribunal's powers) Clause5. Section 249(4)— omit, insert— '(4) A rule is subordinate legislation.'. © State of Queensland 1992 BR WwW NY",
+    "version_id": "queensland_legislation:bill.first/bill-1992-001",
+    "type": "bill",
+    "jurisdiction": "queensland",
+    "source": "queensland_legislation",
+    "mime": "application/pdf",
+    "date": "1992-11-11",
+    "citation": "Anti-Discrimination Amendment Bill 1992 (Qld)",
+    "url": "https://legislation.qld.gov.au/view/whole/pdf/inforce/bill.first/bill-1992-001",
+    "when_scraped": "2024-09-14T01:47:58.289181+10:00"
+  }
+]

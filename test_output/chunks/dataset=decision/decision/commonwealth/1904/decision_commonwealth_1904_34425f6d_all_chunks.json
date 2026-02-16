@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d_0",
+    "doc_id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1904/decision_commonwealth_1904_34425f6d.json",
+    "text": "—2CLR.J OF AUSTRALIA. For these reasons, we think that the appeal should be allowed H. ©. or A. and a new trial granted. we GopHarp Appeal allowed with costs. Rule absolute Were for a new trial with costs.",
+    "version_id": "high_court_of_australia:/showbyHandle/1/15593",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1904-03-17",
+    "citation": "Ex Parte Matthews [1904] HCA 6",
+    "url": "https://eresources.hcourt.gov.au/downloadPdf/1904/HCA/6",
+    "when_scraped": "2024-09-15T23:44:31.235452+10:00"
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d_1",
+    "doc_id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1904/decision_commonwealth_1904_34425f6d.json",
+    "text": "CLA. We. (HIGH COURT OF AUSTRALIA.] Ex parte MATTHEWS. ON APPEAL FROM THE SUPREME COURT OF NEW SOUTH WALES.",
+    "version_id": "high_court_of_australia:/showbyHandle/1/15593",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1904-03-17",
+    "citation": "Ex Parte Matthews [1904] HCA 6",
+    "url": "https://eresources.hcourt.gov.au/downloadPdf/1904/HCA/6",
+    "when_scraped": "2024-09-15T23:44:31.235452+10:00"
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d_2",
+    "doc_id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1904/decision_commonwealth_1904_34425f6d.json",
+    "text": "Turiadiction of High Court to entertain appeals from decisions of Supreme Cowts WO, oF A. pronounced before establishment of Commonwealth. 1904. 'The High Court has no jurisdiction to entertain an appeal from a decision <——~ of the Supreme Court of a State pronounced before the establishment of the parc 17 Commonwealth. March 17. Griffith C.J., Motion for special leave to appeal from a decision of the Supreme Connor Jv.",
+    "version_id": "high_court_of_australia:/showbyHandle/1/15593",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1904-03-17",
+    "citation": "Ex Parte Matthews [1904] HCA 6",
+    "url": "https://eresources.hcourt.gov.au/downloadPdf/1904/HCA/6",
+    "when_scraped": "2024-09-15T23:44:31.235452+10:00"
+  },
+  {
+    "id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d_3",
+    "doc_id": "dataset=decision_decision_commonwealth_1904_decision_commonwealth_1904_34425f6d",
+    "original_source_path": "newapp/dataset=decision/decision/commonwealth/1904/decision_commonwealth_1904_34425f6d.json",
+    "text": "Court of New South Wales pronounced on 27th May, 1887. Per Curiam. The High Court has no jurisdiction to entertain appeals from decisions of the Supreme Courts pronounced before the establishment of the Commonwealth.",
+    "version_id": "high_court_of_australia:/showbyHandle/1/15593",
+    "type": "decision",
+    "jurisdiction": "commonwealth",
+    "source": "high_court_of_australia",
+    "mime": "application/pdf",
+    "date": "1904-03-17",
+    "citation": "Ex Parte Matthews [1904] HCA 6",
+    "url": "https://eresources.hcourt.gov.au/downloadPdf/1904/HCA/6",
+    "when_scraped": "2024-09-15T23:44:31.235452+10:00"
+  }
+]

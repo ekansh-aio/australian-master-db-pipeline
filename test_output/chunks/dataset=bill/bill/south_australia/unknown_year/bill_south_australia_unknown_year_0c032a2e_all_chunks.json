@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dataset=bill_bill_south_australia_unknown_year_bill_south_australia_unknown_year_0c032a2e_0",
+    "doc_id": "dataset=bill_bill_south_australia_unknown_year_bill_south_australia_unknown_year_0c032a2e",
+    "original_source_path": "newapp/dataset=bill/bill/south_australia/unknown_year/bill_south_australia_unknown_year_0c032a2e.json",
+    "text": "South Australia Animal Welfare (Jumps Racing) Amendment Bill 2022 A Bill For An Act to amend the Animal Welfare Act 1985. Contents Part 1—Preliminary 1 Short title 2 Commencement Part 2—Amendment of Animal Welfare Act 1985 3 Insertion of section 14AA 14AA Jumps racing prohibited The Parliament of South Australia enacts as follows: Part 1—Preliminary 1—Short title This Act may be cited as the Animal Welfare (Jumps Racing) Amendment Act 2022. 2—Commencement This Act comes into operation 12 months after the day on which it is assented to by the Governor. Part 2—Amendment of Animal Welfare Act 1985 3—Insertion of section 14AA After section 14 insert: 14AA—Jumps racing prohibited (1) A person must not organise, promote or participate in, or participate in organising or promoting, jumps racing. Maximum penalty: $20 000 or imprisonment for 2 years. (2) In this section— jumps racing means a steeplechase or hurdle race involving the racing of horses.",
+    "version_id": "south_australian_legislation:8b6f14d9870b9db2/animal%20welfare%20(jumps%20racing)%20amendment%20bill%202022_hon%20tammy%20franks%20mlc/b_as%20introduced%20in%20lc/animal%20racing%20amendment%20bill%202022.un",
+    "type": "bill",
+    "jurisdiction": "south_australia",
+    "source": "south_australian_legislation",
+    "mime": "application/rtf",
+    "date": null,
+    "citation": "Animal Welfare (Jumps Racing) Amendment Bill 2022 (SA)",
+    "url": "https://www.legislation.sa.gov.au/__legislation/lz/b/current/animal%20welfare%20(jumps%20racing)%20amendment%20bill%202022_hon%20tammy%20franks%20mlc/b_as%20introduced%20in%20lc/animal%20racing%20amendment%20bill%202022.un.rtf",
+    "when_scraped": "2024-09-13T22:55:32.320871+10:00"
+  }
+]

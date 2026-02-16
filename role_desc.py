@@ -1,293 +1,353 @@
+"""
+TARGETED FIXES for Observed Misclassifications
+
+Based on error analysis showing:
+1. legal_reasoning → legal_issues (reasoning seen as question-framing)
+2. case_facts → procedural_history (facts confused with court steps)
+3. decision → procedural_history (final orders confused with prior rulings)
+4. arguments → legal_issues (submissions confused with issue statements)
+5. legal_reasoning → decision (reasoning confused with conclusions)
+
+STRATEGY: Add strong NEGATIVE contrasts and DISTINGUISHING markers
+"""
+
 ROLE_DESCRIPTIONS_DICT = {
-
-"procedural_history": [
-
-    # FUNCTION
-    "Narrative of steps taken within this specific litigation",
-    "Chronological account of how the case progressed in court or tribunal",
-    "Description of filings hearings applications and procedural management",
-
-    # TYPICAL CONTENT EXPANDED
-    "Commencement of proceedings writ originating motion or reference",
-    "Appeals being filed granted refused dismissed or withdrawn",
-    "Applications for stay injunction summary judgment or security for costs",
-    "Affidavits evidence or submissions being filed or tendered",
-    "Hearings listings adjournments and directions",
-    "Objections taken during proceedings",
-    "Interlocutory rulings not determining final merits",
-    "Leave granted or refused before final determination",
-    "Relief sought prior to judgment",
-    "Prior decisions of lower courts in the same matter",
-
-    # STRONG EXAMPLES
-    "Proceedings were commenced by writ filed on 3 March 1991",
-    "The applicant seeks a declaration that the decision be set aside",
-    "An application for a stay was made pending appeal",
-    "Affidavits were filed by both parties",
-    "The matter was listed for directions",
-    "Submissions were heard over two days",
-    "The Full Court allowed the appeal and remitted the matter",
-    "The hearing was adjourned until 10.40 am",
-    "Security for costs was sought by the respondent",
-    "The proceedings were commenced by originating summons",
-    "Leave to appeal was granted by the primary judge",
-    "Directions were made for the filing of further evidence",
-    "The respondent filed a notice of contention",
-    "The matter was reserved for judgment",
-
-    # EDGE CASE CLARIFICATION
-    "Includes transcript management such as adjournments objections and case control",
-    "Includes description of procedural posture at time of judgment",
-    "Includes references brought under statutory provisions as procedural acts",
-    "Statements describing steps taken by the court default to procedural history",
-    "Reporting what a lower court decided in the same litigation is procedural history",
-
-    # NEGATIVE BOUNDARY
-    "Does not describe events occurring outside the litigation",
-    "Does not evaluate legal arguments",
-    "Does not interpret statutory language in detail",
-    "Does not contain the final operative orders",
-    "Does not consist solely of administrative headings",
-    "Judicial evaluation of whether leave should have been granted is not procedural history"
-],
+    "procedural_history": [
+        # CORE FUNCTION
+        "Administrative steps and court management actions within the litigation process",
+        "Timeline of formal filings and judicial case processing events",
+        
+        # SUPER DISTINCTIVE MARKERS (to prevent case_facts confusion)
+        "Contains procedural verbs like: filed, commenced, listed, adjourned, heard, reserved, granted leave, refused, dismissed appeal",
+        "Mentions court actions: writ filed, summons issued, matter listed, hearing adjourned, judgment reserved",
+        "References to applications motions notices appeals being filed granted or refused",
+        
+        # TEMPORAL + PROCEDURAL COMBO
+        "Dates combined with court actions: filed on DATE, listed for DATE, adjourned until DATE",
+        "Sequential court events: first filed, then listed, subsequently adjourned, finally heard",
+        
+        # STRONG NEGATIVE BOUNDARIES
+        "NOT real-world events like contracts accidents or business dealings",
+        "NOT the court's final binding orders that end the case",
+        "NOT the court's reasoning or interpretation of law",
+        "Reports administrative scheduling and case management NOT substantive legal analysis",
+        
+        # EXAMPLES (court administration focus)
+        "Proceedings were commenced by writ filed on 3 March 1991",
+        "The matter was listed for directions on 15 July",
+        "Leave to appeal was granted by the primary judge",
+        "The hearing was adjourned pending further affidavits",
+    ],
 
 
-"case_facts": [
-
-    # FUNCTION
-    "Description of events circumstances and conduct occurring outside the court process",
-    "Narrative of transactions relationships and real world events giving rise to dispute",
-    "Contextual background necessary to understand the controversy",
-
-    # TYPICAL CONTENT EXPANDED
-    "Contracts agreements leases or commercial arrangements",
-    "Accidents incidents injuries or property damage",
-    "Financial transactions loans transfers or unpaid sums",
-    "Operation of a business industry or licensing scheme",
-    "Employment relationships dismissal or workplace conduct",
-    "Pre litigation negotiations or correspondence",
-    "Membership structure of associations or corporate entities",
-    "Industry practice or market conditions",
-    "Historical development of a policy scheme or enterprise",
-    "Evidence summaries describing factual events",
-
-    # STRONG EXAMPLES
-    "The parties entered into a lease in 1989",
-    "The plaintiff delivered the goods but payment was not made",
-    "An accident occurred at the intersection",
-    "Music was played using recorded tracks at the venue",
-    "Members of the applicant constituted approximately 8500 composers",
-    "The licence fee was calculated by reference to venue capacity",
-    "The employee was dismissed without notice",
-    "A letter of demand was sent prior to proceedings",
-    "The agreement was executed on 12 July 2004",
-    "The plaintiff transferred 50000 dollars to the defendant",
-    "The respondent failed to comply with safety regulations",
-    "The parties exchanged correspondence over several months",
-
-    # EDGE CASE CLARIFICATION
-    "Includes summaries of affidavit evidence describing real world events",
-    "Includes commercial structure underlying dispute",
-    "Includes description of statutory scheme only insofar as it explains industry operation not interpretation",
-    "If events described would exist even without litigation it is case facts",
-    "Chronological narration of events leading to dispute is case facts",
-
-    # NEGATIVE BOUNDARY
-    "Does not describe filings hearings or court management",
-    "Does not frame the legal question to be decided",
-    "Does not interpret statutory provisions or legal doctrine",
-    "Does not announce the court's decision",
-    "Does not consist solely of metadata or headings",
-    "Judicial findings about whether a contract was void are not case facts"
-],
+    "case_facts": [
+        # CORE FUNCTION  
+        "Real-world events and circumstances that occurred BEFORE and OUTSIDE the court process",
+        "Background narrative of transactions relationships and conduct in the world not the courtroom",
+        
+        # SUPER DISTINCTIVE MARKERS (to prevent procedural_history confusion)
+        "Describes actions in the real world: parties entered into, payment was made, accident occurred, business operated",
+        "Past tense narrative of completed events: the plaintiff delivered, the defendant failed to pay, music was played",
+        "Commercial or physical events: contracts signed, goods delivered, accidents happened, employees dismissed",
+        "NO court actions: NO filing, NO listing, NO adjournment, NO hearing, NO applications",
+        
+        # CONTENT DISTINGUISHERS
+        "Specific real-world details: amounts paid, dates of transactions, locations of events, names of parties to agreements",
+        "Industry operations: how a business worked, licensing schemes, market conditions",
+        "Relationships: employer-employee, landlord-tenant, supplier-customer",
+        
+        # STRONG NEGATIVE BOUNDARIES
+        "NOT what happened inside the courtroom or registry",
+        "NOT filings hearings applications or court procedural steps",
+        "NOT what lawyers argued to the court",
+        "NOT what the judge concluded",
+        "If it would exist even without litigation it is case facts",
+        
+        # EXAMPLES (real world focus)
+        "The parties entered into a lease agreement on 15 July 1989",
+        "The plaintiff delivered 5000 units but payment was never received",
+        "An accident occurred at the intersection of Smith and Jones Streets",
+        "Music was played at the venue using pre-recorded backing tracks",
+        "The employee was dismissed without notice on 20 June 1990",
+    ],
 
 
-"legal_issues": [
-
-    # FUNCTION
-    "Explicit identification of the legal question requiring resolution",
-    "Framing of the dispute in legal terms",
-    "Definition of the point the court must determine",
-
-    # TYPICAL CONTENT EXPANDED
-    "Statements beginning with the issue is whether",
-    "Statements beginning with the question is whether",
-    "Identification of competing interpretations of statute",
-    "Jurisdictional challenges",
-    "Contested liability or enforceability questions",
-    "Scope of statutory power or discretion",
-    "Validity of administrative action",
-    "Availability of remedies such as damages injunction or stay",
-
-    # STRONG EXAMPLES
-    "The issue is whether the contract is enforceable",
-    "The question is whether the Tribunal exceeded its jurisdiction",
-    "It must be determined whether a duty of care arose",
-    "The dispute concerns whether damages are recoverable",
-    "The central question is the proper construction of section 154",
-    "The issue arises as to whether leave should be granted",
-    "The appeal raises the question of statutory interpretation",
-    "Two issues arise for consideration",
-
-    # EDGE CASE CLARIFICATION
-    "Includes statements identifying the legal controversy even if introduced through party contentions",
-    "Includes transitional paragraphs narrowing the scope of determination",
-    "If the paragraph frames what must be decided but does not resolve it it is legal issues",
-
-    # NEGATIVE BOUNDARY
-    "Does not provide extended reasoning or doctrinal analysis",
-    "Does not merely recount factual background",
-    "Does not describe procedural chronology",
-    "Does not declare the final orders",
-    "Does not assess evidence in detail",
-    "Immediate resolution of the question moves into legal reasoning"
-],
+    "legal_issues": [
+        # CORE FUNCTION
+        "Explicit framing of the legal question WITHOUT answering it",
+        "Statement identifying what must be decided but NOT providing the answer",
+        
+        # SUPER DISTINCTIVE MARKERS (to prevent legal_reasoning and arguments confusion)
+        "Begins with phrases: THE ISSUE IS WHETHER, THE QUESTION IS WHETHER, IT MUST BE DETERMINED WHETHER",
+        "Uses question-framing not question-answering language",
+        "Identifies the legal controversy but provides NO analysis or reasoning",
+        "NO first-person judicial voice (I am satisfied, in my view)",
+        "NO attribution to parties (counsel submitted, applicant argued)",
+        
+        # STRUCTURAL CHARACTERISTICS
+        "Brief standalone statement usually early in judgment or at transitions",
+        "Presents alternatives: whether X or Y, whether A applies or B applies",
+        "Abstract legal question NOT concrete factual narrative",
+        
+        # STRONG NEGATIVE BOUNDARIES
+        "NOT the court's reasoning or analysis (that's legal_reasoning)",
+        "NOT a party's submission or argument (that's arguments)",
+        "NOT the answer or conclusion (that's legal_reasoning or decision)",
+        "ONLY identifies the question NEVER provides evaluation or determination",
+        "If it contains because, therefore, accordingly, it follows = NOT legal_issues",
+        "If attributed to a party = NOT legal_issues",
+        
+        # EXAMPLES (pure question-framing)
+        "The issue is whether the Tribunal exceeded its jurisdiction",
+        "The question is whether section 52 of the Act applies to this conduct",
+        "Two issues arise: whether a duty of care existed and whether it was breached",
+        "The central question is the proper construction of section 154",
+        "It must be determined whether the contract is void for uncertainty",
+    ],
 
 
-"arguments": [
-
-    # FUNCTION
-    "Submissions advanced by parties in support of their position",
-    "Contentions and reasoning attributed to counsel or litigants",
-
-    # TYPICAL CONTENT EXPANDED
-    "Statements beginning with it was submitted that",
-    "Counsel argued or contended that",
-    "Objections raised to evidence or procedure",
-    "Policy arguments advanced by parties",
-    "Competing constructions proposed by parties",
-    "Requests for specific remedies supported by reasoning",
-
-    # STRONG EXAMPLES
-    "The applicant submitted that the statutory language was ambiguous",
-    "The respondent contended that the appeal should be dismissed",
-    "Counsel argued that the evidence was inadmissible",
-    "It was submitted that public interest required dismissal",
-    "The appellant maintained that the duty of care was established",
-    "The respondent objected to paragraph 12 of the affidavit",
-    "Senior counsel submitted that the provision should be read narrowly",
-    "The appellant contended in the alternative that damages were excessive",
-
-    # EDGE CASE CLARIFICATION
-    "Includes transcript passages where counsel advances a legal position",
-    "Includes evidentiary and procedural arguments",
-    "Includes policy based and textual interpretation arguments",
-    "Statements explicitly attributed to a party are arguments",
-
-    # NEGATIVE BOUNDARY
-    "Does not contain the court's evaluation of those arguments",
-    "Does not state the final determination",
-    "Does not merely identify the issue without advancing a position",
-    "Does not narrate factual background unless used as part of submission",
-    "Judicial rejection or acceptance of a submission is not arguments"
-],
+    "arguments": [
+        # CORE FUNCTION
+        "Positions advanced BY PARTIES through their counsel NOT by the court",
+        "What lawyers submitted contended or argued to persuade the judge",
+        
+        # SUPER DISTINCTIVE MARKERS (to prevent legal_issues confusion)
+        "ALWAYS attributed to a party: the applicant submitted, counsel argued, the respondent contended, it was submitted that",
+        "Contains attribution markers: submitted, argued, contended, maintained, advanced, put forward",
+        "References counsel by role: senior counsel submitted, the appellant's counsel argued",
+        "Advocatory persuasive tone: why the court SHOULD rule a certain way",
+        "NO judicial voice: NEVER I am satisfied, in my view, we conclude",
+        
+        # CONTENT CHARACTERISTICS
+        "Party's interpretation or construction of law",
+        "Challenges to evidence or procedure by parties",
+        "Policy reasons advanced by parties",
+        "Requests for relief with party's supporting reasons",
+        
+        # STRONG NEGATIVE BOUNDARIES
+        "NOT the court's own analysis or reasoning",
+        "NOT neutral issue-framing by the court",
+        "NOT the court's final determination",
+        "MUST be attributed to a party NEVER to the judge",
+        "If no attribution marker = probably NOT arguments",
+        
+        # EXAMPLES (clear attribution)
+        "Senior counsel for the applicant submitted that section 52 should be read narrowly",
+        "The respondent contended that the appeal should be dismissed with costs",
+        "It was argued on behalf of the appellant that no duty of care arose",
+        "The applicant maintained that the Tribunal lacked jurisdiction to make the order",
+        "Counsel submitted that the evidence was inadmissible under section 138",
+    ],
 
 
-"legal_reasoning": [
-
-    # FUNCTION
-    "Judicial analysis explanation and interpretation of law",
-    "Application of legal principles to established facts",
-    "Evaluation of competing arguments",
-
-    # TYPICAL CONTENT EXPANDED
-    "Quotation and interpretation of statutory provisions",
-    "Discussion of precedent and authority",
-    "Logical inferences drawn from legislative language",
-    "Assessment of persuasiveness of submissions",
-    "Application of legal tests to factual findings",
-    "Evaluation of credibility or evidentiary sufficiency",
-    "Discussion of burden of proof",
-    "Consideration of policy rationale underlying statute",
-    "Resolution of ambiguity in statutory or common law principles",
-
-    # STRONG EXAMPLES
-    "Section 154 must be read in its statutory context",
-    "In our view the language of the Act is clear",
-    "It follows that the submission cannot be sustained",
-    "I am not satisfied that the evidence establishes negligence",
-    "The burden of proof lies on the applicant",
-    "Authority establishes that consideration is required",
-    "To accept that argument would be inconsistent with precedent",
-    "The statutory scheme does not leave the matter at large",
-    "In my opinion the correct construction is",
-    "The submission must fail because it is inconsistent with authority",
-
-    # EDGE CASE CLARIFICATION
-    "Includes statutory quotation accompanied by interpretation",
-    "Includes mixed fact law analysis",
-    "Includes statements of satisfaction or dissatisfaction",
-    "Includes reasoning immediately preceding final orders",
-    "Application of legal test to established facts is legal reasoning",
-
-    # NEGATIVE BOUNDARY
-    "Does not merely describe procedural events",
-    "Does not simply restate party submissions",
-    "Does not consist solely of identifying the issue",
-    "Does not contain the formal operative order"
-],
+    "legal_reasoning": [
+        # CORE FUNCTION
+        "The COURT'S OWN analysis interpretation and application of law",
+        "Judicial thinking and evaluation NOT party submissions",
+        
+        # SUPER DISTINCTIVE MARKERS (to prevent legal_issues and decision confusion)
+        "First-person judicial voice: I am satisfied, I conclude, in my view, in my opinion, I find",
+        "Plural judicial voice: we conclude, in our view, we accept, we reject",
+        "Evaluative reasoning language: it follows that, therefore, accordingly, for these reasons, consequently",
+        "Assessment of submissions: I accept that submission, I reject that contention, that argument must fail",
+        "Application to facts: on these facts, in these circumstances, the evidence establishes",
+        
+        # ANALYTICAL OPERATIONS
+        "Interpretation of statutes or precedents WITH explanation",
+        "Weighing competing arguments and stating which is preferred and WHY",
+        "Application of legal tests to facts with evaluative conclusion",
+        "Explaining WHY a conclusion is reached NOT just stating it",
+        
+        # STRONG NEGATIVE BOUNDARIES
+        "NOT just identifying the question (that's legal_issues)",
+        "NOT attributed to parties (that's arguments)",
+        "NOT the bare final order (that's decision)",
+        "Contains explanation and reasoning NOT just conclusion",
+        "If it's ONLY a question with no answer = legal_issues",
+        "If it's ONLY a final order with no reasoning = decision",
+        
+        # EXAMPLES (judicial analysis)
+        "Section 154 must be read in its broader statutory context including Part III",
+        "I am not satisfied that the evidence establishes negligence on these facts",
+        "For these reasons the submission that no duty arose must fail",
+        "In my view the correct interpretation is that section 52 applies to this conduct",
+        "The burden of proof lies on the applicant and has not been discharged on the evidence",
+        "I accept the respondent's submission that the contract is void for uncertainty",
+    ],
 
 
-"decision": [
-
-    # FUNCTION
-    "Final authoritative determination resolving the dispute",
-    "Formal operative pronouncement of the court or tribunal",
-
-    # TYPICAL CONTENT EXPANDED
-    "Dismissal or allowance of appeal",
-    "Confirmation variation or setting aside of decision",
-    "Grant or refusal of relief",
-    "Cost orders including no order as to costs",
-    "Declarations of rights or obligations",
-    "Orders remitting matter to lower court",
-    "Imposition of liability",
-
-    # STRUCTURAL SIGNALS
-    "Text beginning with THE COURT ORDERS THAT",
-    "Text beginning with THE TRIBUNAL ORDERS THAT",
-    "Formal numbered orders",
-    "Judgment is entered for",
-    "The appeal is dismissed",
-    "The application is granted",
-
-    # STRONG EXAMPLES
-    "The appeal is dismissed",
-    "The decision below is set aside",
-    "There be no order as to costs",
-    "The respondent must pay the applicant's costs",
-    "The licence scheme is confirmed",
-    "Judgment is entered for the defendant",
-    "The matter is remitted for rehearing",
-    "The application is refused",
-    "Costs to follow the event",
-
-    # NEGATIVE BOUNDARY
-    "Does not merely frame the issue",
-    "Does not provide extended reasoning",
-    "Does not narrate factual background",
-    "Does not describe procedural history",
-    "Does not consist solely of headings or metadata"
-],
+    "decision": [
+        # CORE FUNCTION
+        "Final operative orders that RESOLVE the dispute and bind parties",
+        "The conclusive determination NOT the reasoning that led to it",
+        
+        # SUPER DISTINCTIVE MARKERS (to prevent procedural_history and legal_reasoning confusion)
+        "Formal dispositive language: THE APPEAL IS DISMISSED, THE APPLICATION IS GRANTED, IT IS ORDERED THAT",
+        "Present tense conclusive verbs: is dismissed, is allowed, is refused, is set aside, are affirmed",
+        "Modal conclusions: I would dismiss, I would allow, I would set aside",
+        "Cost orders: costs are awarded, no order as to costs, respondent must pay costs",
+        "Numbered formal orders usually at the END of judgment",
+        
+        # DISTINGUISHING FROM LEGAL_REASONING
+        "Operative command or determination NOT explanation of reasoning",
+        "Can include transitional phrase (for these reasons) but MUST contain final operative order",
+        "States WHAT the court orders NOT WHY it orders it",
+        
+        # DISTINGUISHING FROM PROCEDURAL_HISTORY
+        "THIS COURT's final binding orders NOT reports of what a lower court did",
+        "If reporting prior court ruling = procedural_history",
+        "If THIS court's final determination = decision",
+        
+        # STRONG NEGATIVE BOUNDARIES
+        "NOT explanation of legal reasoning (that's legal_reasoning)",
+        "NOT reporting what a lower court ordered (that's procedural_history)",
+        "NOT interlocutory or procedural directions (that's procedural_history)",
+        "MUST be final and dispositive",
+        
+        # EXAMPLES (final orders)
+        "The appeal is dismissed with costs",
+        "I would set aside the decision of the Tribunal and remit for reconsideration",
+        "Order that the respondent pay the applicant's costs as agreed or assessed",
+        "For these reasons the appeal must be dismissed",
+        "Judgment for the defendant with costs",
+        "The application is refused",
+    ],
 
 
-"other": [
-
-    # FUNCTION
-    "Material without substantive legal analytical function",
-    "Administrative or formatting content unrelated to legal reasoning",
-
-    # TYPICAL CONTENT EXPANDED
-    "Page numbers running headers or footers",
-    "Editorial publication metadata",
-
-    # STRONG EXAMPLES
-    "Page 12",
-    "Downloaded from www.example.com",
-    "IN THE HIGH COURT OF AUSTRALIA",
-    "No 1 of 1991",
-    "Copyright notice",
-    "END OF DOCUMENT"
-]
-
+    "other": [
+        # FUNCTION
+        "Non-substantive administrative metadata formatting or publication information",
+        
+        # CONTENT TYPES
+        "Page numbers headers footers running heads",
+        "Court file numbers case citations",
+        "Publication metadata copyright notices download information",
+        "Purely structural elements with no legal content",
+        
+        # EXAMPLES
+        "Page 47 of 92",
+        "IN THE HIGH COURT OF AUSTRALIA",
+        "No 1234 of 2020",
+        "Downloaded from www.austlii.edu.au",
+        "Copyright Commonwealth of Australia",
+        
+        # CHARACTERISTICS
+        "No substantive legal content",
+        "Could be removed without affecting understanding",
+    ]
 }
+
+
+# =============================================================================
+# ANALYSIS OF FIXES
+# =============================================================================
+
+TARGETED_FIXES_APPLIED = """
+MISCLASSIFICATION: legal_reasoning → legal_issues
+ROOT CAUSE: Reasoning chunks that identify issues were matching issue-framing language
+
+FIXES APPLIED:
+1. Added to legal_issues:
+   - "Identifies the legal controversy but provides NO analysis or reasoning"
+   - "NO first-person judicial voice (I am satisfied, in my view)"
+   - "ONLY identifies the question NEVER provides evaluation"
+   - "If it contains because, therefore, accordingly = NOT legal_issues"
+
+2. Added to legal_reasoning:
+   - "Evaluative reasoning language: it follows that, therefore, accordingly"
+   - "Contains explanation and reasoning NOT just conclusion"
+   - "If it's ONLY a question with no answer = legal_issues"
+
+---
+
+MISCLASSIFICATION: case_facts → procedural_history
+ROOT CAUSE: Factual narratives matched procedural language or dates
+
+FIXES APPLIED:
+1. Added to case_facts:
+   - "Describes actions in the real world: parties entered into, payment was made"
+   - "NO court actions: NO filing, NO listing, NO adjournment, NO hearing"
+   - "If it would exist even without litigation it is case facts"
+
+2. Added to procedural_history:
+   - "Contains procedural verbs like: filed, commenced, listed, adjourned"
+   - "NOT real-world events like contracts accidents or business dealings"
+   - "Reports administrative scheduling NOT substantive events"
+
+---
+
+MISCLASSIFICATION: decision → procedural_history
+ROOT CAUSE: Final orders confused with reports of prior court rulings
+
+FIXES APPLIED:
+1. Added to decision:
+   - "THIS COURT's final binding orders NOT reports of what a lower court did"
+   - "If reporting prior court ruling = procedural_history"
+   - "If THIS court's final determination = decision"
+
+2. Added to procedural_history:
+   - "NOT the court's final binding orders that end the case"
+   - Clarified it reports prior steps not final determinations
+
+---
+
+MISCLASSIFICATION: arguments → legal_issues
+ROOT CAUSE: Party submissions about issues matched issue-framing language
+
+FIXES APPLIED:
+1. Added to arguments:
+   - "ALWAYS attributed to a party: the applicant submitted, counsel argued"
+   - "MUST be attributed to a party NEVER to the judge"
+   - "If no attribution marker = probably NOT arguments"
+
+2. Added to legal_issues:
+   - "NO attribution to parties (counsel submitted, applicant argued)"
+   - "If attributed to a party = NOT legal_issues"
+
+---
+
+MISCLASSIFICATION: legal_reasoning → decision
+ROOT CAUSE: Reasoning with conclusory language matched decision patterns
+
+FIXES APPLIED:
+1. Added to legal_reasoning:
+   - "Contains explanation and reasoning NOT just conclusion"
+   - "NOT the bare final order (that's decision)"
+   - "Explaining WHY a conclusion is reached NOT just stating it"
+
+2. Added to decision:
+   - "Operative command or determination NOT explanation of reasoning"
+   - "States WHAT the court orders NOT WHY it orders it"
+   - "NOT explanation of legal reasoning (that's legal_reasoning)"
+"""
+
+
+if __name__ == "__main__":
+    print("="*80)
+    print("REFINED ROLE DESCRIPTIONS - TARGETED FIXES")
+    print("="*80)
+    print("\nBased on observed misclassifications:")
+    print("1. legal_reasoning → legal_issues")
+    print("2. case_facts → procedural_history")
+    print("3. decision → procedural_history")
+    print("4. arguments → legal_issues")
+    print("5. legal_reasoning → decision")
+    print("\n" + TARGETED_FIXES_APPLIED)
+    
+    print("\n" + "="*80)
+    print("USAGE")
+    print("="*80)
+    print("""
+from refined_role_descriptions import REFINED_ROLE_DESCRIPTIONS
+from improved_role_classifier import ImprovedEmbeddingRoleClassifier
+
+classifier = ImprovedEmbeddingRoleClassifier(
+    role_descriptions=REFINED_ROLE_DESCRIPTIONS,
+    aggregation_method='top_k_mean',
+    top_k_descriptions=3,
+    confidence_threshold=0.30
+)
+
+# Re-test on your data
+results = classifier.classify_chunks(your_chunks)
+    """)
