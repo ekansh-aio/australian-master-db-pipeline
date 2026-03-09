@@ -18,13 +18,14 @@ ROLE CLASSIFICATION:
 import json
 import logging
 import time
+from collections import defaultdict
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 from datetime import datetime
 import hashlib
 import sys
 
-from utils.json_helper import safe_json_dump
+from utils.weighted_selector import weighted_topk_selection
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
@@ -46,8 +47,9 @@ from core.semantic_chunker import SemanticChunker
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 # Use embedding-based role classifier (no training required)
-from core.role_classifier_embedding import EmbeddingRoleClassifier, create_classifier_from_config
-# Old fine-tuned classifier kept for future use (see role_classifier_FUTURE.py)
+from core.role_classifier_future import create_classifier_from_config
+
+from utils.json_helper import safe_json_dump 
 
 logger = logging.getLogger(__name__)
 
@@ -107,6 +109,21 @@ def get_local_chunks_path(source_file_path: str, base_output: str) -> Path:
         return Path(base_output) / "chunks" / "unknown_all_chunks.json"
 
 
+def attach_same_role_chunk_ids(chunks: List[Dict]) -> None:
+    """
+    For each chunk, add 'same_role_chunk_ids': list of IDs of other chunks
+    in the same document that share the same role. Modifies chunks in-place.
+    """
+    role_to_ids: Dict = defaultdict(list)
+    for chunk in chunks:
+        role_to_ids[chunk.get('role', 'Others')].append(chunk['id'])
+    for chunk in chunks:
+        role = chunk.get('role', 'Others')
+        chunk['same_role_chunk_ids'] = [
+            cid for cid in role_to_ids[role] if cid != chunk['id']
+        ]
+
+
 class TestPipeline:
     """
     Updated test pipeline with:
@@ -159,11 +176,6 @@ class TestPipeline:
             
             if self.role_classifier:
                 logger.info("Role Classifier initialized successfully")
-                # Log role info
-                role_info = self.role_classifier.get_role_info()
-                logger.info(f"  Number of roles: {role_info['num_roles']}")
-                logger.info(f"  Confidence threshold: {role_info['threshold']}")
-                logger.info(f"  Aggregation method: {role_info['aggregation']}")
             else:
                 logger.warning("Role classification is disabled or failed to initialize")
         else:
@@ -314,22 +326,24 @@ class TestPipeline:
                     batch_size=ROLE_CLASSIFICATION_CONFIG["batch_size"],
                     add_to_chunks=True,
                     show_progress=True,  # Useful in testing to see progress
-                    return_all_scores=ROLE_CLASSIFICATION_CONFIG.get("add_probabilities", False)
                 )
                 # Note: Threshold is now handled inside the classifier
                 # No need for post-processing here
+            for chunk in all_chunks:
+                if "role_prediction" in chunk:
+                    chunk["role"] = chunk["role_prediction"]["role"]
+                    del chunk["role_prediction"]
+            attach_same_role_chunk_ids(all_chunks)
 
             # Select top-k chunks if configured
             if CHUNKING_CONFIG["top_k"]:
-                sort_key = CHUNKING_CONFIG["top_k_method"]  # 'doc_similarity' or 'avg_similarity'
-                sorted_chunks = sorted(
-                    enumerate(chunks),
-                    key=lambda x: x[1].get(sort_key, 0.0),
-                    reverse=True
+                selected_indices = weighted_topk_selection(
+                    chunks=all_chunks,
+                    top_k=CHUNKING_CONFIG["top_k"],
+                    similarity_key="doc_similarity"
                 )
-                selected_indices = [idx for idx, _ in sorted_chunks[:CHUNKING_CONFIG["top_k"]]]
             else:
-                selected_indices = list(range(len(chunks)))
+                selected_indices = list(range(len(all_chunks)))
             
             # FIXED: Create chunks for TOP-K (for embedding/search)
             # Use only 'id' field and include all_chunks_path

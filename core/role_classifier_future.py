@@ -410,12 +410,13 @@ class RoleClassifier:
         Returns:
             RoleClassifier instance
         """
-        # Load role config
-        with open(Path(model_dir) / 'role_config.json', 'r') as f:
-            role_config = json.load(f)
-        
-        role_definitions = role_config['role_definitions']
-        
+        # Read label mappings directly from the model's config.json
+        with open(Path(model_dir) / 'config.json', 'r') as f:
+            model_config = json.load(f)
+
+        id2label = {int(k): v for k, v in model_config['id2label'].items()}
+        role_definitions = [id2label[i] for i in sorted(id2label.keys())]
+
         # Create classifier
         classifier = cls(
             role_definitions=role_definitions,

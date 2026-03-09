@@ -49,7 +49,7 @@ SEARCH_CONFIG = {
 # EMBEDDING MODEL CONFIGURATION
 # ========================================
 EMBEDDING_CONFIG = {
-    "model_name": os.getenv("EMBEDDING_MODEL", "intfloat/e5-base-v2"),
+    "model_name": os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2"),
     "dimensions": int(os.getenv("EMBEDDING_DIMENSIONS", "768")),  # Must match model output
     "batch_size": int(os.getenv("EMBEDDING_BATCH_SIZE", "32"))  # For encoding in batches
 }
@@ -92,8 +92,8 @@ ROLE_CLASSIFICATION_CONFIG = {
     
     # Model configuration for fine-tuned approach
     "model_name": os.getenv("ROLE_MODEL_NAME", "microsoft/deberta-v3-base"),  # Base model
-    "use_finetuned": os.getenv("USE_FINETUNED_ROLE_MODEL", "false").lower() == "true",
-    "finetuned_model_path": os.getenv("FINETUNED_ROLE_MODEL_PATH", "./models/role_classifier"),
+    "use_finetuned": True,
+    "finetuned_model_path": "final_model",
     
     # Role definitions for fine-tuned approach (simple list of role names)
     # Only used if role_descriptions_dict is not provided
@@ -107,7 +107,7 @@ ROLE_CLASSIFICATION_CONFIG = {
     
     # Processing settings (shared by both methods)
     "batch_size": int(os.getenv("ROLE_CLASSIFICATION_BATCH_SIZE", "32")),
-    "max_length": int(os.getenv("ROLE_MAX_LENGTH", "1024")),
+    "max_length": int(os.getenv("ROLE_MAX_LENGTH", "512")),
     "device": os.getenv("ROLE_DEVICE", None),  # None for auto-detect, 'cuda' or 'cpu'
     
     # Output settings
