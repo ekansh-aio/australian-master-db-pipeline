@@ -21,3 +21,9 @@ env/
 # !.vscode/tasks.json
 # !.vscode/launch.json
 # !.vscode/extensions.json
+
+# Models
+final_model/
+*.safetensors
+*.pt
+*.bin
