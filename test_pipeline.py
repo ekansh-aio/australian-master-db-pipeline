@@ -1,19 +1,9 @@
 """
-Test Pipeline for Legal Document Processing (UPDATED VERSION)
-
-UPDATES:
-1. Uses new embedding-based role classifier (no training required!)
-2. Fixes missing top_k_chunks.append() bug
-3. Ensures all_chunks.json files are saved for each document
-4. Removes duplicate 'id' and 'chunk_id' fields (keeps only 'id')
-5. Cleans up chunk metadata properly
-6. Improves logging for debugging
-
-ROLE CLASSIFICATION:
-- Now uses semantic similarity between chunks and role descriptions
-- No fine-tuned model required
-- Better confidence scores (0.3-0.8 instead of 0.1-0.2)
-- Easy to customize via role_descriptions_dict in config.py
+Test Pipeline for Legal Document Processing
+- Fine-tuned role classification
+- Weighted proportional top-k selection
+- same_role_chunk_ids attached to every chunk
+- Saves all chunks locally in mirrored directory structure
 """
 import json
 import logging
@@ -44,12 +34,8 @@ from config import (
 from core.adls_fetcher import ADLSFetcher
 from core.legal_text_cleaner import LegalTextCleaner
 from core.semantic_chunker import SemanticChunker
-from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
-# Use embedding-based role classifier (no training required)
 from core.role_classifier_future import create_classifier_from_config
-
-from utils.json_helper import safe_json_dump 
 
 logger = logging.getLogger(__name__)
 
@@ -126,12 +112,10 @@ def attach_same_role_chunk_ids(chunks: List[Dict]) -> None:
 
 class TestPipeline:
     """
-    Updated test pipeline with:
-    - Embedding-based role classification (no training required)
-    - Proper all_chunks.json saving
-    - No duplicate id/chunk_id fields
-    - Clean metadata
-    - Fixed top_k_chunks bug
+    Test pipeline with:
+    - Fine-tuned role classification
+    - Weighted proportional top-k selection
+    - same_role_chunk_ids attached to every chunk
     """
     
     def __init__(self, output_dir: str = "test_output"):
@@ -142,7 +126,7 @@ class TestPipeline:
             output_dir: Local directory for all outputs
         """
         logger.info("=" * 80)
-        logger.info("TEST PIPELINE - UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER")
+        logger.info("TEST PIPELINE")
         logger.info("=" * 80)
         
         self.output_dir = Path(output_dir)
@@ -165,19 +149,14 @@ class TestPipeline:
         self._init_processors()
         self.role_classifier = None
 
-        # Initialize embedding-based role classifier if enabled
+        # Initialize role classifier if enabled
         if ROLE_CLASSIFICATION_CONFIG["enabled"]:
-            logger.info("Initializing Embedding-Based Role Classifier...")
-            logger.info(f"Method: {ROLE_CLASSIFICATION_CONFIG.get('method', 'embedding')}")
-            
-            # Use the new embedding-based classifier
-            # This uses semantic similarity - no training required!
+            logger.info("Initializing role classifier...")
             self.role_classifier = create_classifier_from_config()
-            
             if self.role_classifier:
-                logger.info("Role Classifier initialized successfully")
+                logger.info("Role classifier initialized successfully")
             else:
-                logger.warning("Role classification is disabled or failed to initialize")
+                logger.warning("Role classification disabled or failed to initialize")
         else:
             logger.info("Role classification disabled")
 
@@ -219,7 +198,6 @@ class TestPipeline:
             similarity_threshold=CHUNKING_CONFIG["similarity_threshold"],
             min_sentences_per_chunk=CHUNKING_CONFIG["min_sentences_per_chunk"],
             max_sentences_per_chunk=CHUNKING_CONFIG["max_sentences_per_chunk"],
-            role_file_path="role_desc.py",
             min_chunk_size=CHUNKING_CONFIG["min_chunk_size"]
         )
         
@@ -263,79 +241,61 @@ class TestPipeline:
     ) -> Optional[Tuple[str, List[Dict], List[Dict], Path]]:
         """
         Process a single document.
-        
-        FIXED:
-        - Uses only 'id' field (not both 'id' and 'chunk_id')
-        - Properly includes all_chunks_path in top-k chunks
-        
+
         Returns:
             Tuple of (doc_id, all_chunks, top_k_chunks, local_chunks_path) or None
         """
         source_file = doc.get("_source_file", "unknown.json")
         doc_id = generate_document_id_from_path(source_file)
         local_chunks_path = get_local_chunks_path(source_file, str(self.output_dir))
-        
-        # For traceability in chunks
         relative_chunks_path = str(local_chunks_path.relative_to(self.output_dir))
-        
+
         try:
-            # Clean text
             text = doc.get("text", "")
             if not text:
                 logger.warning(f"Document {doc_id} has no text")
                 return None
-            
+
             cleaned_text = self.text_cleaner.clean(text)
-            
+
             if not cleaned_text:
                 logger.warning(f"Document {doc_id} is empty after cleaning")
                 return None
-            
-            # Semantic chunking
+
             chunks, doc_embedding = self.semantic_chunker.split(
                 cleaned_text,
                 compute_doc_similarity=CHUNKING_CONFIG["compute_doc_similarity"]
             )
-            
+
             if not chunks:
                 logger.warning(f"Document {doc_id} produced no chunks")
                 return None
-            
-            # Extract metadata (exclude text and internal fields)
+
             excluded_fields = {'text', 'embedding', '_source_file'}
             metadata = {k: v for k, v in doc.items() if k not in excluded_fields}
-            
-            # FIXED: Create chunks for ALL (stored locally)
-            # Use only 'id' field, not both 'id' and 'chunk_id'
+
             all_chunks = []
             for idx, chunk in enumerate(chunks):
                 chunk_all = {
-                    "id": f"{doc_id}_{idx}",  # ONLY id field
+                    "id": f"{doc_id}_{idx}",
                     "doc_id": doc_id,
                     "original_source_path": source_file,
                     "text": chunk["text"],
                     **metadata
-                    # Removed: chunk_id (duplicate), start_char, end_char, num_sentences, similarities
                 }
                 all_chunks.append(chunk_all)
-            # Role classification using embedding-based classifier
+
             if self.role_classifier:
                 self.role_classifier.classify_chunks(
                     all_chunks,
                     text_field="text",
                     batch_size=ROLE_CLASSIFICATION_CONFIG["batch_size"],
                     add_to_chunks=True,
-                    show_progress=True,  # Useful in testing to see progress
+                    show_progress=True,
                 )
-                # Note: Threshold is now handled inside the classifier
-                # No need for post-processing here
-            for chunk in all_chunks:
-                if "role_prediction" in chunk:
-                    chunk["role"] = chunk["role_prediction"]["role"]
-                    del chunk["role_prediction"]
+
             attach_same_role_chunk_ids(all_chunks)
 
-            # Select top-k chunks if configured
             if CHUNKING_CONFIG["top_k"]:
                 selected_indices = weighted_topk_selection(
                     chunks=all_chunks,
@@ -344,19 +304,17 @@ class TestPipeline:
                 )
             else:
                 selected_indices = list(range(len(all_chunks)))
-            
-            # FIXED: Create chunks for TOP-K (for embedding/search)
-            # Use only 'id' field and include all_chunks_path
+
             top_k_chunks = []
             for idx in selected_indices:
                 chunk_topk = all_chunks[idx].copy()
                 chunk_topk["all_chunks_path"] = relative_chunks_path
-                top_k_chunks.append(chunk_topk)  # FIX: Actually append the chunk!
+                top_k_chunks.append(chunk_topk)
 
             logger.debug(f"Processed {doc_id}: {len(all_chunks)} total chunks, {len(top_k_chunks)} top-k chunks")
-            
+
             return (doc_id, all_chunks, top_k_chunks, local_chunks_path)
-            
+
         except Exception as e:
             logger.error(f"Error processing document {doc_id}: {e}", exc_info=True)
             return None
@@ -468,10 +426,8 @@ class TestPipeline:
         stats: Optional[Dict] = None
     ):
         """
-        FIXED: Save all outputs to local filesystem in mirrored structure.
-        
-        Ensures all_chunks.json files are actually created.
-        
+        Save all outputs to local filesystem in mirrored structure.
+
         Args:
             doc_chunks_map: dict mapping doc_id -> (chunks, local_path)
             top_k_chunks: Top-k selected chunks (optional)
@@ -480,8 +436,7 @@ class TestPipeline:
         logger.info("\n" + "=" * 80)
         logger.info("STAGE 4: SAVING OUTPUTS LOCALLY")
         logger.info("=" * 80)
-        
-        # FIXED: Save each document's chunks to separate file in mirrored structure
+
         saved_count = 0
         for doc_id, (chunks, chunks_path) in tqdm(
             doc_chunks_map.items(),
@@ -492,7 +447,8 @@ class TestPipeline:
                 chunks_path.parent.mkdir(parents=True, exist_ok=True)
                 
                 # Save chunks
-                safe_json_dump(chunks, chunks_path, indent=2)
+                with open(chunks_path, 'w', encoding='utf-8') as f:
+                    json.dump(chunks, f, indent=2, ensure_ascii=False)
                 saved_count += 1
                 logger.debug(f"✓ Saved {len(chunks)} chunks for {doc_id} to {chunks_path}")
             except Exception as e:
@@ -504,7 +460,8 @@ class TestPipeline:
         if top_k_chunks:
             top_k_path = self.chunks_dir / "combined_top_k_chunks.json"
             try:
-                safe_json_dump(top_k_chunks, top_k_path, indent=2)
+                with open(top_k_path, 'w', encoding='utf-8') as f:
+                    json.dump(top_k_chunks, f, indent=2, ensure_ascii=False)
                 logger.info(f"✓ Saved {len(top_k_chunks)} combined top-k chunks to: {top_k_path}")
             except Exception as e:
                 logger.error(f"✗ Failed to save combined top-k chunks: {e}")
@@ -513,7 +470,8 @@ class TestPipeline:
         if stats:
             stats_path = self.stats_dir / "pipeline_stats.json"
             try:
-                safe_json_dump(stats, stats_path, indent=2)
+                with open(stats_path, 'w', encoding='utf-8') as f:
+                    json.dump(stats, f, indent=2, ensure_ascii=False)
                 logger.info(f"✓ Saved statistics to: {stats_path}")
             except Exception as e:
                 logger.error(f"✗ Failed to save statistics: {e}")
@@ -531,7 +489,8 @@ class TestPipeline:
                 }
             }
             index_path = self.output_dir / "document_index.json"
-            safe_json_dump(index, index_path, indent=2)
+            with open(index_path, 'w', encoding='utf-8') as f:
+                json.dump(index, f, indent=2, ensure_ascii=False)
             logger.info(f"✓ Saved document index to: {index_path}")
         except Exception as e:
             logger.error(f"✗ Failed to save document index: {e}")
@@ -576,7 +535,7 @@ class TestPipeline:
             
             stats = {
                 "status": "success",
-                "mode": "test_with_embedding_classifier",
+                "mode": "test",
                 "pipeline_time_seconds": round(pipeline_time, 2),
                 "documents_fetched": len(documents),
                 "documents_processed": proc_stats["successful_documents"],
@@ -636,7 +595,7 @@ def main():
     # Setup logging
     setup_logging()
     
-    logger.info("Starting Test Pipeline (UPDATED WITH EMBEDDING-BASED ROLE CLASSIFIER)")
+    logger.info("Starting Test Pipeline")
     
     try:
         # Create and run test pipeline
@@ -666,6 +625,4 @@ def main():
 
 
 if __name__ == "__main__":
-    print("DEBUG MODEL:", EMBEDDING_CONFIG["model_name"])
-
     main()

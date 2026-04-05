@@ -1,6 +1,5 @@
 """
 Production Pipeline for Legal Document Processing
-UPDATED TO MATCH TEST PIPELINE LOGIC
 """
 
 import json
@@ -107,7 +106,7 @@ class ProductionPipeline:
     def __init__(self, base_output_path="processed"):
 
         logger.info("=" * 80)
-        logger.info("PRODUCTION PIPELINE (UPDATED)")
+        logger.info("PRODUCTION PIPELINE")
         logger.info("=" * 80)
 
         validate_config()
@@ -239,11 +238,6 @@ class ProductionPipeline:
                     add_to_chunks=True,
                     show_progress=False
                 )
-
-                for chunk in all_chunks:
-                    if "role_prediction" in chunk:
-                        chunk["role"] = chunk["role_prediction"]["role"]
-                        del chunk["role_prediction"]
 
             attach_same_role_chunk_ids(all_chunks)
 
