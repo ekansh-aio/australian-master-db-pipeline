@@ -2,13 +2,14 @@
 Azure Data Lake Storage (ADLS) Uploader Module
 Handles writing JSON documents and chunks back to ADLS Gen2.
 """
-import json
 import logging
-from typing import List, Dict, Optional
+from typing import Dict, List, Optional
 from pathlib import Path
 from azure.storage.filedatalake import DataLakeServiceClient
-from azure.core.exceptions import AzureError
+from azure.core.exceptions import AzureError, ResourceNotFoundError
 from tqdm import tqdm
+
+from utils.json_helper import safe_json_dumps
 
 logger = logging.getLogger(__name__)
 
@@ -68,7 +69,7 @@ class ADLSUploader:
             logger.info(f"Uploading JSON to ADLS path: {adls_path}")
             
             # Convert to JSON string
-            json_str = json.dumps(data, indent=2, ensure_ascii=False)
+            json_str = safe_json_dumps(data)
             json_bytes = json_str.encode('utf-8')
             
             # Get file client
@@ -180,7 +181,7 @@ class ADLSUploader:
                 directory_client.get_directory_properties()
                 logger.debug(f"Directory already exists: {directory_path}")
                 return True
-            except:
+            except Exception:
                 # Doesn't exist, create it
                 directory_client.create_directory()
                 logger.info(f"Created directory: {directory_path}")
@@ -260,8 +261,21 @@ class ADLSUploader:
             file_client = self.file_system_client.get_file_client(adls_path)
             file_client.get_file_properties()
             return True
-        except:
+        except Exception:
             return False
+
+    def write_marker(self, marker_path: str) -> bool:
+        """
+        Write an empty JSON marker file to ADLS.
+        Used to record completion state (e.g. _done.json).
+
+        Args:
+            marker_path: Path in ADLS container for the marker file
+
+        Returns:
+            True if written successfully
+        """
+        return self.upload_json_file({}, marker_path, overwrite=True)
     
     def delete_file(self, adls_path: str) -> bool:
         """

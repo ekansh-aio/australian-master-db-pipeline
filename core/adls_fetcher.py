@@ -4,7 +4,7 @@ Handles reading JSON documents from ADLS Gen2.
 """
 import json
 import logging
-from typing import List, Dict, Optional, Generator
+from typing import Dict, Generator, List, Optional, Union
 from pathlib import Path
 from azure.storage.filedatalake import DataLakeServiceClient
 from azure.core.exceptions import AzureError
@@ -83,7 +83,7 @@ class ADLSFetcher:
             logger.error(f"Error listing files: {e}")
             raise
     
-    def read_json_file(self, file_path: str) -> Dict:
+    def read_json_file(self, file_path: str) -> Union[Dict, List]:
         """
         Read a single JSON file from ADLS.
         
@@ -171,10 +171,10 @@ class ADLSFetcher:
         file_paths = self.list_files(path, pattern, recursive)
         
         # Limit if specified
-        if max_files and max_files < len(file_paths):
+        if max_files is not None and max_files < len(file_paths):
             logger.info(f"Limiting to {max_files} files (out of {len(file_paths)})")
             file_paths = file_paths[:max_files]
-        
+
         # Read files
         return self.read_multiple_files(file_paths, show_progress)
     
@@ -203,9 +203,9 @@ class ADLSFetcher:
         file_paths = self.list_files(path, pattern, recursive)
         
         # Limit if specified
-        if max_files and max_files < len(file_paths):
+        if max_files is not None and max_files < len(file_paths):
             file_paths = file_paths[:max_files]
-        
+
         logger.info(f"Fetching {len(file_paths)} files as generator")
         
         iterator = tqdm(file_paths, desc="Fetching files") if show_progress else file_paths
